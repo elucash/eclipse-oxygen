@@ -591,11 +591,11 @@ public final class CompletionEngine
 	private static final char[] KNOWN_TYPE_WITH_UNKNOWN_CONSTRUCTORS = new char[]{};
 	private static final char[] KNOWN_TYPE_WITH_KNOWN_CONSTRUCTORS = new char[]{};
 	
-	private static final char[] ARG = "arg".toCharArray();  //$NON-NLS-1$
-	private static final char[] ARG0 = "arg0".toCharArray();  //$NON-NLS-1$
-	private static final char[] ARG1 = "arg1".toCharArray();  //$NON-NLS-1$
-	private static final char[] ARG2 = "arg2".toCharArray();  //$NON-NLS-1$
-	private static final char[] ARG3 = "arg3".toCharArray();  //$NON-NLS-1$
+	private static final char[] ARG = "a".toCharArray(); //$NON-NLS-1$
+	private static final char[] ARG0 = "b".toCharArray(); //$NON-NLS-1$
+	private static final char[] ARG1 = "c".toCharArray(); //$NON-NLS-1$
+	private static final char[] ARG2 = "d".toCharArray(); //$NON-NLS-1$
+	private static final char[] ARG3 = "e".toCharArray(); //$NON-NLS-1$
 	private static final char[][] ARGS1 = new char[][]{ARG0};
 	private static final char[][] ARGS2 = new char[][]{ARG0, ARG1};
 	private static final char[][] ARGS3 = new char[][]{ARG0, ARG1, ARG2};
