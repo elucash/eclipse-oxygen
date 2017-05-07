@@ -8186,7 +8186,8 @@ public final class CompletionEngine
 						missingElementsHaveProblems,
 						castedReceiver,
 						receiverStart,
-						receiverEnd);
+						receiverEnd,
+						currentType);
 				}
 
 				itsInterfaces = currentType.superInterfaces();
@@ -8641,7 +8642,8 @@ public final class CompletionEngine
 		boolean missingElementsHaveProblems,
 		char[] castedReceiver,
 		int receiverStart,
-		int receiverEnd) {
+		int receiverEnd,
+		ReferenceBinding declaringType) {
 
 		boolean completionOnReferenceExpressionName = invocationSite instanceof ReferenceExpression;
 		ObjectVector newMethodsFound =  new ObjectVector();
@@ -8897,6 +8899,10 @@ public final class CompletionEngine
 					proposal.setFlags(method.modifiers);
 					proposal.setReplaceRange(this.startPosition - this.offset, this.endPosition - this.offset);
 					proposal.setTokenRange(this.tokenStart - this.offset, this.tokenEnd - this.offset);
+					if (receiverType == declaringType) {
+						relevance += R_NON_INHERITED;
+						proposal.setFlags(proposal.getFlags() | Flags.AccNonInherited);
+					}
 					proposal.setRelevance(relevance);
 					if(parameterNames != null) proposal.setParameterNames(parameterNames);
 					this.requestor.accept(proposal);
@@ -8970,6 +8976,10 @@ public final class CompletionEngine
 					proposal.setReplaceRange(this.startPosition - this.offset, this.endPosition - this.offset);
 					proposal.setReceiverRange(receiverStart - this.offset, receiverEnd - this.offset);
 					proposal.setTokenRange(this.tokenStart - this.offset, this.tokenEnd - this.offset);
+					if (CharOperation.equals(proposal.getDeclarationSignature(), proposal.getReceiverSignature())) {
+						relevance += R_NON_INHERITED;
+						proposal.setFlags(proposal.getFlags() | Flags.AccNonInherited);
+					}
 					proposal.setRelevance(relevance);
 					if(parameterNames != null) proposal.setParameterNames(parameterNames);
 					this.requestor.accept(proposal);
@@ -10208,7 +10218,8 @@ public final class CompletionEngine
 					missingElementsHaveProblems,
 					castedReceiver,
 					receiverStart,
-					receiverEnd);
+					receiverEnd,
+					currentType);
 			}
 
 			/* Searching of superinterfaces for candidate proposal methods can be skipped if current type is concrete, but only for source levels below 1.8.

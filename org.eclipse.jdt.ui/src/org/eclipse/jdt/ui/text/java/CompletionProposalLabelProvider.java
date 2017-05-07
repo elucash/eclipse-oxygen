@@ -13,13 +13,16 @@ package org.eclipse.jdt.ui.text.java;
 import org.eclipse.core.runtime.Assert;
 
 import org.eclipse.jface.resource.ImageDescriptor;
+import org.eclipse.jface.resource.JFaceColors;
+import org.eclipse.jface.resource.JFaceResources;
 import org.eclipse.jface.viewers.StyledString;
-
+import org.eclipse.swt.graphics.Font;
+import org.eclipse.swt.graphics.TextStyle;
 import org.eclipse.jdt.core.CompletionContext;
 import org.eclipse.jdt.core.CompletionProposal;
 import org.eclipse.jdt.core.Flags;
 import org.eclipse.jdt.core.Signature;
-
+import org.eclipse.jdt.core.compiler.CharOperation;
 import org.eclipse.jdt.internal.corext.template.java.SignatureUtil;
 import org.eclipse.jdt.internal.corext.util.Messages;
 import org.eclipse.jdt.internal.corext.util.Strings;
@@ -42,6 +45,7 @@ import org.eclipse.jdt.internal.ui.viewsupport.JavaElementImageProvider;
  */
 public class CompletionProposalLabelProvider {
 
+	private static final char[] OBJECT_ARRAY_SIGNATURE = "Ljava.lang.Object;".toCharArray();
 	private static final String QUALIFIER_SEPARATOR= JavaElementLabels.CONCAT_STRING;
 	private static final String RETURN_TYPE_SEPARATOR= JavaElementLabels.DECL_STRING;
 	private static final String VAR_TYPE_SEPARATOR= JavaElementLabels.DECL_STRING;
@@ -262,11 +266,19 @@ public class CompletionProposalLabelProvider {
 	 * @return the display label for the given method proposal
 	 */
 	StyledString createMethodProposalLabel(CompletionProposal methodProposal) {
-		StyledString nameBuffer= new StyledString();
-
-		// method name
-		nameBuffer.append(methodProposal.getName());
-
+		StyledString nameBuffer = new StyledString();
+		boolean isFaded = false;
+		if ((methodProposal.getFlags() & Flags.AccStatic) > 0) {
+			nameBuffer.append(methodProposal.getName(), STATIC_METHOD_STYLER);
+		} else if ((methodProposal.getFlags() & Flags.AccNonInherited) > 0) {
+			nameBuffer.append(methodProposal.getName(), NON_INHERITED_STYLER);
+		} else {
+			char[] declarationSignature = methodProposal.getDeclarationSignature();
+			if (declarationSignature != null && CharOperation.equals(declarationSignature, OBJECT_ARRAY_SIGNATURE)) {
+				isFaded = true;
+			}
+			nameBuffer.append(methodProposal.getName());
+		}
 		// parameters
 		nameBuffer.append('(');
 		appendUnboundedParameterList(nameBuffer, methodProposal);
@@ -276,10 +288,13 @@ public class CompletionProposalLabelProvider {
 		if (!methodProposal.isConstructor()) {
 			// TODO remove SignatureUtil.fix83600 call when bugs are fixed
 			char[] returnType= createTypeDisplayName(SignatureUtil.getUpperBound(Signature.getReturnType(SignatureUtil.fix83600(methodProposal.getSignature()))));
-			nameBuffer.append(RETURN_TYPE_SEPARATOR);
+			nameBuffer.append(RETURN_TYPE_SEPARATOR, StyledString.QUALIFIER_STYLER);
 			nameBuffer.append(returnType);
 		}
 
+		if (isFaded) {
+			nameBuffer.setStyle(0, nameBuffer.length(), StyledString.QUALIFIER_STYLER);
+		}
 		// declaring type
 		nameBuffer.append(QUALIFIER_SEPARATOR, StyledString.QUALIFIER_STYLER);
 		String declaringType= extractDeclaringTypeFQN(methodProposal);
@@ -293,9 +308,23 @@ public class CompletionProposalLabelProvider {
 		}
 
 		declaringType= Signature.getSimpleName(declaringType);
-		nameBuffer.append(declaringType, StyledString.QUALIFIER_STYLER);
+		nameBuffer.append(declaringType, StyledString.DECORATIONS_STYLER);
 		return org.eclipse.jdt.internal.corext.util.Strings.markJavaElementLabelLTR(nameBuffer);
 	}
+
+	private static final StyledString.Styler NON_INHERITED_STYLER = new StyledString.Styler() {
+		private final Font bold = JFaceResources.getFontRegistry().getBold(JFaceResources.DIALOG_FONT);
+		public void applyStyles(TextStyle textStyle) {
+			textStyle.font = bold;
+		}
+	};
+	
+	private static final StyledString.Styler STATIC_METHOD_STYLER = new StyledString.Styler() {
+		private final Font italic = JFaceResources.getFontRegistry().getItalic(JFaceResources.DIALOG_FONT);
+		public void applyStyles(TextStyle textStyle) {
+			textStyle.font = italic;
+		}
+	};
 
 	/**
 	 * Creates a display label for the given method proposal. The display label consists of:

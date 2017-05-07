@@ -173,6 +173,12 @@ public final class Flags {
 	public static final int AccAnnotationDefault = ClassFileConstants.AccAnnotationDefault;
 	
 	/**
+	 * Synthetic attribute for methods to indicate that it is non inherited,
+	 * i.e. defined in receiver class
+	 */
+	public static final int AccNonInherited = ClassFileConstants.AccVolatile;
+
+	/**
 	 * Not instantiable.
 	 */
 	private Flags() {
