@@ -13,7 +13,6 @@ package org.eclipse.jdt.ui.text.java;
 import org.eclipse.core.runtime.Assert;
 
 import org.eclipse.jface.resource.ImageDescriptor;
-import org.eclipse.jface.resource.JFaceColors;
 import org.eclipse.jface.resource.JFaceResources;
 import org.eclipse.jface.viewers.StyledString;
 import org.eclipse.swt.graphics.Font;
@@ -49,6 +48,7 @@ public class CompletionProposalLabelProvider {
 	private static final String QUALIFIER_SEPARATOR= JavaElementLabels.CONCAT_STRING;
 	private static final String RETURN_TYPE_SEPARATOR= JavaElementLabels.DECL_STRING;
 	private static final String VAR_TYPE_SEPARATOR= JavaElementLabels.DECL_STRING;
+	private static final int FlagAccNonInherited = 0x0040;
 
 
 	/**
@@ -270,7 +270,7 @@ public class CompletionProposalLabelProvider {
 		boolean isFaded = false;
 		if ((methodProposal.getFlags() & Flags.AccStatic) > 0) {
 			nameBuffer.append(methodProposal.getName(), STATIC_METHOD_STYLER);
-		} else if ((methodProposal.getFlags() & Flags.AccNonInherited) > 0) {
+		} else if ((methodProposal.getFlags() & FlagAccNonInherited) > 0) { 
 			nameBuffer.append(methodProposal.getName(), NON_INHERITED_STYLER);
 		} else {
 			char[] declarationSignature = methodProposal.getDeclarationSignature();
