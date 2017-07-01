@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.7"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.popupMenus">
+      <objectContribution
+            adaptable="true"
+            id="com.github.elucash.openexternal.objectContribution.mac"
+            objectClass="com.github.elucash.openexternal.models.IntermediateResource">
+         <action
+               class="com.github.elucash.openexternal.actions.OpenTerminalAction"
+               icon="icons/etool16/terminal_exec.png"
+               id="com.github.elucash.openexternal.action.mac.terminal"
+               label="Terminal"
+               menubarPath="com.github.elucash.openexternal.menu/additions">
+         </action>
+         <action
+               class="com.github.elucash.openexternal.actions.OpenFinderAction"
+               icon="icons/etool16/finder_exec.png"
+               id="com.github.elucash.openexternal.action.mac.finder"
+               label="Finder"
+               menubarPath="com.github.elucash.openexternal.menu/additions">
+         </action>
+         <visibility>
+            <objectState
+                  name="platform"
+                  value="macosx">
+            </objectState>
+         </visibility>
+      </objectContribution>
+     <objectContribution
+            adaptable="true"
+            id="com.github.elucash.openexternal.objectContribution.menu"
+            objectClass="org.eclipse.core.resources.IResource">
+         <menu
+               id="com.github.elucash.openexternal.menu"
+               label="Open External"
+               path="additions">
+         </menu>
+      </objectContribution>
+   </extension>
+   <extension
+         point="org.eclipse.core.runtime.adapters">
+      <factory
+            adaptableType="org.eclipse.core.runtime.IAdaptable"
+            class="com.github.elucash.openexternal.adapters.ResourceAdapterFactory">
+         <adapter
+               type="com.github.elucash.openexternal.models.IntermediateResource" />
+      </factory>
+   </extension>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            class="com.github.elucash.openexternal.preferences.OpenExternalPreferencePage"
+            id="com.github.elucash.openexternal.preference"
+            name="Open External">
+      </page>
+   </extension>
+   <extension
+         point="org.eclipse.core.runtime.preferences">
+      <initializer
+            class="com.github.elucash.openexternal.preferences.PreferenceInitializer">
+      </initializer>
+   </extension>
+
+</plugin>

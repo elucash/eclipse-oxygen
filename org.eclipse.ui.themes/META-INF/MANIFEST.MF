@@ -10,7 +10,7 @@ Eclipse-SourceReferences: scm:git:git://git.eclipse.org/gitroot/platfo
  I20170517-0800";commitId=6a909f14b0813dab2c03d48ee8e0d613ff3d7938
 Bundle-Vendor: %Plugin.providerName
 Bundle-Name: %Plugin.name
-Bundle-Version: 1.2.0.v20170517-0622
+Bundle-Version: 1.2.1
 Bundle-Localization: plugin
 Created-By: Apache Maven 3.3.3
 Build-Jdk: 1.8.0_121

@@ -1,0 +1,6 @@
+*.class
+*/bin/
+bin/
+classes/
+target/
+.DS_Store
