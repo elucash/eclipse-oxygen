@@ -54,7 +54,7 @@ Export-Package: org.eclipse.ui,org.eclipse.ui.actions,org.eclipse.ui.d
  tasklist,org.eclipse.ui.wizards.datatransfer,org.eclipse.ui.wizards.n
  ewresource
 Bundle-Name: %Plugin.name
-Bundle-Version: 3.13.0.v20170516-1223
+Bundle-Version: 3.13.23
 Bundle-ClassPath: .
 Bundle-Localization: plugin
 Bundle-Activator: org.eclipse.ui.internal.ide.IDEWorkbenchPlugin
