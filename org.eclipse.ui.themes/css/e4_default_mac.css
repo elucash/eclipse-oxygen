@@ -32,16 +32,18 @@ ColorDefinition#org-eclipse-ui-workbench-ACTIVE_TAB_OUTER_KEYLINE_COLOR {
 .MPartStack {
 	swt-simple: false;
 	swt-mru-visible: false;
-	swt-unselected-tabs-color: #E8E8E8 #FFFFFF 100%;
-	swt-outer-keyline-color: #FFFFFF;
+	swt-unselected-tabs-color: #E8E8E8 #E8E8E8 100%;
+	swt-outer-keyline-color: #D0D0D2;
 	swt-inner-keyline-color: #FFFFFF;
-	swt-tab-outline: #B6BCCC;
+	swt-tab-outline: #D0D0D2;
+	padding: 0px 0px 0px 0px;
 }
 
 .MPartStack.active {
-	swt-tab-outline: #B6BCCC;
+	swt-unselected-tabs-color: #E8E8E8 #E8E8E8 100%;
+	swt-tab-outline: #D0D0D2;
 	swt-shadow-visible: false;
-	swt-outer-keyline-color: #C4C5C1;
+	swt-outer-keyline-color: #D0D0D2;
 }
 
 .MTrimBar {
@@ -64,6 +66,10 @@ ColorDefinition#org-eclipse-ui-workbench-ACTIVE_TAB_OUTER_KEYLINE_COLOR {
 
 .MTrimmedWindow {
 	background-color: #E8E8E8;
+}
+
+.MTrimmedWindow.topLevel {
+	margin: 0px 0px 0px 0px;
 }
 
 #PerspectiveSwitcher {
@@ -120,8 +126,13 @@ Section {
 
 CTabFolder {
   swt-selected-tabs-background: #CCE0F6 #3F97F9 100%;
+  corner-radius: 6;
 }
 
 CTabFolder CTabItem:selected {
   background-color: #E9E8E9;
+}
+
+#org-eclipse-ui-trim-status .TrimStack {
+	frame-image: none;
 }
