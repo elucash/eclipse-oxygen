@@ -36,6 +36,7 @@ import org.eclipse.jdt.core.IJavaProject;
 import org.eclipse.jdt.core.IType;
 import org.eclipse.jdt.core.JavaModelException;
 import org.eclipse.jdt.core.Signature;
+import org.eclipse.jdt.core.compiler.CharOperation;
 import org.eclipse.jdt.core.compiler.IProblem;
 import org.eclipse.jdt.core.formatter.CodeFormatter;
 
@@ -93,6 +94,12 @@ import org.eclipse.jdt.internal.ui.viewsupport.ImageDescriptorRegistry;
  * @since 3.1
  */
 public class CompletionProposalCollector extends CompletionRequestor {
+	private static final char[] EQUALS_METHOD = "equals".toCharArray();  //$NON-NLS-1$
+	private static final char[] HASH_CODE_METHOD = "hashCode".toCharArray();  //$NON-NLS-1$
+	private static final char[] TO_STRING_METHOD = "toString".toCharArray();  //$NON-NLS-1$
+	private static final char[] CLASS_LITERAL = "class".toCharArray();  //$NON-NLS-1$
+	private static final char[] GET_CLASS_METHOD = "getClass".toCharArray();  //$NON-NLS-1$
+	private static final char[] OBJECT_CLASS = "java.lang.Object".toCharArray();  //$NON-NLS-1$
 	/** Triggers for method proposals without parameters. Do not modify. */
 	protected final static char[] METHOD_TRIGGERS= new char[] { ';', ',', '.', '\t', '[', ' ' };
 	/** Triggers for method proposals. Do not modify. */
@@ -546,7 +553,22 @@ public class CompletionProposalCollector extends CompletionRequestor {
 	protected boolean isFiltered(CompletionProposal proposal) {
 		if (isIgnored(proposal.getKind()))
 			return true;
+		
 		char[] declaringType= getDeclaringType(proposal);
+	    if (declaringType != null && CharOperation.equals(declaringType, OBJECT_CLASS)) {
+	    	char[] name = proposal.getName();
+	    	if (CharOperation.equals(GET_CLASS_METHOD, name)
+	    			|| CharOperation.equals(CLASS_LITERAL, name)
+	    			|| CharOperation.equals(TO_STRING_METHOD, name)
+	    			|| CharOperation.equals(HASH_CODE_METHOD, name)
+	    			|| CharOperation.equals(EQUALS_METHOD, name)) {
+	    		int relevance = proposal.getRelevance();
+	    		proposal.setRelevance(Math.max(relevance - 5, 1));
+	    		return TypeFilter.isFiltered(declaringType);
+	    	}
+	    	// filter out all those wait, notify, finalize, clone methods
+	    	return true;
+	    }
 		return declaringType!= null && TypeFilter.isFiltered(declaringType);
 	}
 
@@ -593,7 +615,7 @@ public class CompletionProposalCollector extends CompletionRequestor {
 				// special methods may not have a declaring type: methods defined on arrays etc.
 				// Currently known: class literals don't have a declaring type - use Object
 				if (declaration == null)
-					return "java.lang.Object".toCharArray(); //$NON-NLS-1$
+					return OBJECT_CLASS;
 				return Signature.toCharArray(declaration);
 			case CompletionProposal.PACKAGE_REF:
 			case CompletionProposal.MODULE_REF:
