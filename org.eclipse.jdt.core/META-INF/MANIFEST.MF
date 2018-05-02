@@ -72,7 +72,7 @@ Export-Package: org.eclipse.jdt.core,org.eclipse.jdt.core.compiler,org
  eclipse.jdt.internal.formatter.linewrap;x-internal:=true,org.eclipse.
  jdt.internal.formatter.old;x-internal:=true
 Bundle-Name: %pluginName
-Bundle-Version: 3.13.102.v20180330-0919
+Bundle-Version: 3.13.144
 Bundle-Localization: plugin
 Bundle-Activator: org.eclipse.jdt.core.JavaCore
 Created-By: Apache Maven 3.3.3

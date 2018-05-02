@@ -30,7 +30,7 @@ Export-Package: org.eclipse.jface.contentassist,org.eclipse.jface.cont
  ection,org.eclipse.jface.text.source.projection.images,org.eclipse.jf
  ace.text.templates,org.eclipse.jface.text.templates.persistence
 Bundle-Name: %pluginName
-Bundle-Version: 3.12.2.v20180112-1341
+Bundle-Version: 3.12.44
 Bundle-Localization: plugin
 Created-By: Apache Maven 3.3.3
 Build-Jdk: 1.8.0_131
