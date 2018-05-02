@@ -129,7 +129,7 @@ Export-Package: org.eclipse.jdt.internal.corext;x-friends:="org.eclips
  pse.jdt.ui.text.java.correction,org.eclipse.jdt.ui.text.java.hover,or
  g.eclipse.jdt.ui.wizards
 Bundle-Name: %pluginName
-Bundle-Version: 3.13.144
+Bundle-Version: 3.13.147
 Bundle-Localization: plugin
 Bundle-Activator: org.eclipse.jdt.internal.ui.JavaPlugin
 Created-By: Apache Maven 3.3.3
