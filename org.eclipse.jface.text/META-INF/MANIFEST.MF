@@ -1,0 +1,2159 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.eclipse.jface.text
+Bundle-SymbolicName: org.eclipse.jface.text
+Built-By: genie.releng
+Require-Bundle: org.eclipse.core.runtime;bundle-version="[3.5.0,4.0.0)
+ ",org.eclipse.text;bundle-version="[3.8.0,4.0.0)";visibility:=reexpor
+ t,org.eclipse.swt;bundle-version="[3.107.0,4.0.0)",org.eclipse.jface;
+ bundle-version="[3.15.0,4.0.0)"
+Bundle-ManifestVersion: 2
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Eclipse-SourceReferences: scm:git:git://git.eclipse.org/gitroot/platfo
+ rm/eclipse.platform.text.git;path="org.eclipse.jface.text";tag="I2019
+ 0819-0600";commitId=cbc3f41c5bbaeefe42ee458c5b8c50acb01085ba
+Bundle-Vendor: %providerName
+Import-Package: com.ibm.icu.text
+Export-Package: org.eclipse.jface.contentassist,org.eclipse.jface.cont
+ entassist.images,org.eclipse.jface.internal.text;x-internal:=true,org
+ .eclipse.jface.internal.text.codemining;x-internal:=true,org.eclipse.
+ jface.internal.text.html;x-friends:="org.eclipse.ant.ui, org.eclipse.
+ jdt.ui, org.eclipse.ltk.ui.refactoring, org.eclipse.pde.ui, org.eclip
+ se.ui.editors, org.eclipse.xtext.ui",org.eclipse.jface.internal.text.
+ link.contentassist;x-internal:=true,org.eclipse.jface.internal.text.r
+ evisions;x-internal:=true,org.eclipse.jface.internal.text.source;x-in
+ ternal:=true,org.eclipse.jface.text,org.eclipse.jface.text.codemining
+ ,org.eclipse.jface.text.contentassist,org.eclipse.jface.text.formatte
+ r,org.eclipse.jface.text.hyperlink,org.eclipse.jface.text.information
+ ,org.eclipse.jface.text.link,org.eclipse.jface.text.presentation,org.
+ eclipse.jface.text.quickassist,org.eclipse.jface.text.reconciler,org.
+ eclipse.jface.text.revisions,org.eclipse.jface.text.rules,org.eclipse
+ .jface.text.source,org.eclipse.jface.text.source.inlined,org.eclipse.
+ jface.text.source.projection,org.eclipse.jface.text.source.projection
+ .images,org.eclipse.jface.text.templates,org.eclipse.jface.text.templ
+ ates.persistence
+Bundle-Name: %pluginName
+Bundle-Version: 3.15.300.v20190819-0725
+Bundle-Localization: plugin
+Created-By: Apache Maven 3.5.4
+Build-Jdk: 1.8.0_192
+
+Name: org/eclipse/jface/text/contentassist/AdditionalInfoController$Ti
+ mer$1.class
+SHA-256-Digest: ef7Dd2p/klqCae7iKVykRXlbzR8P19+BBvz6OlCU1kQ=
+
+Name: org/eclipse/jface/text/revisions/RevisionEvent.class
+SHA-256-Digest: E8YUy3K5p2L0vc1PyxDE+2jK1Js9e2BE9FU/yZXgIWM=
+
+Name: org/eclipse/jface/text/contentassist/IContentAssistListener.clas
+ s
+SHA-256-Digest: FiMrQkO/dmvrhHdMVrQuxbbq3eA6XQaeUow7YroYJuU=
+
+Name: org/eclipse/jface/text/TextPresentation$FilterIterator.class
+SHA-256-Digest: mYBIIfXBbMITs8Q7S0R+3qVAylCsC3g/Tn39YnX88zM=
+
+Name: org/eclipse/jface/internal/text/revisions/HunkComputer.class
+SHA-256-Digest: TiQgdM3rNBUuegUUeWmWYPB//xBES8j+lYcTABh9QEI=
+
+Name: org/eclipse/jface/text/source/TextInvocationContext.class
+SHA-256-Digest: +Pe1inGpADpSMYI9gJSrktLS0O2lBvq5K9wEkSbTE1Q=
+
+Name: org/eclipse/jface/text/contentassist/IContentAssistantExtension2
+ .class
+SHA-256-Digest: hMykwVjMUOoB4Jhr+OJsOdGv8F2JyWq4ykMJESo13U4=
+
+Name: org/eclipse/jface/text/contentassist/CompletionProposalPopup$4.c
+ lass
+SHA-256-Digest: gRphRR3GsJY3iJGLJ8k/mvdArhhPOOmFm2OV0upNwUc=
+
+Name: org/eclipse/jface/text/source/inlined/LineHeaderAnnotation.class
+SHA-256-Digest: an4yFXNX/Rrx4AGBp7e+I/cPsE24wIPOtFpxaHnqZ0Y=
+
+Name: org/eclipse/jface/text/contentassist/CompletionProposalPopup$Emp
+ tyProposal.class
+SHA-256-Digest: XCZSpP59rxgT0CeZxJOHwamTksyr2oBkbXHToCokTk4=
+
+Name: org/eclipse/jface/text/DocumentCommand$ReverseListIterator.class
+SHA-256-Digest: /f2Q2kxXSbFPE1ZFJbbksi8FO7Lk6/PRYOJD8uIhFZg=
+
+Name: org/eclipse/jface/text/AbstractInformationControl.class
+SHA-256-Digest: onLGq4sCKy84ioUkx67tLHD50Xu0KykkyUdJpaPHiBc=
+
+Name: org/eclipse/jface/text/IRewriteTarget.class
+SHA-256-Digest: OyrJU0WRwObGkojSrpU7trLPXFZK2sb8b6jtrmW3QEs=
+
+Name: org/eclipse/jface/text/source/IAnnotationAccessExtension2.class
+SHA-256-Digest: 6T4wT9RHu58xDl4NotPdI5yGXEoWbW08Gu/CazDkRro=
+
+Name: org/eclipse/jface/text/rules/IPartitionTokenScanner.class
+SHA-256-Digest: oOZMkOiC2CWhw0TJllizE59vt1JJoo5iNpPSBDeNS1g=
+
+Name: org/eclipse/jface/contentassist/ISubjectControlContentAssistant.
+ class
+SHA-256-Digest: wCW26NfL8Sub0aTyEmyw4iLMDO0nR4YGJcSJVYIfX7M=
+
+Name: org/eclipse/jface/text/contentassist/ContentAssistant$ExceptionL
+ oggingSafeRunnable.class
+SHA-256-Digest: pvHdE/5j3keFeIPoHqnLTP9YFy4CMks6jyIRU5G4YCk=
+
+Name: org/eclipse/jface/text/source/projection/ProjectionAnnotationMod
+ el.class
+SHA-256-Digest: l3YVlCXInZO6WfVIiWmvDUJKzVMQUNJv1hcWlQVFXMM=
+
+Name: org/eclipse/jface/text/TextViewerUndoManager$TextInputListener.c
+ lass
+SHA-256-Digest: F6Br4GtgvWgpN1iTp/e0Uuj/gOHGga4Y415NLlj9Xi8=
+
+Name: org/eclipse/jface/text/source/LineNumberRulerColumn.class
+SHA-256-Digest: ie+pAYsPoBHT05lnJklBsO5xISN1dcRMWKMYFYd0PTo=
+
+Name: org/eclipse/jface/internal/text/link/contentassist/IContentAssis
+ tListener2.class
+SHA-256-Digest: GO8xPqLn3y9O93vI44A7gechHM2Tl14Ags8oJimLgl4=
+
+Name: org/eclipse/jface/text/source/inlined/InlinedAnnotationSupport$M
+ ouseTracker.class
+SHA-256-Digest: DB+sZQxLJVI3CIxRaD1LXrtKtdHaUzzUlF5y1SdrNSs=
+
+Name: org/eclipse/jface/internal/text/link/contentassist/IProposalList
+ ener.class
+SHA-256-Digest: 7RJZUElZCN1RoTjCxmzvo58Rhw6h9pyDHLhyA+RGOlQ=
+
+Name: org/eclipse/jface/text/reconciler/MonoReconciler.class
+SHA-256-Digest: 2xdJa88q5bf2Hm7hadOpACKIzJUIOlDbSlt6F74sncM=
+
+Name: org/eclipse/jface/text/codemining/CodeMiningReconciler.class
+SHA-256-Digest: f6i11w1wTNM0ZCXoNlLKbVq7w/G5LoYPXGdYYuT5xyQ=
+
+Name: org/eclipse/jface/text/ITextViewerExtension.class
+SHA-256-Digest: f5QeGsnDYiJtHIMi/r3NM6oxxPWuBEcXpsGgZyjYEwM=
+
+Name: org/eclipse/jface/text/DocumentCommand.class
+SHA-256-Digest: YS2QrrGVzTC25VmIlcZQiYUBb1S2j2Xdv8HMZREdSzc=
+
+Name: org/eclipse/jface/text/rules/DefaultDamagerRepairer.class
+SHA-256-Digest: mQRoKRyGRcNzwK9XECK2R1lZobRAmaf2jHSK/O7mATo=
+
+Name: org/eclipse/jface/text/AbstractHoverInformationControlManager$2.
+ class
+SHA-256-Digest: W1Z5ln7pe23S53rBdN0RPSEhwtAQFwQReOjgRZeXZOQ=
+
+Name: org/eclipse/jface/text/link/LinkedModeUI$EmtpyFocusListener.clas
+ s
+SHA-256-Digest: KDKRojOd2bToGZED7ikFID6di40/94Ee7+qKmP5QCqE=
+
+Name: org/eclipse/jface/text/contentassist/IContentAssistant.class
+SHA-256-Digest: F5Rl/QUK38nDDrX209aDIrFgNpm+2kc0dB6Lg6r0GL0=
+
+Name: org/eclipse/jface/text/ITextViewer.class
+SHA-256-Digest: wGCb/5fXiyueqVGpe3GbOWpAYWuQWuKT+p/WbxvnLvQ=
+
+Name: org/eclipse/jface/internal/text/SelectionProcessor$Implementatio
+ n.class
+SHA-256-Digest: Y0CM2wyZdDToz9mmvUc3d2XQg39QGjEearJ6OtwnsJs=
+
+Name: org/eclipse/jface/text/source/ChangeRulerColumn.class
+SHA-256-Digest: 9sIhZBJAbegr+1hiF7BIFGfiMkz/IIqvcauXc+wnh1Q=
+
+Name: org/eclipse/jface/text/rules/RuleBasedPartitionScanner.class
+SHA-256-Digest: 25BUloizcLWDJF8qbKqbrFNi/PCetUiqcQdhfGPVg6w=
+
+Name: org/eclipse/jface/text/formatter/IFormattingContext.class
+SHA-256-Digest: dtjxICwqCE/VcDnXjPNNOSVi5ryyQhp+/h35flU38Ek=
+
+Name: org/eclipse/jface/text/source/AnnotationRulerColumn$Tuple.class
+SHA-256-Digest: cu4cZMn3zhRkiiKA0LE3sRxEShNIUBMETuc6jJY3WEg=
+
+Name: org/eclipse/jface/contentassist/images/content_assist_cue.png
+SHA-256-Digest: v1DMjB4HXM2gNE2bAZiLyEM0Ub9mMVG9FiT1KGsNW64=
+
+Name: org/eclipse/jface/text/rules/BufferedRuleBasedScanner.class
+SHA-256-Digest: 6uIub68Ke6J5RPcUu0W0hoiJ2siqr1DufjGh/NEsep0=
+
+Name: org/eclipse/jface/text/source/projection/ProjectionRulerColumn$2
+ .class
+SHA-256-Digest: 0HwRrxoIUXC9MyEiX+9ApDoNsBDbFL/H9WAg/nXvtZM=
+
+Name: org/eclipse/jface/text/AbstractInformationControlManager$Anchor.
+ class
+SHA-256-Digest: SUHOrov2f3/8ZHOuq0dQrZmru3pYnNHds3tmkFKPI5M=
+
+Name: org/eclipse/jface/text/IUndoManagerExtension.class
+SHA-256-Digest: n6F5tSZYs6ZN4AojcT5oHTjSRoyphjJuuXs0CrE+Oko=
+
+Name: org/eclipse/jface/text/hyperlink/MultipleHyperlinkPresenter$Link
+ ListInformationControl.class
+SHA-256-Digest: q9Le9gVa2z1HI6KxrG5yd7BT3y3TVjs4H7jyffnJzqw=
+
+Name: org/eclipse/jface/text/DefaultInformationControl$IInformationPre
+ senterExtension.class
+SHA-256-Digest: xC0A0eaUR7C0GfmxFtak/snTkytFbyjApfzgVrp+VtI=
+
+Name: org/eclipse/jface/internal/text/html/SubstitutionTextReader.clas
+ s
+SHA-256-Digest: +uFUr28+Uz9Qf7wZQzuvPMLO/O7ElG53JD4KLDsgdHA=
+
+Name: org/eclipse/jface/text/source/projection/ProjectionViewer$Replac
+ eVisibleDocumentExecutor.class
+SHA-256-Digest: GrDI8GS0ckUOYcP5kolkQ58P+Gx62VjSXvgH1RKHN7o=
+
+Name: org/eclipse/jface/text/link/LinkedModeUI$ProposalListener.class
+SHA-256-Digest: yXaBvZa58Ai8M1ADSOpJdf2RAYo0k362IHJuD1wpy8k=
+
+Name: org/eclipse/jface/text/codemining/AbstractCodeMiningProvider.cla
+ ss
+SHA-256-Digest: 78XnDBNkvOfSNGmnHWPQ/5ftgk+Xr7vanLENdZpTo14=
+
+Name: org/eclipse/jface/internal/text/revisions/RevisionPainter$Annota
+ tionListener.class
+SHA-256-Digest: QyS4gndmvzOLCF11bfhC4k6FmWgkG/qSbTm8/dAT8po=
+
+Name: org/eclipse/jface/text/link/ProposalPosition.class
+SHA-256-Digest: CYeZj6THdqc5utxwmkqD18jj2c6FWnI6hK+S4fB9Gto=
+
+Name: org/eclipse/jface/text/contentassist/CompletionProposalPopup$9.c
+ lass
+SHA-256-Digest: SImcyHnmx5ohDnqhNsakaElI4nzsHYMMq+lfhNOHi1E=
+
+Name: org/eclipse/jface/text/DocumentClone$StringTextStore.class
+SHA-256-Digest: ogLnjrm0n8N2qUAX5JNeGJ3VbNNfYhVIFtAThXdoruw=
+
+Name: org/eclipse/jface/text/DefaultUndoManager$TextInputListener.clas
+ s
+SHA-256-Digest: xPMIynMTaRQE4bFQIA7NuAcWDx2Mt3Q1cN38CXJzxqA=
+
+Name: org/eclipse/jface/text/contentassist/ContextInformationPopup$1.c
+ lass
+SHA-256-Digest: lEbCNen04oW4JekiicuxJpooVseCTjukf+NBEzVrIBE=
+
+Name: org/eclipse/jface/text/source/AnnotationRulerColumn.class
+SHA-256-Digest: VNAQ/wsHUARq0VoW5KWOCjnnlfXYZ1/sNRmIqBWjSqw=
+
+Name: org/eclipse/jface/internal/text/link/contentassist/Helper2.class
+SHA-256-Digest: uNngw00lnThz4DFX4cUmXftYmMrFCfAMSpbypB0UDp4=
+
+Name: org/eclipse/jface/text/reconciler/IReconcileStep.class
+SHA-256-Digest: 48bBHrqiVzLUS7RlFQQgzM2eZYD8iyAGmSBYFMUORBo=
+
+Name: org/eclipse/jface/text/IWidgetTokenKeeperExtension.class
+SHA-256-Digest: wx+WIkEWTC0trVXDGbx/eIIlNyxNELQ24huF4glFfqs=
+
+Name: org/eclipse/jface/text/source/AnnotationRulerColumn$ReusableRegi
+ on.class
+SHA-256-Digest: WBGGeqt9PBNG7OS0QAMd2W6Ge83aZfIFey+N8EDSrCY=
+
+Name: org/eclipse/jface/internal/text/link/contentassist/ContentAssist
+ ant2$Closer.class
+SHA-256-Digest: /573M4rNPqPJpuf7m6CNO+tRjgxpcGNIVqtFvWZW7VY=
+
+Name: org/eclipse/jface/text/source/SourceViewer$RulerLayout.class
+SHA-256-Digest: P+K0PWm3fHqNzOYvJ1/qcexntHBA5N0/3I1BYJCHeiA=
+
+Name: org/eclipse/jface/internal/text/codemining/CancellationException
+ Monitor.class
+SHA-256-Digest: 5qq5cti3gk7D4NH7j81tjnpIowyFU5a7h++7ZNATQOI=
+
+Name: org/eclipse/jface/internal/text/codemining/CodeMiningManager.cla
+ ss
+SHA-256-Digest: /1D1R4Tmd/vbObnFMdW7SQIgaNzRdB8lshuLBNcEZY0=
+
+Name: org/eclipse/jface/internal/text/link/contentassist/CompletionPro
+ posalPopup2.class
+SHA-256-Digest: l1C+S757gQtT8zflXsxOhnFOj0aBC6+U6qGf8STGms4=
+
+Name: org/eclipse/jface/text/source/projection/ProjectionSupport$Proje
+ ctionListener.class
+SHA-256-Digest: IRL39D1MKQl4TpmHqU7hbdQSFNQah5jrRlqJBAl+Rrc=
+
+Name: org/eclipse/jface/text/DefaultTextHover.class
+SHA-256-Digest: ISjH4s23suhbzIFLkyzupYgkE82RaCQhmDAjmmhAnmg=
+
+Name: org/eclipse/jface/text/information/IInformationProviderExtension
+ 2.class
+SHA-256-Digest: ZEpk8To6vK/kFgUcfdas8FdF7y5U4CuC8DAPsFr9eMs=
+
+Name: org/eclipse/jface/text/hyperlink/IHyperlinkPresenter.class
+SHA-256-Digest: cKa3Mg/GMKnu5GEY5N7o2Unl85vuVaR+lQ9mBJXgrr8=
+
+Name: org/eclipse/jface/text/source/OverviewRuler$1.class
+SHA-256-Digest: 7/T9NE14A/78m0GY35zDNxBwYQOFxlHm5AE4MprKl7A=
+
+Name: org/eclipse/jface/text/hyperlink/HyperlinkManager$DETECTION_STRA
+ TEGY.class
+SHA-256-Digest: 0j8uGCaYlokWrAoo4Se/8ESJEDBqa+nT/HAPCvYKHuM=
+
+Name: org/eclipse/jface/text/TextViewerHoverManager.class
+SHA-256-Digest: xNqG69JoCa3RbB96FN71DJqUMUThEwKAdAHzKhIm4V8=
+
+Name: org/eclipse/jface/text/reconciler/Reconciler.class
+SHA-256-Digest: zC9pliHW9HZyabndsEKoK380YwJD2Owamt6usUr68co=
+
+Name: org/eclipse/jface/text/link/LinkedModeUI.class
+SHA-256-Digest: DBFMfBeDQVYCIexrCaByPi1h2grlAYzZIEhG83/3ZdE=
+
+Name: org/eclipse/jface/text/source/IOverviewRulerExtension.class
+SHA-256-Digest: 3BwkNMGhOpa75sOUpHKMlmvdmxeV629qK4ZW3O6Hjp4=
+
+Name: org/eclipse/jface/contentassist/ISubjectControlContextInformatio
+ nPresenter.class
+SHA-256-Digest: t2A5je2/MdMpOvZ0bN9unGAB9UINmCxfO0wRHpM18as=
+
+Name: org/eclipse/jface/text/DefaultInformationControl.class
+SHA-256-Digest: hM2JKDb5CF7EDOp5UYoVT1+2RlciGw0/mEKLEDIspO8=
+
+Name: org/eclipse/jface/internal/text/link/contentassist/CompletionPro
+ posalPopup2$5.class
+SHA-256-Digest: e8/Vwzoh2nIfMV/o8GTz1cS+NCXv1MfPbijvRJrHBeY=
+
+Name: org/eclipse/jface/internal/text/link/contentassist/PopupCloser2.
+ class
+SHA-256-Digest: I1m+oNNvHh+8tbEp5ckT0Wne2AwmEi5QtzMxye41lMI=
+
+Name: org/eclipse/jface/text/contentassist/ICompletionListenerExtensio
+ n.class
+SHA-256-Digest: KJlN/I+3q9t7KJuyh5LJAkI1xnDPy+PDnrOnTOtR29k=
+
+Name: org/eclipse/jface/text/contentassist/ICompletionProposalExtensio
+ n.class
+SHA-256-Digest: UBibBCPOCzvtDcFa/dw9rLxT5iq/rgmYwIeV6vGR8i4=
+
+Name: org/eclipse/jface/text/contentassist/CompletionProposalPopup$7$1
+ .class
+SHA-256-Digest: /W4yQ0AaciscTIYNqzdFcNwDL1QHmFv5ZZUdCJMBBv4=
+
+Name: org/eclipse/jface/text/information/IInformationPresenter.class
+SHA-256-Digest: SHQh81QUMzA3M/j1Chv9aUDLaTQuLAqzcGhLn1uQaB0=
+
+Name: org/eclipse/jface/text/WhitespaceCharacterPainter.class
+SHA-256-Digest: 42Hvm5jBBQAXUWyevjzvFGu3AZ11Mo29BXsAnxIvliE=
+
+Name: org/eclipse/jface/text/hyperlink/HyperlinkManager.class
+SHA-256-Digest: utCWRzsgwp6R/cRbFWLYj2Y/oEEvlvhuw8ZANbpGaAE=
+
+Name: org/eclipse/jface/text/source/AnnotationPainter$IDrawingStrategy
+ .class
+SHA-256-Digest: ePkqP5VT0jer/arn3ZU/VSJwcS3T4tEB5v3rG8kL6IY=
+
+Name: org/eclipse/jface/internal/text/link/contentassist/ContextInform
+ ationPopup2$1.class
+SHA-256-Digest: WYTsvP3mYNAXCwQERPFjIouTV1tyuYN4IsTHLolK4hA=
+
+Name: org/eclipse/jface/text/formatter/ContentFormatter$UpdateAffected
+ Positions.class
+SHA-256-Digest: Qb4rGIrNiC5maFbNhlQt/lU10U2iHf+pZxtxDb3Jfj4=
+
+Name: org/eclipse/jface/text/templates/JFaceTextTemplateMessages.prope
+ rties
+SHA-256-Digest: BCow0SMQlnXjLBMTIxZ7gfxNO0sUbomNJms3wSkyGx4=
+
+Name: org/eclipse/jface/text/rules/RuleBasedScanner.class
+SHA-256-Digest: IZMeEoJPcY8lvkUudmHaRb4Fax5Amo0hrq0qBTGfCIM=
+
+Name: org/eclipse/jface/internal/text/revisions/RevisionPainter$Revisi
+ onAnnotation.class
+SHA-256-Digest: ZAP8OgEXYd0ShG758Ajw4Qow+kg8BwQqn6kCujWSeqk=
+
+Name: org/eclipse/jface/text/DefaultUndoManager$DocumentListener.class
+SHA-256-Digest: 8K0K1NLLhMbnEg+NncTQ8cENUzpLpEsW8yIULg9eB44=
+
+Name: org/eclipse/jface/text/ITextPresentationListener.class
+SHA-256-Digest: foov2n9lZPaBcIW3rzksyoxsrjnpCtkkyFDjo/CZB6Y=
+
+Name: org/eclipse/jface/text/contentassist/ContentAssistant$InternalLi
+ stener.class
+SHA-256-Digest: BjYWrkUsgJGHd9nLetkQApgOjWXi8NI36zJIiKS1Wa4=
+
+Name: org/eclipse/jface/internal/text/revisions/RevisionSelectionProvi
+ der.class
+SHA-256-Digest: 9Ba4fm0dpA8/Sn5qEQSIhIn6l7udR2jvuDC5XFyz9lA=
+
+Name: org/eclipse/jface/text/TabsToSpacesConverter.class
+SHA-256-Digest: vqjGS1BDxuU25SweKrYviyt04ttg7aJm1BCbQKNnWe4=
+
+Name: org/eclipse/jface/text/JFaceTextUtil.class
+SHA-256-Digest: paDQ2plqSvXB33vvg7Qkh4/w/SWPx2nfBq9+qHQgKdM=
+
+Name: org/eclipse/jface/text/source/IVerticalRulerExtension.class
+SHA-256-Digest: 5uKdYiL9+IgQ+tWFTPx2srCG2+A8hONBl64gRVoSogg=
+
+Name: org/eclipse/jface/text/hyperlink/MultipleHyperlinkPresenter$Link
+ ListInformationControl$3.class
+SHA-256-Digest: +j7wTA7EAEHezw1gZRjkiwAVyN4dhyb40zpxqYOUCNU=
+
+Name: org/eclipse/jface/text/DefaultUndoManager$KeyAndMouseListener.cl
+ ass
+SHA-256-Digest: 5HxZoqsIfXFzVZ9b9veU3dU6rD88yZJMOL1T1hUSy0E=
+
+Name: org/eclipse/jface/text/templates/persistence/TemplateStore.class
+SHA-256-Digest: E9zhQbd78lIpWBcv6XYPcNfJBeVOrHZUJDf4maog4Co=
+
+Name: org/eclipse/jface/text/ITextHoverExtension2.class
+SHA-256-Digest: k8MjJgGAeZ/80J0IwE/99YzAGZIx5truuMu3vsbPoNs=
+
+Name: org/eclipse/jface/internal/text/revisions/Colors.class
+SHA-256-Digest: 4epMbPoB9Yx9AKIlyXPpv/rAjPEgIjB1NelP6cN0zW0=
+
+Name: org/eclipse/jface/internal/text/TableOwnerDrawSupport.class
+SHA-256-Digest: RkQoOcFU5k0APoWvCLAYL2Ad7zyVMwvsWtz3TfubgeQ=
+
+Name: org/eclipse/jface/internal/text/NonDeletingPositionUpdater.class
+SHA-256-Digest: jTEQ5Q3sEUFylo2zlPzrkC4QNICz/MtAalnpfzpEnDQ=
+
+Name: org/eclipse/jface/text/contentassist/CompletionProposalPopup$6.c
+ lass
+SHA-256-Digest: ZBB4x31j7Rxlezk5agmx3XySWRgtroWcjeMTZM5ErRA=
+
+Name: org/eclipse/jface/text/IInformationControlExtension.class
+SHA-256-Digest: p1m1rYjmkgYc9BtilJrJZs6UYirU+Bhy+HVVkzJGfOY=
+
+Name: org/eclipse/jface/text/source/CompositeRuler$CompositeRulerCanva
+ s.class
+SHA-256-Digest: 1bXe5lt4gJlEEfKnZnMFjE1/yr1fWqhAW8d3RBMunKk=
+
+Name: org/eclipse/jface/internal/text/revisions/RevisionSelectionProvi
+ der$PostSelectionListener.class
+SHA-256-Digest: njXe9RIT4+w73pmLShPpYSjS/3iu44u0vOFDRYVJLk0=
+
+Name: org/eclipse/jface/text/source/ContentAssistantFacade.class
+SHA-256-Digest: 5WR8rY/QpqOQmwrzj0Txc2aDj6CXHGlZ/cp+8HeojAw=
+
+Name: org/eclipse/jface/text/source/IVerticalRulerInfo.class
+SHA-256-Digest: 1aRyhka6QngPwarfn5I6Lh8+F6t1bDcvoqhmUyqMyPQ=
+
+Name: org/eclipse/jface/text/templates/persistence/TemplatePersistence
+ Data.class
+SHA-256-Digest: C30L0fxkq6v+M77xSgtXBO0r/pLfoXvdweobtieeEfg=
+
+Name: org/eclipse/jface/text/formatter/IFormattingStrategyExtension.cl
+ ass
+SHA-256-Digest: wU2lbysRtRvYzizZXXmkwPTfAKjmHZvGNty378HI/dQ=
+
+Name: org/eclipse/jface/text/source/LineNumberRulerColumn$MouseHandler
+ $1.class
+SHA-256-Digest: K2mr2y54LIEbOAycSkPYm4y8wjaf/bXO8f0yT3/RDyo=
+
+Name: org/eclipse/jface/internal/text/link/contentassist/ContentAssist
+ Messages.class
+SHA-256-Digest: dtaxBLMY2PzpHNsC2TbPrgMl0UNhcjVPiP2bateu4LI=
+
+Name: org/eclipse/jface/text/TextViewer$TextHoverKey.class
+SHA-256-Digest: QyZht/o4hFtMrCBRtJ7/8eExo1crmJdM74Ly4GAf7eQ=
+
+Name: org/eclipse/jface/text/contentassist/ICompletionListener.class
+SHA-256-Digest: dVCFa9r9sFdKtt1egz9Z31zA0fwPAXyarJQz1T3oFUY=
+
+Name: org/eclipse/jface/text/reconciler/AbstractReconcileStep.class
+SHA-256-Digest: RXc8jdu5ux+j5VheQAddEHEmlrkm9iVgtU1Vz0YgwgA=
+
+Name: org/eclipse/jface/text/IEventConsumer.class
+SHA-256-Digest: zr/FwU9YlaZ5nt6gxmpoJhnhcEEaJHumQ7Qt8zySy90=
+
+Name: org/eclipse/jface/text/TextViewer$3.class
+SHA-256-Digest: KUKvSrjnY7OjfZgUYreNUbiavZzWdKY3k9If7c91xGc=
+
+Name: org/eclipse/jface/text/source/CompositeRuler$RulerLayout.class
+SHA-256-Digest: sE6Sj7oyrflPKRd8YU0fBF148Numg8dw4GnqpmEHPJE=
+
+Name: org/eclipse/jface/text/IAutoIndentStrategy.class
+SHA-256-Digest: ckzReI9TiqA8mt9lfcU1ypPdeKqtuJ7OrFrIm1rC1f8=
+
+Name: org/eclipse/jface/text/source/OverviewRuler$3.class
+SHA-256-Digest: LImlb9kT1t+FMX7vrgLAfip6/mvfcm9a8CewJbiEuHE=
+
+Name: org/eclipse/jface/text/TextViewer$ViewportGuard.class
+SHA-256-Digest: 7+oYdntgeWyFRg5l/oLSJU0Y7GgwqqGe6ao5BQrai68=
+
+Name: org/eclipse/jface/text/TextViewer$FindReplaceTarget.class
+SHA-256-Digest: VAhqkb5stD05pUpiS+bkMYbFW0fzgZyHej96Y5e+eJ8=
+
+Name: org/eclipse/jface/text/rules/WhitespaceRule.class
+SHA-256-Digest: uk90sdvZ3cAJm4FpWPQTAwtefe2iLKcC9SNfyblVSsQ=
+
+Name: org/eclipse/jface/internal/text/html/BrowserInformationControl$2
+ .class
+SHA-256-Digest: I5oaI/cy03Rhbwz1sC6jQYBZMTHk3NgonB86XWfa8X8=
+
+Name: org/eclipse/jface/text/source/ISharedTextColors.class
+SHA-256-Digest: A9spKu2OTPM5gjfR/GwzI7/0vVYbfNON1tzbwmWEf34=
+
+Name: org/eclipse/jface/internal/text/html/HTMLMessages.class
+SHA-256-Digest: Ge260H0SiZPAe7vyGF5xPmUoocP4BCBkOggTZyuNyG0=
+
+Name: org/eclipse/jface/text/presentation/PresentationReconciler$Inter
+ nalListener.class
+SHA-256-Digest: HTNsOScjv1WTp/zQxhQWI520sV+90F2qag7ytrKwkTc=
+
+Name: org/eclipse/jface/text/ITextViewerExtension3.class
+SHA-256-Digest: +gdDK1GUzrhyjBsP8XF43wW6I0Q9+w1wzcfxC5K0lvw=
+
+Name: org/eclipse/jface/text/rules/WordPatternRule.class
+SHA-256-Digest: lVAy78bhTpvJRYKoN8nX9OtN8ko17jhtF4ToaORInY0=
+
+Name: org/eclipse/jface/internal/text/revisions/RevisionPainter$ColorT
+ ool.class
+SHA-256-Digest: Z+5ruHdHp9OlprQ+rqCo6jr5tp5bZaig41aPFY9mTxM=
+
+Name: org/eclipse/jface/text/source/inlined/LineContentAnnotation.clas
+ s
+SHA-256-Digest: RDtB2wbvKHmi1fifS5I9zFwA7rHQ3ZZm3u31z0WWg+s=
+
+Name: org/eclipse/jface/text/hyperlink/MultipleHyperlinkPresenter$Link
+ ListInformationControl$1.class
+SHA-256-Digest: R1M6E8+qjb7t0DMz5P5kuJgL3rHgWT5U1hpp4iVVfFg=
+
+Name: org/eclipse/jface/text/hyperlink/HyperlinkMessages.class
+SHA-256-Digest: 5EIbvYA5060KI1zb1ql/cT3OX98ynjG7kA44JTNL65Q=
+
+Name: org/eclipse/jface/text/link/LinkedModeUI$NullExitPolicy.class
+SHA-256-Digest: AC7cGgyA1LyKSnGwl8fsZ4yWFgsVBK8QEgNtSf2A4DE=
+
+Name: org/eclipse/jface/text/source/OverviewRuler$HeaderPainter.class
+SHA-256-Digest: hXKYVA9iDeyaT86Kby5E+WCwPcR8SGsf7gTBVmVTEw8=
+
+Name: org/eclipse/jface/text/source/IVerticalRulerColumn.class
+SHA-256-Digest: DcrvHyVGQSNfwO4MIU8tznKNVqxNBxrb+VB+hourVeE=
+
+Name: org/eclipse/jface/text/source/SourceViewer$ColumnPosition.class
+SHA-256-Digest: lc42x/mcWNarepJAm7DI1Rwws2tBdbULLJrcKFbmJJk=
+
+Name: org/eclipse/jface/text/source/OverviewRuler$WidgetInfos.class
+SHA-256-Digest: c8xVIN72XAt0kcIXFtKBXwu44uw/RvZbf93gAZnlFYU=
+
+Name: org/eclipse/jface/text/link/TabStopIterator.class
+SHA-256-Digest: P4BeXcUrnjfVOAU2EBl5owMhJEenz6imdkjia0dAlG8=
+
+Name: org/eclipse/jface/text/templates/persistence/TemplateReaderWrite
+ r.class
+SHA-256-Digest: gcjWZKfckXR8jjjPjLIR8x59ORiJDHT9zutmuE9RiQI=
+
+Name: org/eclipse/jface/text/TextViewerHoverManager$4.class
+SHA-256-Digest: AxA6rmfiO4oKo/ThEq8D7hHaTMI3VqI81CEXXOgrwmI=
+
+Name: org/eclipse/jface/internal/text/html/HTML2TextReader.class
+SHA-256-Digest: EuTg1vZHS/WV+izxxi9bi0tXrZm1qbsvsmPhZL/RldA=
+
+Name: org/eclipse/jface/text/presentation/IPresentationRepairer.class
+SHA-256-Digest: Q1TbQJJSGr+1vvlX4EejWZ3yGrbPRfnei3rdh61ntv0=
+
+Name: org/eclipse/jface/text/source/projection/IProjectionPosition.cla
+ ss
+SHA-256-Digest: +QrLf1HBfe3o6gpagVC2etOBxzPvjP4sip6vsE0AcYg=
+
+Name: org/eclipse/jface/text/contentassist/Helper.class
+SHA-256-Digest: IaJbCK0UVBflh8KNcYWGXzB+cmDRVt5oiYcHhNFL6vQ=
+
+Name: org/eclipse/jface/text/source/AbstractRulerColumn$MouseHandler.c
+ lass
+SHA-256-Digest: PabJgRHk+buDhy63VGbYaS/h5bDzRRSVUSQ4H7/WZW0=
+
+Name: org/eclipse/jface/text/presentation/PresentationReconciler.class
+SHA-256-Digest: k62PDvmQxrJa8n1qxCxlc9BKhOTw/N0n7Vru0UkLkWM=
+
+Name: org/eclipse/jface/text/revisions/Revision.class
+SHA-256-Digest: o26NSla0L0N19/DG6sEtbA74oRi28cWlSbISZvqQyZM=
+
+Name: org/eclipse/jface/text/hyperlink/IHyperlinkDetectorExtension2.cl
+ ass
+SHA-256-Digest: g1rsgx2mu0zK+eVJOVvC6f1/SroC/nvgT9l1cksxBmU=
+
+Name: org/eclipse/jface/text/formatter/ContentFormatter$PositionRefere
+ nce.class
+SHA-256-Digest: NIk8tej43958W7xHS3VVPeAKrkjYuAtPRa24P9sgUJg=
+
+Name: org/eclipse/jface/text/hyperlink/HyperlinkMessages.properties
+SHA-256-Digest: A+WDHKCeLhDigtkk4RM8TzzUryBAnEeJC/Ad+okVDb4=
+
+Name: org/eclipse/jface/text/source/LineNumberRulerColumn$2.class
+SHA-256-Digest: SfC/U8556iWzu2cMqtLV7fMePiz++oxkhDoQTDPLW9k=
+
+Name: org/eclipse/jface/text/source/projection/ProjectionViewer$Annota
+ tionModelListener.class
+SHA-256-Digest: 7CcneEosBwpsb2Fxq9aB5b+kyEy723g32tSCY5Pkiok=
+
+Name: org/eclipse/jface/text/formatter/IFormattingStrategy.class
+SHA-256-Digest: pHmz553waZiA+h3Y297FdyNGb8urvr+qanrlhdm6FbQ=
+
+Name: org/eclipse/jface/text/hyperlink/MultipleHyperlinkPresenter$Mult
+ ipleHyperlinkHover$1.class
+SHA-256-Digest: IsHDqdI1AKG1leEXpKLiY4XaiT7l/SU4tUoX2gKX/0k=
+
+Name: org/eclipse/jface/text/source/AnnotationPainter.class
+SHA-256-Digest: Z1/JU/9ypbg7VT/kOCMM6NKnyvccuHjWqc3kzEvr7wo=
+
+Name: org/eclipse/jface/text/JFaceTextMessages.class
+SHA-256-Digest: +gcJcECoBO0zjm3iiHicoKh1nE/OO63YzJWUtiXZ/ZM=
+
+Name: org/eclipse/jface/text/contentassist/ContentAssistant$LayoutMana
+ ger.class
+SHA-256-Digest: mIVU4m6618ylGUN1N9x9ICAsUwD6IFf1LbNLd7lzK7w=
+
+Name: org/eclipse/jface/text/quickassist/IQuickAssistInvocationContext
+ .class
+SHA-256-Digest: VI1gloS4SbCxAw4k4iiIbOivB7T1DRbLC0j9EWQ3iqM=
+
+Name: org/eclipse/jface/internal/text/link/contentassist/CompletionPro
+ posalPopup2$2.class
+SHA-256-Digest: vx+nMlnQ9n0nAeYYOZSK18rlbiWKhyPFrQtUDQOnzug=
+
+Name: org/eclipse/jface/text/rules/IToken.class
+SHA-256-Digest: TNFAYq1O2xgAx/ShU6N18o+Ek2E3+mqVOdYcQU1pwUw=
+
+Name: org/eclipse/jface/text/TextViewer$ViewerState.class
+SHA-256-Digest: w9LLPHySCjdQUCjK99TGm7MMGkiRH3ih4HliHIamfqs=
+
+Name: org/eclipse/jface/text/TextViewer$1.class
+SHA-256-Digest: MFAx3o9Es9BWCjbEv7qqgTfgDuL3jpD3xpfMmdKPKZ8=
+
+Name: org/eclipse/jface/text/source/ImageUtilities.class
+SHA-256-Digest: xLXORsdfS7cnTxzQ7FJvpsSeEG9AovpaK751CiOYHVI=
+
+Name: org/eclipse/jface/text/contentassist/CompletionProposalPopup$Com
+ mandKeyListener.class
+SHA-256-Digest: mzF0fCWWFTUs7KlLVB3Bib9Z2jqNx2O0JD7fzuGpFA0=
+
+Name: org/eclipse/jface/text/revisions/RevisionInformation.class
+SHA-256-Digest: cupE/dH3dM9Kwo44P77mYtUitni16knFmqcKPDZxqWE=
+
+Name: org/eclipse/jface/text/contentassist/ContextInformationPopup$3.c
+ lass
+SHA-256-Digest: Snj2PsIblCMSGoC2FpFAjrtLT7xddBe4qzKJ7XJQPDA=
+
+Name: org/eclipse/jface/text/hyperlink/MultipleHyperlinkPresenter.clas
+ s
+SHA-256-Digest: RWPJc+i11Rd9D4qVe9b6iBnBCgUEbLylQ4Qc8GvdKUo=
+
+Name: org/eclipse/jface/text/formatter/FormattingContext.class
+SHA-256-Digest: 434NzCH1DeYzZPlBqWo6LfVNX0ZzrHUBUvDT+GEhUGA=
+
+Name: org/eclipse/jface/text/presentation/IPresentationReconcilerExten
+ sion.class
+SHA-256-Digest: NZ2wg39sJfDauu+qwGtIHP2FBsUFJyOWD/SY/BtZlcc=
+
+Name: org/eclipse/jface/internal/text/link/contentassist/AdditionalInf
+ oController2$TableSelectionListener.class
+SHA-256-Digest: oFGGQD+gwp6BogO+hYP2hc7HvK+6gep445KG/H9XUUk=
+
+Name: org/eclipse/jface/text/contentassist/ContentAssistEvent.class
+SHA-256-Digest: d55duLZWu2vWmmJ3P3tnpUWC4r8WhSRPPweByFAIMQQ=
+
+Name: org/eclipse/jface/text/codemining/ICodeMiningProvider.class
+SHA-256-Digest: Yj2XYUhwWD5cqP0Dh0hhpYMfKJ34aCzcKQDiMtqdtf8=
+
+Name: org/eclipse/jface/text/DocumentCommand$Command.class
+SHA-256-Digest: 0r7JSM9z3wQgE1VyESYXbOk2kCiwfLHxFheE04+jYUc=
+
+Name: org/eclipse/jface/text/reconciler/IReconciler.class
+SHA-256-Digest: +0ZTkdpQeJzXoiBTORW31zcqi9mfzRgaJNxs9lVL39o=
+
+Name: org/eclipse/jface/text/source/AnnotationBarHoverManager$1.class
+SHA-256-Digest: riFbaf/9febMgtjU+8M8fGicLEnGiH01ZkojnzlN3wA=
+
+Name: org/eclipse/jface/text/link/LinkedModeUI$ExitListener.class
+SHA-256-Digest: jQEUVLd2xiMeie95Fo2tow9zx53ttFZfUhcaRhVOXH0=
+
+Name: org/eclipse/jface/text/source/OverviewRuler$InternalListener.cla
+ ss
+SHA-256-Digest: upYNdLmWJFaqHWuE/7xePo3epCncuZO2sa+A4OEkzxY=
+
+Name: org/eclipse/jface/text/source/AnnotationPainter$HighlightingStra
+ tegy.class
+SHA-256-Digest: pP8zQnQ3oF/u9lbhwWQaFGNXmIOZmv973RZfIZV9lF0=
+
+Name: org/eclipse/jface/text/source/projection/images/collapsed@2x.png
+SHA-256-Digest: gTgaGDNFEUjlC32+ss2DkQEn4IuykUXnSVBSvjcjzGM=
+
+Name: org/eclipse/jface/internal/text/link/contentassist/CompletionPro
+ posalPopup2$3.class
+SHA-256-Digest: ZE92zLkFs6BX+nTSlObpmhiVycHkAKDRde5YUrGrhQQ=
+
+Name: org/eclipse/jface/text/TextViewerHoverManager$2.class
+SHA-256-Digest: JE1rRBIryI+0XYads3XbznFwfI8UN0DLDl6lgZiFTNc=
+
+Name: org/eclipse/jface/text/ITextViewerExtension6.class
+SHA-256-Digest: BMMaJB1HxG9KLSm66K9p4JZuG5z4vNk/QYtsiEH6H8A=
+
+Name: org/eclipse/jface/text/hyperlink/MultipleHyperlinkPresenter$Link
+ ListInformationControl$5.class
+SHA-256-Digest: 5RLlbzJaS9I3gARFyVS9q99a57xKN1huicaCwm1r76c=
+
+Name: org/eclipse/jface/text/formatter/IContentFormatterExtension.clas
+ s
+SHA-256-Digest: ugv8wWUwzsGb1Br/Ko44csADy9fbGFahJdXbX7YQpuk=
+
+Name: org/eclipse/jface/text/reconciler/DirtyRegionQueue.class
+SHA-256-Digest: TkTcoe5mhI3XjAP7uROyxc+1wbCuSDHGJB6x+NNU6LM=
+
+Name: org/eclipse/jface/contentassist/images/content_assist_cue@2x.png
+SHA-256-Digest: Yf8zu0fqzw7h+LCNsUH4MgDqBvEqI24MgenOYtFMf6o=
+
+Name: org/eclipse/jface/text/source/DefaultAnnotationHover.class
+SHA-256-Digest: qVkJ/+baIAjn8MFaNJPqYGp1KJ6D++vwIyNghrCVayE=
+
+Name: org/eclipse/jface/text/contentassist/AdditionalInfoController$Ti
+ mer$4.class
+SHA-256-Digest: /d8buZbkjZbD1/2QTJVbtvuVQ010JaOAWyE4yYq2RgI=
+
+Name: org/eclipse/jface/text/codemining/AbstractCodeMining.class
+SHA-256-Digest: V4ZToN0HBqP51x612tIb8Cn6EO/j2iYsoak57FAc298=
+
+Name: org/eclipse/jface/text/contentassist/ContentAssistSubjectControl
+ Adapter.class
+SHA-256-Digest: G1P5mBJ9QAkCm9Hh/BGo//egBb1PGvp45Bf0ZLZmYt8=
+
+Name: org/eclipse/jface/text/TextViewer.class
+SHA-256-Digest: nW8fieRRYe4fvRiZ9O4TUq59ayu5Zc//zKU+TX1XqOo=
+
+Name: org/eclipse/jface/text/IFindReplaceTarget.class
+SHA-256-Digest: y1PBfeK85S8khAdX94OQzKGZYZpTv3q369dEAmHFiwQ=
+
+Name: org/eclipse/jface/text/source/AnnotationPainter$UnderlineStrateg
+ y.class
+SHA-256-Digest: ssgJYIOXL8sv/NOCRnEyaOO/Ggn3hegMRccmNdWaqoA=
+
+Name: org/eclipse/jface/text/source/IVerticalRulerInfoExtension.class
+SHA-256-Digest: ADjxEbz60EwHk600TLFLCLfOLI+ePdSXBlOV635C0qA=
+
+Name: org/eclipse/jface/text/source/AbstractRulerColumn.class
+SHA-256-Digest: cahUOT5S/0zDJ5naJWLnXcAphwMuSrCIrf1Ln4R1Lho=
+
+Name: org/eclipse/jface/text/formatter/ContentFormatter$RemoveAffected
+ Positions.class
+SHA-256-Digest: FFZCIXfP3S305VajJ1M15BDubvSUmaamO1G0QaTRa1o=
+
+Name: org/eclipse/jface/text/hyperlink/MultipleHyperlinkPresenter$Link
+ ListInformationControl$4.class
+SHA-256-Digest: A//BUV3kFD2jipkl+SeZuCdQZxWRq1teSyO1VIC7gb4=
+
+Name: org/eclipse/jface/text/source/inlined/InlinedAnnotationSupport.c
+ lass
+SHA-256-Digest: V8ETmuR9uR1F1ZYk/lnajiZJtrs07QaNejF1JQEH9yE=
+
+Name: org/eclipse/jface/text/source/inlined/InlinedAnnotationDrawingSt
+ rategy.class
+SHA-256-Digest: r7TRD29inakkcRyEwELa7J0zYzdw5QJS76HF5GYXnjM=
+
+Name: org/eclipse/jface/text/contentassist/CompletionProposalPopup$2.c
+ lass
+SHA-256-Digest: eCgvG1ccAHEwpGybDxlfyh8aS529liTkzBSOlqg1ubY=
+
+Name: org/eclipse/jface/internal/text/InformationControlReplacer.class
+SHA-256-Digest: dYEmQP7lp0IbwmzrAVc8gytofy25UYH790CTHZNWpm8=
+
+Name: .options
+SHA-256-Digest: w1YgKbadG3ATrX+On4yklDh7D959TyOjNpoPWQz4qGI=
+
+Name: org/eclipse/jface/text/TextViewerHoverManager$1.class
+SHA-256-Digest: yDj2WkdHw84eJAwg15wjb/9ElRtAnRCXEkzZMH2NQqA=
+
+Name: org/eclipse/jface/internal/text/link/contentassist/CompletionPro
+ posalPopup2$4.class
+SHA-256-Digest: iWkT9kSkGdyzbnKpPvMzK5mTcQgb36dZ5k3PdQ/Rv2Y=
+
+Name: org/eclipse/jface/text/contentassist/ContextInformationPopup.cla
+ ss
+SHA-256-Digest: TnfA6a5JfnnWLqqu7UhXB86iof2ez6URSUqaRX25X3U=
+
+Name: org/eclipse/jface/contentassist/ComboContentAssistSubjectAdapter
+ $InternalDocument$1.class
+SHA-256-Digest: 2Zv2BlXCDVYGHog82OxC9EQsYQzz2PQKtVmkWM63vpY=
+
+Name: org/eclipse/jface/text/source/SourceViewerConfiguration.class
+SHA-256-Digest: rOZ/+dO6h3ryIjiPWQkvxsdg8DaHNNRGbebiwHY3n0Y=
+
+Name: org/eclipse/jface/internal/text/codemining/ICodeMiningAnnotation
+ .class
+SHA-256-Digest: TCottErXey4NNrboEbvqO6/tUJ+2cSl37XSDPK0cRbU=
+
+Name: org/eclipse/jface/text/IInformationControl.class
+SHA-256-Digest: FB2iArg06GnRsusDdlu5Ic2vdmKUyE87tR2I662PgZ4=
+
+Name: org/eclipse/jface/internal/text/revisions/Range.class
+SHA-256-Digest: 2gVJqWC9a97W/O60yRfs2AGQKDYBJlmb7MfmwUafG8I=
+
+Name: org/eclipse/jface/text/contentassist/ICompletionProposalSorter.c
+ lass
+SHA-256-Digest: taSSxMipghtXQokP/kCIhNMmXvpJAYGexUfFjZsx/hA=
+
+Name: org/eclipse/jface/text/TextViewer$2.class
+SHA-256-Digest: l+1nM73ztnc4qqumN8tpGiOrDmeAQLy7ktvBGqJyQMg=
+
+Name: org/eclipse/jface/text/templates/TemplateCompletionProcessor$Pro
+ posalComparator.class
+SHA-256-Digest: B6gAjAiC/qcQO/9v50AyJaxJiDlA5nCwq2IP3r1s3h4=
+
+Name: org/eclipse/jface/internal/text/link/contentassist/AdditionalInf
+ oController2.class
+SHA-256-Digest: 2Ue2qJoaS3yOrnJRhTPQ13bTK1sQKyydvVSWx9SjumE=
+
+Name: org/eclipse/jface/text/contentassist/CompletionProposalPopup$1.c
+ lass
+SHA-256-Digest: MRDSQ5tX4BI09SJeQ1J8XXLBmzre0o/EOpSfDaS+DNA=
+
+Name: org/eclipse/jface/text/source/AnnotationPainter$Decoration.class
+SHA-256-Digest: 5xEtzs4sieCHqE5BrgEVYb0Sv8TOK1hvI545M5eGV7A=
+
+Name: org/eclipse/jface/text/DefaultUndoManager$TextCommand.class
+SHA-256-Digest: xRXwJLXr4KWEgZX33bUy+DA0pAFS8dIrWFjI/6CzCuU=
+
+Name: org/eclipse/jface/contentassist/AbstractControlContentAssistSubj
+ ectAdapter.class
+SHA-256-Digest: TMvU2vZeuH/VqBe0ZIPbeT60YfwHZRjluh0vF4WZ/eY=
+
+Name: org/eclipse/jface/text/source/CompositeRuler.class
+SHA-256-Digest: 9an3c3UfifpR5KqLYgaRZEhewxO6TUBXAYqSsdLjoCs=
+
+Name: org/eclipse/jface/text/hyperlink/MultipleHyperlinkPresenter$Mult
+ ipleHyperlinkHoverManager$Closer.class
+SHA-256-Digest: XM4VjypXZWJDm6FgFx6aiyj7RUoggmsVLjq7VSJY7PQ=
+
+Name: org/eclipse/jface/text/contentassist/ICompletionProposal.class
+SHA-256-Digest: sUJJJICDFEkHpgeqTwvN8oH5Fawhm8w6kTbhi0+blNk=
+
+Name: org/eclipse/jface/text/contentassist/AdditionalInfoController$Ti
+ mer$3.class
+SHA-256-Digest: 5+8PH+LB+ha0HMJabID6CaAlbiJ13YIsAuuBaLmMvi4=
+
+Name: org/eclipse/jface/text/hyperlink/AbstractHyperlinkDetector.class
+SHA-256-Digest: q8ze0mfqYti1OGpEYNZKi5z+G6pvxFuazP4b26iMEbE=
+
+Name: org/eclipse/jface/internal/text/DelayedInputChangeListener.class
+SHA-256-Digest: jiYc3+ak06b4o8d82lsaV7s1NOLaiq4FZCkYTFgCQ9A=
+
+Name: org/eclipse/jface/text/source/OverviewRuler$FilterIterator.class
+SHA-256-Digest: O+zWElgbmbpEtjN7DNnpMBn6lX6vV84Y8vjhz5esebY=
+
+Name: org/eclipse/jface/text/TextSelection.class
+SHA-256-Digest: X+Ovv2M4KSWJzBORsHUNC0ORuX/5ipDhEHpDO1NcGYw=
+
+Name: org/eclipse/jface/text/AbstractInformationControlManager$MyInter
+ nalAccessor.class
+SHA-256-Digest: aW7BDNVnzS1JogDY/4cZVu1LQL1E+xKgqf7LkEoCOmQ=
+
+Name: org/eclipse/jface/text/TextViewerUndoManager$KeyAndMouseListener
+ .class
+SHA-256-Digest: R4FhviuWVgbUCrEi15pR1wpHTB4O4u1os7af+u3QGDc=
+
+Name: org/eclipse/jface/text/IMarkSelection.class
+SHA-256-Digest: EQfljM5aMb6jICUGiqsE62noHRAgy/tYGX9KfcYtXS0=
+
+Name: org/eclipse/jface/text/ITextViewerExtension5.class
+SHA-256-Digest: CBcwMHoqQPSc26OhzPiS4Pn1THLsVx4Yik6qfz5KE2o=
+
+Name: org/eclipse/jface/text/contentassist/AdditionalInfoController$Ti
+ mer$Task.class
+SHA-256-Digest: C31OO5WaVZ5xPFlW6bjL1nDGF6ayaRb/xLPMjTQOtZk=
+
+Name: org/eclipse/jface/text/reconciler/DirtyRegion.class
+SHA-256-Digest: w0HcDWVY80EqY1yULVXFTcuQFp2LCzstN4p0KXw57CE=
+
+Name: org/eclipse/jface/text/DocumentCommand$CommandIterator.class
+SHA-256-Digest: J78E5c/M9pxkmF/1ImfB1exMFGbF75+LHto77k9CjQM=
+
+Name: org/eclipse/jface/text/contentassist/IContextInformationExtensio
+ n.class
+SHA-256-Digest: 8/6jmbvNP0UP/dt1mepSk8MSAGC6j92skSJiw+ktiMU=
+
+Name: org/eclipse/jface/text/reconciler/IReconcilerExtension.class
+SHA-256-Digest: qU2qg7TKOFr7q9IrJPz2RaMBwVlojlMCBWIV+V/8Foc=
+
+Name: org/eclipse/jface/text/reconciler/AbstractReconciler.class
+SHA-256-Digest: Q7r7eNKzuVm2lFYPGEXdQkKpordejbGcQwNEKGpEdeY=
+
+Name: org/eclipse/jface/text/DefaultTextDoubleClickStrategy.class
+SHA-256-Digest: 1AVjkMfFGKdyWAYkRnzXfkoszUHAKLC0j8XK/bznEoA=
+
+Name: org/eclipse/jface/text/contentassist/AdditionalInfoController$Ti
+ mer$5.class
+SHA-256-Digest: eNbrZf4UtLxLr2XnJgLnRlJr2E7YtOxHQJqCmV6Mnus=
+
+Name: org/eclipse/jface/text/codemining/LineContentCodeMining.class
+SHA-256-Digest: zIHangxEWthWXv3MXdUvJFofli2rbfgyRf6hJwN7Fj4=
+
+Name: org/eclipse/jface/text/rules/ITokenScanner.class
+SHA-256-Digest: HP9g08ndAcc06ue4LV9VeXAKshNRqWWQtLhr4CsdDBs=
+
+Name: org/eclipse/jface/contentassist/ComboContentAssistSubjectAdapter
+ .class
+SHA-256-Digest: TJzgrFemPRQtXTPtbXF1HqUAJ6V1cqmOzzCmZlGL6ZI=
+
+Name: org/eclipse/jface/text/contentassist/ContextInformationPopup$2.c
+ lass
+SHA-256-Digest: jjNDntHXzFUS88Mq1VNWCsrsd1wh2ZdlhyU7az1yHps=
+
+Name: org/eclipse/jface/text/source/projection/ProjectionRulerColumn$1
+ .class
+SHA-256-Digest: jSjW7vpJyasjSo09Zrpzt6bixFxX0DBZibYyHnBlPxU=
+
+Name: org/eclipse/jface/text/contentassist/AdditionalInfoController$Ti
+ mer.class
+SHA-256-Digest: JHKN2Evb0iQuASRNix/H/lIR5K+nlMawI52yia2qnWU=
+
+Name: org/eclipse/jface/text/ITextHoverExtension.class
+SHA-256-Digest: lh0qCKcwFhL9XesLA6Yp8V+AVw2b434zTVkgriPbe5s=
+
+Name: org/eclipse/jface/text/rules/IWhitespaceDetector.class
+SHA-256-Digest: akO3087GgrmOPARA/25eo6Mxs5E+oq6M/PIMOhTDuv8=
+
+Name: org/eclipse/jface/text/IWidgetTokenOwner.class
+SHA-256-Digest: ofCLkYJGuySMbzWXikcn7rjQmmYoLbCE9cg9Smgxdm8=
+
+Name: org/eclipse/jface/internal/text/link/contentassist/CompletionPro
+ posalPopup2$7.class
+SHA-256-Digest: ChZ+ou3n4bfwRl/24NHCpA1ZB6B6EsRai8evbm8NzwQ=
+
+Name: org/eclipse/jface/text/source/projection/SourceViewerInformation
+ Control$1.class
+SHA-256-Digest: 8vhAQpeHPuAtq6S8gIlivG7X/w7NFHugUELjueM0Tqg=
+
+Name: org/eclipse/jface/text/source/SourceViewer.class
+SHA-256-Digest: CzTHNUuA/gb5JERLorCU/N5TLpeZtjtisQX2ZPIxRWs=
+
+Name: org/eclipse/jface/text/CursorLinePainter.class
+SHA-256-Digest: TszbuanpUBVtR85EtLTNv1FOsZhHg1O13AzLOhGMYdk=
+
+Name: org/eclipse/jface/contentassist/TextContentAssistSubjectAdapter$
+ 1.class
+SHA-256-Digest: tR9MjQMsk1Uh6ONQVqAK8R5tGVvHXMFw3WS99zTtSAw=
+
+Name: org/eclipse/jface/text/contentassist/IContentAssistantExtension.
+ class
+SHA-256-Digest: thCU6UI2r37ayhKTeC8geJjNTpuBDnr0YsI5yyz3iTs=
+
+Name: org/eclipse/jface/text/source/DefaultCharacterPairMatcher.class
+SHA-256-Digest: vo4+Hxg2er9IaSjfEEXxaansN9bwJWKy14ANEFljyeY=
+
+Name: org/eclipse/jface/text/ITextHover.class
+SHA-256-Digest: klcC0bjJjwXLrOVNTXGDBr1qUMl6OwqJIYX1V+mEmZI=
+
+Name: org/eclipse/jface/text/hyperlink/IHyperlinkPresenterExtension2.c
+ lass
+SHA-256-Digest: ssdY2/cqzB16WervTLShnDWZktPrKUKZJMj3RZNJQR4=
+
+Name: org/eclipse/jface/text/source/AbstractRulerColumn$InternalListen
+ er.class
+SHA-256-Digest: JRq8ircGx2fgc0qyM/fno7h+n5YQsWmAN4TvDbLYyLI=
+
+Name: org/eclipse/jface/text/source/AnnotationBarHoverManager$Closer.c
+ lass
+SHA-256-Digest: yLMd4OWskYYg/Q6lCgZkZqhOs4hm6/h3zA69NH47vW4=
+
+Name: org/eclipse/jface/text/hyperlink/MultipleHyperlinkPresenter$Mult
+ ipleHyperlinkHoverManager.class
+SHA-256-Digest: Wc2UyWoQY6cvUZPgrBkaE9vW0pYTxwSkFem2GVnYMPg=
+
+Name: org/eclipse/jface/text/source/projection/images/expanded.png
+SHA-256-Digest: 9zGkO+VyZY3xm0I6IBOAXarwQQoCHpjlyY0xa+JdlxA=
+
+Name: org/eclipse/jface/text/source/VerticalRuler$InternalListener.cla
+ ss
+SHA-256-Digest: 73ItFag3KTXQx23i/lvZ+JahHDzonKV1ZGGwLMkB1n8=
+
+Name: org/eclipse/jface/text/codemining/ICodeMining.class
+SHA-256-Digest: CY5mKcVzO4r5XsZG3jj+eZsQyN2JP3Ml4yhLjyANams=
+
+Name: org/eclipse/jface/text/source/VisibleLinesTracker.class
+SHA-256-Digest: UG8V3mZYBhjc2Ui9y419k5v9uXQgvth60Zetj1RVTaE=
+
+Name: org/eclipse/jface/text/source/inlined/InlinedAnnotationSupport$U
+ pdateStylesWidth.class
+SHA-256-Digest: UYwF/Q+Xc0Y1Y7xY5TPf9O1j5Jm6T4Ez8IzW6CKpXDY=
+
+Name: org/eclipse/jface/internal/text/revisions/RevisionPainter.class
+SHA-256-Digest: j4ZB4TkgPccA4y/1LqgeoYkz1asAbumP+I9AzacvtSQ=
+
+Name: org/eclipse/jface/text/source/projection/ProjectionAnnotation.cl
+ ass
+SHA-256-Digest: ByKn9ZpAB3K4C0nwFv8H+7Y6Hmx1DP770cBTlDyg2HI=
+
+Name: org/eclipse/jface/text/rules/IWordDetector.class
+SHA-256-Digest: wqYEvuJO32HJHnLE5dZh/rU4wkcY2rOj3baJ6it1N30=
+
+Name: org/eclipse/jface/text/revisions/IRevisionListener.class
+SHA-256-Digest: 6i/1T3H/5hN6bqbLZpcPbbQCOWn8QsXbs2CBjMd/ppw=
+
+Name: org/eclipse/jface/text/reconciler/AbstractReconciler$Listener.cl
+ ass
+SHA-256-Digest: Vq9ZkbCZK93YDrG4Pie6YBVufTKmLkpz1xvBwOAiP1E=
+
+Name: org/eclipse/jface/text/ITextViewerExtension7.class
+SHA-256-Digest: 42XdAQFTFdW7FQFn4wF2x2LVWnrGrAtiLwcgI/FHZGg=
+
+Name: org/eclipse/jface/text/TextViewer$WidgetCommand.class
+SHA-256-Digest: tiBZHQTE3692aG97QA6ryUgLsnCWr7OaKBFq6EIPzH0=
+
+Name: org/eclipse/jface/text/RegExMessages.class
+SHA-256-Digest: LFbQnqllytcv1lWLoTtM1ltTwZJ/r2XB9sWIAl9byes=
+
+Name: org/eclipse/jface/text/PropagatingFontFieldEditor.class
+SHA-256-Digest: J0+209ys4fpexl4n1M0eUv4OVYtDm17xqlaYGSAHp6Q=
+
+Name: org/eclipse/jface/text/TextEvent.class
+SHA-256-Digest: zVVJy2sY5ad1iqi+65dCdpEdHo1BXjc8usJJwiXQnkI=
+
+Name: org/eclipse/jface/text/contentassist/ContextInformationPopup$4.c
+ lass
+SHA-256-Digest: 36PiYe86NHk3IP1lKwj77K1pfgmavl2JnJeG0WZmAiU=
+
+Name: org/eclipse/jface/text/source/LineNumberChangeRulerColumn.class
+SHA-256-Digest: mpl/396FMqVPgGiQDqsWGYn7+epg644wMdV5ycWuc8U=
+
+Name: org/eclipse/jface/internal/text/revisions/ChangeRegion.class
+SHA-256-Digest: Q+gsW9ZqUDU9Jt/Cx8G7oICa1HGWFXPB08OhhH0vMR0=
+
+Name: org/eclipse/jface/text/source/IAnnotationHoverExtension2.class
+SHA-256-Digest: mhjscjMqIZBSi5rSCdvz0jzUtTm0cy9hjpi1bifQYQU=
+
+Name: org/eclipse/jface/text/rules/IRule.class
+SHA-256-Digest: jG5KnipdOKLDYoIWy1ATlES1HjtBj/V24GRcUzWYgEE=
+
+Name: org/eclipse/jface/contentassist/ISubjectControlContentAssistProc
+ essor.class
+SHA-256-Digest: U/VKqrJPzldQ14vPqhI0Tb4NkMHKi1NdhxENUddZ0sQ=
+
+Name: org/eclipse/jface/text/templates/persistence/TemplateStore$1.cla
+ ss
+SHA-256-Digest: 0CEe3eJd3lL3wHbGTJ+LZJcAcVuteimFA03SsdWLK5o=
+
+Name: org/eclipse/jface/contentassist/TextContentAssistSubjectAdapter$
+ InternalDocument$1.class
+SHA-256-Digest: 2+XQOZLDlaL2443mxk8VuM5bVkKeYwmpzITMzk3KRKg=
+
+Name: org/eclipse/jface/internal/text/link/contentassist/ContentAssist
+ ant2$LayoutManager.class
+SHA-256-Digest: jMuekm7Ga0SZX03aBCV/dG5O2fsfF9GnMdxc2OtW9vY=
+
+Name: org/eclipse/jface/text/source/projection/SourceViewerInformation
+ Control$2.class
+SHA-256-Digest: Z/EwVkdRgQAMrTMJQMQc8eTxRL1QGRqHUvUrejUaZo8=
+
+Name: org/eclipse/jface/text/source/AnnotationPainter$SquigglesStrateg
+ y.class
+SHA-256-Digest: VESs5mmzjRZ0VtcONEdRJOFhXjPw1OPMErZ66HmgW0E=
+
+Name: org/eclipse/jface/text/rules/RuleBasedPartitioner.class
+SHA-256-Digest: v7DSz+AYkvAXNaxdYgCyQiTX7B7uh8oOd0LUORJSQlg=
+
+Name: org/eclipse/jface/text/FindReplaceDocumentAdapterContentProposal
+ Provider$ProposalComputer.class
+SHA-256-Digest: VICThBQvAq/QPeVyKgq9UKTZWotJd5sOSxwW1ysHOfg=
+
+Name: org/eclipse/jface/text/link/LinkedModeUI$Closer.class
+SHA-256-Digest: Qc9ZRLa4SPYdChcEdKi8vnhczi26ghSbRPBYIG2mIuo=
+
+Name: org/eclipse/jface/text/ITextViewerExtension8.class
+SHA-256-Digest: P2ov17KX92EK2iOZuvqyBjDmVV0l6sZyyLjmUUz+3cg=
+
+Name: org/eclipse/jface/text/IInformationControlCreator.class
+SHA-256-Digest: IvIGDjpXa4uve6A4Rm9J2yqn461xLhqM4nVh0OrPjJY=
+
+Name: org/eclipse/jface/text/source/JFaceTextMessages.class
+SHA-256-Digest: 8POn6iGEfS3dIh07Ext/mgNYvuDcBwB5XURxZSt9Dm4=
+
+Name: org/eclipse/jface/internal/text/InternalAccessor.class
+SHA-256-Digest: K7grZS/cArh99CEa4LQOk+hvAJiG7rt9iwGza51hlWg=
+
+Name: org/eclipse/jface/text/PaintManager$PositionManager.class
+SHA-256-Digest: gnDHFoXTYrXWnHE+YUtrk9gwv3RpELQhkFoZLos5n00=
+
+Name: org/eclipse/jface/text/quickassist/IQuickAssistAssistant.class
+SHA-256-Digest: qJkEDP0UCT/wZo5jkynOa6UAqmDwlRisGSaIars0pR0=
+
+Name: org/eclipse/jface/text/DefaultTextDoubleClickStrategy$DocumentCh
+ aracterIterator.class
+SHA-256-Digest: Vf5dhcMMezj5xVuDy6EcaQpOvLpBgHy059mvYU0UoXc=
+
+Name: org/eclipse/jface/text/hyperlink/IHyperlinkDetectorExtension.cla
+ ss
+SHA-256-Digest: Sk3VXPWE8mePZj5knEe9PpL/3HL9LeuKp+iOWWbABKY=
+
+Name: org/eclipse/jface/text/contentassist/ContentAssistant$Closer.cla
+ ss
+SHA-256-Digest: aypH95AVfk4CiwJy9Ocq2Lfj995S8+RxGgF7xHGmPZ0=
+
+Name: org/eclipse/jface/text/contentassist/CompletionProposalPopup.cla
+ ss
+SHA-256-Digest: /1l6HkTVVZNwveQwfKXbT3BuOPFN9bWcp49vwxYSdjs=
+
+Name: org/eclipse/jface/text/PropagatingFontFieldEditor$1.class
+SHA-256-Digest: uKi2eGGDCdpHcpYQyPtsSlxPeKmnQpzanMLv2A4YQYQ=
+
+Name: org/eclipse/jface/text/information/InformationPresenter.class
+SHA-256-Digest: lKteJx7ctusF48oZoteTHdeZ4H0mqNSd1QTnHn9nE98=
+
+Name: org/eclipse/jface/text/templates/ContextTypeRegistry.class
+SHA-256-Digest: dmNM7jxlsoFgwnXvXXvQPBhXuAu97h6bs3L6MSR1BVs=
+
+Name: org/eclipse/jface/text/reconciler/IReconcileResult.class
+SHA-256-Digest: w2uNHpPwkgzkVewLn7U6W9Cj2DW6/S2hc/AIaFe0nvk=
+
+Name: org/eclipse/jface/text/AbstractHoverInformationControlManager$Cl
+ oser.class
+SHA-256-Digest: cIHb/0KvrUrXYQazD6UD65hlorQDhm194/0SmBTZ6bg=
+
+Name: org/eclipse/jface/internal/text/html/HTMLPrinter.class
+SHA-256-Digest: 2SHp1KN9efa8j8PX08GGMdKhKesjiDsmAbQcTTL6itI=
+
+Name: org/eclipse/jface/text/IDelayedInputChangeProvider.class
+SHA-256-Digest: hE3BbLLSV9itBjzaUyGaCf6gJQxy/S+a8jRDHu9MzUU=
+
+Name: org/eclipse/jface/internal/text/html/BrowserInput.class
+SHA-256-Digest: CW3q8TERaOqlPIfAgbJbPvdLblHc1gcomFvrPRL8UtI=
+
+Name: org/eclipse/jface/text/reconciler/IReconcilingStrategyExtension.
+ class
+SHA-256-Digest: KiV6c/msk8pu2lm5MdkPrO17wD9gFzMkYTscDpcExF4=
+
+Name: org/eclipse/jface/text/rules/PatternRule.class
+SHA-256-Digest: Xc5o4QkEK0pNVCnb7mjgo+uh2o+97X9gVA/mVcZbzsE=
+
+Name: org/eclipse/jface/text/IEditingSupportRegistry.class
+SHA-256-Digest: WG4qXFpg+fqz9PJm7jnyeA/c5pgv4jDYgL0z3yaG2jg=
+
+Name: org/eclipse/jface/internal/text/revisions/RevisionPainter$MouseH
+ andler.class
+SHA-256-Digest: 9e8nmVAlXypFt+QO9Eg3nl6u5CvQFuhNcyn7Lw0aOto=
+
+Name: org/eclipse/jface/text/DefaultDocumentAdapter.class
+SHA-256-Digest: RjCTUDhyou6UxKciEzOLsz1yZlAzKPYFfMgBdXC4Bgs=
+
+Name: org/eclipse/jface/text/source/LineNumberRulerColumn$1.class
+SHA-256-Digest: xaCeBuudYKwS7X+lP99x7b66Mdy3Dl2fGnvoBgrzvdo=
+
+Name: org/eclipse/jface/text/source/projection/ProjectionAnnotationHov
+ er.class
+SHA-256-Digest: 9DO9F58kiBgVqFvmHVYD6lXQgg4S3ZZpU2e00E1rKmQ=
+
+Name: org/eclipse/jface/text/IDocumentAdapter.class
+SHA-256-Digest: Y+H7XTwkjLcTnDZfiD+gM2tQ+fEJWCuB0cwsvt5iDQQ=
+
+Name: org/eclipse/jface/text/ITextViewerExtension8$EnrichMode.class
+SHA-256-Digest: Zols3F+FqDVtjWBq/WYBHmS21NSrmzu8UbG5fh8kcKY=
+
+Name: org/eclipse/jface/internal/text/link/contentassist/CompletionPro
+ posalPopup2$6.class
+SHA-256-Digest: rQQsNNUnhuCJu+6PKBASSIQP3elmgzlSNFa8czNfvnk=
+
+Name: org/eclipse/jface/text/information/IInformationProvider.class
+SHA-256-Digest: Cv4liJX0i1MRpYbKFc1g0rEH3xcL+shYPzIcJtJ/q38=
+
+Name: org/eclipse/jface/text/IDocumentAdapterExtension.class
+SHA-256-Digest: quN5HNkr+E6dUCJGb/925RkssDNsxT+tUUTtIvzjrvU=
+
+Name: org/eclipse/jface/text/rules/EndOfLineRule.class
+SHA-256-Digest: /rTcmQz6eJN+sMo+XpRk0BQsjh+juHEhjL//BJ1fNmo=
+
+Name: org/eclipse/jface/text/source/projection/ProjectionAnnotation$Di
+ splayDisposeRunnable.class
+SHA-256-Digest: h4g/oDZE3H8H8FMUQiqnZfyn4Gyoc1DLqgj49Jumims=
+
+Name: .api_description
+SHA-256-Digest: hwGVoKduxnqa89SzKyaqHXjVNSfcQFrccSjPcv8Hi0U=
+
+Name: org/eclipse/jface/internal/text/link/contentassist/ContextInform
+ ationPopup2$2.class
+SHA-256-Digest: XwcEc2fh6Apt8pOC/pbwvT32/+9j0ck79vw/wFoZX4o=
+
+Name: org/eclipse/jface/text/IUndoManager.class
+SHA-256-Digest: OM9VLt750dgNTX7FMD6xgq5Jr8BXRjSc/Opkt0I5wCI=
+
+Name: org/eclipse/jface/text/link/LinkedModeUI$IExitPolicy.class
+SHA-256-Digest: zDPREl7x8pogdubxQXA09t865P85kKYTx1txjxPA8xI=
+
+Name: org/eclipse/jface/text/source/CompositeRuler$CompositeRulerCanva
+ s$ListenerInfo.class
+SHA-256-Digest: yHfes2Fk5PYVrlTxzbVgvbCjO7JK6B9SB+tRJI5CZEA=
+
+Name: org/eclipse/jface/text/PaintManager$PaintPositionUpdater.class
+SHA-256-Digest: qFn3wS5UUDQyxiJlIAzG22ORPp+cWIU/I2CuoqwQ8Jk=
+
+Name: org/eclipse/jface/text/TextViewer$DocumentRewriteSessionListener
+ .class
+SHA-256-Digest: ld9PfOqj1WIvSIPoQ5t+cc/VNvS4RRCYWJdatOoubak=
+
+Name: org/eclipse/jface/text/source/ILineDifferExtension.class
+SHA-256-Digest: Qwh7frcyVKMyI+UO9w7F0VOZFAQfs49JcSw/NSmoa4w=
+
+Name: org/eclipse/jface/text/ITextOperationTarget.class
+SHA-256-Digest: ICW5NP9tO7fGOGKSYTEDAtyZVOpv9+5aO8pwYp9I7s4=
+
+Name: org/eclipse/jface/text/MarginPainter.class
+SHA-256-Digest: oufmgHUyLGrCFO0co+6Eukti8wMm7danMWSk/AqvkZQ=
+
+Name: org/eclipse/jface/text/hyperlink/MultipleHyperlinkPresenter$Link
+ ListInformationControl$2.class
+SHA-256-Digest: wKri/FjIM0c0rjlyqAFP4U5dHM3FXXZynfcajva51Lg=
+
+Name: org/eclipse/jface/text/source/projection/ProjectionRulerColumn.c
+ lass
+SHA-256-Digest: np29csCp/boLuC6ggYVUm96GTpN3yzlRvVBKxIw2hn0=
+
+Name: org/eclipse/jface/text/rules/Token.class
+SHA-256-Digest: pe9p+B5ij96mHW0Rwdc9+Z1sCOyKLgv090Kp7dAZkpU=
+
+Name: org/eclipse/jface/text/IBlockTextSelection.class
+SHA-256-Digest: m35TORs3Xk5FZFO09TexH6JIMWmdSR+RfGgmH6NWe0Q=
+
+Name: org/eclipse/jface/internal/text/link/contentassist/ContextInform
+ ationPopup2.class
+SHA-256-Digest: gVBbneUcyZia9YfTa84wswLGYwkeoRDugcYtgKOTRmE=
+
+Name: org/eclipse/jface/text/source/IAnnotationPresentation.class
+SHA-256-Digest: jhm7pS9AahWc/Gdvu0tFK3CLVTCUUc5OK04BvW1JnuE=
+
+Name: org/eclipse/jface/text/source/OverviewRuler$2.class
+SHA-256-Digest: +b3jmpTe7kTqR82iRBGaDBM5eHdW7fOXTd888u2WXMs=
+
+Name: org/eclipse/jface/text/DefaultUndoManager$HistoryListener.class
+SHA-256-Digest: pf8WoWNc0g1YLMNi/ES4HKLa1bUQmNo5wWL7g48lj1Q=
+
+Name: org/eclipse/jface/text/information/IInformationProviderExtension
+ .class
+SHA-256-Digest: p7dNc8cyz3HVakYcusb0rPWs8ChWP0AR/PJbUbdi1T0=
+
+Name: org/eclipse/jface/internal/text/html/SingleCharReader.class
+SHA-256-Digest: Et2Bhw6MKbJUANrTwfKxHkiJkL6HCYf1cDNOwa4CuRM=
+
+Name: org/eclipse/jface/text/TextViewerUndoManager$DocumentUndoListene
+ r.class
+SHA-256-Digest: 8bh3ypFuu34XTFHiU6mEuGuQIUIN/ic4JElJJuXzUoc=
+
+Name: org/eclipse/jface/text/source/AbstractRulerColumn$1.class
+SHA-256-Digest: yH0cjBrNoN4NGFAN8kmmlcBbclDNJifQEXlZjxlU+Ts=
+
+Name: org/eclipse/jface/internal/text/html/BrowserInformationControl.c
+ lass
+SHA-256-Digest: AUN2kGxd8+TwKjHcu8uHHLrBtC6bCd2/lUfCgKSE9xk=
+
+Name: org/eclipse/jface/text/contentassist/JFaceTextMessages.class
+SHA-256-Digest: MFrIW3Qq+7N3ewgI3R6A1AopmfeyycqIQfmu3NTMmw8=
+
+Name: org/eclipse/jface/text/revisions/IRevisionRulerColumn.class
+SHA-256-Digest: 1aQmpgWRQkpg8WhDPNFEfGwKaypq3KhiDUp1dYyeIzQ=
+
+Name: org/eclipse/jface/text/contentassist/PopupCloser.class
+SHA-256-Digest: EmWpzkXP51tmIfnYGb7fPhv2xzHB0ui6Y5rt1xVoV/k=
+
+Name: org/eclipse/jface/text/contentassist/ContextInformationValidator
+ .class
+SHA-256-Digest: eGTOQmXAdzqPGMO0XO/DaoK7O0u7sgjuTdR3YpLWVCw=
+
+Name: org/eclipse/jface/text/source/AnnotationPainter$1.class
+SHA-256-Digest: GKP2fTvNCYIVvBLy1IwXm4gWCjG7bQxNlV1PcXIm8O4=
+
+Name: org/eclipse/jface/text/source/ChangeRulerColumn$InternalListener
+ .class
+SHA-256-Digest: k9hSh5zqC6V35/BfFZ86yRVUlLKRg9QkBakp3aU51VU=
+
+Name: org/eclipse/jface/text/TextViewer$ColumnPosition.class
+SHA-256-Digest: 5sQq9Rs2DYqX/oPaVc+BlPOuc/SFV5XiYOxef0jwDMU=
+
+Name: org/eclipse/jface/text/link/TabStopIterator$SequenceComparator.c
+ lass
+SHA-256-Digest: s3KntvQC+W0UzToLxCWRqPlPx2tMaZwm8kJa4c6P60w=
+
+Name: org/eclipse/jface/text/source/LineNumberRulerColumn$InternalList
+ ener.class
+SHA-256-Digest: 50UMuQtMN0dEvxZxqAOez7pCLeExfqDeIKtj/mFGpHI=
+
+Name: org/eclipse/jface/text/contentassist/AdditionalInfoController$Ti
+ mer$2.class
+SHA-256-Digest: 3cKrQnP3/WV2KW1ryOtwf3lwIa4EeTtyunNjU7NeYzg=
+
+Name: org/eclipse/jface/text/information/IInformationPresenterExtensio
+ n.class
+SHA-256-Digest: Q4Srd0xILd/gqHph9i/Uahwj1xP2uy+EZkxObZP9wkY=
+
+Name: org/eclipse/jface/text/formatter/FormattingContextProperties.cla
+ ss
+SHA-256-Digest: mijqV1KUP0JpOJQT26P7h9xVXQnh1PSwOUZ1pfgsR2o=
+
+Name: org/eclipse/jface/contentassist/SubjectControlContentAssistant.c
+ lass
+SHA-256-Digest: 66LzRNk1Han8+xnlJ76H5U7T9KzUdoVd21CgHyH/lF0=
+
+Name: org/eclipse/jface/text/ITextViewerExtension4.class
+SHA-256-Digest: FzYdxeA1VJO0dPs++N22QqPG2fSPNyhPCHLgZc/UnmA=
+
+Name: org/eclipse/jface/text/codemining/LineHeaderCodeMining.class
+SHA-256-Digest: w6WU7XbBwOx0d5bgQbNJ6mkk7EwGhWfnvwKBz/t6Gys=
+
+Name: org/eclipse/jface/text/source/projection/ProjectionSupport$Proje
+ ctionDrawingStrategy.class
+SHA-256-Digest: RXUebhUE8z8I4RQ8fP3NbuH1adHou/OObz2BUsiuXOc=
+
+Name: org/eclipse/jface/text/TextViewer$VerifyKeyListenersManager$Batc
+ h.class
+SHA-256-Digest: PD/8nRSs5fT1O+hMfAJnV9tY0qzc+MF8VxVH0hKyj4U=
+
+Name: org/eclipse/jface/text/source/projection/SourceViewerInformation
+ Control.class
+SHA-256-Digest: nkxdDrdBAhevRqUeb6lu242kWia9cYtp85Z/NmIJx4o=
+
+Name: org/eclipse/jface/text/source/IAnnotationHover.class
+SHA-256-Digest: sC8uDx1W00Ti2YLFzx6xbJJObVCTS2HjpUd07zCOSxo=
+
+Name: org/eclipse/jface/internal/text/link/contentassist/ContentAssist
+ ant2.class
+SHA-256-Digest: XQsfflkmVToK4si8qpy63sWhMUcW8iHQJCkB9SobOzQ=
+
+Name: org/eclipse/jface/text/hyperlink/URLHyperlinkDetector.class
+SHA-256-Digest: iGBf4qswnECJ+2A5G+FfcnFi8bzPK2lDa/ihUifWIws=
+
+Name: org/eclipse/jface/text/TextPresentation.class
+SHA-256-Digest: tbO3X0whZPDjry5lNYGq69tLv+s8r7t9uVEyVjjwvJM=
+
+Name: org/eclipse/jface/text/templates/TemplateProposal$1.class
+SHA-256-Digest: 7uibpNMyqcZzIiQ3nolbB+6ygatRqQEKGSsjKq30IAE=
+
+Name: org/eclipse/jface/text/source/AnnotationColumn.class
+SHA-256-Digest: eMqggdtY4XvYR9TfDYjMgA+MXYfEANtfq7f1VkA3ZLk=
+
+Name: org/eclipse/jface/text/AbstractHoverInformationControlManager$Mo
+ useTracker.class
+SHA-256-Digest: L0l3mgZiftgCE/xbpwfriiGaNxF/ls4Gg9eY4PPl1EQ=
+
+Name: org/eclipse/jface/text/IAutoEditStrategy.class
+SHA-256-Digest: p7hZc65YYSQk0kZeFoBEDhkAPxiU6o0eMK31Low79wQ=
+
+Name: org/eclipse/jface/text/DefaultAutoIndentStrategy.class
+SHA-256-Digest: 22+gYgtRYWJSA8bD7CQ2ube/SzPGZ63msWg1FXTi53s=
+
+Name: org/eclipse/jface/text/contentassist/AdditionalInfoController$1.
+ class
+SHA-256-Digest: auX/LBRplhG4zTMwnpFkRMa3y3+G+/k2yEvKcx9Xfps=
+
+Name: org/eclipse/jface/text/TextViewer$RewriteTarget.class
+SHA-256-Digest: CuG27ZcYLFjpnRQmpiN6XT91DqQDEbUkUFbrXMQTJM4=
+
+Name: org/eclipse/jface/text/hyperlink/DefaultHyperlinkPresenter.class
+SHA-256-Digest: 34O8MfDH2C/PaOlul1PcJrm7bbAEw3GH4w/Yy//B2to=
+
+Name: org/eclipse/jface/text/source/AnnotationPainter$ITextStyleStrate
+ gy.class
+SHA-256-Digest: GHJy5vFHuJVsKkBKsI/dsznuUIncdLGTnfIi8U9ryOc=
+
+Name: org/eclipse/jface/internal/text/SelectionProcessor$2.class
+SHA-256-Digest: OMNJGB5PuKFLSumrQORv/9drRZwIOiqDuLGtBtTTRKw=
+
+Name: org/eclipse/jface/internal/text/revisions/LineIndexOutOfBoundsEx
+ ception.class
+SHA-256-Digest: VvuxMS3ewV5guAwkepPTrrsonQ4886e9LmiHOBs2/tw=
+
+Name: org/eclipse/jface/text/quickassist/QuickAssistAssistant$ContentA
+ ssistProcessor.class
+SHA-256-Digest: WleKxK0AmL/r5PeX8qNKmCmLm0mNxtbi+9wMJ8WbZmo=
+
+Name: org/eclipse/jface/text/AbstractInformationControl$1.class
+SHA-256-Digest: gER+3oNgMa5qkohIfs38poupYwi+EAWwLQYYcgt4zTE=
+
+Name: org/eclipse/jface/text/source/AnnotationRulerColumn$1.class
+SHA-256-Digest: jOS5O2HMqhW9CXuu0d/5wTM1IbSTSt/uz+9iJQZ6Xik=
+
+Name: org/eclipse/jface/text/source/inlined/Positions.class
+SHA-256-Digest: RFunv2lC/gXqpLkX6i1qnOOxNcSlC/1xoQrRUcsvvXw=
+
+Name: org/eclipse/jface/contentassist/TextContentAssistSubjectAdapter$
+ InternalDocument.class
+SHA-256-Digest: T0wWioKzmnN2oMSZMk+v06zkYtfA/t/X+mUwGUhh5Dg=
+
+Name: org/eclipse/jface/text/hyperlink/MultipleHyperlinkPresenter$Link
+ ListInformationControl$LinkContentProvider.class
+SHA-256-Digest: c74+3S2h1xu/qfTaegy09EIgS9C42H89ehCdJgvdDvA=
+
+Name: org/eclipse/jface/text/link/LinkedModeUI$LinkedModeUITarget.clas
+ s
+SHA-256-Digest: 2mRfZO+EKeCJgKZpnQHrEfC8lD6Gn3r0O3RvBdEEQDQ=
+
+Name: org/eclipse/jface/text/source/projection/IProjectionListener.cla
+ ss
+SHA-256-Digest: YwIkEtO423dBKX1Y28uj0CpTNhyPJ/k+LI4p9ps/G04=
+
+Name: org/eclipse/jface/text/contentassist/JFaceTextMessages.propertie
+ s
+SHA-256-Digest: rldBoJm9NesmW7yp+QCCPkvJfDVbXdscZF3B/jSZL1M=
+
+Name: org/eclipse/jface/text/source/MatchingCharacterPainter.class
+SHA-256-Digest: QngGPBj+WlYVdGruOLkpATLrEJt3TGqsjaNvRyxwGNs=
+
+Name: org/eclipse/jface/text/source/IOverviewRuler.class
+SHA-256-Digest: oJBnMj684+4urGvbrPcz6A5o9gPijS+x3ZpfMm/vltg=
+
+Name: org/eclipse/jface/text/link/LinkedPositionAnnotations.class
+SHA-256-Digest: qwV0HuMPW/C+rHKRK+WyOsOixNtNQKfGb5aYwO9xU74=
+
+Name: org/eclipse/jface/text/source/projection/ProjectionViewer.class
+SHA-256-Digest: pfdxLR/ftfYrvnYDMgGOHnifp4uR88+Lb2tXKktT4tw=
+
+Name: org/eclipse/jface/internal/text/InformationControlReplacer$Defau
+ ltInformationControlCreator.class
+SHA-256-Digest: 55WcSydoEAaAc/uO8ndlysrO6MLf6SBFPji7S8RJrMM=
+
+Name: org/eclipse/jface/text/hyperlink/MultipleHyperlinkPresenter$Link
+ ListInformationControl$LinkLabelProvider.class
+SHA-256-Digest: G3kcVYEaqjKwSo/A26VUvRsuAAga65bWx7fTV5OzX9U=
+
+Name: org/eclipse/jface/contentassist/AbstractControlContentAssistSubj
+ ectAdapter$1.class
+SHA-256-Digest: ApScMoSFNnIW+hyOElxqkw2Y3yA/JRN77qcaHTDJHAU=
+
+Name: org/eclipse/jface/text/source/inlined/AbstractInlinedAnnotation.
+ class
+SHA-256-Digest: bSVwN0eKotd5PX4CcyQVOm2DTdp5I9SJY7BDjNUVk24=
+
+Name: org/eclipse/jface/text/contentassist/IContextInformationValidato
+ r.class
+SHA-256-Digest: m8MiSUZrQEemzgC+kWAe2xLM80IEvUIR0Es0raunEvU=
+
+Name: org/eclipse/jface/text/source/projection/images/expanded@2x.png
+SHA-256-Digest: FOg+WD2z6fKe09uEs2MuKKlBk0bRFv17rgNsYdtwMwc=
+
+Name: org/eclipse/jface/text/AbstractHoverInformationControlManager.cl
+ ass
+SHA-256-Digest: CqBgeM1t8Y+lMrrZbsYl820FnYCEgqSk4XdSzhRnPN8=
+
+Name: org/eclipse/jface/internal/text/html/HTMLTextPresenter.class
+SHA-256-Digest: f2aaB5dnASo10vgn+8wbhPUZu7OPjO/jtvoJXDgzDK4=
+
+Name: org/eclipse/jface/text/DefaultInformationControl$1.class
+SHA-256-Digest: /g+kajNFSeumh9HpHHiyGdOWG0eK4kFGIEnbYRp9ZFc=
+
+Name: org/eclipse/jface/text/rules/RuleBasedDamagerRepairer.class
+SHA-256-Digest: Ih5Js+jn+jT2NRajw7J+4lGO9G+563NIrk8FcUUjR2w=
+
+Name: org/eclipse/jface/text/contentassist/ContentAssistant.class
+SHA-256-Digest: N8jrZlQsx9f3oJAjsjz5C8pJ1fAsntYKXqHT2yd2geQ=
+
+Name: org/eclipse/jface/text/TextViewerHoverManager$3.class
+SHA-256-Digest: /su/AGx8P6pYYvaQfwQa5lZR/QPgMlhwXF4B3tzYOf4=
+
+Name: org/eclipse/jface/contentassist/ISubjectControlContextInformatio
+ nValidator.class
+SHA-256-Digest: NPzuyFjBQd70DVdx8N/p5d8gME0V3AzCfnNB7ZWbijw=
+
+Name: org/eclipse/jface/text/source/projection/ProjectionSummary.class
+SHA-256-Digest: 3mkE/MwofQq2U+V1DlSd6Uk5OlSMg5nincDvDhqK6Gc=
+
+Name: org/eclipse/jface/text/rules/WordRule.class
+SHA-256-Digest: bEa3vfrGWJIFF/fUZILC556t7FkSEwYaeXXBCkazRH0=
+
+Name: org/eclipse/jface/text/templates/InclusivePositionUpdater.class
+SHA-256-Digest: qO2GtmllvXV5LylEuQ4Baw7UN/O5Iwb92X3GC8l62E0=
+
+Name: org/eclipse/jface/text/source/projection/ProjectionAnnotationHov
+ er$2.class
+SHA-256-Digest: SYIYc30FmOKFSoin4pJBnDzg6PJJLHlpZlpjyYpK8Zk=
+
+Name: org/eclipse/jface/contentassist/ComboContentAssistSubjectAdapter
+ $InternalDocument.class
+SHA-256-Digest: dTcCGnEKQgz6kDd1cxKUREbKRkVdlnh0lvJcZTc3oYk=
+
+Name: org/eclipse/jface/contentassist/ComboContentAssistSubjectAdapter
+ $1.class
+SHA-256-Digest: BswpJPpV6fY//d+b2Fbiw7B/Gzuf4f4hcHRTHjDk/mE=
+
+Name: org/eclipse/jface/internal/text/revisions/RevisionPainter$HoverI
+ nformationControlCreator.class
+SHA-256-Digest: L74B6OlwdxVx4X2sNccwa23o2jWq6HwFjTfuBYcbRuA=
+
+Name: org/eclipse/jface/text/source/ISourceViewerExtension.class
+SHA-256-Digest: DWPaxNeuXXTs4N91S5tCUyT3Z8cjoaH4sw4K1EZdW4g=
+
+Name: org/eclipse/jface/text/reconciler/IReconcilableModel.class
+SHA-256-Digest: 5g68gGPUTxtc90PLrlr7robscWvBYHL8qOxHg3rzK2E=
+
+Name: org/eclipse/jface/internal/text/revisions/RevisionPainter$Revisi
+ onHover.class
+SHA-256-Digest: BYS4VqDCOfCpETgKVR3t+xOtGtK1JZ2roV6tvam3b2w=
+
+Name: org/eclipse/jface/text/source/projection/AnnotationBag.class
+SHA-256-Digest: OAT/vaj4WxO/JQ4kt4k0m6Zw6IS1F+HjO83ZqXy2UoM=
+
+Name: org/eclipse/jface/text/contentassist/CompletionProposalPopup$3.c
+ lass
+SHA-256-Digest: vkRQU+RJlTkDgG0UbNvsKZt/sQH+Km8GQZUbX3Px9Uw=
+
+Name: org/eclipse/jface/text/contentassist/ContentAssistant$4.class
+SHA-256-Digest: xqjphfrYjQYIDHV0oaQ/NVa15j6eqRlHC5kwd2OwFsk=
+
+Name: org/eclipse/jface/text/TextViewer$FindReplaceRange.class
+SHA-256-Digest: ffFG9O6RmFKhsffd3JsdEQpLch9IqLfpdXA3BsBY7eQ=
+
+Name: org/eclipse/jface/text/contentassist/IContextInformation.class
+SHA-256-Digest: ms56cLGUstMscCzyUOT8nKCgbDSneCF9FJG9mIGdzXg=
+
+Name: org/eclipse/jface/text/DefaultIndentLineAutoEditStrategy.class
+SHA-256-Digest: M/57BGAJfl0xXyDwmIwkeWHn2MCLGuJY9BNoc6M8Xoc=
+
+Name: org/eclipse/jface/text/source/VerticalRulerEvent.class
+SHA-256-Digest: Epn3qkupSFpF2TvtflNh7h814Pv3Cv2HciaQcnTwpsg=
+
+Name: org/eclipse/jface/text/source/ISourceViewer.class
+SHA-256-Digest: 1WXtOkJYAxJQELXVTolUMM4pyM4URL+ogwF0oCY9v5k=
+
+Name: org/eclipse/jface/text/IInputChangedListener.class
+SHA-256-Digest: vUA2L6QH2Zt+/sOdhEXKC3I7SUdyVPa+qGmWJbSSm/A=
+
+Name: org/eclipse/jface/text/codemining/CodeMiningStrategy.class
+SHA-256-Digest: gInuGicwGYIqczyxvHTdYTKlgIDYPd0h9UieLwiqZ10=
+
+Name: org/eclipse/jface/text/quickassist/IQuickFixableAnnotation.class
+SHA-256-Digest: VqxutTNZMz8IDUq4pdD1w/76mw5AWDGHlHgw3NJSyWQ=
+
+Name: org/eclipse/jface/text/rules/ICharacterScanner.class
+SHA-256-Digest: uiUnMMG/lTNvRjDwhY8mObIEpb8GBloHDXE0tqzMcZ8=
+
+Name: org/eclipse/jface/text/source/VerticalRuler.class
+SHA-256-Digest: N+NTKx4K5shodUE3uw1hVQZBxmvWkcicZ6ZiYwvXwuQ=
+
+Name: org/eclipse/jface/text/templates/persistence/TemplatePersistence
+ Messages.class
+SHA-256-Digest: Rzk76nsw+9X6+EpNzzKNOh1EmIyMkvQi/MRvQqa4D18=
+
+Name: org/eclipse/jface/text/source/VerticalRuler$1.class
+SHA-256-Digest: lIvcd5mm/iGvR0o9nJ7tvDHqJzh0NmnAQ6c487G0ngc=
+
+Name: org/eclipse/jface/text/source/LineNumberRulerColumn$MouseHandler
+ $2.class
+SHA-256-Digest: n/sZjnMHbjHDLOuuXPQjWsq8zGhidnoA9q528wM2yTQ=
+
+Name: org/eclipse/jface/text/AbstractHoverInformationControlManager$1.
+ class
+SHA-256-Digest: W3c2jeZXp5V9aqBHCQda5dPS0+LD9m0itgZVVYUukiU=
+
+Name: org/eclipse/jface/text/TextViewer$VerifyKeyListenersManager.clas
+ s
+SHA-256-Digest: H5PjmM6L9tsiFldH0m3pdIZo/OjL0ATLuJfx2KJZ7R0=
+
+Name: org/eclipse/jface/text/information/InformationPresenter$Closer.c
+ lass
+SHA-256-Digest: PiwOffqZYYCMMaObJ0oV/lNbvt4uvrGxXplSpyYDNl0=
+
+Name: org/eclipse/jface/text/IWidgetTokenOwnerExtension.class
+SHA-256-Digest: sij72QijKd3PXoCov06+ZrfrKVgwpxjnYhlST0gurXM=
+
+Name: org/eclipse/jface/internal/text/link/contentassist/CompletionPro
+ posalPopup2$1.class
+SHA-256-Digest: OkuE8AenjjtGOc10ultfIunXANhSG5XSbjM0ve/j78M=
+
+Name: org/eclipse/jface/text/hyperlink/URLHyperlink.class
+SHA-256-Digest: /fsCH+QABkLtuvyo8d5NE8bu+MKv2uuuA6rZEwU2d4g=
+
+Name: org/eclipse/jface/text/formatter/ContextBasedFormattingStrategy.
+ class
+SHA-256-Digest: GONRHxHYGU7MmdBDAh7iNgNauYHaBtgVEi5l2MzxtQo=
+
+Name: org/eclipse/jface/text/source/OverviewRulerHoverManager.class
+SHA-256-Digest: oy8JK2x8akwXQV3DUwO7azyEOSmSi04+ro4bbT/5V7w=
+
+Name: org/eclipse/jface/text/contentassist/AdditionalInfoController$Ti
+ mer$2$1.class
+SHA-256-Digest: cOhc20UiKNxmvIgjnZVnmbXuQocK+psDB2XbU7tTsHk=
+
+Name: org/eclipse/jface/text/IPainter.class
+SHA-256-Digest: /btjtzbitixOF8AKYL9AR4iqG8t7DLXtxha7H9Q6cMU=
+
+Name: org/eclipse/jface/text/source/AnnotationRulerColumn$4.class
+SHA-256-Digest: w5L/6T6eObtz9ktxr5cgxc4fDCmkLSmh5GFd/CYcwI4=
+
+Name: org/eclipse/jface/text/rules/DefaultPartitioner.class
+SHA-256-Digest: JOVrdrvz0thXE4JGSbjZqWXSJi4rjX2OPsA7ZHM8nPw=
+
+Name: org/eclipse/jface/internal/text/html/BrowserInformationControl$1
+ .class
+SHA-256-Digest: I6L7ud5khwPiAuB6YOgF8WNcnZdLABOgjpGiwm5NswE=
+
+Name: org/eclipse/jface/text/source/projection/ProjectionSupport.class
+SHA-256-Digest: cMkhonv8cWllhgmf+XmbExfQP+9sJ75M5h+OBLOKW50=
+
+Name: org/eclipse/jface/text/TextViewer$ShiftPositionUpdater.class
+SHA-256-Digest: +kyHIakoXfnXQESGMvr1aw9ZdN+4ujMRfV/0V+f6r5c=
+
+Name: org/eclipse/jface/text/ITextOperationTargetExtension.class
+SHA-256-Digest: CBzdlxc7cuwPMi3aBpEXMZt1yLRng+VLjp6JfJahz3E=
+
+Name: org/eclipse/jface/text/source/AnnotationRulerColumn$AnnotationsL
+ istener.class
+SHA-256-Digest: b48tdcmiCLAmViBNcMcdf+6WepqlnJe5O6wLzBRR/dE=
+
+Name: org/eclipse/jface/text/source/LineChangeHover$1.class
+SHA-256-Digest: R2sQZmHN6fG2TfQ+NItvBP4z7BfYApKvW1V+wvbUGZQ=
+
+Name: org/eclipse/jface/text/IInformationControlCreatorExtension.class
+SHA-256-Digest: ucHv7mLfyueJTfJATn2lRtPWcStwCZjgOhRvR46nwpI=
+
+Name: org/eclipse/jface/text/DefaultUndoManager.class
+SHA-256-Digest: JhVLy4F5riDpOfmNYaKUljzHMuhyg5kPQOfQJggrs2Y=
+
+Name: org/eclipse/jface/text/ITextViewerExtension2.class
+SHA-256-Digest: q+2/x7P10XdgWO+BLLWupkdQ/Vsq+Av++5GF6TxbD14=
+
+Name: org/eclipse/jface/text/contentassist/BoldStylerProvider$1.class
+SHA-256-Digest: U6XEurvuPYjzpewAe1NWgzB/ByE8Rh/h/PgiXqU4Jac=
+
+Name: org/eclipse/jface/text/presentation/IPresentationDamager.class
+SHA-256-Digest: xlq1KZte4YEX01vJIpZPSdzR243HDbg7cVkUwdxfEpo=
+
+Name: org/eclipse/jface/text/contentassist/IContentAssistProcessor.cla
+ ss
+SHA-256-Digest: LsfCP8xAZbzfD57jwbWxUTSTQY7ivssQWTIigdjdLDg=
+
+Name: org/eclipse/jface/text/TextViewer$TextVerifyListener.class
+SHA-256-Digest: Q5dpcOZwSvEg4SEqrcCPk6i66/tukZzafhKaDtCU5TU=
+
+Name: org/eclipse/jface/text/contentassist/ContentAssistant$AutoAssist
+ Listener.class
+SHA-256-Digest: JqOG3+9gVAW9ishqidJOgkn+gmYLXaatTCggERO0Vjg=
+
+Name: org/eclipse/jface/text/source/ILineDiffer.class
+SHA-256-Digest: ImfpLVSlixeyq6rRnN0zpLHQjDJGaq1z2GrXZIKQHw0=
+
+Name: org/eclipse/jface/text/rules/PatternRule$DecreasingCharArrayLeng
+ thComparator.class
+SHA-256-Digest: kNmkejUvMUBl4hSQ/k0FGO39ntduwsG2KgCsPV2Ivsg=
+
+Name: org/eclipse/jface/internal/text/SelectionProcessor.class
+SHA-256-Digest: 5TsUawRvZ0bf8koCTQW2YuP+pFvJ3cevgcFeH9yOTJk=
+
+Name: org/eclipse/jface/internal/text/codemining/CodeMiningLineContent
+ Annotation.class
+SHA-256-Digest: D2nTomXlttMIsGUFximkZjt8lsmUGGI+6VbyIm3sWew=
+
+Name: org/eclipse/jface/text/contentassist/CompletionProposalPopup$5.c
+ lass
+SHA-256-Digest: h45b5uxiTUTry26UuQuDi09b8L5TctEmkeWfS6W3ecA=
+
+Name: org/eclipse/jface/text/PaintManager.class
+SHA-256-Digest: DysfiOAxSjRh3jIhUURkVjGirmiP541c1xtm7pKVW3U=
+
+Name: org/eclipse/jface/text/contentassist/CompletionProposalPopup$7.c
+ lass
+SHA-256-Digest: zsx9kcKnUSyIv+WnW318MAvLYXLTVLSn5/+uTyFHT1k=
+
+Name: org/eclipse/jface/text/contentassist/ContextInformation.class
+SHA-256-Digest: 3kN/AWQejmIubZC734ykaFgskZfQXwl+niePpOTpJ4g=
+
+Name: org/eclipse/jface/text/IPaintPositionManager.class
+SHA-256-Digest: PHgIfzcPHYWlqRHFuONzZ27y+R5aDEbrzsXJpq8+9YA=
+
+Name: org/eclipse/jface/text/source/IAnnotationAccessExtension.class
+SHA-256-Digest: fKCY0hCwXd1dkD5sjh2NHU+GxINZ/q7KCkUo8tT2zVk=
+
+Name: org/eclipse/jface/text/quickassist/QuickAssistAssistant.class
+SHA-256-Digest: 6soAD2DCz5rvXtGhx2MWpbfZIt5oGSgRERjLIOyOjo8=
+
+Name: org/eclipse/jface/contentassist/SubjectControlContextInformation
+ Validator.class
+SHA-256-Digest: m4oR3iAH5S1Yz+5YblTZRHRx7vV6XEybqDTOqb2xm5o=
+
+Name: org/eclipse/jface/text/revisions/RevisionRange.class
+SHA-256-Digest: pDCKb3faXurrUQAJN+dZKEOaYOcJ322efMeJsBUPV9Y=
+
+Name: org/eclipse/jface/text/templates/TemplateProposal.class
+SHA-256-Digest: kUVvbqFnIQ6ah6RvAPHMwB5rBLUYuVjOPBlaxXk/ETI=
+
+Name: org/eclipse/jface/text/source/AnnotationRulerColumn$3.class
+SHA-256-Digest: ySPdzeR2DnG5VLC0B+lMre74bDjx2qlqIKDGj9HVX38=
+
+Name: org/eclipse/jface/text/source/AnnotationBarHoverManager.class
+SHA-256-Digest: zfei0sJJ8E4lqshFAu0wMYMjmWc/0iC8BDWr1b4+X+Q=
+
+Name: org/eclipse/jface/internal/text/html/BrowserInformationControlIn
+ put.class
+SHA-256-Digest: 25ecqRl/7QpIx/HQ9aJD2HJ79ugkt5ekVEwfUv20Ay8=
+
+Name: org/eclipse/jface/text/contentassist/ContextInformationPopup$Con
+ textFrame.class
+SHA-256-Digest: uSFtL6UKioYDqlNWSg5pPOyz6K6EkDzjZjBsbPSSMIg=
+
+Name: org/eclipse/jface/text/source/OverviewRuler.class
+SHA-256-Digest: muCQt5hSI25/vuhqJj9M2f1AEA9sPk5jSeKnhljqxf4=
+
+Name: org/eclipse/jface/internal/text/link/contentassist/ContentAssist
+ ant2$InternalListener.class
+SHA-256-Digest: 22W3odHuj3XhoGZYEkIAM2+4Re1kiOY9QpJvfoxZrYk=
+
+Name: org/eclipse/jface/text/source/ISourceViewerExtension4.class
+SHA-256-Digest: snX3lwr2HJWS9H2Eq2j7+2rhJzqrJn8qWwHbpoVV/nI=
+
+Name: org/eclipse/jface/text/formatter/ContentFormatter$NonDeletingPos
+ itionUpdater.class
+SHA-256-Digest: exvtMbsCY3rIRUZxElSt+PyCmnZGHGua8tB6W2uzTK0=
+
+Name: org/eclipse/jface/text/RegExMessages.properties
+SHA-256-Digest: uTuaTF0sJRXs4UQxEZuMZ8lujF+20Wj9V17/D1YdEcQ=
+
+Name: org/eclipse/jface/text/TextViewer$VisibleDocumentListener.class
+SHA-256-Digest: R6akO3SU0IQupuSy9C8jUnOhgO/diVMa+sovQYr5mIM=
+
+Name: org/eclipse/jface/text/contentassist/ICompletionProposalExtensio
+ n2.class
+SHA-256-Digest: 5T5N2o3GJLdPHva3Wzd6F2xcZkl0F8aYEmjncX7gFvc=
+
+Name: org/eclipse/jface/text/rules/NumberRule.class
+SHA-256-Digest: 8ScB66y5jtAoH/dr01XRaFMLlzN1tObwocmqsNmQA1w=
+
+Name: org/eclipse/jface/text/link/LinkedModeUI$ILinkedModeUIFocusListe
+ ner.class
+SHA-256-Digest: ZiaLLZcrEfPD35CKJfrQZCjCBlKCYR7jyxotUsKjJj0=
+
+Name: org/eclipse/jface/text/source/ICharacterPairMatcherExtension.cla
+ ss
+SHA-256-Digest: pgQpBzUxt+LvndVZZXeBB2g/M/dBTHgTUsSSYWR4LT8=
+
+Name: org/eclipse/jface/text/source/DefaultCharacterPairMatcher$Docume
+ ntPartitionAccessor.class
+SHA-256-Digest: rQwr0VdWCMQ7/Aho13X0P6nvQxjBTV+wG0kkLHN5r8g=
+
+Name: org/eclipse/jface/text/contentassist/AdditionalInfoController$Ta
+ bleSelectionListener.class
+SHA-256-Digest: l8/RS9ptwKna3oDcN7ej9sEnCOIZIOvM5/fzGE1Gn3g=
+
+Name: org/eclipse/jface/internal/text/link/contentassist/ContextInform
+ ationPopup2$ContextFrame.class
+SHA-256-Digest: 9tqF7CfokldP6IOOf5NJQlB8oEnPDwXK7Cwh4bBH3mI=
+
+Name: org/eclipse/jface/text/source/MatchingCharacterPainter$TextListe
+ ner.class
+SHA-256-Digest: qDZVWucVFiuFEPpxRSOEWTRnSEqS6dmyNphv1psP/Xc=
+
+Name: org/eclipse/jface/text/contentassist/AsyncCompletionProposalPopu
+ p$2.class
+SHA-256-Digest: zoy3kf1fpKAeBKKqM2LhaAmIEWsO8wNqiWPJqlTq/QE=
+
+Name: org/eclipse/jface/text/templates/JFaceTextTemplateMessages.class
+SHA-256-Digest: FMfjX5pXscIOVljDYo+FE7gg92+yo2foyRN7wjSzHqU=
+
+Name: org/eclipse/jface/internal/text/StickyHoverManager.class
+SHA-256-Digest: x4G8ElKoUDCOCkd1U1RovrZz3Y91AJpq8YnSVGVU5kI=
+
+Name: org/eclipse/jface/text/contentassist/BoldStylerProvider.class
+SHA-256-Digest: 7NpLxS8hVhcaBWXyFtBsnSBZCXX2LNXspYq7/HZx64c=
+
+Name: org/eclipse/jface/text/formatter/MultiPassContentFormatter.class
+SHA-256-Digest: iTU99vSX952ilTBEFN8P4+sdhKtHDTcOQ8B4IiJyBgw=
+
+Name: org/eclipse/jface/text/source/projection/ProjectionAnnotationHov
+ er$1.class
+SHA-256-Digest: SlAv/e69Fi238iqxYoaYH+NFmqyQ/h4T0c7yZy8RTGw=
+
+Name: org/eclipse/jface/text/source/IChangeRulerColumn.class
+SHA-256-Digest: QXs/1bb8FijTogcbVbWCVHD579PnGRQxuEB9qAXdYxQ=
+
+Name: org/eclipse/jface/internal/text/link/contentassist/ContentAssist
+ ant2$AutoAssistListener.class
+SHA-256-Digest: nIiJVF4l5cQQ383/IYj9lHHJZha/nFpuLj2Du0eYioU=
+
+Name: org/eclipse/jface/text/link/LinkedModeUI$DocumentListener.class
+SHA-256-Digest: K+neyAByBP++uW+j3izK9cWRZLD4bsW6ofQ2v15UBtg=
+
+Name: org/eclipse/jface/text/contentassist/CompletionProposalPopup$Pro
+ posalSelectionHandler.class
+SHA-256-Digest: mFlw8v2b4wjORDT+bC8yyO03LGrF0aMwNmKWAGluHWM=
+
+Name: org/eclipse/jface/text/FindReplaceDocumentAdapterContentProposal
+ Provider.class
+SHA-256-Digest: X7H6Jpz9xml0RtkwWkP2lkjgMc2MyWHhrCRHuY+uCXs=
+
+Name: org/eclipse/jface/text/IInformationControlExtension4.class
+SHA-256-Digest: 6+hIzeXe1Yj1UAV4IX+WbNylhcgbGcMgtD8WJScz+gQ=
+
+Name: org/eclipse/jface/text/source/AnnotationRulerColumn$TupleCompara
+ tor.class
+SHA-256-Digest: ahyEcVSq2KIXlECcg8fWZmSHaN/X5AHTDGIhzyzYylo=
+
+Name: org/eclipse/jface/text/source/projection/ProjectionViewer$Projec
+ tionCommand.class
+SHA-256-Digest: NEZfb3N98L5yNFg2SIYXswoWJYNmgxIOfEK2Bi2xEBM=
+
+Name: org/eclipse/jface/text/source/projection/ProjectionViewer$Projec
+ tionCommandQueue.class
+SHA-256-Digest: U8MRE5+wmMFESAgcKR9wxJYq00bHCm81La4A/aCPrcY=
+
+Name: org/eclipse/jface/text/source/LineNumberRulerColumn$MouseHandler
+ .class
+SHA-256-Digest: gGr13LagasTQdcFamLxwfvE4VoZNIu4ZZG6s7lvrODQ=
+
+Name: org/eclipse/jface/text/DocumentClone.class
+SHA-256-Digest: MszRzpXm38clGKZYwiuA7o1nS4MOk8omj4guXayB42c=
+
+Name: org/eclipse/jface/text/quickassist/IQuickAssistProcessor.class
+SHA-256-Digest: k36xWamqfDmYVuwsJyggDnMVt2G2KfQI+4iIUv8eswc=
+
+Name: org/eclipse/jface/text/formatter/IContentFormatter.class
+SHA-256-Digest: ZZiMoKJdbp4wsZFuw80bwzNpIe4DYQVNjQG85Cqf7Wk=
+
+Name: org/eclipse/jface/text/contentassist/ContentAssistant$2.class
+SHA-256-Digest: fSB5hrfgEj8HBDfRtirAK6NMnrDTsWtUWsuOeuc+IXQ=
+
+Name: org/eclipse/jface/text/source/inlined/InlinedAnnotationSupport$V
+ isibleLines.class
+SHA-256-Digest: 8PP3h6V3IaiypFBUetglWWjsq6FOvxAQNkHVvo4S2yE=
+
+Name: org/eclipse/jface/text/contentassist/AdditionalInfoController.cl
+ ass
+SHA-256-Digest: Z2RBbR1b7yc61EqDNsAp6mNKK3ACZeyAAIEvTpVWyKw=
+
+Name: org/eclipse/jface/text/contentassist/CompletionProposalPopup$Pro
+ posalSelectionListener.class
+SHA-256-Digest: RTv+N63xlbXOmtib6jx5qIxWRzpMnQDmOkMiWz9qkW8=
+
+Name: org/eclipse/jface/text/TextViewer$CursorListener.class
+SHA-256-Digest: +jxuMkdlonMLz3G7jMFuwfZi6WDt0QtrcEBhRCETH9s=
+
+Name: org/eclipse/jface/text/contentassist/AsyncCompletionProposalPopu
+ p.class
+SHA-256-Digest: bFQRtIBKW90lnSVETXoiVbLE7XdAV0AppnjaDTzhDW4=
+
+Name: org/eclipse/jface/text/source/AnnotationRulerColumn$2.class
+SHA-256-Digest: J5zb3QcjBqji87SgB0pkSI/0iSbxpHDWZxEnVh6I1zM=
+
+Name: org/eclipse/jface/text/AbstractInformationControlManager.class
+SHA-256-Digest: AZ71MGG1Ud18fcaoKSbeCsHlvXcE0HKTBNdPZCc7GWg=
+
+Name: org/eclipse/jface/text/link/LinkedModeUI$ExitFlags.class
+SHA-256-Digest: zQSI/AXLr1UMEa2pr8Tu0jdUnDxuFF5GMfogiJl4rgw=
+
+Name: org/eclipse/jface/text/AbstractInformationControl$2.class
+SHA-256-Digest: /KLAfulowtYfpu/YivU+EYG2A4TgmAPa+zBjRTMeF/M=
+
+Name: org/eclipse/jface/text/formatter/MultiPassContentFormatter$NonDe
+ letingPositionUpdater.class
+SHA-256-Digest: iZ+S/iwIxvZQQwBsqEJ7GRkgDifDHjUcDwkC6WcNlr8=
+
+Name: org/eclipse/jface/text/source/ICharacterPairMatcher.class
+SHA-256-Digest: ARBoGFc+6tziw6/5bR82i2AWr6OgaB1eDuzx3k2L7Cw=
+
+Name: org/eclipse/jface/text/hyperlink/MultipleHyperlinkPresenter$Mult
+ ipleHyperlinkHover.class
+SHA-256-Digest: X7bk0laAbO2heMdvITQvDyUF84FL+f3P6BDO+4bUkoo=
+
+Name: org/eclipse/jface/text/contentassist/CompletionProposal.class
+SHA-256-Digest: /H7GoQZVVKTTbSZSZDR3TyY/Q7aqrd7gGpArzNdT5qc=
+
+Name: org/eclipse/jface/text/contentassist/ICompletionProposalExtensio
+ n7.class
+SHA-256-Digest: 5f0wNae89rBrpQc4IIhXx1dZMIvsQttxQax/nyBjPOk=
+
+Name: org/eclipse/jface/internal/text/StickyHoverManager$Closer.class
+SHA-256-Digest: PnvMpQPtScx8dCCruGloAtzh75Ag0kVEgFKEUKe8yLQ=
+
+Name: org/eclipse/jface/text/contentassist/CompletionProposalPopup$8.c
+ lass
+SHA-256-Digest: DCDYaaheUYHYjERz4nxR1IAH6vscAt25tUpoUzCs9lc=
+
+Name: org/eclipse/jface/internal/text/revisions/Hunk.class
+SHA-256-Digest: J03bgub05h61q3yFx4CboN60tFUcrHzjGf3upD+9oxM=
+
+Name: org/eclipse/jface/text/IFindReplaceTargetExtension3.class
+SHA-256-Digest: 4jrhnkqJjMX48gddSDvnErIwvaL/EQCTzDblhw+if/I=
+
+Name: org/eclipse/jface/internal/text/codemining/CodeMiningLineHeaderA
+ nnotation.class
+SHA-256-Digest: FGCCGEZQo32pFc0rGx9B+iJKmnrWIez+BKJYtM/y5kg=
+
+Name: org/eclipse/jface/text/contentassist/ContentAssistant$3.class
+SHA-256-Digest: SA7mE7udGFufLzM7SPISoJPbmaedr91+pa67eLwqXvM=
+
+Name: org/eclipse/jface/text/rules/IPredicateRule.class
+SHA-256-Digest: yZBeWYuuOUyAasyv6ObOsd4bd1apW1IJIY3L58tdlRE=
+
+Name: org/eclipse/jface/text/contentassist/AdditionalInfoController$De
+ faultPresenterControlCreator.class
+SHA-256-Digest: 4B0c/b5NEG3upqZQQDsZmSIdN9T5xvs/MrpNUMUJ+sc=
+
+Name: org/eclipse/jface/text/source/LineChangeHover.class
+SHA-256-Digest: j1GEd1qGgaAzTyC3JgEKxNpDR5pyU+671fbO4jjrCew=
+
+Name: org/eclipse/jface/text/BlockTextSelection.class
+SHA-256-Digest: jtGCYJJexozUGL5HSbvESItiXhc9bmfaVF79VmVbp0U=
+
+Name: org/eclipse/jface/text/source/projection/ProjectionSupport$Proje
+ ctionAnnotationsPainter.class
+SHA-256-Digest: uABb68RMTOkZnV+tlxXk5h35u97hIywmmDhlqind35A=
+
+Name: org/eclipse/jface/text/source/ISourceViewerExtension5.class
+SHA-256-Digest: 2AmVpTzSb5RwQFWo/8DArD2ZEQW9cyI9+LBLlNRIozA=
+
+Name: org/eclipse/jface/contentassist/TextContentAssistSubjectAdapter.
+ class
+SHA-256-Digest: 5ghn4V+idugfM90oN2m2OPDcVQSNBF/LYwY5Dtlmv9c=
+
+Name: org/eclipse/jface/text/hyperlink/IHyperlinkDetector.class
+SHA-256-Digest: fx1uE4ElsWRsLlMpavZiR9YXMnt5+qDN+dwNAEijM1Y=
+
+Name: org/eclipse/jface/text/ITextDoubleClickStrategy.class
+SHA-256-Digest: cSnaYPx21WJw6a6h++6v7HhVxViYMqhRsqyXoutsDDg=
+
+Name: org/eclipse/jface/text/contentassist/IContentAssistantExtension4
+ .class
+SHA-256-Digest: gqkmVmoYON9Wk0xE3JgA2I9l6hb+qTUjrb1nbfdAxVY=
+
+Name: org/eclipse/jface/text/hyperlink/IHyperlinkPresenterExtension.cl
+ ass
+SHA-256-Digest: 3AkaONgklJ2qawh8/Uw/UUOVONvJ2iGd0dbEI/fMt8w=
+
+Name: org/eclipse/jface/text/source/IVerticalRuler.class
+SHA-256-Digest: 4dC3MMq0oooVwQDB63LcKbAE6uu/YNxe61IhoaLrVMs=
+
+Name: org/eclipse/jface/text/rules/SingleLineRule.class
+SHA-256-Digest: DSx7OxmbYI0lfAGSbo70VHKevwJMpTioTSJTpu1Axsw=
+
+Name: org/eclipse/jface/text/IInformationControlExtension5.class
+SHA-256-Digest: TwCPBxWsSX629Ackjo2B8zUc7kbJtJddjtp0PLjwDs4=
+
+Name: org/eclipse/jface/text/contentassist/ICompletionProposalExtensio
+ n3.class
+SHA-256-Digest: CedwSIrUeXqpufMjTfv0HBdjmhaPbw2SvbvNusnEJhs=
+
+Name: org/eclipse/jface/text/revisions/IRevisionRulerColumnExtension.c
+ lass
+SHA-256-Digest: 28ojzYISm9KnCEy6MwqWSmIL3RMyANRY8iW7V9+P0/s=
+
+Name: org/eclipse/jface/text/contentassist/CompletionProposalPopup$11.
+ class
+SHA-256-Digest: EQ3xblmRNvyxYsk5iGyI9UnXIDjV0oFrwQxmjR6R3kA=
+
+Name: org/eclipse/jface/text/MarkSelection.class
+SHA-256-Digest: /Vlf8FSl49w2ojBNyc2c/e1iwhwlSACH6PteTNMT3nw=
+
+Name: org/eclipse/jface/text/hyperlink/IHyperlink.class
+SHA-256-Digest: reWYS5l0P7QKU/TaG0lhyj27zwMgkWNS8LAvxrC9+oU=
+
+Name: org/eclipse/jface/text/ITextListener.class
+SHA-256-Digest: OV7Z1cNnIACqgpiLvTJo2jK7wY5UAPL0elRYZ+mG01A=
+
+Name: plugin.properties
+SHA-256-Digest: zAAjqKQvJdqINxU80VDQInqtN3AezO9lB8IQqWwZBb8=
+
+Name: org/eclipse/jface/internal/text/link/contentassist/LineBreakingR
+ eader.class
+SHA-256-Digest: BeP+Vksom9QUgSMPB8cjuuqbErBVrFNb//LgjbLMn8k=
+
+Name: org/eclipse/jface/text/source/IVerticalRulerListener.class
+SHA-256-Digest: SuhfuCqmDw39m3NJ9EWe6LtBGNIzxc5829CZ/ckHb0U=
+
+Name: org/eclipse/jface/text/quickassist/QuickAssistAssistant$QuickAss
+ istAssistantImpl.class
+SHA-256-Digest: UO+lJWE/hz7i9A4yHK1W+YTG1TdB2YqdNw6GXGztcYQ=
+
+Name: org/eclipse/jface/text/contentassist/IContextInformationPresente
+ r.class
+SHA-256-Digest: ZdhnsoLR2bG/rWIJPavg4OkWRrBVYlfCT7G/dDnZRuM=
+
+Name: org/eclipse/jface/text/source/ILineDifferExtension2.class
+SHA-256-Digest: pqhftyXe40YYzhhIph4MWXaF/tB2yAAvga+MU2GgkZ0=
+
+Name: org/eclipse/jface/text/source/SourceViewerConfiguration$1.class
+SHA-256-Digest: C+aN/UnToQqYyDZdOQ1q25JvZe2zu+lqqY6/D+wvBAE=
+
+Name: org/eclipse/jface/text/source/projection/images/collapsed.png
+SHA-256-Digest: ClK24VomDX7cimWF3rj7wUk5qfMr9YrityePOvrXY1Q=
+
+Name: org/eclipse/jface/text/source/ILineRange.class
+SHA-256-Digest: eQk48cy4/e1ThkhQkg2RTKgYuYvSSWp/7RCDeCNP1W0=
+
+Name: org/eclipse/jface/text/source/ChangeRulerColumn$MouseHandler.cla
+ ss
+SHA-256-Digest: bEkFbpwOAsVX0tuODPC9UtV0OBExLX+h7Y38sIjgYNM=
+
+Name: org/eclipse/jface/internal/text/source/DiffPainter.class
+SHA-256-Digest: Y3EyuCF/Ta9initAXQISkx1jGjs9iRNXgzvAvIx+dtA=
+
+Name: org/eclipse/jface/text/contentassist/IContentAssistantExtension3
+ .class
+SHA-256-Digest: o5lK8kZw1Rc1bsphPo84Ib4z+dBDXsUiI/fE0UoB+Os=
+
+Name: org/eclipse/jface/text/reconciler/IReconcilingStrategy.class
+SHA-256-Digest: uviDv5Koy9FjM2i0vLB32wKLxPk61ZSAg0f2bIarSjE=
+
+Name: org/eclipse/jface/text/link/LinkedModeUI$EmptyTarget.class
+SHA-256-Digest: 0fkz1vNr5JL26C3bnmaYCRFMkAhxwzsQYit6FrxfSdg=
+
+Name: org/eclipse/jface/text/link/LinkedModeUI$MySelectionListener.cla
+ ss
+SHA-256-Digest: yedb0GEYlgVjYWifhKMZ9awSqYp1MUvyXnG/vJrizgg=
+
+Name: org/eclipse/jface/text/rules/MultiLineRule.class
+SHA-256-Digest: b+1G/W1aulCUkhlr3kguIiYdIIm9Y+XRH1Ampmf9rIo=
+
+Name: org/eclipse/jface/text/DefaultInformationControl$IInformationPre
+ senter.class
+SHA-256-Digest: VS82ks2Vz7gyxHlcF94f5LWfHwvTJGZEJ7k6+cU9s1I=
+
+Name: org/eclipse/jface/text/IViewportListener.class
+SHA-256-Digest: QpmayrQr88kyohz3Nm000tlXMIucoP5NllcCSpcnoHA=
+
+Name: org/eclipse/jface/text/source/IAnnotationHoverExtension.class
+SHA-256-Digest: JwimNyciStWPfQtpgcaJRsnaFRxTekoEBh1TI1evbrk=
+
+Name: org/eclipse/jface/text/quickassist/IQuickAssistAssistantExtensio
+ n.class
+SHA-256-Digest: WrSPAxJglKi2IXhShXpHHPIPQIVy/rUZgYl9cItQDJE=
+
+Name: org/eclipse/jface/internal/text/SelectionProcessor$1.class
+SHA-256-Digest: uVaW84HOORkyePvdIBphkRkwr2vTFO0jaUltI9V9CU0=
+
+Name: org/eclipse/jface/text/contentassist/ICompletionListenerExtensio
+ n2.class
+SHA-256-Digest: 7urudZhwDnrhYodjKcCvRMx2gGIWTP8vPI6y6GCmUd4=
+
+Name: org/eclipse/jface/text/contentassist/AsyncCompletionProposalPopu
+ p$ComputingProposal.class
+SHA-256-Digest: QXDfH2T/UmAaF+AwgUnNPqF5nMF7gQ/AOsUnKbNp84c=
+
+Name: org/eclipse/jface/text/source/IAnnotationAccess.class
+SHA-256-Digest: SWIxwK76g8dY3h7rhSnaZt/fri79H2YdT+4+FFfKKtY=
+
+Name: org/eclipse/jface/text/source/ISourceViewerExtension3.class
+SHA-256-Digest: 8RQyiSBBeZIN54QxYNE0n9CkglmhYM/Is23mEkxY1sk=
+
+Name: org/eclipse/jface/internal/text/html/HTMLMessages.properties
+SHA-256-Digest: LxBPvBLHmw40yyCZg77rJol4gg+jclfznd1Ziq381Wo=
+
+Name: org/eclipse/jface/text/AbstractInformationControlManager$IInform
+ ationControlCloser.class
+SHA-256-Digest: z/rtmHt4+Ox5mwt4iGUQSaBuAE/hA0pOi1Xzz+UR4R4=
+
+Name: org/eclipse/jface/text/source/DefaultCharacterPairMatcher$CharPa
+ irs.class
+SHA-256-Digest: egr3xLFekSaVV2/R+9StBSzlr7o3T5ic8WCT2VmNkFY=
+
+Name: org/eclipse/jface/text/revisions/IRevisionRulerColumnExtension$R
+ enderingMode.class
+SHA-256-Digest: uSzW0YSsF62p89gGYQhP3AHZze7nLAEAZoeWGKNCPzc=
+
+Name: org/eclipse/jface/internal/text/source/DiffPainter$AnnotationLis
+ tener.class
+SHA-256-Digest: ykrvo2c4r16rPQi9JlRAgdq5rRFZ14NPKYWD4WegkSs=
+
+Name: org/eclipse/jface/text/contentassist/ICompletionProposalExtensio
+ n6.class
+SHA-256-Digest: NmDltJiVk9dTH87f/KodujagJ9QCrZ8k79GtLhvuh8o=
+
+Name: org/eclipse/jface/text/contentassist/ContentAssistant$1.class
+SHA-256-Digest: 58Iy5PTf7yQM7U6/Y+PBVw1GmdJVd22TKRtz50eBbQA=
+
+Name: org/eclipse/jface/text/presentation/IPresentationReconciler.clas
+ s
+SHA-256-Digest: JQHNItsOJXibwhcs/WkGBvSKl8LEHzPAJplyd+5mxTQ=
+
+Name: org/eclipse/jface/text/formatter/ContentFormatter.class
+SHA-256-Digest: GgxaTcms12Vv5QzpMJhwDwqwWXfD0aYvgF8OlNdeyng=
+
+Name: org/eclipse/jface/text/source/ILineDiffInfo.class
+SHA-256-Digest: kBiN8laFNGh1Y5+pMTT/2CehN3+VRXDjIOKAieEDcXc=
+
+Name: org/eclipse/jface/text/AbstractReusableInformationControlCreator
+ .class
+SHA-256-Digest: HhQavu9cHBlNIFInSYWZ+dDlXK2xhbnhJgJ3rnyefFU=
+
+Name: org/eclipse/jface/text/ISelectionValidator.class
+SHA-256-Digest: NGk6I0/EYOxPuZIUwbbtOzyzXepSFUeAWoJHaFVBxOY=
+
+Name: org/eclipse/jface/text/templates/TemplateCompletionProcessor.cla
+ ss
+SHA-256-Digest: NTCgGVUzdas4Xy9H6D7z/j7UtpAZEzvra9ljTggYWIE=
+
+Name: org/eclipse/jface/contentassist/IContentAssistSubjectControl.cla
+ ss
+SHA-256-Digest: ZVxS9gKULXBn4oAFbJyrdQjpb+7EUqsvvwvOy6v9nUg=
+
+Name: org/eclipse/jface/text/TextViewerUndoManager.class
+SHA-256-Digest: limFcgC6UFa0ptlUgRi2cTj5wyfQqhpUmn+lvjY5MMU=
+
+Name: org/eclipse/jface/text/source/ISourceViewerExtension2.class
+SHA-256-Digest: A2FohQFh/oAYvMAaTotk9OrOEgGC5FujHG4Iadw1isY=
+
+Name: org/eclipse/jface/text/templates/PositionBasedCompletionProposal
+ .class
+SHA-256-Digest: emOVvnVI3bRBnH4VSi+NvpmdocZ64TPAR0AMNPsJVTM=
+
+Name: org/eclipse/jface/text/source/projection/ProjectionSummary$Summa
+ rizer.class
+SHA-256-Digest: VgyrMYXdrQ/OaXtzKcWZxPv+u4/kpdus8Llzb0NsB2s=
+
+Name: org/eclipse/jface/text/TextAttribute.class
+SHA-256-Digest: jmXXA8gVDfJuQAbBUxYmNWDFWOCpJhZ7oCDiU1+Hpmw=
+
+Name: org/eclipse/jface/text/source/AnnotationPainter$NullStrategy.cla
+ ss
+SHA-256-Digest: X9LlXGt11eE0UTdWNGl+pNcVyLSf8KSjileZBKub0xQ=
+
+Name: org/eclipse/jface/text/contentassist/ICompletionProposalExtensio
+ n5.class
+SHA-256-Digest: SiZN8WsHGQGPT2AN2rUYZVB26Vb9Y2xCpiIrmmwTnp4=
+
+Name: org/eclipse/jface/text/IMarkRegionTarget.class
+SHA-256-Digest: coNsYOKvGrG60GC63GtSrIyVsMBqwpFXiST2NHRZBPc=
+
+Name: org/eclipse/jface/text/IFindReplaceTargetExtension.class
+SHA-256-Digest: B9ob87OLKN7vKKIgGDmUgii83S3BEnWllZtQQ9IyvnU=
+
+Name: org/eclipse/jface/text/IInformationControlExtension3.class
+SHA-256-Digest: bKTSYAy9qAIQg4eduCTdyCLMPipPy3F0+bTtyd2e2nw=
+
+Name: org/eclipse/jface/text/IWidgetTokenKeeper.class
+SHA-256-Digest: T8Qg2bQOiBXqA/LjIfshBmGx4HmpQbtR4bdn19Ge5uo=
+
+Name: org/eclipse/jface/text/TextViewer$TextDoubleClickStrategyConnect
+ or.class
+SHA-256-Digest: uFb9aQEGYQMWLm1unUcvWwOYalon3CZCtre6D7OeXZg=
+
+Name: org/eclipse/jface/text/contentassist/CompletionProposalPopup$10.
+ class
+SHA-256-Digest: hULZigoaRFazdJAbUOWbfpxdRMVVdNpv6D/CZ90MF8o=
+
+Name: about.html
+SHA-256-Digest: 7mbS+ztMDS7S5/aYvJ7U49bPd/pcr0CtAylhJdsaxfA=
+
+Name: org/eclipse/jface/text/rules/FastPartitioner.class
+SHA-256-Digest: f+5mBs//hxhOVSn6AOj14baV6jWvgCS4MHseT7ECiNI=
+
+Name: org/eclipse/jface/text/reconciler/AbstractReconciler$BackgroundT
+ hread.class
+SHA-256-Digest: uaPMQBq2/0IRuFdeUZAx2K+okTc1SM7FklHIDcjkaR0=
+
+Name: org/eclipse/jface/internal/text/link/contentassist/ContentAssist
+ Messages.properties
+SHA-256-Digest: CiHg8X/JeMxZoJ+gOnwzqpCCDEMqOQZQFgjC/QFo1hE=
+
+Name: org/eclipse/jface/text/JFaceTextMessages.properties
+SHA-256-Digest: i5b6jbD/rMhbST2WSOlcvI64jupPja0GGOSFl0dTv1E=
+
+Name: org/eclipse/jface/text/contentassist/ICompletionProposalExtensio
+ n4.class
+SHA-256-Digest: 0AGeTXagMh2VNCVMFZsc0JTHf1sGOfieO4Upq4XEQ0E=
+
+Name: org/eclipse/jface/text/link/LinkedModeUI$KeyListener.class
+SHA-256-Digest: GQVSnAZ3xn3eOtzi99FX6rNvPh2w6lCjdlagpmMAHCc=
+
+Name: org/eclipse/jface/text/IInformationControlExtension2.class
+SHA-256-Digest: /HJ+CgailGfluyHZlGEZP+Z5Lh2XqPzVvAsBpL6kv4U=
+
+Name: org/eclipse/jface/text/ITextSelection.class
+SHA-256-Digest: MIiz2okdJ/72GJ5GmADG5t7iZ++w68JOJ2OD+gsKEgk=
+
+Name: org/eclipse/jface/text/IEditingSupport.class
+SHA-256-Digest: LHrzTpyaYBx7bsUH0x//eD+SypBbZmo2GoqnU0wsIv8=
+
+Name: org/eclipse/jface/internal/text/revisions/RevisionPainter$HoverI
+ nformationControlCreator$1.class
+SHA-256-Digest: q2Ko90wSS39dRecH8rGsGa0x9hF1HqHyWoLrcbg735k=
+
+Name: org/eclipse/jface/text/ITextInputListener.class
+SHA-256-Digest: /Q2SVVYqdvgNbeo5cozw0c4P+8pX6tZF6LTcPttV9cs=
+
+Name: org/eclipse/jface/text/source/AnnotationPainter$BoxStrategy.clas
+ s
+SHA-256-Digest: 77fQOAfIhg5xMRyYWQfL3+MMKUJq0Ctrf9ystjeGqDU=
+
+Name: org/eclipse/jface/text/DefaultUndoManager$CompoundTextCommand.cl
+ ass
+SHA-256-Digest: 9THrmMA3emLQyvN9ESOL9DdGzP5Ubpv4nZBFbdRwhaM=
+
+Name: org/eclipse/jface/text/source/AnnotationPainter$ReusableRegion.c
+ lass
+SHA-256-Digest: 1bf5Z/H4ONkjBxncq9LEXBIumvT0CoIjamMvOiUEaEc=
+
+Name: org/eclipse/jface/text/source/LineRange.class
+SHA-256-Digest: oJ+ryhswQZg6d/+HmV8rMJffwsj4xbjkoGcLOLdnJOg=
+

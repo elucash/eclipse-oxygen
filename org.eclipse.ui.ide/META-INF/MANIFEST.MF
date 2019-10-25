@@ -1,0 +1,4412 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.eclipse.ui.ide
+Bundle-SymbolicName: org.eclipse.ui.ide; singleton:=true
+Built-By: genie.releng
+Require-Bundle: org.eclipse.core.resources;bundle-version="[3.7.0,4.0.
+ 0)";resolution:=optional,org.eclipse.core.runtime;bundle-version="[3.
+ 2.0,4.0.0)",org.eclipse.core.filesystem;bundle-version="[1.0.0,2.0.0)
+ ",org.eclipse.help;bundle-version="[3.2.0,4.0.0)",org.eclipse.swt;bun
+ dle-version="[3.107.0,4.0.0)",org.eclipse.ui;bundle-version="[3.106.0
+ ,4.0.0)",org.eclipse.ui.workbench;bundle-version="[3.115.100,4.0.0)",
+ org.eclipse.ui.views;bundle-version="[3.2.0,4.0.0)";resolution:=optio
+ nal,org.eclipse.jface.text;bundle-version="[3.2.0,4.0.0)",org.eclipse
+ .ui.forms;bundle-version="[3.3.0,4.0.0)";resolution:=optional,org.ecl
+ ipse.equinox.p2.engine;bundle-version="[2.0.0,3.0.0)",org.eclipse.equ
+ inox.p2.metadata;bundle-version="[2.0.0,3.0.0)",org.eclipse.equinox.b
+ idi;bundle-version="[0.10.0,2.0.0)",org.eclipse.e4.core.services;bund
+ le-version="2.0.0",org.eclipse.e4.core.contexts;bundle-version="[1.3.
+ 100,2.0.0)",org.eclipse.e4.ui.workbench;bundle-version="[1.3.0,2.0.0)
+ ",org.eclipse.e4.core.commands;bundle-version="[0.11.0,1.0.0)",org.ec
+ lipse.e4.ui.model.workbench;bundle-version="[2.0.0,3.0.0)",org.eclips
+ e.e4.core.di;bundle-version="[1.6.0,2.0.0)",org.eclipse.e4.core.di.ex
+ tensions;bundle-version="[0.14.0,1.0.0)",org.eclipse.osgi.services;bu
+ ndle-version="3.5.0",org.eclipse.ui.navigator;bundle-version="3.7.400
+ "
+Bundle-ManifestVersion: 2
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Eclipse-SourceReferences: scm:git:git://git.eclipse.org/gitroot/platfo
+ rm/eclipse.platform.ui.git;path="bundles/org.eclipse.ui.ide";tag="I20
+ 190916-1045";commitId=a7975082f940e577c1ebb82439ba61d3b7e31673
+Bundle-Vendor: %Plugin.providerName
+Import-Package: javax.annotation,javax.inject,com.ibm.icu.text
+Export-Package: org.eclipse.ui,org.eclipse.ui.actions,org.eclipse.ui.d
+ ialogs,org.eclipse.ui.ide,org.eclipse.ui.ide.dialogs,org.eclipse.ui.i
+ de.fileSystem,org.eclipse.ui.ide.undo,org.eclipse.ui.internal.ide;x-f
+ riends:="org.eclipse.ui.ide.application,org.eclipse.ui.navigator.reso
+ urces",org.eclipse.ui.internal.ide.actions;x-internal:=true,org.eclip
+ se.ui.internal.ide.addons;x-internal:=true,org.eclipse.ui.internal.id
+ e.commands;x-internal:=true,org.eclipse.ui.internal.ide.dialogs;x-fri
+ ends:="org.eclipse.ui.ide.application",org.eclipse.ui.internal.ide.fi
+ lesystem;x-internal:=true,org.eclipse.ui.internal.ide.handlers;x-inte
+ rnal:=true,org.eclipse.ui.internal.ide.misc;x-internal:=true,org.ecli
+ pse.ui.internal.ide.model;x-friends:="org.eclipse.ui.ide.application"
+ ,org.eclipse.ui.internal.ide.registry;x-internal:=true,org.eclipse.ui
+ .internal.ide.undo;x-friends:="org.eclipse.ui.ide.application",org.ec
+ lipse.ui.internal.views.bookmarkexplorer;x-internal:=true,org.eclipse
+ .ui.internal.views.framelist;x-internal:=true,org.eclipse.ui.internal
+ .views.helpers;x-friends:="org.eclipse.ui.navigator,org.eclipse.jdt.u
+ i",org.eclipse.ui.internal.views.markers;x-internal:=true,org.eclipse
+ .ui.internal.views.navigator;x-internal:=true,org.eclipse.ui.internal
+ .views.properties;x-internal:=true,org.eclipse.ui.internal.views.task
+ list;x-internal:=true,org.eclipse.ui.internal.wizards.datatransfer;x-
+ internal:=true,org.eclipse.ui.internal.wizards.datatransfer.expressio
+ ns;x-internal:=true,org.eclipse.ui.internal.wizards.newresource;x-int
+ ernal:=true,org.eclipse.ui.model,org.eclipse.ui.part,org.eclipse.ui.v
+ iews.bookmarkexplorer,org.eclipse.ui.views.framelist,org.eclipse.ui.v
+ iews.markers,org.eclipse.ui.views.markers.internal;x-internal:=true,o
+ rg.eclipse.ui.views.navigator,org.eclipse.ui.views.properties,org.ecl
+ ipse.ui.views.tasklist,org.eclipse.ui.wizards.datatransfer,org.eclips
+ e.ui.wizards.newresource
+Bundle-Name: %Plugin.name
+Bundle-Version: 3.16.0.v20190916-1323
+Bundle-ClassPath: .
+Bundle-Localization: plugin
+Bundle-Activator: org.eclipse.ui.internal.ide.IDEWorkbenchPlugin
+Created-By: Apache Maven 3.5.4
+Build-Jdk: 1.8.0_192
+
+Name: org/eclipse/ui/ide/fileSystem/FileSystemContributor.class
+SHA-256-Digest: PnAlleH62zHtn8YUrLNcE9WPyHu854DNj2d/KDvKOas=
+
+Name: org/eclipse/ui/internal/ide/WorkbenchActionBuilder$4.class
+SHA-256-Digest: ibpBXEpWDDAFx6cFSXOS+Xa081fFJZGfPKp3B0BiZDI=
+
+Name: icons/full/elcl16/showwarn_tsk.png
+SHA-256-Digest: aLIanner099r1rY8q/0TjllcdZOe9vnUD38aWo+LwC0=
+
+Name: org/eclipse/ui/views/navigator/ResourceSelectionUtil.class
+SHA-256-Digest: +klAzZpsnA/3U9XENtRSWNz77gyMYp/InoMwN3bnT3A=
+
+Name: org/eclipse/ui/IURIEditorInput.class
+SHA-256-Digest: nmfbBqZseaBb1MbEVjtxASxB+Ltk972U5taRNsFfW3E=
+
+Name: icons/full/dtool16/prev_nav.png
+SHA-256-Digest: OpWdYhU5Zsgmwiiw3eR8vg/Vmu0pPlIfuCRime+OV4k=
+
+Name: org/eclipse/ui/dialogs/SaveAsDialog.class
+SHA-256-Digest: L2/h8uYpHogyFeH1/JB+UIAaVHmDYhv1uD2Wp09AMY0=
+
+Name: org/eclipse/ui/views/navigator/ShowInNavigatorAction.class
+SHA-256-Digest: KCJ9Z+ifLCblGKhbguwuSlROOMFiZyv6WO6vKQbpuT8=
+
+Name: org/eclipse/ui/views/bookmarkexplorer/RemoveBookmarkAction.class
+SHA-256-Digest: xLtHB/hkfhm7ofWI8xDq9KsbfKU8FbaPdF2UMz3SlUs=
+
+Name: org/eclipse/ui/internal/ide/undo/MarkerDescription.class
+SHA-256-Digest: wXP4m6JT8dKz/mCN9J4JSoC08B83H9igP6iXLGhahdA=
+
+Name: org/eclipse/ui/internal/views/markers/TypesConfigurationArea$4.c
+ lass
+SHA-256-Digest: HuzJKhv5XrhTDlcTNRBhHdtDOJGoVJIYj01jllwIPNo=
+
+Name: org/eclipse/ui/internal/views/helpers/EmptyWorkspaceHelper$Liste
+ ner.class
+SHA-256-Digest: 4TozOnCE5l2ahmFHR0+wWCwH923d9ip2jKezDr1Xdn4=
+
+Name: org/eclipse/ui/dialogs/WizardExportPage$1.class
+SHA-256-Digest: mH484sKfYZoNr8FiKXpwPXlywfR/qxSCLMPIBhYVpbE=
+
+Name: org/eclipse/ui/wizards/datatransfer/ZipFileExportWizard.class
+SHA-256-Digest: MxEy9qdu3x7ZBHGe0zyXx8cnDOqqwF4vhMv1Us1m3KY=
+
+Name: icons/full/dtool16/problem_category@2x.png
+SHA-256-Digest: +DSbWMH/wPl39oXUGwmx8edurRzWsLrOGqkiO3CVrEA=
+
+Name: org/eclipse/ui/views/bookmarkexplorer/BookmarkSorter.class
+SHA-256-Digest: pvk2VGVy/P2oiBnrxSkGy9vPSo5qSu/Uvb3QWlY5MVA=
+
+Name: icons/full/obj16/complete_tsk@2x.png
+SHA-256-Digest: KzzdcNIW2mAxgA8xitgCHt0+kgz4paljMy83pCo69TU=
+
+Name: icons/full/obj16/exportpref_obj.png
+SHA-256-Digest: jEcD5KUruKr5H3vrnBO7M7ZaKtpSp0w8BQDXc0zOpR8=
+
+Name: org/eclipse/ui/ide/dialogs/AbstractEncodingFieldEditor.class
+SHA-256-Digest: jsG7u1RmotAByw7TWVFlz19I0a2/oCSZa2Lt4YyNRG0=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/SmartImportJobRepor
+ tDialog$9$2.class
+SHA-256-Digest: Q+DWL9+9DkujHBFtFS7V0pOyjIQwv/w4ZNj9vRkD6wI=
+
+Name: org/eclipse/ui/internal/ide/dialogs/FilterEditDialog$4.class
+SHA-256-Digest: 0u4XjYAIj8T7vLFLQcVOOfr/CgAFqv8VND8YV5wBg5k=
+
+Name: org/eclipse/ui/internal/views/markers/OpenMarkersViewHandler.cla
+ ss
+SHA-256-Digest: fZLIvDi9d2e5J2RYE3zGFpAX6e588ZjCfot/eE/+ats=
+
+Name: org/eclipse/ui/actions/CopyProjectAction.class
+SHA-256-Digest: T1HvIrnPdqzJ+Zqek2YSIiz/jvpscuJAoVRpSLL6hZg=
+
+Name: org/eclipse/ui/internal/ide/model/ResourceFactory.class
+SHA-256-Digest: 9S03woJ4ZGYj2doZzo8mdOiYmwo60iCGbPPgsGMnoas=
+
+Name: icons/full/dtool16/newfolder_wiz.png
+SHA-256-Digest: 6HWh8GhEaqqHIEeQ8s0pDuiFbHddDSlCyUJpwfaaZTM=
+
+Name: org/eclipse/ui/ide/IDE$2.class
+SHA-256-Digest: kdR7JFluq9LRAiG9OAmV3CfZVjYL08gFjdYy/60FIWg=
+
+Name: org/eclipse/ui/internal/ide/dialogs/CleanDialog.class
+SHA-256-Digest: KqRvE6WTcTRo49EsOuC+eZgvn3t8R2f1VC3Z1k9e35s=
+
+Name: icons/full/eview16/problems_view_warning.gif
+SHA-256-Digest: glg9ervCrCnCJrExq9emapYM2aHWVlioELekiHwRQ8Q=
+
+Name: org/eclipse/ui/ide/undo/CreateFolderOperation.class
+SHA-256-Digest: oS+hQ6aSqj8cZ5PQoGPyoK9jmHQ9MDS9qlxfOVpLEIM=
+
+Name: org/eclipse/ui/views/framelist/FrameList.class
+SHA-256-Digest: qeqr9tIscNj9ehFOfXDywZzrOWHPfJHTaAZW7OBM7cY=
+
+Name: icons/full/eview16/pview.gif
+SHA-256-Digest: DOCOE3mI1kG8b0/+MKmRkTQmzf0vVSwSa0VucukI9kY=
+
+Name: org/eclipse/ui/internal/views/properties/ideMessages.properties
+SHA-256-Digest: Dh6nukZOITUfGdmm0BvYjIQhQ0lRMdP38NPO4Ejc36s=
+
+Name: org/eclipse/ui/internal/ide/ResourceDragAndDropEditor$Preference
+ Group.class
+SHA-256-Digest: FNtfE9kANT10gedFM9DQ0o1bbENLRATtcW9yAAXGvL0=
+
+Name: org/eclipse/ui/ide/undo/ResourceDescription.class
+SHA-256-Digest: C37iYz6ae7xdYaJbLFxzcm1JIH0LIsKtYflLRCzml58=
+
+Name: org/eclipse/ui/internal/ide/model/FileInputAdapterFactory.class
+SHA-256-Digest: vCG2AVUuW9y/IPUF9iyEuIw2U866QuMbMLqd0np7f3M=
+
+Name: org/eclipse/ui/internal/ide/model/WorkbenchRootResource.class
+SHA-256-Digest: bCs/YCzxVIod4oLyMGWkOMY5xyV0bJZ3HPXWBBICSK0=
+
+Name: icons/full/dtool16/next_nav@2x.png
+SHA-256-Digest: heYelbvjctMwjw5lPI9cHbOfCOLjr2A84ZjYO4dI3Ig=
+
+Name: org/eclipse/ui/internal/ide/dialogs/PathVariableEditDialog.class
+SHA-256-Digest: GaYrtn+Z39et5uzt8jkD6SVUaAbBpINRzh4qR/b4loo=
+
+Name: org/eclipse/ui/actions/OpenResourceAction.class
+SHA-256-Digest: ZOVtQBp44lsYhc5MY4hGCyfoONKrYzDMvxDIz2r8B8U=
+
+Name: org/eclipse/ui/internal/views/markers/SeverityAndDescriptionConf
+ igurationArea$3.class
+SHA-256-Digest: 5fSgtXyTs5qoksnWgDATW/gSrzGbh/RS57zWPngTBGE=
+
+Name: org/eclipse/ui/internal/views/markers/UIUpdateJob.class
+SHA-256-Digest: KI4ocwxzC0Thdg2Wa9CPeweyvTBBWpGKy3daG18fCJ8=
+
+Name: org/eclipse/ui/views/navigator/CopyAction.class
+SHA-256-Digest: GzUTIfRn0BhNdMOVa3X565NTATL5c5LVHZ40J4QMB9U=
+
+Name: org/eclipse/ui/internal/views/markers/MarkersViewPropertyTester.
+ class
+SHA-256-Digest: q27n4iC3cJz2D4KlXPfEebuRA1Stsun63KY3W6Gv9fQ=
+
+Name: icons/full/wizban/quick_fix.png
+SHA-256-Digest: W5qUX7T2mFN5C524lK8Jc3xNO+Q6mHQwLPd9ht8JwS8=
+
+Name: org/eclipse/ui/internal/views/markers/MarkerComparator.class
+SHA-256-Digest: AjTn/C07gxkg2rd6BMAioGEw2a4r50TJY0ZbEKoKJ4k=
+
+Name: org/eclipse/ui/ide/undo/AbstractResourcesOperation.class
+SHA-256-Digest: YNUnrRuegYxTD5NKlhqoFxB4VrICggkSVTNZwRcBDL0=
+
+Name: org/eclipse/ui/views/navigator/GotoResourceAction.class
+SHA-256-Digest: Mib97yBEzEy7nqtkHfl5uNNNi5yYli7BjdkNqxzxk+k=
+
+Name: icons/full/dlcl16/showtsk_tsk.png
+SHA-256-Digest: Z5NNX3JIm4reOFijU8X3gNqrmT94iZ8d9VecmQn/Xk4=
+
+Name: org/eclipse/ui/internal/ide/actions/BuildSetAction.class
+SHA-256-Digest: rLFYEpDAlItjHeXXrnrEEzbZvDaWywVKUxylfQrmQqQ=
+
+Name: org/eclipse/ui/internal/ide/registry/IDERegistryReader.class
+SHA-256-Digest: 77qLyNhZYt/4/MNh/2y75FmBYYHkQbipftzlKZMc8M0=
+
+Name: org/eclipse/ui/internal/ide/IDESelectionConversionService.class
+SHA-256-Digest: IhedDbuIQuMaLSEVxU4fWPUz0USQwAhzhbcfmJsc98I=
+
+Name: icons/full/wizban/newfile_wiz@2x.png
+SHA-256-Digest: 8FxYzsz7WAatkY1L0u9jRvlZU8zafJJjEubfk7kxjtg=
+
+Name: org/eclipse/ui/views/framelist/BackAction.class
+SHA-256-Digest: gD9IxSU2/Fbcs47SNWEa2i84gOOMg0Td+uKAym2Uy5s=
+
+Name: org/eclipse/ui/internal/ide/IMarkerImageProvider.class
+SHA-256-Digest: q2+iDTtbES4u9ZwDTHsAQ8zUZG7ksfNvrMFfwWdAx2o=
+
+Name: org/eclipse/ui/internal/ide/dialogs/ResourceFilterGroup$Filters.
+ class
+SHA-256-Digest: +yEG3yoyQuZ/aXQkt6wQDdfkPixgGi7s/QQDK6B7cG4=
+
+Name: org/eclipse/ui/actions/CopyFilesAndFoldersOperation$8$1.class
+SHA-256-Digest: 6GOqAV67TiI6019V0GJe5pney7DGW96fgxso3IuMpzQ=
+
+Name: org/eclipse/ui/ide/undo/DeleteResourcesOperation.class
+SHA-256-Digest: wRIMuc8EfWimcgBZGcmbf4+6WeT8U6FZgPrY7LYe4q8=
+
+Name: org/eclipse/ui/ide/IDEActionFactory$4.class
+SHA-256-Digest: c76+FDvY1pDZEuUTnrqYXtO5m0GpYnIal1Bb7ky+1f0=
+
+Name: icons/full/dlcl16/synced.png
+SHA-256-Digest: C9epe0yowc5MMphUA2vP29x7WgXDMMntY1JZWiTIgGk=
+
+Name: org/eclipse/ui/internal/ide/dialogs/FileStatesPage.class
+SHA-256-Digest: cPJBrpgJbr+e+OstSQkhyWa/RjiglL1KcfEjJD5FCYw=
+
+Name: org/eclipse/ui/actions/RefreshAction$1.class
+SHA-256-Digest: 5VH53wGDx/XZAbwTcGTMMgg+VfdtZ4GDAjdhqpHry5I=
+
+Name: org/eclipse/ui/wizards/datatransfer/PopulateRootOperation.class
+SHA-256-Digest: hNS8xsWqHIrLr+TPjGzZZOluEUASETJ9UI2KHuDMtAE=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/WizardFileSystemRes
+ ourceImportPage1$9.class
+SHA-256-Digest: cQmkUKz7mpxG372pVsHjHDKNTRiPBBia4zSh0Fb3zaE=
+
+Name: org/eclipse/ui/views/markers/internal/AbstractField.class
+SHA-256-Digest: WMAzqZp5rHHK9q6+VD8HTrciX/+14N29UJVJ0lCSuYw=
+
+Name: org/eclipse/ui/internal/ide/IDEWorkbenchPlugin$2.class
+SHA-256-Digest: LfSFDjFGbyw+gwQXQC3amy2GB+Ysl78rHA7UNphp+Z8=
+
+Name: org/eclipse/ui/internal/ide/dialogs/WelcomeEditor.class
+SHA-256-Digest: CNJR4i96fuaQ5vxXhlGD4XBrGIFdcelSDunvwkCUQ3M=
+
+Name: org/eclipse/ui/internal/ide/actions/BuildCleanAction.class
+SHA-256-Digest: gNWRXTfWgImUbuKyObIgTkaLcGNAmZqPkZu8+f3eu/U=
+
+Name: org/eclipse/ui/dialogs/WizardExportPage.class
+SHA-256-Digest: 85P2JDP6Kn1GSMOfhICtXtZTCzOOBNJj67VqHlYih6w=
+
+Name: icons/full/etool16/newgroup_wiz.png
+SHA-256-Digest: CfwmmbXeBkCEcMBQXsPP69Bfz6aUSjzaKegHOmqPAk4=
+
+Name: org/eclipse/ui/internal/ide/dialogs/BuildOrderPreferencePage$1.c
+ lass
+SHA-256-Digest: x5e9QL+oQ2kUnjZNS7yRMGbXfiZ7M1LCbdEabhy8+VU=
+
+Name: org/eclipse/ui/internal/views/markers/DescriptionConfigurationAr
+ ea.class
+SHA-256-Digest: uyV0dDswE3A5mSIjUjEuGitgR29Rg8yeDKFINp+Veuw=
+
+Name: org/eclipse/ui/internal/views/markers/QuickFixPage.class
+SHA-256-Digest: k7nhBlw5zQ+t8BOIee60OXB1t8cyRUM4kNgI1pcEbvM=
+
+Name: org/eclipse/ui/internal/views/markers/CompatibilityMarkerFieldFi
+ lterGroup.class
+SHA-256-Digest: onRp9EH3KnabEULxtmySB9y78gdvU/9wiCFkGiJVOG4=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/SmartImportJobRepor
+ tDialog$8.class
+SHA-256-Digest: C0BU+l0za6dwrTeE45yhkbZGWk1rEdSjKsbtW7z/G1E=
+
+Name: org/eclipse/ui/internal/views/markers/TodoFiltersContributionPar
+ ameters.class
+SHA-256-Digest: DuQv8hDSpKIBTO00BfKaiOppNTVb0K3czt1oVtvCbtU=
+
+Name: org/eclipse/ui/internal/ide/dialogs/ProjectContentsLocationArea$
+ IErrorMessageReporter.class
+SHA-256-Digest: EBsx+V8TJi/G5ILGlIqS9t4U1lYHT3Rd9zytkVvoyuU=
+
+Name: icons/full/dlcl16/selected_mode.png
+SHA-256-Digest: eaDRI1dYK/Af23VeZxfncrZtv3eRMIhGjXH4dWpBpyQ=
+
+Name: org/eclipse/ui/views/bookmarkexplorer/BookmarkAction.class
+SHA-256-Digest: W66ZpBnn3l1xFpnel/lgyPyWpbuYDURqWmwH6jyN+3M=
+
+Name: org/eclipse/ui/ide/IEditorAssociationOverride.class
+SHA-256-Digest: AqVYiL6SjRziv+J4+OUTnGJg3DXcOcgp8MrAbdKcLYk=
+
+Name: org/eclipse/ui/internal/ide/ProblemImageProvider.class
+SHA-256-Digest: wmMmuyVrb9m9XpB00TEjrVJAcBa3Q+p3bVabPOcRLIo=
+
+Name: org/eclipse/ui/internal/ide/addons/SaveAllDirtyPartsAddon$IdleLi
+ stener.class
+SHA-256-Digest: CXwV9luYuzQCISghX1nm1t28eMmK18FhIeNCpdpBtEg=
+
+Name: org/eclipse/ui/internal/ide/misc/ResourceAndContainerGroup$1.cla
+ ss
+SHA-256-Digest: QB+/BuZzm9b0prmCfQos7voFAQzzDhOY+QG3QVxX2os=
+
+Name: org/eclipse/ui/internal/ide/misc/ContainerContentProvider.class
+SHA-256-Digest: KhRKzBTgxrVRjBVMakTA9cl2S99I7FH2lp+TR1nUL8Y=
+
+Name: icons/full/elcl16/showerr_tsk@2x.png
+SHA-256-Digest: 6o/FZ/RJCpGUn4ahxVErOFNoAsfxMqEh6FW7WkBo7Vk=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/WizardFileSystemRes
+ ourceImportPage1$14.class
+SHA-256-Digest: uoPHbCm05izyVC9gDO9qYZCyh8zp+VyG6vZpia82k/o=
+
+Name: org/eclipse/ui/actions/ScrubLocalAction.class
+SHA-256-Digest: e2Xzfvv03/j3SGmtENprrWp1+YbfMJ0EYzqPpu2nQsQ=
+
+Name: org/eclipse/ui/internal/ide/filesystem/FileSystemStructureProvid
+ er.class
+SHA-256-Digest: RaoOzkX9N4CZgEH9FJkMmqFs7dTU9dB4xVsiWdo9Xrg=
+
+Name: org/eclipse/ui/internal/ide/registry/MarkerQuery.class
+SHA-256-Digest: Hy3Utx7v+OqUC/B8JMczLR3uexan90y9uDazIbCA1Jk=
+
+Name: icons/full/wizban/quick_fix@2x.png
+SHA-256-Digest: YAfim6pyaAm7WvTZRbWlJGdW5NaNiZcdC5j+bXOFYVo=
+
+Name: org/eclipse/ui/internal/views/markers/QuickFixHandler.class
+SHA-256-Digest: kvf2rqEQ0Sdnj4NX/kcvWy73nhAmgm76U1kTGfGzFdU=
+
+Name: org/eclipse/ui/dialogs/WizardDataTransferPage.class
+SHA-256-Digest: PhU0pLlknb5plN1gDTv9eqVJTDiUzJvok1Hi/BOHsX4=
+
+Name: org/eclipse/ui/internal/ide/dialogs/OpenResourceDialog$1.class
+SHA-256-Digest: BanBkDhRiDbxkXfISKPx+rdxbMWAJLqyh2xTWtKhsS8=
+
+Name: org/eclipse/ui/internal/views/markers/BookmarksView.class
+SHA-256-Digest: Cp67BBOEaTQ+B8/qwYwrcMByjfDIRQe9iKoA4mFwW6s=
+
+Name: org/eclipse/ui/views/navigator/ResourceNavigatorMessages.class
+SHA-256-Digest: EPNdymxDqBCuXKV2pc0FUEiX6dxJyrE392nHZPLKfBg=
+
+Name: org/eclipse/ui/internal/ide/dialogs/MultiMatcherCustomFilterArgu
+ mentUI$4.class
+SHA-256-Digest: PGBeoSp30iluvBGHY2M25IYWWId0QuFNBxib60WF7zc=
+
+Name: org/eclipse/ui/views/navigator/ResourceSorter.class
+SHA-256-Digest: 4eS04N1KVm5zZaWXGerycux+IHocIqH5TQ+jS+qXA8Y=
+
+Name: icons/full/dlcl16/configs.png
+SHA-256-Digest: 6oHD5x/CwAyeIoVqKf0FBNrvbr0eKSlR5qb3GLkClD8=
+
+Name: org/eclipse/ui/internal/views/tasklist/TaskListMessages.class
+SHA-256-Digest: HSAmbJk6IIF20wgoCRbHLIBlbEheGBb6wAODafUSjQk=
+
+Name: org/eclipse/ui/dialogs/ContainerGenerator.class
+SHA-256-Digest: zYN7IqyqX+LD13kMrzewPLPJqZbv1SPIVtW+O9wEdfQ=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/WizardFileSystemRes
+ ourceImportPage1$4.class
+SHA-256-Digest: OoNhopNuBXu5HOazeoQs/sQCgMXBbeDwu31tg1Jl20A=
+
+Name: org/eclipse/ui/dialogs/FilteredResourcesSelectionDialog$Resource
+ SelectionHistory.class
+SHA-256-Digest: jvxKwX6QvOQYSiOBlVRPZ1FJbFdZPoP3zMP0t6r/L/U=
+
+Name: org/eclipse/ui/views/bookmarkexplorer/CopyBookmarkAction.class
+SHA-256-Digest: bBflVYy9XvrO9+1LjX27cj7FlPeha4e3WwXhqVu925k=
+
+Name: org/eclipse/ui/internal/views/markers/FiltersContribution$2.clas
+ s
+SHA-256-Digest: VIgGlx3/Rw+JK2xnc8xbNVXM4NPvkoUY0XHMD9DWyOU=
+
+Name: org/eclipse/ui/internal/ide/actions/LTKLauncher.class
+SHA-256-Digest: IGGR1errd/g1epDJUkaXUnzwac4qlMjds/egZn+F5I8=
+
+Name: org/eclipse/ui/internal/ide/dialogs/IDEPerspectivesPreferencePag
+ e.class
+SHA-256-Digest: b3Ao94qQhQYMopj0G3wO66PKT3fITZeYIZwNu87x/VM=
+
+Name: org/eclipse/ui/internal/ide/dialogs/CreateLinkedResourceGroup$3.
+ class
+SHA-256-Digest: E3CZop668WDZ40MEkxn8qlGc/OoMh/dLQIzHa8XKK94=
+
+Name: icons/full/ovr16/linkwarn_ovr@2x.png
+SHA-256-Digest: UpgLRQu1MDJo1gp0U8hHJKHrLukTRcCJ9HpdEwyaOpI=
+
+Name: icons/full/ovr16/filterapplied_ovr@2x.png
+SHA-256-Digest: RPraE6NLfyif279DSl1NUxeoV76RzQhuxDYml2G65vM=
+
+Name: org/eclipse/ui/ide/undo/MoveProjectOperation.class
+SHA-256-Digest: pZsECVe99MVWy8kxURt3eNgBF8lfJ4wiu8YUrkLTZ6w=
+
+Name: org/eclipse/ui/views/markers/internal/MarkerNode.class
+SHA-256-Digest: 4PLxI0ISFtRfaURvubzQgZfu0fB0wOglTTx9w92Oh/w=
+
+Name: org/eclipse/ui/ide/IDE$SharedImages.class
+SHA-256-Digest: 86rHWFrwfinPaTXhDSsNQuT20jUFJvdv6FBZlnvODAI=
+
+Name: org/eclipse/ui/internal/ide/IDEInternalWorkbenchImages.class
+SHA-256-Digest: ZVyXwD9vcaqByAajVkePZVPQNce9N89GVrDM7ZwEPyk=
+
+Name: org/eclipse/ui/views/markers/internal/TypeMarkerGroup$TypesMarke
+ rGroupingEntry.class
+SHA-256-Digest: hcQBrTaEEEZu/NDSDd/xIuL0m/bDVRgUtMnLFITnqLk=
+
+Name: org/eclipse/ui/internal/views/markers/FiltersConfigurationDialog
+ $4.class
+SHA-256-Digest: sf7x8bQUz+mCaLsz0TegkgAnk4UXjm9+odZAlaOB4ko=
+
+Name: org/eclipse/ui/internal/ide/EditorAreaDropAdapter.class
+SHA-256-Digest: cUhiAFjWsZumGF0XQIGImzXUNFGgLZUHHnI5xO2oos0=
+
+Name: org/eclipse/ui/internal/ide/model/FileStoreInputAdapterFactory.c
+ lass
+SHA-256-Digest: NmKcs1qpbABIGIi0vJbu97+6PDORcP8wm9P+QT94pBE=
+
+Name: org/eclipse/ui/views/navigator/ResourceNavigatorAction.class
+SHA-256-Digest: f1zaf7BOFu9D1cpUKQBA6mmjl8RrUGMRCP7yuD11tQk=
+
+Name: org/eclipse/ui/actions/AddBookmarkAction.class
+SHA-256-Digest: 3Aaoae12S+4zZjzBm/J99bQOF5OHAPR3kq/ijnlGkK0=
+
+Name: org/eclipse/ui/internal/ide/dialogs/BuildOrderPreferencePage$6.c
+ lass
+SHA-256-Digest: Gwkzyw+nAt1Ec5q9XPFYbrf0V8ngS3AnsjF53tHNwjg=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/WizardProjectsImpor
+ tPage$6.class
+SHA-256-Digest: ijAhwfYBw5vIRzb6jGx+Mbsa5XU7UlyrEjB5cRYvbPA=
+
+Name: org/eclipse/ui/internal/ide/dialogs/ResourceInfoPage$IResourceCh
+ ange.class
+SHA-256-Digest: ApcKhcs3+TA0QexZmDsvNRrAEJ9tPPER8dIe5YAnBMQ=
+
+Name: org/eclipse/ui/dialogs/NewFolderDialog$2.class
+SHA-256-Digest: QNG1lVfPKnbxJXdseaLFoBTiD+lPLTdJeL8awMngDv4=
+
+Name: org/eclipse/ui/internal/ide/actions/SelectBuildWorkingSetAction.
+ class
+SHA-256-Digest: rfb332poVDFoFm9QseEhe4HBUd9cuHnD3OhwYxheKJc=
+
+Name: org/eclipse/ui/internal/ide/dialogs/WelcomeEditor$3.class
+SHA-256-Digest: j1ZXrjXfbmvH2DQ31deWhemTN/g3ifwaJ9sbTFbtVQU=
+
+Name: icons/full/etool16/prev_nav@2x.png
+SHA-256-Digest: tqRZLi6GF2cCnBqG+SNYNc7HiXpmcPU6D0WJHlXnoJ0=
+
+Name: org/eclipse/ui/internal/ide/undo/WorkspaceUndoMonitor.class
+SHA-256-Digest: 6qWIEmUY3t8jCDB3VafXsGRnTnb/VpO/4/AarJEKpOE=
+
+Name: org/eclipse/ui/internal/views/markers/QuickFixPage$6.class
+SHA-256-Digest: Hj70iDCc5EFfb/eT+YYE5tQ0TE9LPhzsccsh09Txe+U=
+
+Name: org/eclipse/ui/internal/ide/dialogs/RelativePathVariableGroup.cl
+ ass
+SHA-256-Digest: sHb0Qdpdg3e+axtzAI60+Qt0pRZiDRXLEsw7I/wvqs8=
+
+Name: org/eclipse/ui/internal/ide/misc/OrFileInfoMatcher.class
+SHA-256-Digest: rYacVlnwe5EB64T/xO++CadLlYsDkPSgTx82SZomoMk=
+
+Name: org/eclipse/ui/internal/ide/dialogs/PathVariablesGroup$2.class
+SHA-256-Digest: inV8RSMWE6f29GE2w5dlBg+rEVoOaTwkpO3OYDLxcFU=
+
+Name: org/eclipse/ui/wizards/datatransfer/FileSystemImportWizard.class
+SHA-256-Digest: nfjjjL5o6j1TGdzI7DVvsyfBjpGTcwnV9/NmS1fEFOM=
+
+Name: org/eclipse/ui/internal/ide/dialogs/ProjectReferencePage$1.class
+SHA-256-Digest: O6fyVI+SodmToViGpz0abIjzP9dat6HyO3gXO3iQ+V8=
+
+Name: org/eclipse/ui/internal/ide/model/WorkbenchFolder.class
+SHA-256-Digest: VFnUxMIww8jhKU8nNOUM12L75tAp3PrDo9tln+JIxs4=
+
+Name: org/eclipse/ui/ide/IDEActionFactory$10.class
+SHA-256-Digest: SZH68lz8AM3z0UJ3Q5tnA1slpPGqhhKJolpHiEqAHyM=
+
+Name: org/eclipse/ui/internal/ide/dialogs/RelativePathVariableGroup$IM
+ odel.class
+SHA-256-Digest: wpMoYbhavW3fvATdy3LqvzOFXZjE6keenSGnQyvBfck=
+
+Name: org/eclipse/ui/internal/views/markers/MarkersViewColumnsDialog.c
+ lass
+SHA-256-Digest: 7d9x8MflcaqlJ8pRz1lXPZP//vVMpypc7BX/QgPRZLs=
+
+Name: org/eclipse/ui/ide/FileStoreEditorInputFactory.class
+SHA-256-Digest: AJdwcLROqDXFIJ7i84C0z/g7NuSSnmf7J/m18rSz+R8=
+
+Name: org/eclipse/ui/views/markers/internal/ContentGeneratorDescriptor
+ .class
+SHA-256-Digest: XKldiOPjkKKb9IdtXv6k6FnH//ogs5haA+4pjSaRp7A=
+
+Name: org/eclipse/ui/ide/undo/CreateProjectOperation.class
+SHA-256-Digest: 7fLVGlrODqne+HlGjXrAHwUYYLGP2bPrQnbRgBgl5/4=
+
+Name: org/eclipse/ui/internal/views/markers/ViewerColumnsDialog$IColum
+ nInfoProvider.class
+SHA-256-Digest: PSbU+jj2Ao4q5KGR+SXgtMVcNDkK3CIF91zrloHUqvE=
+
+Name: icons/full/eview16/problems_view.gif
+SHA-256-Digest: p8Moqsu/ySOcScP76xQCF87tLFXQfySxdGQKgDhISgQ=
+
+Name: org/eclipse/ui/internal/ide/dialogs/LinkedResourceEditor$5.class
+SHA-256-Digest: q00sprElrcDyFNxYc3/1vEiOXLESfGDbsujiRWeMV10=
+
+Name: org/eclipse/ui/internal/views/markers/MarkerCategory.class
+SHA-256-Digest: Sgn2iI+EHOpAOiX1DY7XOoixG59p5QYB+tG4JsYYQlM=
+
+Name: org/eclipse/ui/internal/ide/dialogs/WelcomeParser$ItemHandler$Ac
+ tionHandler.class
+SHA-256-Digest: Ac7clqbihFynVlgf6Hwqrr3Y3tuY/+0BxBxPWOASJ/w=
+
+Name: org/eclipse/ui/internal/ide/dialogs/ResourceFilterGroup$LabelPro
+ vider$2.class
+SHA-256-Digest: XRBK5fwWzIdocn4UO5eh2PvRlCP4WvmPpUI4dOLylH4=
+
+Name: org/eclipse/ui/internal/ide/dialogs/ResourceInfoPage$2.class
+SHA-256-Digest: ew8fLxqAv+1iJaRS40AY7XWvZ78koRMm/Wn2R/aNHjw=
+
+Name: org/eclipse/ui/internal/ide/filesystem/FileSystemSupportRegistry
+ $2.class
+SHA-256-Digest: zpUj3pnjeaR/A0J4phEVOQULPBgh7qpEkbVK220X7IU=
+
+Name: org/eclipse/ui/dialogs/ProjectLocationSelectionDialog.class
+SHA-256-Digest: flHKdAu0+WcGUlOHFFoeosE1Umn+BIHhLnROCcMHgQA=
+
+Name: icons/full/etool16/import_wiz@2x.png
+SHA-256-Digest: MJEKXPT384QWVw1he+H9WSFn4oyPYxN/upts5nrhhfw=
+
+Name: icons/full/dview16/problems_view_error@2x.png
+SHA-256-Digest: 9U6Pa9t4fiDTnRgvl4lqCsXEFnlhgW67257UEBrqHk4=
+
+Name: org/eclipse/ui/actions/DeleteResourceAction$DeleteProjectDialog.
+ class
+SHA-256-Digest: b/Y2JvKeUqmGHqiy5dQAMY6z4fQnNNIHUAB0TC6xSW8=
+
+Name: org/eclipse/ui/internal/views/markers/MarkerEntry$2.class
+SHA-256-Digest: Vic2DyA3UodderhGwHx7cUfTKat6+05Zo8K0cX3tv1c=
+
+Name: icons/full/obj16/exportpref_obj@2x.png
+SHA-256-Digest: DoiBO7019zTDlMeyGgw3/AVutpWdLtzN5IEwL6FkqF8=
+
+Name: org/eclipse/ui/internal/ide/actions/ToggleAutoBuildAction.class
+SHA-256-Digest: Vj9MjvPIbIJh38GtGm0RQHteA0r/n18nwxL3D3MEah0=
+
+Name: icons/full/obj16/includeMode_filter@2x.png
+SHA-256-Digest: mNfoW8vvaGeSWIuRoPwNbu/ysQd+VbW67d5smXY4OBE=
+
+Name: org/eclipse/ui/internal/ide/dialogs/FileFolderSelectionDialog$Fi
+ leSelectionValidator.class
+SHA-256-Digest: 9vir4sRmsX0+guHr9oLs3iPM42zou8lscL1zVc1m9zQ=
+
+Name: icons/full/wizban/exportdir_wiz@2x.png
+SHA-256-Digest: RSX0Andjowu9uui3Yc4e6RmNSBpd++G0/ZFSjD/q8jw=
+
+Name: org/eclipse/ui/actions/MoveResourceAction.class
+SHA-256-Digest: sV9zCSdXPR3mBKTyoOCHrFez1aPiuRRjAGGrysCVbTo=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/WizardProjectsImpor
+ tPage$13.class
+SHA-256-Digest: TlEDnHz6iHncGRmvCeE4PMEAqvN3lfqNvKhGa49W9Xs=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/SmartImportRootWiza
+ rdPage$12.class
+SHA-256-Digest: OLnPSTVUrF3YEywy42ERrEFSakNf5rXQoZpi+MvWko4=
+
+Name: org/eclipse/ui/internal/ide/filesystem/FileSystemSupportRegistry
+ $1.class
+SHA-256-Digest: yKGq9kBgHDQoZbkyCqUouwxVONjJ9zioTsxF7o5tZKM=
+
+Name: icons/full/markers/help_small.gif
+SHA-256-Digest: szMdUzXYBZw6h7GOxn32VKzZW4dGFmjlQgThfo+By6A=
+
+Name: org/eclipse/ui/dialogs/FilteredResourcesSelectionDialog$Resource
+ ItemLabelProvider$1.class
+SHA-256-Digest: AggGwYwoMqFD7qbZdw/p+56zJ+2RQBu3/AHmdJqBZz8=
+
+Name: icons/full/obj16/excludeMode_filter@2x.png
+SHA-256-Digest: wGTfsq2Zz5WhY34d164jLUkgA8SYB94vsqPr7dTP+8E=
+
+Name: org/eclipse/ui/internal/views/markers/MarkersViewColumnsDialog$2
+ .class
+SHA-256-Digest: PerHpc4vNmT6+TOi70PIkTmlIQgIOuQR73nzER18RHY=
+
+Name: org/eclipse/ui/internal/ide/dialogs/ProjectLinkedResourcePage.cl
+ ass
+SHA-256-Digest: S0CWcz9M1gzym48kE13Ycr/IWTnVZOUh6NxlHwa8uZA=
+
+Name: org/eclipse/ui/internal/ide/dialogs/ProjectContentsLocationArea$
+ 2.class
+SHA-256-Digest: FM014pNaRE6uNn2Dy5n2qK8m7UElPpiSmmoQRb99hPA=
+
+Name: org/eclipse/ui/internal/ide/LineDelimiterEditor.class
+SHA-256-Digest: vxpBYY6+GOXWFROB8AwU7DianYdGp/gJYz7hnx0tt9I=
+
+Name: org/eclipse/ui/internal/ide/dialogs/ResourceFilterGroup$LabelPro
+ vider$1.class
+SHA-256-Digest: +kFstacZwkh0fRMe7uMXybK+3bwdh/WMzdT9FZSka/o=
+
+Name: org/eclipse/ui/internal/ide/dialogs/CleanDialog$3.class
+SHA-256-Digest: NHKElJycQa6EhTz+GGXihDcEqsIqlev+mVqpOt74fdo=
+
+Name: org/eclipse/ui/internal/ide/dialogs/CreateLinkedResourceGroup.cl
+ ass
+SHA-256-Digest: e2nkwY8Mj6KIK00Thr/sBCXTbYNS5r+NbxPkLOup5BE=
+
+Name: icons/full/markers/help_small@2x.png
+SHA-256-Digest: hA/LQyWI2VdD2NBLQoXnkHukSr+0tzNdwOCCi96cHP8=
+
+Name: org/eclipse/ui/ide/undo/WorkspaceUndoUtil$1.class
+SHA-256-Digest: rvqzCCrm68VBfyZFbwft1SB2Q+StyXlWv+oqaQErCFM=
+
+Name: org/eclipse/ui/internal/ide/dialogs/WelcomeEditor$4.class
+SHA-256-Digest: g+GM5EbkrL33p8IQUzAFUktKB6C/lY9wHnDR/DdcVss=
+
+Name: icons/full/etool16/newgroup_wiz@2x.png
+SHA-256-Digest: 1xDSVrArGYiWHiECEn5asDTNq6fB15sofMMqpdrA9P8=
+
+Name: icons/full/obj16/info_tsk.png
+SHA-256-Digest: Rgda63lWAUl2Fss58VoNEomYB29ReMOHKUY1ZkGxUcI=
+
+Name: org/eclipse/ui/internal/views/markers/ViewerColumnsDialog$TestDa
+ ta$2.class
+SHA-256-Digest: dMQyXXWvvxCuyyMjWeK2xWqULs524JOOSHDNY+OCeaY=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/SmartImportRootWiza
+ rdPage$13.class
+SHA-256-Digest: pYheokRcjA+JDOWPe3paDXJUPJOujPw0vjXU9GWkdYU=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/SmartImportJobRepor
+ tDialog$4.class
+SHA-256-Digest: HrvJQXG3ge8aIpqL6oO0OZ8hecyMEjjXG705AP/CR0Y=
+
+Name: org/eclipse/ui/ide/IDEActionFactory$11.class
+SHA-256-Digest: 7skDeE325jZZypY+8dIBCFchxfEfoCBEpVsizrVWNRE=
+
+Name: org/eclipse/ui/views/navigator/FiltersContentProvider.class
+SHA-256-Digest: RS+gVgsK1qTbNGI6wfDzAmiV36px5XLOSRzxrjF9cmM=
+
+Name: icons/full/elcl16/showchild_mode@2x.png
+SHA-256-Digest: sOaldFiyZCKkJnw3juAcOvdfPI41OB7SZD7FHN3DbDA=
+
+Name: icons/full/obj16/keyspref_obj.png
+SHA-256-Digest: VcnofNJUphMFpMP4WuDzgYckeroHIDf7Do8tbeUfvds=
+
+Name: org/eclipse/ui/internal/ide/dialogs/PathVariablesGroup$3.class
+SHA-256-Digest: /nLW8hblD9fw8c1YrQqhQdHfVQVQgY82F+dBV1ET89Y=
+
+Name: org/eclipse/ui/internal/views/markers/CachedMarkerBuilder.class
+SHA-256-Digest: 4/lvT7d9aJH6NzxUFi2bVUMsOLS8NrHeE54ssYXDB/o=
+
+Name: org/eclipse/ui/internal/ide/dialogs/ResourceFilterGroup$TreeCont
+ entProvider.class
+SHA-256-Digest: JrOrCr8a/3A2ZviAhGVTFGCjU0AtMkR80y9j8UPtBro=
+
+Name: icons/full/dlcl16/workingsets.png
+SHA-256-Digest: z2S3m5MJII5w1ixGnIJvGj1QLMlslMy+zCX618qysUQ=
+
+Name: icons/full/ovr16/virt_ovr@2x.png
+SHA-256-Digest: MtPBxSgMc55BjEymMcTLdHTaYTQk9f/bcZU1s7ayx0c=
+
+Name: org/eclipse/ui/internal/views/markers/MarkersViewColumnsDialog$3
+ .class
+SHA-256-Digest: r1B4oHZt2uW+LQNC1zdJ1hr3qhLTqaP4SnrBfwP2AMA=
+
+Name: icons/full/etool16/newfolder_wiz.png
+SHA-256-Digest: mdv53e9uus8Rm9rqKHCxkAUUMO4wpfVBIvIQe9WgT0M=
+
+Name: org/eclipse/ui/views/navigator/MainActionGroup.class
+SHA-256-Digest: JTJ6Gd402pHt6PNHhZ54ZM9a/yszO0GDAAdC/+XjjGU=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/messages.properties
+SHA-256-Digest: WMlp2qkwOBVi5yu/xCSezicXdVKJUkA5wBZN006XLTA=
+
+Name: org/eclipse/ui/internal/ide/dialogs/FilterTypeUtil.class
+SHA-256-Digest: 6n+j/Hapo9829AJuzCdofpEw2gtoFC/qgzV5relhIKQ=
+
+Name: org/eclipse/ui/internal/views/markers/MarkerResourceField.class
+SHA-256-Digest: ZRslKPBqwQ0u3g9d6CTdNk0LinHGj9iATJaa9CuOMn4=
+
+Name: icons/full/dtool16/next_nav.png
+SHA-256-Digest: +No2SzjTqEz7nxOzpMkbkvK2FST4sO/O8FGT5swXenE=
+
+Name: org/eclipse/ui/internal/ide/ContentTypeDecorator.class
+SHA-256-Digest: AAK3s+mlTZ3plVOmHdxMBFJ0AzJpyA5c2IpMs7e1JPA=
+
+Name: icons/full/ovr16/link_ovr.png
+SHA-256-Digest: 0h1EPiA1aYGKYNMUmC/iJaCV1Dujwpr1Vum5Y0TpdN8=
+
+Name: icons/full/etool16/next_nav@2x.png
+SHA-256-Digest: 7epsDK+DI6eXAJJWrdosxSVb1OqbtwQ948AxSP3eevc=
+
+Name: icons/full/elcl16/showchild_mode.png
+SHA-256-Digest: iCKzoVnrYMVfNBKV5HYgctwVNLZ/ZvXuHgUoOCuOwaE=
+
+Name: org/eclipse/ui/ide/dialogs/ResourceTreeAndListGroup$2.class
+SHA-256-Digest: NyIsDgnoowE+vmjyC/xmg0/stmv0N+bWpvhA5xkC96I=
+
+Name: icons/full/obj16/folderType_filter.png
+SHA-256-Digest: EkoTSOO0Fh7t+yFbPat1FBzkBXtaX64ZPC3+Kjg1/2s=
+
+Name: org/eclipse/ui/internal/ide/dialogs/WelcomeParser$ItemHandler$To
+ picHandler.class
+SHA-256-Digest: UDQcloCj8t39kF9OAUsVtpJOI4M1B+tB0ISpiv3k1gk=
+
+Name: icons/full/etool16/prev_nav.png
+SHA-256-Digest: Tr+eEDegXN6i0+KHUxxsCEi6Zz+AXtD2nAafR2t598Y=
+
+Name: org/eclipse/ui/actions/OpenFileAction.class
+SHA-256-Digest: kSAYPuRgDe+JrNLrc1K1NHuSxu6DoovfIib0Sv8yTDA=
+
+Name: org/eclipse/ui/internal/ide/DirectoryProposalContentAssist$FileN
+ ameSubstringMatchContentProposalProvider.class
+SHA-256-Digest: DVSYyDBeDoyZsouFfFYPuBDd3Q6/3yqJM83dV/xy5Mk=
+
+Name: org/eclipse/ui/internal/ide/dialogs/OpenResourceDialog$ResourceS
+ howInMenu.class
+SHA-256-Digest: EOW7seMlW8NkG6x1Eqf9949f3IZTBwBG/10ggN2Sr8Y=
+
+Name: org/eclipse/ui/internal/views/markers/DescriptionFieldFilter.cla
+ ss
+SHA-256-Digest: UdpbCC6roFqMp0Zyt9lLJCWm9xToVRakxOMRWe+caeQ=
+
+Name: icons/full/dlcl16/showwarn_tsk@2x.png
+SHA-256-Digest: beBOm+2psN/NjDOGZxbFxK2rbkqcvHXvjn+61erpSec=
+
+Name: icons/full/obj16/inheritable_filter.png
+SHA-256-Digest: DP6+x5cb5wTq7rPQccfS/J/sA9eJuuKlq0MT1JwxBio=
+
+Name: icons/full/wizban/importzip_wiz.png
+SHA-256-Digest: zPRno6OccoNqIS7ZWgRGIg7Mhl7M7lWD8enlQBJYVXw=
+
+Name: org/eclipse/ui/actions/GlobalBuildAction.class
+SHA-256-Digest: KfJOAq17lWJuh8hbJsVaMYOXY8Bf6YWTEKYc86asm4Y=
+
+Name: .options
+SHA-256-Digest: fhXjiris9cFI/Uc4V2sQRLTa9Rog2FHjgp38Trgqmsw=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/SmartImportJobRepor
+ tDialog$9.class
+SHA-256-Digest: 4GRv3ZdquelD0d05j/4li5NqHLuRmIEYGzGdOxJ2GZA=
+
+Name: icons/full/elcl16/refresh_nav.png
+SHA-256-Digest: P02CztAAOyjMg9un4khWH5iDqJoQ0o9TcqlgUjIKTqk=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/WizardFileSystemRes
+ ourceImportPage1$13.class
+SHA-256-Digest: l8AH0lctgaIgbPIlmvlT6652rBRWEhowGaw4c0s46UU=
+
+Name: icons/full/elcl16/addtoworkset@2x.png
+SHA-256-Digest: OlobC9aCw+wLkuAK99uwJ+lPcxLIkRzkMxn4hhSs1kU=
+
+Name: org/eclipse/ui/internal/views/tasklist/messages.properties
+SHA-256-Digest: Zad6F5AZFJ1TF+Y4C8kPau605F2mCgVj6RAWiNOf4+s=
+
+Name: org/eclipse/ui/internal/ide/dialogs/FileSystemSelectionArea.clas
+ s
+SHA-256-Digest: 1KFwcK/EABknNsvniEOu0g2NiRlX9HugdXKryK15ZFk=
+
+Name: org/eclipse/ui/internal/ide/misc/CheckboxTreeAndListGroup.class
+SHA-256-Digest: W2xUj/niMeU/sVcDuvuaOhgymDRXnxPYEbjl0n/0otA=
+
+Name: icons/full/elcl16/usearch_obj.png
+SHA-256-Digest: hZqVxS9u+0e/GrQxt8IIy/WmverG/Dp8tEUs2KzQJ58=
+
+Name: org/eclipse/ui/ide/IDEActionFactory$WorkbenchCommandAction.class
+SHA-256-Digest: 2gnGQ9fSj2lXEeAywBInd4lbBxgOXKZ8ARbXBjzX+Ec=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/SmartImportRootWiza
+ rdPage$9.class
+SHA-256-Digest: O0VFjX93sKOSbrxQTWfN9bLQqnmHu7k4BH96409VQwM=
+
+Name: icons/full/dlcl16/showcomplete_tsk.png
+SHA-256-Digest: +Bl+GUcbsQTDCylRf+2tNC5epnTJYXqteE4hWaG2cNI=
+
+Name: icons/full/obj16/keyspref_obj@2x.png
+SHA-256-Digest: ZW1JlCiJTve9wymb914Y63sL0YGVm/hlWyi1mFITCyg=
+
+Name: icons/full/obj16/folderType_filter@2x.png
+SHA-256-Digest: 6QdWIOtqQ2G0WuGF/xluAdpDI0qN6kUpijwqeZzU8Is=
+
+Name: org/eclipse/ui/internal/ide/handlers/ShowResourceByPathHandler.c
+ lass
+SHA-256-Digest: M0sXIYs6ppNDnOc7XUqUjClkcPRFRhPFZSpwMkMoIlw=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/SmartImportRootWiza
+ rdPage$4.class
+SHA-256-Digest: C1V3K4scEnYgLUoHuP4KpLqgu0uD8cKWm7JnVzwrLKo=
+
+Name: icons/full/ovr16/symlink_ovr.png
+SHA-256-Digest: q3nMYCIjUslbjWXEpPIKstDaytXblYB6SE5s5zfbBoM=
+
+Name: org/eclipse/ui/ide/dialogs/ResourceTreeAndListGroup$1.class
+SHA-256-Digest: ZaIjirtozxlZF9c7v3nF/sVPy062YuGZoBvMKsLaiIg=
+
+Name: icons/full/elcl16/showcomplete_tsk@2x.png
+SHA-256-Digest: KzzdcNIW2mAxgA8xitgCHt0+kgz4paljMy83pCo69TU=
+
+Name: org/eclipse/ui/internal/views/markers/MarkerViewerContentProvide
+ r.class
+SHA-256-Digest: oIT16C/sZvsLQi4qBj/JdPFmFyALV3n0FbG/7jjPxsg=
+
+Name: org/eclipse/ui/dialogs/ResourceListSelectionDialog$ResourceDescr
+ iptor.class
+SHA-256-Digest: WgXamgXWZqB/Hq5o7rjzAf1aYZgMnvuGwgqQW+JXTrg=
+
+Name: org/eclipse/ui/actions/CreateFolderAction.class
+SHA-256-Digest: d8DxPS1D0TdEHrNjAvih2C+pnsvIM6Io69IlUg6C59o=
+
+Name: icons/full/dlcl16/showwarn_tsk.png
+SHA-256-Digest: 38GXehlBp5skZH+Lo7dmM8SBY0b7xcpn/Yx+F1GomAA=
+
+Name: org/eclipse/ui/part/FileInPlaceEditorInput.class
+SHA-256-Digest: 5R3V8iE/IpMH8tAmuu3/CRKusJEVfANuTrGEn8k3zsE=
+
+Name: org/eclipse/ui/internal/ide/dialogs/MultiMatcherCustomFilterArgu
+ mentUI$5.class
+SHA-256-Digest: LrAaBpX+nb/gWiYRdzuSALMHOq6XqCMc/u7WsRFyIks=
+
+Name: org/eclipse/ui/internal/views/markers/FileMarkerPropertyTester.c
+ lass
+SHA-256-Digest: AwWRQb15znyMHmtAIQ/1jpM6OMYxUeoPMvNxG2KLoTc=
+
+Name: icons/full/elcl16/smartmode_co.png
+SHA-256-Digest: 3Ryv7MfFpT18xr8rK/8WEz7EcthT/mZnPilJ79tAdEw=
+
+Name: icons/full/etool16/importdir_wiz@2x.png
+SHA-256-Digest: gwHyLn1Et8gRx1ZYpjFeNsYLWHqIQt6gjiawz9Qj4kI=
+
+Name: org/eclipse/ui/views/bookmarkexplorer/BookmarkNavigator$1.class
+SHA-256-Digest: EON5YObg1djZgHYjH0y25wugidUU862/3QNGxpPUKxc=
+
+Name: org/eclipse/ui/internal/views/markers/ExtendedMarkersView$Viewer
+ PageSelectionListener.class
+SHA-256-Digest: 0MpV9sYL8GhX9kTHkCW7XS+eJ509nFZ1W9jdLR3xuis=
+
+Name: org/eclipse/ui/internal/ide/dialogs/LinkedResourceEditor$1.class
+SHA-256-Digest: 9ZUg8J46rx/m3Au3kRKQVZGmAgbT1LLxJtNvtIhoDyE=
+
+Name: org/eclipse/ui/internal/ide/model/WorkingSetResourceMapping.clas
+ s
+SHA-256-Digest: VYud0wFUIl2l1SBqAJmxYB2J2eCEQy1blqeWXqPpdnk=
+
+Name: icons/full/elcl16/showwarn_tsk@2x.png
+SHA-256-Digest: Hls1n0NJzJpozwAf2yC2Q3Gl8PLDXHrM0586ScCQnIg=
+
+Name: icons/full/dlcl16/smartmode_co.png
+SHA-256-Digest: geEQzIR5zZQ2m2E3Yk0ydAodwJnEZJSXdgxIGathuFw=
+
+Name: org/eclipse/ui/ide/IDEActionFactory$15.class
+SHA-256-Digest: YSaKiHJSstoZLKggy10JNPgcDP/9Nu7YrUlADxRdGRE=
+
+Name: org/eclipse/ui/internal/views/markers/DeleteHandler.class
+SHA-256-Digest: 2OCq0ldPi3+Yqf4l4Zg8IqBEKiRRPNJA6OguEmROSBQ=
+
+Name: org/eclipse/ui/internal/ide/dialogs/ResourceWorkingSetPage.class
+SHA-256-Digest: ykAUP0bJ6yzxuBcecsXUojquyL3AjwQoSMSZeezPFTs=
+
+Name: org/eclipse/ui/dialogs/WizardNewLinkPage$1.class
+SHA-256-Digest: 0IhvHpI2N694AEjSwPrEo+QuwI1k5qetqOOvEPLioBA=
+
+Name: org/eclipse/ui/internal/views/markers/MarkersTreeViewer.class
+SHA-256-Digest: IxJjKCwSnGBU553hefhzslSqKmOZu3aLglVWoxzO6uw=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/SubdirectoryOrSameN
+ ameSchedulingRule.class
+SHA-256-Digest: E9L38fyXqEVER/K/n77rtbCYVoVzhFXWOJBgXABOAhg=
+
+Name: org/eclipse/ui/dialogs/FilteredResourcesSelectionDialog$CustomWo
+ rkingSetFilter.class
+SHA-256-Digest: i9oBCewJrHaVIopx57HnSK6WFDG0tI/lX9rzZI+WQhQ=
+
+Name: org/eclipse/ui/part/FileEditorInput$1.class
+SHA-256-Digest: 0mdrtZCT4xsC+CBW2YMXg3+q5qA1z5wacR3WA8zjE18=
+
+Name: icons/full/dtool16/newprj_wiz.png
+SHA-256-Digest: qaN5JldutDm5G8pvIA6B7ZgCkVk7nHZe6x0AlFtaTbQ=
+
+Name: org/eclipse/ui/views/markers/internal/Util.class
+SHA-256-Digest: 1IQL+c8Watx9MIS5+cnd0gRKMp1Xk8a0ZLz9Mu+Vrjw=
+
+Name: org/eclipse/ui/actions/TextActionHandler$DeleteActionHandler.cla
+ ss
+SHA-256-Digest: 2LoRTDpLC25MKKw2v1jJkon+GLfkr1j3ih5QSAbcSFQ=
+
+Name: org/eclipse/ui/views/bookmarkexplorer/BookmarkNavigator$2.class
+SHA-256-Digest: pb5wZG/l/Bxr8wnjKSiRd2Vb2AvIASsXwxslYsm0oSM=
+
+Name: org/eclipse/ui/internal/ide/dialogs/ResourceFilterGroup$CellModi
+ fier.class
+SHA-256-Digest: +AMZiUplIlWfoBRVRJgUfTrg4hMHtXqhz/oHh6aNoY0=
+
+Name: org/eclipse/ui/internal/ide/registry/MarkerHelpRegistry.class
+SHA-256-Digest: LvIZC2XfboArMKJGvr5aC/idbMighpGro6GM6M2eges=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/SmartImportRootWiza
+ rdPage$17.class
+SHA-256-Digest: amz/ptozLTObsYjxnvr28aLTFlUwMp2wdAQ37h5Ldk0=
+
+Name: org/eclipse/ui/actions/AddTaskAction.class
+SHA-256-Digest: 2TYwfR8WaYRYDRxmBuOajdxkY6lBcD0k7EDXoDTPw6w=
+
+Name: org/eclipse/ui/dialogs/FileSelectionDialog$2.class
+SHA-256-Digest: if0hJZIASLIGxSI40lPpPIXxeAbLR5n5lbeliDm7tFA=
+
+Name: icons/full/dlcl16/showerr_tsk@2x.png
+SHA-256-Digest: OD6lnKXCq3WSdZwhoNuR+OgxJGBFPl1UKxyKfwCs81w=
+
+Name: icons/full/dtool16/import_wiz.png
+SHA-256-Digest: 3zmz2p3Bp5NxQK1qeIkXe6X7ocU9t3iXjvCJSXhfbaA=
+
+Name: org/eclipse/ui/ide/IIDEActionConstants.class
+SHA-256-Digest: Ep+FPO3IhTrFdsvT/y5ZotfO1gkmlL11Q/aLeO1CP6E=
+
+Name: icons/full/eview16/problems_view_error@2x.png
+SHA-256-Digest: /4AOrTiV+KypQtRm47BiZY3UYDT3Xo7MeDErJD5+d0c=
+
+Name: org/eclipse/ui/internal/views/markers/MarkerSortUtil.class
+SHA-256-Digest: 8hji2sERR5jR4cmWDaMr21LEDLXj0UmrdXpv5abrjYo=
+
+Name: org/eclipse/ui/internal/views/markers/ViewerColumnsDialog$TestDa
+ ta$1.class
+SHA-256-Digest: vGoOysk613/pvnAmrWAVopoI12jAUvTImkJU3hLQRpA=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/SmartImportJobRepor
+ tDialog$3.class
+SHA-256-Digest: Vr/AAyaXmb6Y/LA5KSf54mcyz046aTg5ZpueiBjqdeY=
+
+Name: org/eclipse/ui/wizards/datatransfer/ZipFileStructureProvider.cla
+ ss
+SHA-256-Digest: oqFXUGbXkb6QQtgSHS3aMoSagpuWcu/iFaFZLBUh1Wg=
+
+Name: org/eclipse/ui/internal/views/framelist/messages.properties
+SHA-256-Digest: 5N1UdFRno2TIW949SPQqPQ2UINr6G6G2ftp7MxepqvY=
+
+Name: org/eclipse/ui/dialogs/WizardExportResourcesPage.class
+SHA-256-Digest: 0C6bdsVkwgnlzpTmJfzeUANBAhPUNfQLWXbnzI+ldMs=
+
+Name: icons/full/dlcl16/showchild_mode@2x.png
+SHA-256-Digest: HkpJjdYO2kcmK/ndxT1KQFQ13CbpYoREIvZmAIsumnE=
+
+Name: org/eclipse/ui/internal/ide/dialogs/LinkedResourceEditor$Content
+ Provider.class
+SHA-256-Digest: cRX9VRsT1l/YcQ3HJluTky9wWQ7gteNqqbGv34+8jeA=
+
+Name: org/eclipse/ui/ide/IDE$Preferences.class
+SHA-256-Digest: 8dD+CVeC3q+SSOv8s0vaAGdXEhfts0ojuTSZkth3Cxg=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/SmartImportRootWiza
+ rdPage$5.class
+SHA-256-Digest: vOjoeH8SWygJBoYcxhiX5Flw0XOPMQYDlZOpk9hVCT0=
+
+Name: icons/full/wizban/importproj_wiz@2x.png
+SHA-256-Digest: 9dYWCj4KqOwj/GYcORFwMrSx1RfzbNR/OIZrnci9Fyg=
+
+Name: org/eclipse/ui/internal/ide/VirtualResourceDecorator.class
+SHA-256-Digest: 8Ygf/COgrQpCi79RF7Oo6nmY6w1jtR3y2VlkUgf6vC8=
+
+Name: icons/full/eview16/problems_view_warning@2x.png
+SHA-256-Digest: Hg8Hlk1zngRH1roUsn/aXyUFOfgtrQjFEHPffBxLY5Q=
+
+Name: org/eclipse/ui/views/markers/internal/DialogTaskProperties.class
+SHA-256-Digest: RUQ2UyaqOvStbpq/wJZRcW+ddfx2ryrSG9SUrBSohwA=
+
+Name: org/eclipse/ui/internal/ide/dialogs/MultiMatcherLocalization.cla
+ ss
+SHA-256-Digest: WGEHjfupnwosxKTR7RgVa4g5/okNKOCEwZ0h1eLhCRU=
+
+Name: org/eclipse/ui/ide/IUnassociatedEditorStrategy.class
+SHA-256-Digest: kCd9EnKQeI92C7+rBKFEHPUit0uF/tBzLtSVl/QqPus=
+
+Name: icons/full/obj16/info_tsk@2x.png
+SHA-256-Digest: w3vvjWAo6KfY/b9uW0I8DGtWP9kU3BttRwZmXJdmUhU=
+
+Name: org/eclipse/ui/internal/ide/handlers/PagePropertyTester.class
+SHA-256-Digest: z25qIn89XeUqDMx2py7W3qFWlv5geE/vZoW//7/B/lg=
+
+Name: org/eclipse/ui/internal/ide/dialogs/ResourceFilterGroup$AddSubFi
+ lterAction.class
+SHA-256-Digest: 98gOzDEFmmUm+QsQ/JvVe0DX2V2yPppYkiEg55KfC00=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/SmartImportRootWiza
+ rdPage$18.class
+SHA-256-Digest: vccuTPpdI0eu/9dko1HFmytnmYPT7grGHFC9srqknAs=
+
+Name: org/eclipse/ui/internal/views/markers/ViewerColumnsDialog$IColum
+ nUpdater.class
+SHA-256-Digest: /olP7TYNDDC4rrxIOP/ZLcK2xJREYnl2M7q3YTbMrmI=
+
+Name: org/eclipse/ui/views/markers/internal/MarkerGroup$FieldGroup.cla
+ ss
+SHA-256-Digest: dzSZv8G9SEPgY7x438UijlLsq/HqpxRsLvSkcC++w/4=
+
+Name: org/eclipse/ui/internal/ide/dialogs/DefaultCustomFilterArgumentU
+ I.class
+SHA-256-Digest: 8Y8oiTn3/qeXrN87LOlUfhRZK3dsz4rkwGzmoCtbco0=
+
+Name: org/eclipse/ui/internal/views/markers/ProblemsView.class
+SHA-256-Digest: PPelglylegQAlU+fh9K+3BHff3PJNzy1QRnY5AI33Cw=
+
+Name: org/eclipse/ui/views/navigator/PasteAction.class
+SHA-256-Digest: 2UTMs4tMMRf5He7tvfQi/Whmh74eqripNeEXFF+9a54=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/expressions/HasFile
+ Expression.class
+SHA-256-Digest: JyjaU3I0Klcytf+wpDHjurfW35w67YK4ISFzPh60gFc=
+
+Name: org/eclipse/ui/dialogs/SaveAsDialog$1.class
+SHA-256-Digest: lITgOxGk5BVS/Q2pbnZAnxOG7RoSLyfmMQtqTs0YRh0=
+
+Name: org/eclipse/ui/dialogs/ResourceSelectionDialog.class
+SHA-256-Digest: b+gfakuNcBoWyObInE7niYD9/AS8owv7LtuiAA8/WWw=
+
+Name: org/eclipse/ui/internal/views/markers/MarkerIDField.class
+SHA-256-Digest: 8zueuipYp0BUv8ttO9tle3VFhCS4cohDWtiNidsJFm8=
+
+Name: org/eclipse/ui/ide/IDEActionFactory$16.class
+SHA-256-Digest: ZkURi6ng7w3M7aLcHtHl8Oih6yoDxpOVKyc+h8gs7a8=
+
+Name: org/eclipse/ui/actions/WorkspaceModifyOperation.class
+SHA-256-Digest: 7CT2xuZ7vp1+H6b0/XFsXRRmI/rf6Doh9tJImdgG9dA=
+
+Name: org/eclipse/ui/internal/ide/misc/FileInfoAttributesMatcher$Argum
+ ent.class
+SHA-256-Digest: 8FlGs8N9m/CGjzvHSBJbp8WbcveFR80UdcFufY7eBAo=
+
+Name: org/eclipse/ui/IStorageEditorInput.class
+SHA-256-Digest: QuVR6FvFBnSz452S13wfjtS30gVSlu2iTMhIgYNciOo=
+
+Name: icons/full/obj16/inheritable_filter@2x.png
+SHA-256-Digest: +dRSs1f9tKZauiTRa6TKMcjezBGsDGGNTxv8kNnbYL8=
+
+Name: icons/full/elcl16/addtsk_tsk.png
+SHA-256-Digest: Upw1ugHtZbB3LmOxPR4aX6dke/uwrovCIyy3tgdzbSU=
+
+Name: model/fragment.e4xmi
+SHA-256-Digest: jqW5mN2BM4980AQhFhQq2zMkfQUMbkyORNZWqu4xY6Q=
+
+Name: org/eclipse/ui/ide/IDEEncoding.class
+SHA-256-Digest: GuCDSVXI9GQg5GiHFZ33EAJgQ4ieoM/hcYGe1/Roo5s=
+
+Name: org/eclipse/ui/internal/views/markers/QuickFixPropertyTester.cla
+ ss
+SHA-256-Digest: KeHFS7xJ3h75PlxDVoursVTZuyr3l+Z2t5LfA+p64So=
+
+Name: org/eclipse/ui/internal/ide/DirectoryProposalContentAssist$Opena
+ bleContentProposalAdapter.class
+SHA-256-Digest: gzsrJoqX3UO58pV5hZ66CWV8a3O+Eeh6SO56ULKzyPc=
+
+Name: org/eclipse/ui/dialogs/FilteredResourcesSelectionDialog$Resource
+ ItemDetailsLabelProvider.class
+SHA-256-Digest: Q3zTJopO0Np6H3F5Vw9ss22AK3mAsmZr6kRaTxDDkaU=
+
+Name: org/eclipse/ui/ide/dialogs/AbstractEncodingFieldEditor$1.class
+SHA-256-Digest: ENmROaJTqHqrEnIe+I9TUFzTTVltnlBhTUgNjYt4Px4=
+
+Name: org/eclipse/ui/ide/undo/UpdateMarkersOperation.class
+SHA-256-Digest: vKQQ1sjMjhwUGy6yPq7A8l1smW3etsHUEreLZPoYJLs=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/NonUIThreadProgress
+ MonitorPart.class
+SHA-256-Digest: JqePVho+l1V7pu0ksVM5S67XT9SYlICuU6sI+wkLqxs=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/SmartImportWizard$E
+ xpandArchiveIntoFilesystemOperation.class
+SHA-256-Digest: 30VuKO4XQsv6DzYsc6QMSOeGQ3MgWjJt2wxgcYUmFhw=
+
+Name: icons/full/etool16/importzip_wiz.png
+SHA-256-Digest: kvMcbpSiQ/u0k6kb+AN/dkaC7u+BAEGIzA/FrPF8uPs=
+
+Name: org/eclipse/ui/dialogs/ContainerSelectionDialog.class
+SHA-256-Digest: pXB4Vi9MP1ckmY6atVom1zFV9D/FnfQzZSy+3CISViY=
+
+Name: icons/full/obj16/welcome_banner@2x.png
+SHA-256-Digest: 6trSojRjBCTSO8K5bHm761BUTfQjIlgO+BZVDJjHZt8=
+
+Name: icons/full/obj16/workset@2x.png
+SHA-256-Digest: EcfVaq+WJM38yce0bAhlUFs2arW1IdpXXDIPd4++NJM=
+
+Name: icons/full/dlcl16/flatLayout.png
+SHA-256-Digest: faZUVSZsA+KF2MVXHVl3n2uvMFY3YoWTlQdytIAytXY=
+
+Name: org/eclipse/ui/dialogs/FileSelectionDialog$1.class
+SHA-256-Digest: BWT2zPyPfU5ayVcUvEnF+yZZ8dju2o/pKVHDunAeYlU=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/IFileExporter.class
+SHA-256-Digest: 1foVmybWU42RTJ13aiHcwSt32dbR8ue/wiFmgybw8TU=
+
+Name: icons/full/eview16/filenav_nav.gif
+SHA-256-Digest: uh8Hro8VqnqIAPO6a6HXf48XG5eWVzcmRJORLK4AaWo=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/SmartImportRootWiza
+ rdPage$16.class
+SHA-256-Digest: jImEEyyIWz5IbtKzWZOt7kumMxa6jdRnrSv0UaBx64U=
+
+Name: org/eclipse/ui/internal/ide/dialogs/OpenResourceDialog$ResourceO
+ penWithMenu.class
+SHA-256-Digest: 3bLFF0UIz/oFHtF5PuoLFFBynwyhWiDmRwDmnGowI+Y=
+
+Name: icons/full/dlcl16/filter_ps@2x.png
+SHA-256-Digest: I38pJWjVQ+FDlhzAszl0frypRwhnAdtkw1zikaxYCT8=
+
+Name: org/eclipse/ui/internal/ide/DirectoryProposalContentAssist$1.cla
+ ss
+SHA-256-Digest: FpKvDYZiSSrozdsxFf2uGuVggPd8DpBd6sfYd6fnyo8=
+
+Name: org/eclipse/ui/internal/ide/ResourceDragAndDropEditor.class
+SHA-256-Digest: DlMVtF/fjmAJE7FFd51mt5LjwsP+IzRaFJ9tCMCqCuo=
+
+Name: icons/full/dlcl16/addtoworkset@2x.png
+SHA-256-Digest: p5g4DTM80ERJv9D0fBLpCt1cUTF13e3edgs9IHh9xVs=
+
+Name: org/eclipse/ui/views/navigator/NavigatorFrameSource.class
+SHA-256-Digest: Euo36b055uvL6KJfvZoPPpclhuTMwtYtSGoN9jhABW8=
+
+Name: org/eclipse/ui/views/markers/internal/MarkerGroupingEntry.class
+SHA-256-Digest: Wd9mov6YX62Fk8stc10zb7SMwvlxzHa5r163Fh1Xmkw=
+
+Name: org/eclipse/ui/internal/ide/TipsAndTricksAction.class
+SHA-256-Digest: YP1FlrjIbQSafAtzIP1kWRiICi/1Xbgngqr13rae6fo=
+
+Name: org/eclipse/ui/internal/views/markers/MarkerEntry.class
+SHA-256-Digest: PxDueh8/HJfqqlB28+vYynqYibgmijKcS7ck8iTXGV4=
+
+Name: org/eclipse/ui/dialogs/NewFolderDialog$1.class
+SHA-256-Digest: AaZCMKiL5uya6qS3mBv/N92cWrfH5s6vgzWYCnSdp2s=
+
+Name: org/eclipse/ui/internal/views/markers/FiltersConfigurationDialog
+ $3.class
+SHA-256-Digest: wc2nFCzmRwws6N+dqM7LfWMOyli5gMjfMKTCQ6WaDeo=
+
+Name: org/eclipse/ui/internal/ide/model/WorkingSetAdapterFactory$Workb
+ enchAdapter.class
+SHA-256-Digest: mCnlYINnSMcfjCs/eVKVHqxGYOMCe9Rsw7AcBmfqh3U=
+
+Name: org/eclipse/ui/actions/CopyFilesAndFoldersOperation$4.class
+SHA-256-Digest: cpRGbLTyVDjgmpzHTe8jHPf9a0KrNV3WfiSTsGcKl58=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/WizardProjectsImpor
+ tPage$5.class
+SHA-256-Digest: avGC9biJIjPtPbwJicJNSwurV6dPpps2lNQKpI/DR6c=
+
+Name: org/eclipse/ui/internal/ide/dialogs/MultiMatcherCustomFilterArgu
+ mentUI$3.class
+SHA-256-Digest: 4SHI2HXic7XLW5ErmHBvpSpO95IirM08xE2WGlXORnI=
+
+Name: org/eclipse/ui/internal/views/markers/MarkerTypeField.class
+SHA-256-Digest: Q5sUCY+pGm0zZvhXEgteIYV4jSCdsHZ2EE2dMZkmz6k=
+
+Name: org/eclipse/ui/internal/ide/dialogs/ResourceComparator.class
+SHA-256-Digest: lDNP+shCP85ynwUY9MTN9H4ItjTr7rSlKOflbZpeVNg=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/SmartImportRootWiza
+ rdPage$6.class
+SHA-256-Digest: GEWISz3GfC5P3n1LFMkRX2RdhCAcQfN6bpOr7EDKP6g=
+
+Name: org/eclipse/ui/internal/ide/dialogs/LinkedResourceEditor$LabelPr
+ ovider.class
+SHA-256-Digest: ldMFtmAPV3HN27NnKvs92r8HWmZ5mMv0E4ukqy5e0Xg=
+
+Name: org/eclipse/ui/actions/CopyFilesAndFoldersOperation.class
+SHA-256-Digest: g7LY9mGwtGOiLimrg3zphteYIn7/n4PlatZu0iyaGvo=
+
+Name: org/eclipse/ui/wizards/newresource/BasicNewProjectResourceWizard
+ $1.class
+SHA-256-Digest: NXlU8aCSGdJCannsZLC4aO9YSDXMrFChVdaYdyofoHg=
+
+Name: org/eclipse/ui/internal/views/bookmarkexplorer/BookmarkMessages.
+ class
+SHA-256-Digest: 8cGmFNjP9VbYkKIvKr530V5iobt5IHUOeDIidhvGgYI=
+
+Name: icons/full/dtool16/search_src@2x.png
+SHA-256-Digest: X3psB7poheRB2Uu+n8CaPOdlRrf1TAZUoNb4+vuXHtY=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/WizardFileSystemRes
+ ourceImportPage1$10.class
+SHA-256-Digest: qNI08LH0K4B976xSbOAmipGY6g3PQ85+jmzZLJcqsbM=
+
+Name: org/eclipse/ui/ide/IGotoMarker.class
+SHA-256-Digest: xVbIVH12vKJTs256zOPsk/+K57RoOjqGizOFVLFIPgs=
+
+Name: org/eclipse/ui/dialogs/WizardExportResourcesPage$ResourceProvide
+ r.class
+SHA-256-Digest: uSbAj81317Vj4vD2PadNvn0b5sZQ82kcDUpvuBBp/TY=
+
+Name: org/eclipse/ui/internal/views/markers/MarkersViewColumnsDialog$F
+ ieldEntry.class
+SHA-256-Digest: +pEBe53MIxOxT32vY1fCDTKZVGVSSdxvqjTyhsO05BM=
+
+Name: org/eclipse/ui/internal/ide/IDEWorkbenchErrorHandler$FatalErrorD
+ ialog.class
+SHA-256-Digest: aEWhFxOyXUKAdIHVQoqDQOjW3EfVpEyjO9DAsGxeECk=
+
+Name: org/eclipse/ui/dialogs/WizardExportResourcesPage$2.class
+SHA-256-Digest: ifi56u7jQsiJwF3ny8Cwy0uX2663T1EQOO8uD9s3Y4U=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/ArchiveFileExportOp
+ eration.class
+SHA-256-Digest: ry8xN6zWSTbGahJHx1sKbhtqLxpG07q/j3NNDnQhHGY=
+
+Name: org/eclipse/ui/internal/ide/model/WorkbenchAdapterFactory.class
+SHA-256-Digest: sxnUJPYejeyt/xT1d/aZGIy3tzwlG3CHYgtCZNYJ+M0=
+
+Name: org/eclipse/ui/views/bookmarkexplorer/BookmarkNavigator$3.class
+SHA-256-Digest: Xew2irZVr56GYiRx1jEK+Bezo+6NpRUGK3om13dxETY=
+
+Name: org/eclipse/ui/internal/ide/misc/StringFileInfoMatcher.class
+SHA-256-Digest: VEEZjz9gw2KemNFd/dSrdhWPLbfn8Euc5yZdXDpYqIk=
+
+Name: org/eclipse/ui/internal/views/markers/QuickFixPage$5.class
+SHA-256-Digest: 2QNwa3Cwk1DrgfiGXp0XffWEWEbXw/+CO6NNeXWdvIA=
+
+Name: org/eclipse/ui/actions/QuickStartAction.class
+SHA-256-Digest: PSA0YGTUvPFE1zyPnHZ33i7G60NIbXIyWdxDEMWSZkg=
+
+Name: org/eclipse/ui/internal/ide/StatusUtil.class
+SHA-256-Digest: suIC10lT59yAs2qty4VrfT1xnGHrhD1yr49g4kFjt0o=
+
+Name: org/eclipse/ui/internal/ide/IDEWorkbenchActivityHelper.class
+SHA-256-Digest: GmS5cpEZHEhmnBJ1nx6LN07Fri3XlcZG7t/CM6UOT+M=
+
+Name: icons/full/etool16/export_wiz@2x.png
+SHA-256-Digest: Jr/fpifRHwYQzeQkjIwDRsUwK9JRIm0dnRbLlrNMVtE=
+
+Name: org/eclipse/ui/internal/views/markers/CompatibilityFieldFilter.c
+ lass
+SHA-256-Digest: o9sf9ecQXIhQxA5KT2ePbFtSPW+wtQ0HakaaViOPn0E=
+
+Name: org/eclipse/ui/internal/views/markers/MarkerSupportItem.class
+SHA-256-Digest: ucakLFuW6t26chP4ZJc+cQeRdCSTmPALhjdY1XaTLRI=
+
+Name: icons/full/dlcl16/showerr_tsk.png
+SHA-256-Digest: HtKksNCOVHi4i0ejTpANmEPvhHlIWl97S1b3K7OvHAY=
+
+Name: org/eclipse/ui/internal/ide/undo/UndoMessages.class
+SHA-256-Digest: LkSgLj+2ZPd/xkFjGee29xdRSoNbfBinZ4Mxfty0jqo=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/SmartImportJobRepor
+ tDialog$9$3.class
+SHA-256-Digest: rM31XnhLuJrzBWUtDwgikCnEda2YevBKo9Qf5BHfSKI=
+
+Name: icons/full/obj16/workset.png
+SHA-256-Digest: OJmQ32WE4q0IkiGVK8WbR/i7Cajk/NSDKXMpfB9wCgs=
+
+Name: org/eclipse/ui/internal/ide/handlers/EditorInputPropertyTester.c
+ lass
+SHA-256-Digest: aZE2bSfnw6zPJYNncYZyL4aV+qIOoWEj1v/MWsa5AdI=
+
+Name: org/eclipse/ui/wizards/newresource/BasicNewFolderResourceWizard.
+ class
+SHA-256-Digest: EhGJ554+srQeWlXukNZ67+oJNAnBYHAZjpeJEoZytTM=
+
+Name: org/eclipse/ui/internal/ide/IDEPreferenceInitializer.class
+SHA-256-Digest: /brnx+VOmqS6LJjiYkVd5N1zJd0Ovho+g35dyZ9N+yI=
+
+Name: icons/full/elcl16/gotoobj_tsk@2x.png
+SHA-256-Digest: h8PUzo8f+q7ZgtNA/CTaatEEXIEMjRP3KwzQ5PRQg9g=
+
+Name: org/eclipse/ui/views/tasklist/TaskPropertiesDialog.class
+SHA-256-Digest: r/UuQs4vwCgk6jlTeb0Wbuhzag9A1yTfs45yZ+g95e0=
+
+Name: org/eclipse/ui/internal/ide/dialogs/ConfigurationLogUpdateSectio
+ n.class
+SHA-256-Digest: Poux2w0IIbtn6fPXTSfayqZOpeahoOxOtyM3wW/HGt8=
+
+Name: org/eclipse/ui/actions/CopyResourceAction.class
+SHA-256-Digest: 8kzE1KVpQ8N83jePv7ldDFVPLsvbQ0gw8wwZTZ4bFr8=
+
+Name: icons/full/dview16/bkmrk_nav@2x.png
+SHA-256-Digest: /YyviVvQDsAlgFTHzF4JI7hFFYhmaQ54Ny1jrKyCa2k=
+
+Name: org/eclipse/ui/wizards/newresource/BasicNewResourceWizard.class
+SHA-256-Digest: NSXstSgIZtm5ixpDONefmcfYb/c5f5YdsCOs0042OP4=
+
+Name: org/eclipse/ui/views/markers/internal/MarkerMessages.class
+SHA-256-Digest: x9+5RVL829ZJnnl/gB0A1Jr5uXga+A1kuNk9mxgnp6o=
+
+Name: org/eclipse/ui/views/navigator/ResourceComparator.class
+SHA-256-Digest: kk6+R0vgacYMfYmdtlaCWldPXzcjHwxzyMlx5kfAd8g=
+
+Name: org/eclipse/ui/views/markers/FilterConfigurationArea.class
+SHA-256-Digest: Rp91XmvwxVR4mvS4YenUP6iX0uAvaJJq1tN9gNB6v5s=
+
+Name: icons/full/dlcl16/configs@2x.png
+SHA-256-Digest: fbLzILoPpIVMwoO2lWGG86/odq6D/ThDCCVQ62IdDwQ=
+
+Name: org/eclipse/ui/internal/ide/model/WorkspaceFactory.class
+SHA-256-Digest: geMvujnzlUoBXwbq+NZ6wIBI79cQoPfczbH87ipc1g0=
+
+Name: org/eclipse/ui/internal/views/markers/SortFieldContribution$1.cl
+ ass
+SHA-256-Digest: mmb2CKV42xPxXzT1O/qMqgcc3HdrMfMJlAinPozs0EY=
+
+Name: org/eclipse/ui/internal/views/markers/SeverityAndDescriptionConf
+ igurationArea.class
+SHA-256-Digest: JAtYFpK3cB5BzV99lISYIKs50hb3eKwDpeDmGOYTowk=
+
+Name: org/eclipse/ui/internal/ide/actions/ProjectPropertyDialogAction.
+ class
+SHA-256-Digest: zVaOJs6yBtpd0sEuXdCvtYZYXOD1gIMWkvB6RfEpn3I=
+
+Name: org/eclipse/ui/internal/views/markers/AllMarkersView.class
+SHA-256-Digest: FkHn82gID4BpW48CLfLEzSGtpaw5N85XnbHuqBSfo3Q=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/SmartImportJobRepor
+ tDialog$2.class
+SHA-256-Digest: 4tMXWIKBHYFsW6zRPoi0GJbItYKHzRZtt584SjfK1+8=
+
+Name: org/eclipse/ui/internal/views/markers/ExtendedMarkersView$1.clas
+ s
+SHA-256-Digest: X7oM4EAEfHj3dgbyPMGFXh+RXHzkzXAFIuWLgZUogBo=
+
+Name: icons/full/ovr16/symlink_ovr@2x.png
+SHA-256-Digest: CmvI8690apj897bp1FAZHsTjmNxz2cW4GMGQs3Ir8EU=
+
+Name: org/eclipse/ui/ide/dialogs/PathVariableSelectionDialog.class
+SHA-256-Digest: XTV2OnQmPCDJi1ioRMpFJRDEQzNlTZims/GiAHjO3Ks=
+
+Name: org/eclipse/ui/views/bookmarkexplorer/BookmarkPropertiesDialog.c
+ lass
+SHA-256-Digest: 95On6rcsEm4ICMemy2jEHtbWZrt6kowxYWLJj9p9j+4=
+
+Name: org/eclipse/ui/wizards/datatransfer/FileStoreStructureProvider.c
+ lass
+SHA-256-Digest: +4Fc4boRCCKdYaDTPWi7IxBeXpV7G7uzZUuDMichKcM=
+
+Name: org/eclipse/ui/actions/DeleteResourceAction$2$1.class
+SHA-256-Digest: KqR2K96nihhUjXK1n4mi0TYNo65KmAY/ch4vV2cDDrA=
+
+Name: icons/full/obj16/importpref_obj@2x.png
+SHA-256-Digest: IetqAkt7wIzApNT+reb0E5wQBlwV+95TfcI9CY69X90=
+
+Name: org/eclipse/ui/dialogs/WizardNewProjectReferencePage.class
+SHA-256-Digest: kVgXe5ZpAXEd5+0ztsRDvdR3p3TSYkG/Y8TiLG4XFkA=
+
+Name: org/eclipse/ui/ide/IDEActionFactory$5.class
+SHA-256-Digest: MHPeKG9vMZX2+gANem1dEpTXtC9BbqI6BS1fMUiiano=
+
+Name: org/eclipse/ui/internal/ide/dialogs/FilterEditDialog$3.class
+SHA-256-Digest: k+BjLizczrW0nv60T/42d/XaLaSvn3gRePVV9Gkajok=
+
+Name: org/eclipse/ui/internal/ide/handlers/BuildAllProjectsHandler.cla
+ ss
+SHA-256-Digest: eueLnf4kgJ7CoOXHFT527h6bvJ2BcDcKiOs/qcnK340=
+
+Name: org/eclipse/ui/internal/ide/dialogs/ProjectReferencePage.class
+SHA-256-Digest: MoBu1ZNki9EPKuwWnETPOu4aGdYit/mW1J2tFHpJOW4=
+
+Name: icons/full/eview16/tasks_tsk.gif
+SHA-256-Digest: k6ttWzG+v9ZO0zFrJlfCekei9LIac0HXhxe4p1i2X48=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/SmartImportRootWiza
+ rdPage.class
+SHA-256-Digest: G0czktEliS319G2KE3inPvDInG82vVzU+w91uglaXPM=
+
+Name: org/eclipse/ui/internal/ide/dialogs/PathVariableDialog$1.class
+SHA-256-Digest: XCFqtuQBt14AV0LNxRUTRt/gJD8bb8OAiRsmAfpc6no=
+
+Name: org/eclipse/ui/internal/ide/model/WorkbenchMarker.class
+SHA-256-Digest: qCNYryLhXTqHNLe0nXoSIj0eZ10tHVj/Gkmaa9lHX5Q=
+
+Name: org/eclipse/ui/internal/ide/addons/SaveAllDirtyPartsAddon.class
+SHA-256-Digest: mlYQjoNNdFL7Cn4gcYIj5au/NtU0VaBPht+hpsQiB3w=
+
+Name: icons/full/etool16/exportdir_wiz.png
+SHA-256-Digest: DNuxX10Nc0mCO9Kvn2ahqDzW/+D5sY3De5sbm5hIsRk=
+
+Name: org/eclipse/ui/views/navigator/GotoActionGroup.class
+SHA-256-Digest: ftty1m/eIJe2z7uOmp0JdQoHyUgaL/UNQNq9Js3x35o=
+
+Name: org/eclipse/ui/internal/ide/dialogs/BuildOrderPreferencePage.cla
+ ss
+SHA-256-Digest: OWe1KqQrkD9pHQHYBnI5A6LfTLMR5awotf196j7Ijp8=
+
+Name: org/eclipse/ui/internal/ide/dialogs/ResourceInfoPage.class
+SHA-256-Digest: mc3vB9Ag84LcYrk5ACnEHJLG2LGHDvku0jdLBJww7f8=
+
+Name: org/eclipse/ui/internal/ide/registry/SystemEditorOrTextEditorStr
+ ategy.class
+SHA-256-Digest: 1mvGi2MEW+oig4nJ1HcGVrx21Gamzwt/9dwYYsypKqs=
+
+Name: org/eclipse/ui/internal/ide/IIDEHelpContextIds.class
+SHA-256-Digest: EXcpDk2fMB4uUImgUpes06BfPmIhyGK0MIhtCzY11Hw=
+
+Name: icons/full/wizban/new_wiz.png
+SHA-256-Digest: Wn9RZNd+PvUVWBi+JKTIMce0ZMOT98iC/0cKnMxxyzc=
+
+Name: org/eclipse/ui/internal/views/markers/PriorityConfigurationArea$
+ 1.class
+SHA-256-Digest: t3wcOZBz3wHV6mqG78BDx1RM8BzqMP7vV7Pwt2rvV3s=
+
+Name: org/eclipse/ui/internal/ide/dialogs/LinkedResourceEditor$6.class
+SHA-256-Digest: Jlw3KonDNULGhkWp/XDSlbUs4XamwOGY0epHOIkVVZo=
+
+Name: icons/full/dtool16/importdir_wiz@2x.png
+SHA-256-Digest: CFe/FlmTnCnm4WhhDQI7vWNDxVhDBMl2cxfSGY+hA4s=
+
+Name: icons/full/etool16/newprj_wiz.png
+SHA-256-Digest: SV03aQR7k/CiVpx7qBCQDCYPQ0LNLTayWM0nGUj0rIM=
+
+Name: org/eclipse/ui/actions/CopyFilesAndFoldersOperation$7$1.class
+SHA-256-Digest: BmNzvmug1sDJprr4dxzHDhYHkrueVUyCMVzqokv5EeQ=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/ProjectConfigurator
+ ExtensionManager.class
+SHA-256-Digest: ElLp5b3e/86KvI5J84u/67969uy7v9s3e2a+fsjsF9k=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/SmartImportWizard.c
+ lass
+SHA-256-Digest: HboXDXPzqdtoPFAwlv4R/3hDkhT1tcvJVpsrXMfr5nQ=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/WizardProjectsImpor
+ tPage$14.class
+SHA-256-Digest: yqJwWTr8t4MT1dMcslEdDKbR//HsDzo7S4GPFZRdu+k=
+
+Name: icons/full/obj16/prj_obj@2x.png
+SHA-256-Digest: FlNzAs04CKcBdsYb/6Y4MgdwbgkR/Qyk9N+0UZABk9U=
+
+Name: org/eclipse/ui/actions/DeleteResourceAction$DeleteProjectDialog$
+ 1.class
+SHA-256-Digest: l5AeKLjzKeOg1iZFLxJpkoeao068d7K8VTn8m2RVU4k=
+
+Name: org/eclipse/ui/internal/ide/ChooseWorkspaceWithSettingsDialog.cl
+ ass
+SHA-256-Digest: VLENd4iU7tx0zGWNuoNep7YUbVucxKKnosYQPeFtns8=
+
+Name: org/eclipse/ui/internal/ide/dialogs/PathVariablesGroup$NameLabel
+ Provider.class
+SHA-256-Digest: Z+DGPfPm+kJQlh6kaL5gKXW+l02hVeo3N+796xkWK3U=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/ZipFileExporter.cla
+ ss
+SHA-256-Digest: tV9goOHju8r8wOV5dj4WO34nVAZOowlxsAG/eBbsSgY=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/TarFileExporter.cla
+ ss
+SHA-256-Digest: 1mEGDB4xuodD4Nt5XcaPiQ+olgHX2YhB5ufSB7yRBdQ=
+
+Name: org/eclipse/ui/internal/views/framelist/FrameListMessages.class
+SHA-256-Digest: 0TK1oUaXuHZx9HJvizWb9DdzfSy3Ti+/LQFBWKDwlmg=
+
+Name: org/eclipse/ui/internal/ide/commands/CopyConfigToClipboardHandle
+ r.class
+SHA-256-Digest: G4KTQgzq7s7gmdMb5rpaFJv+RYOEgBL6X+I2jVFE+zQ=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/WizardProjectsImpor
+ tPage$ProjectLabelProvider.class
+SHA-256-Digest: NAPA8uofqDj4FnsZhL8CiqnJmJhqW7HSsUfOFky/B/Q=
+
+Name: org/eclipse/ui/ide/IDEActionFactory$3.class
+SHA-256-Digest: wzMlN/RnVIjUT9dQVLKZYIj2kxMehAQ0JtSTFG+A3VA=
+
+Name: org/eclipse/ui/internal/ide/dialogs/WelcomeEditorInput$1.class
+SHA-256-Digest: P9lS56t5bqQd2Unf1m44aeXvHFHaJGG1hv4HjvDOEEg=
+
+Name: org/eclipse/ui/internal/views/markers/MarkerProblemSeverityAndMe
+ ssageField.class
+SHA-256-Digest: 3uez7kpQyxqAzg5+AClPHtEJ+dxLEw5AFg2h0vGwp4o=
+
+Name: org/eclipse/ui/internal/ide/dialogs/PathVariableDialog$3.class
+SHA-256-Digest: +L9nRg3z90m33XeDtWH2fmXMe2BzKUBrCuX/HOfVPkQ=
+
+Name: org/eclipse/ui/wizards/datatransfer/ProjectConfigurator.class
+SHA-256-Digest: K4nmrfBmR082vwE67QWQfr8KScCQHHxZ9ngtWgsPyf4=
+
+Name: icons/full/etool16/search_src.png
+SHA-256-Digest: QB9q1snYrX8oLqUilCD9SQ7y4zOBpVn5BTlzN3MxXu0=
+
+Name: icons/full/eview16/filenav_nav@2x.png
+SHA-256-Digest: +4voc+Aa+Nvb4p8FfcDDRYhZ2nQI5YtImahm184ClOI=
+
+Name: org/eclipse/ui/internal/ide/dialogs/MultiMatcherCustomFilterArgu
+ mentUI$1.class
+SHA-256-Digest: ss6UC891VQlNLVOP8LpFhxcehJisUqN/0j3fhNSn9vA=
+
+Name: org/eclipse/ui/views/framelist/FrameListMessages.class
+SHA-256-Digest: +OY874K4u4OVlIgyUb07v2sU3cD8DSi4U3WRXz26ydg=
+
+Name: org/eclipse/ui/internal/ide/registry/MarkerImageProviderRegistry
+ .class
+SHA-256-Digest: ZXq/ZjobjMCfWSGXOMVIpIoy+sZDJyTxYF4kA9qsHu0=
+
+Name: org/eclipse/ui/views/markers/internal/messages.properties
+SHA-256-Digest: 5IMGqOP8KZdtDl9pnUtuU3qt1OS+ry9Qif/v6IRQftc=
+
+Name: org/eclipse/ui/internal/views/markers/TypesConfigurationArea$3.c
+ lass
+SHA-256-Digest: cFmzIl84DR6QKHfHzPCEe/QKzMquWqfxST6k+RLjsnc=
+
+Name: icons/full/ovr16/linkwarn_ovr.png
+SHA-256-Digest: QeYj0VpuC6S4XOZBIzFAYRyRYPXz9YhpiQKloSOUKPY=
+
+Name: org/eclipse/ui/internal/ide/ExtendedFileEditorsPreferencePage.cl
+ ass
+SHA-256-Digest: HpJMoDWcP1RLhIDr7bpKNJUMcGuvSlsfYQr/KN1Ic1o=
+
+Name: org/eclipse/ui/internal/views/markers/MockMarkerEntry.class
+SHA-256-Digest: 4Wh1kGv14XVq1ROpHkjiXitlQMMr2ZvgB0HSHTEsTDU=
+
+Name: org/eclipse/ui/internal/views/markers/MarkerEntry$1.class
+SHA-256-Digest: fkb4YkVLBXDQNC8y2RM9/nU/wK5nQLAKx3ih25WMTS4=
+
+Name: org/eclipse/ui/internal/ide/dialogs/ResourceFilterGroup$1.class
+SHA-256-Digest: rf2Ztar+4zBRPn9lV5F+Di0RJ7Z/lLsFcaFssFmgWV8=
+
+Name: org/eclipse/ui/internal/views/helpers/EmptyWorkspaceHelper$1.cla
+ ss
+SHA-256-Digest: 5n/AL8xNaf2qaE9fh9JXrQkF02h7mcsuPNc1jbZQs6Y=
+
+Name: org/eclipse/ui/ide/dialogs/ResourceTreeAndListGroup$SelectionLis
+ tener.class
+SHA-256-Digest: qwHLIKB55QzU/WdN3DWluJ0d8HmI6sWK7rS24EqVb8c=
+
+Name: org/eclipse/ui/views/markers/FiltersContributionParameters.class
+SHA-256-Digest: RkyCw9FKa2NdBlJOOOHfYaT6uyC0TjUvKb+gH/XMKkY=
+
+Name: icons/full/dtool16/newgroup_wiz@2x.png
+SHA-256-Digest: +LfU8tkCBxK9DAOTfGITHHBo78k1AugY3dSWKHw7lt8=
+
+Name: org/eclipse/ui/internal/views/markers/PriorityMarkerFieldFilter.
+ class
+SHA-256-Digest: xrg2VrMTlRHfxfllt5LKHB0MBrqYNxbi/ZpjVt63s8E=
+
+Name: icons/full/elcl16/hierarchicalLayout.png
+SHA-256-Digest: z0o8F/IV3ZR59vkO//VkbWMCt2HUdvmh17wVWdaFx50=
+
+Name: org/eclipse/ui/internal/ide/dialogs/PathVariablesGroup$ContentPr
+ ovider.class
+SHA-256-Digest: pxTnwfOAyC3rbXowtcNbEK2BaE3w9JbcsSCXN7pzbM8=
+
+Name: icons/full/dview16/pview@2x.png
+SHA-256-Digest: I55G/T5mUpGB8nLIQjoThH+MPZzlH06ItNOW2GSUp24=
+
+Name: org/eclipse/ui/internal/views/markers/MarkerSeverityAndDescripti
+ onField.class
+SHA-256-Digest: Ny/TRIxjh3MeteHpeP863cpBPLpMOVw6rUsPEpbf+P0=
+
+Name: org/eclipse/ui/part/FileInPlaceEditorInput$1.class
+SHA-256-Digest: 7RWmoOXz11IJhSF+3q1ZdeZWFHYC5S6S14wjM5u1wpY=
+
+Name: icons/full/etool16/exportzip_wiz.png
+SHA-256-Digest: m2tKCrfpnMccWJI+7nTzxHPsSWQ9hIFKDWqo9wYg3CA=
+
+Name: org/eclipse/ui/internal/views/markers/FiltersConfigurationDialog
+ $5.class
+SHA-256-Digest: /P4GfK/FlBXeeeIN5hJWNF5KOfPWyTO1cEoLNHkrryg=
+
+Name: org/eclipse/ui/internal/ide/undo/ProjectDescription.class
+SHA-256-Digest: 8Y8kEulMrZN2bWa6+R5DGZMG3iIe6TApWOlX8ub5jCk=
+
+Name: org/eclipse/ui/internal/ide/dialogs/IFileStoreFilter.class
+SHA-256-Digest: ma8mNbPulrA4q6D2OhjFvCfT8UBYdkNBxxUfvCEpKUM=
+
+Name: org/eclipse/ui/internal/ide/WorkbenchActionBuilder.class
+SHA-256-Digest: 8LDPRf0Wr9KWnixmRe1WK5PlMqrM2zu4+GSB5+/D3J4=
+
+Name: icons/full/etool16/build_exec@2x.png
+SHA-256-Digest: Egv+Ac8MJwK8HYKgBI1rhP9fi/3O0+GII9bTCxzgrzI=
+
+Name: icons/full/dtool16/export_wiz@2x.png
+SHA-256-Digest: wdLvgxjxpwEB8H1JAq1pIo43dzfyMuiN8BeSTSXXFy4=
+
+Name: org/eclipse/ui/dialogs/MarkerResolutionSelectionDialog.class
+SHA-256-Digest: oCDU0MzHmOpuGX0BZWIQ4ow5mWRKZcprQJwcZJcNNCo=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/WizardProjectsImpor
+ tPage$7.class
+SHA-256-Digest: dDfcY0EvlusHxqCmZ65VKKhe6qC2qyaenq1uNZHHMIA=
+
+Name: icons/full/elcl16/synced@2x.png
+SHA-256-Digest: zsUn+52EQ7wMq8WXZBF6Y070q3vGH0ypfjzRDow7KQ0=
+
+Name: org/eclipse/ui/internal/views/markers/MarkerDescriptionField$Des
+ criptionEditingSupport.class
+SHA-256-Digest: 0wm40j5jeaDcT9ymItiixwxciuUe3UszvbIit+/9rIw=
+
+Name: org/eclipse/ui/internal/ide/addons/SaveAllDirtyPartsAddon$1.clas
+ s
+SHA-256-Digest: Hsc2hrE/Lynl1/PWc06mw9Twcmk/BAavIjvm7OHMgP4=
+
+Name: org/eclipse/ui/IMarkerActionFilter.class
+SHA-256-Digest: zdtCsg1jn83D8X3OibkG19sISZ1Cu8xfUou/R4QS7k0=
+
+Name: org/eclipse/ui/internal/ide/dialogs/RelativePathVariableGroup$1.
+ class
+SHA-256-Digest: bkMv7p03cFFKfBTEkwdoiplr2idkvTwJh8IRD3lhgY8=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/WizardProjectsImpor
+ tPage$8.class
+SHA-256-Digest: EP4EiwdPLgQ9X7qtU0RMDT7VKV7Ty1URZaPydmDwcMo=
+
+Name: org/eclipse/ui/views/markers/internal/ConcreteMarker.class
+SHA-256-Digest: w8BGBJAWqzjtvJGB4nvRgxviN9pbc+6JkLt1a5ggwL4=
+
+Name: org/eclipse/ui/views/framelist/UpAction.class
+SHA-256-Digest: JRBqAFRQM2PYj7pQ4a+Zti8DP96iA/esmxMh99lZ+l8=
+
+Name: org/eclipse/ui/views/markers/internal/MarkerSupportRegistry.clas
+ s
+SHA-256-Digest: ZNens2i6V+deIIYpSN8r5uMEtf951vh96/O9/JRIRh4=
+
+Name: org/eclipse/ui/actions/MoveProjectAction.class
+SHA-256-Digest: TSVCa3I+pchUGeK8TWGmBsx60eeNciBEW/Z711J9Bhc=
+
+Name: org/eclipse/ui/dialogs/NewFolderDialog$3.class
+SHA-256-Digest: gznmlee32/0aA1yRmGRa/JKGvJ11MHrD5S10wNQti7M=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/WizardProjectsImpor
+ tPage$12.class
+SHA-256-Digest: HqxC3qozRITpwjAgmV+arT4wZB5wgHd3bFbyEvED8DE=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/SmartImportRootWiza
+ rdPage$11.class
+SHA-256-Digest: 4HKFALLsVJS2Ljc8jAQ1+9u13WrTtY8mgDidKrgIKv0=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/SmartImportRootWiza
+ rdPage$1.class
+SHA-256-Digest: +TVcWZMBPZYjQw8Ie4qa1Jz9o6dJU6NgNxIvyfhD8cU=
+
+Name: org/eclipse/ui/internal/views/markers/QuickFixPage$7.class
+SHA-256-Digest: Iapvp47cK/MxmEhdn3KGkd2nR/9uM3MjZR4GQA5OI6I=
+
+Name: org/eclipse/ui/internal/ide/dialogs/ResourceFilterPage.class
+SHA-256-Digest: ApQIbubtxX9EHALhPK5eGqgiyjpwumMWQuSHilwhKC0=
+
+Name: icons/full/dlcl16/step_done.png
+SHA-256-Digest: +Bl+GUcbsQTDCylRf+2tNC5epnTJYXqteE4hWaG2cNI=
+
+Name: org/eclipse/ui/internal/ide/dialogs/ResourceFilterGroup$3.class
+SHA-256-Digest: AqADHcDvszhRzXSch1hrVB5HVN+BurB0bC+kNITJrkg=
+
+Name: org/eclipse/ui/actions/NewProjectAction.class
+SHA-256-Digest: eFo5mivgYMDcztd52EznMCvx9/7qtZbg5caoxcNIrcY=
+
+Name: org/eclipse/ui/internal/ide/misc/CheckboxTreeAndListGroup$1.clas
+ s
+SHA-256-Digest: KUnHlVbNx2wb793ARL1j3WazxzMgjR3RuyHkSvW3wT8=
+
+Name: org/eclipse/ui/internal/ide/dialogs/LinkedResourcesPreferencePag
+ e$1.class
+SHA-256-Digest: /ouQYKogVhtJKCBBbb07k7EudkbbBRQweFEjHrhSv0k=
+
+Name: org/eclipse/ui/internal/ide/registry/MarkerHelpRegistry$QueryCom
+ parator.class
+SHA-256-Digest: qK83hAI+Ozpw3TAbKvk9guvlyFduUQoQNWzKt6t9mj4=
+
+Name: org/eclipse/ui/internal/views/helpers/EmptyWorkspaceHelper.class
+SHA-256-Digest: Th2AWFAHXvW9aBsnHacpRHeys/oIzwZLMkuiy5CrAA8=
+
+Name: org/eclipse/ui/dialogs/WizardNewFolderMainPage.class
+SHA-256-Digest: KMTA8hJOWCbJRZc3KPVx88T13mSTMQ8vlHRVll19oCY=
+
+Name: org/eclipse/ui/internal/views/markers/FiltersContribution$1.clas
+ s
+SHA-256-Digest: wkp/yJAPcRy5lLMYPXPAKwtK3ImTz2C668hb90cQM9c=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/EclipseWorkspaceCon
+ figurator.class
+SHA-256-Digest: Cy81E7c19jtLDKk2b04MNhSMKFkQfNSWMfUc0ROLZa4=
+
+Name: org/eclipse/ui/internal/ide/misc/FileInfoAttributesMatcher.class
+SHA-256-Digest: BQfShWy74+hTD76mWgHY8vv3w6zlNmDWN3c0zwgKdh8=
+
+Name: org/eclipse/ui/internal/views/markers/PriorityConfigurationArea.
+ class
+SHA-256-Digest: 2h+ywwQbwtJxgC9Pvkbo+GET4AtjsDrLHGy+XkNaGIs=
+
+Name: org/eclipse/ui/dialogs/FilteredResourcesSelectionDialog$GroupRes
+ ourcesByLocationAction.class
+SHA-256-Digest: kkFy9I8TOvNmgrHer9Z81z+oXBbfqqlM5RuxGsVHKxk=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/SmartImportJobRepor
+ tDialog$9$1.class
+SHA-256-Digest: 1HuEA/l7x8iHl5VtDUEl7qnCB29G2wh6REnV5yTn3KY=
+
+Name: org/eclipse/ui/internal/ide/dialogs/LinkedResourceEditor$4.class
+SHA-256-Digest: Dom/GD1LVKbj7dxxSDzTvPM4cCl9FDLnea/qYLnJ3Sk=
+
+Name: icons/full/dlcl16/step_current@2x.png
+SHA-256-Digest: UbBX+gWRRdAP0fp+nFVkHPFJolMz6sR5tXhwu5Dihmg=
+
+Name: icons/full/elcl16/flatLayout@2x.png
+SHA-256-Digest: WhcYrBEUksWF9Kt/LP3GUzbx/tH7GBXyGJFLgRIBVr8=
+
+Name: org/eclipse/ui/internal/ide/undo/FileDescription.class
+SHA-256-Digest: /R6K39yWhIhMsa6RRmUWlEZAT17lXYT56CXtemjfGpI=
+
+Name: org/eclipse/ui/internal/ide/actions/ProjectPropertyDialogAction$
+ SelProvider.class
+SHA-256-Digest: 0rxRZJLPVeFIwu0yvhAJjgJFCSTS7JD2JZIgW3qq4Ps=
+
+Name: org/eclipse/ui/views/navigator/LocalSelectionTransfer.class
+SHA-256-Digest: J7P5UYcKKHvypDgNLrlP45Cf16wUSXZ/wYz6t02O7Ys=
+
+Name: org/eclipse/ui/internal/views/properties/IDEPropertiesMessages.c
+ lass
+SHA-256-Digest: +LrE6nubWEihIU6QEUgdb96izhjcuiWflOEDAM1YZdM=
+
+Name: org/eclipse/ui/actions/RefreshAction.class
+SHA-256-Digest: f6upuI8Z9iHmaIW2WPq2ailsbq77S+OGRqbN3iUCUdg=
+
+Name: org/eclipse/ui/internal/views/markers/TypesConfigurationArea$5.c
+ lass
+SHA-256-Digest: lBLdDVElzM7mjzhjB14mryE8WqYo2pk/+cTm2PlpG6w=
+
+Name: org/eclipse/ui/internal/ide/registry/ProjectImageRegistry.class
+SHA-256-Digest: Xkt0WaQU7ciPs7ws6xpHCBUji92vb83PxvZCXRlJ4HE=
+
+Name: org/eclipse/ui/internal/views/markers/IncrementUpdateJob.class
+SHA-256-Digest: pT8rqfjV+4jcKTKvInXzFas4IB2am0ERJQBNTX97yY0=
+
+Name: org/eclipse/ui/actions/WorkspaceModifyDelegatingOperation.class
+SHA-256-Digest: SJAq6flW8edptkG5veQ+km/FL5AGcwK64Hoq15LTEJc=
+
+Name: org/eclipse/ui/internal/ide/dialogs/ProjectNaturesPage$2.class
+SHA-256-Digest: upNlJT1Vnj+1NxHYLbaRFcR4TMGvTFSVTFAp6zj1vyk=
+
+Name: icons/full/dview16/tasks_tsk@2x.png
+SHA-256-Digest: KvLgU7TkEVjT9MiCalkAXwFZOBbghNgfmtb13L9gRsc=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/TarEntry.class
+SHA-256-Digest: z2zDdis11ZDuvKtvpBmLt3+fhpcNwU5CubZnWmKtMBQ=
+
+Name: org/eclipse/ui/views/navigator/ResourceNavigator$3.class
+SHA-256-Digest: BPCG1KxYtWz16D/cj48x5ZeE4OzDcl56saqcG1C5odM=
+
+Name: org/eclipse/ui/ide/IDEActionFactory$2.class
+SHA-256-Digest: A5iW3m/y6XFoDgRf5m38P4/4fDg5DQN57zYP1ViFGuE=
+
+Name: org/eclipse/ui/wizards/datatransfer/WizardExternalProjectImportP
+ age$1.class
+SHA-256-Digest: lSVSg4cYP7P3TY2S9DsWNZagA9tucFlre5D4UsPGXJE=
+
+Name: icons/full/elcl16/step_done@2x.png
+SHA-256-Digest: KzzdcNIW2mAxgA8xitgCHt0+kgz4paljMy83pCo69TU=
+
+Name: org/eclipse/ui/dialogs/WizardImportPage.class
+SHA-256-Digest: 6Kr0e+lP3MA7Y4user78PyLCP2P3DNBa9VA6MEytdJ8=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/WizardProjectsImpor
+ tPage$2.class
+SHA-256-Digest: DCBEvFexDxw2XXjBXbz8M0ENbh3nchi1mT4gJzAVioI=
+
+Name: org/eclipse/ui/internal/views/markers/ExtendedMarkersView$5.clas
+ s
+SHA-256-Digest: haXVmflqf8ICDLc0QStrGneP0u2QJ4nmm7dbJKVXLTM=
+
+Name: org/eclipse/ui/internal/ide/dialogs/FilterEditDialog$1.class
+SHA-256-Digest: DKrXXU1Ffy3XYbTejGWdFv80FPkoDtE6kJveho+6A2s=
+
+Name: icons/full/dtool16/importzip_wiz.png
+SHA-256-Digest: OFA1YDTJN9Avgb2YXQDs/NE1PnM2c1R73VdPgQrSxIM=
+
+Name: org/eclipse/ui/internal/ide/dialogs/WelcomeEditorActionContribut
+ or.class
+SHA-256-Digest: LtDKS5BLvsNMy3T5CfWNHrA1m6gFUqY1ssUBp3C64p8=
+
+Name: org/eclipse/ui/internal/ide/dialogs/PathVariableDialog.class
+SHA-256-Digest: /XlvwOs+wLlBo07PdyvWoGU0+bSle5ft1nBOYOgnb0U=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/WizardArchiveFileRe
+ sourceExportPage1.class
+SHA-256-Digest: 7jQTadizd+HeJl+lAGFd2/Mv2AMUEKzRF6z9v4So78k=
+
+Name: org/eclipse/ui/ide/undo/CopyProjectOperation.class
+SHA-256-Digest: bxrJEQLT3q08B+9CiAG8gTI5MSP1L+uonziqihIs5bU=
+
+Name: org/eclipse/ui/internal/wizards/newresource/messages.properties
+SHA-256-Digest: nA/tU0nOZ0EQk93p/tS2j6UefcQ9NUvAcF9iQP9xpY0=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/DelegateProgressMon
+ itorInUIThreadAndPreservingFocus.class
+SHA-256-Digest: TI/Xkl5lFoCEiAzSzV6ZEYavKfJEPizMXYaTdhwHN+I=
+
+Name: icons/full/dlcl16/gotoobj_tsk@2x.png
+SHA-256-Digest: uXgDt/xOCGxRpt7+wvAkquDe1+SgBe19RVFyMcRQpOc=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/WizardArchiveFileRe
+ sourceImportPage1.class
+SHA-256-Digest: HZ2qN675Gve4mYQcTx5pCw11qOk0Z3ldOREkKR3Ye0E=
+
+Name: icons/full/wizban/workset_wiz.png
+SHA-256-Digest: 2Y48Z/mK1QBW0Nn3W/AUqJfTYI1Q20jE/7Y3vOEKRog=
+
+Name: org/eclipse/ui/internal/views/markers/MarkersPropertyPage.class
+SHA-256-Digest: qFijJBoUYC0i7Lk5b2JRBzEr426RK5EwLSch/dk+Few=
+
+Name: org/eclipse/ui/internal/ide/misc/AndFileInfoMatcher.class
+SHA-256-Digest: x0y+uJnuS7s2ngf1785neOm1yPERZRZ9m9sxxlFM4Lc=
+
+Name: org/eclipse/ui/actions/CopyFilesAndFoldersOperation$7.class
+SHA-256-Digest: e7THzduRi8yewSl71khcrS7eOOOtfcu6XS0mFjbh7kI=
+
+Name: org/eclipse/ui/internal/ide/DialogUtil.class
+SHA-256-Digest: AhajNP3/fe6WPxdboaq4BRh3Fkz3mxV4FMLiiHz2+ow=
+
+Name: org/eclipse/ui/internal/views/markers/AddTaskHandler.class
+SHA-256-Digest: F0fyeThls9ku0g6SVt0hQWUB8xDRGq7tXHuFJOR4+sM=
+
+Name: org/eclipse/ui/internal/views/markers/QuickFixPage$2.class
+SHA-256-Digest: 7S6IuMrJ2R+e25Otp/SUJTRq9MzTawk5qBC3Vh27sS0=
+
+Name: org/eclipse/ui/internal/views/markers/ConfigureContentsDialogHan
+ dler.class
+SHA-256-Digest: DBVht17Wn3jCwAGjQnC6I2sqQL9zMlkWavFXT9Wzk1k=
+
+Name: org/eclipse/ui/IFileEditorInput.class
+SHA-256-Digest: K9gw3+8INwGBrofqTa7ZBBNdc67lsHXy8A+m7Xm3PQY=
+
+Name: icons/full/dtool16/prev_nav@2x.png
+SHA-256-Digest: C1mVe1mhItywB8LYAEX0RvctBmOedFfVXIxTdNef398=
+
+Name: icons/full/dlcl16/usearch_obj.png
+SHA-256-Digest: 9cm0NJPl7qO3lot/QDCW59YfBSb41hQaG2xco1A7x7k=
+
+Name: org/eclipse/ui/views/framelist/TreeFrame.class
+SHA-256-Digest: rqBOsfkSATqJcSTO/b9U9Z3g8pGUiHDiGHRF0JoX36U=
+
+Name: icons/full/obj16/header_complete.png
+SHA-256-Digest: HzA7WjQSomVolHD/t3DikTMpFgyea+XYAN4csxQgEKM=
+
+Name: org/eclipse/ui/internal/ide/dialogs/FilterEditDialog.class
+SHA-256-Digest: f7Q6qrkPRPkxCeZH+xTUEPdqxJJnq4Tk8f0FuRYEUu8=
+
+Name: org/eclipse/ui/ide/IContributorResourceAdapter2.class
+SHA-256-Digest: h0ajhFUXaI4M+BTL/kre7Y92Uj+hcZ26Fz/eg92b80M=
+
+Name: org/eclipse/ui/internal/ide/dialogs/ResourceFilterGroup$4.class
+SHA-256-Digest: 8OQTzbl6AF5KrUHHalycibgFOd+YoY6/ZCAsQNeTtJk=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/SmartImportJobRepor
+ tDialog.class
+SHA-256-Digest: 8tWhLD9DDhT3d1EIM0v46ePmQFL5askVzkqCud0AJL4=
+
+Name: org/eclipse/ui/internal/views/markers/MarkerCompletionField$Comp
+ letionEditingSupport.class
+SHA-256-Digest: XKUTP6FPfbg0RkF1IFk9vc80ovFRIaRSej2Mdx7SNt0=
+
+Name: icons/full/eview16/problems_view_info.png
+SHA-256-Digest: 2asw9NV14pfe75KRxWa9ozJz3/BHasd76ynM2FDjFik=
+
+Name: org/eclipse/ui/internal/ide/registry/MarkerQueryResult.class
+SHA-256-Digest: H55E+qy/hc26XJor84vSrZjpNj6gRYNAkI//og6am+A=
+
+Name: icons/full/dtool16/newgroup_wiz.png
+SHA-256-Digest: IdCegF11CWZNsDzUjXvu3G3kkT9Vhuz+ISfNswnQlW8=
+
+Name: org/eclipse/ui/actions/TextActionHandler$SelectAllActionHandler.
+ class
+SHA-256-Digest: S/IxQfVJCbLNXvY9UBueYkvTkPFYjPw/rO3tsmStlg0=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/expressions/HasFile
+ WithSuffixRecursivelyExpression$RecursiveSuffixFileFinder.class
+SHA-256-Digest: iViJTVj29nYewDj3FavB9rs6FvqyvfK2z/Ce441XvNo=
+
+Name: icons/full/dlcl16/selected_mode@2x.png
+SHA-256-Digest: J+YLIdnmNhWighWfi2zcvRkf7u6oHYRrZuRO4YNzwVU=
+
+Name: org/eclipse/ui/internal/views/markers/QuickFixPage$3.class
+SHA-256-Digest: /1iGqd5voVuCf7T5RdxZe03aK1yIfJC/5Tq3CD5HzyQ=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/TarException.class
+SHA-256-Digest: rp2a19f053rlLTQT5+iYsh57EBUqyLfvJ4nYCOm2gqA=
+
+Name: org/eclipse/ui/actions/WorkspaceAction.class
+SHA-256-Digest: RfJhxUjfWNkakzL8wJQ/jKtdS25BFCWaSuX/POn7eCg=
+
+Name: icons/full/obj16/cprj_obj@2x.png
+SHA-256-Digest: BaJ5nll7rf49AETCMuVnY8Ypqx4LOYslvdxuKBeWJ6U=
+
+Name: org/eclipse/ui/wizards/datatransfer/FileSystemStructureProvider.
+ class
+SHA-256-Digest: 5vTMZJtwFPPBIA2ydA56VARknfkvXnzIzvizxHORerc=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/WizardProjectsImpor
+ tPage$15.class
+SHA-256-Digest: vUyhrghUMMg/hokQvOK0+hctDFATGRXZ7mSg3wuax3o=
+
+Name: icons/full/obj16/warning@2x.png
+SHA-256-Digest: QCrZHxUgkEa2M1/p2R4UyKRsgeX5FoPprIXDAHFrrtQ=
+
+Name: org/eclipse/ui/internal/ide/dialogs/FilterEditDialog$2.class
+SHA-256-Digest: 2JjGaytNHeMJGlTBmoMOGPUktMN4zjEBdYYmtmkeEYM=
+
+Name: org/eclipse/ui/actions/CopyFilesAndFoldersOperation$2.class
+SHA-256-Digest: +cwyRzRT+Ehmrav5bwhYtWKc+7m99AbZna1hLFmpFj0=
+
+Name: org/eclipse/ui/internal/views/markers/FiltersConfigurationDialog
+ $1.class
+SHA-256-Digest: ciGBUxYdS38UAnj8OS66Ch1376xf/uMBHLPdU2sOmP0=
+
+Name: org/eclipse/ui/views/markers/internal/DialogTaskProperties$2.cla
+ ss
+SHA-256-Digest: 4E5i4eRPtRaoJKtdyaK94wQj9Xgzjig5F0xRKNwJF/Q=
+
+Name: org/eclipse/ui/ide/undo/DeleteMarkersOperation.class
+SHA-256-Digest: YoxcvrwwKzR/IFPQidYe0+SS9KCOdD9BQJJTEwK+dH4=
+
+Name: org/eclipse/ui/actions/ReadOnlyStateChecker.class
+SHA-256-Digest: W6N9nxZQWmGHqSAEIfJSO0ctZpbqn99surrLsEmsQNI=
+
+Name: org/eclipse/ui/ide/dialogs/ResourceEncodingFieldEditor$1.class
+SHA-256-Digest: ZDjtB0tZs6dfmd7MqEP+KdiOE1LiM86ScoYugpwqq+g=
+
+Name: org/eclipse/ui/internal/views/markers/MarkerHelpAdapterFactory.c
+ lass
+SHA-256-Digest: G7cVZYThUnly+WpiXUEb98mjlDt9ntARjcZ6EJVUPds=
+
+Name: org/eclipse/ui/internal/ide/undo/ContainerDescription.class
+SHA-256-Digest: 7rLUqUVucaTyRKIS6ATS9RcD879kni5pt6E7F2XQFqk=
+
+Name: icons/full/wizban/exportzip_wiz@2x.png
+SHA-256-Digest: rFdj7ajLdq2ucAmBBEXnVbFSZQ9twoBWxmWUxKh9Qh4=
+
+Name: icons/full/dview16/filenav_nav.png
+SHA-256-Digest: mTSHYAEZv2hqyXuYbXLiBDXDYS/JzZEpfM71FbBCy6o=
+
+Name: org/eclipse/ui/actions/CopyFilesAndFoldersOperation$1.class
+SHA-256-Digest: 3knMD+LD9xnpNeBTGd4CSy776dnm2rSww98optH8GjU=
+
+Name: org/eclipse/ui/dialogs/FileSelectionDialog.class
+SHA-256-Digest: A3gS+RB4rZhEpJUgnojtJZmEYrH5PAeYSKzU70YNIM0=
+
+Name: org/eclipse/ui/internal/ide/dialogs/ResourceFilterGroup$5.class
+SHA-256-Digest: pxCNtVzVmB98dpQMtGkl6XvyNpk1T/9Txe9Uy8PJUf4=
+
+Name: org/eclipse/ui/views/framelist/IFrameListHelpContextIds.class
+SHA-256-Digest: bPitfktGUaWMG2GMyJkchUJa5m9Wy/HyxGPTnX4ymQs=
+
+Name: org/eclipse/ui/internal/views/helpers/EmptyWorkspaceHelper$Impor
+ tAction.class
+SHA-256-Digest: Fk4CEESEv7C0Iov0BmLm3QJeczRyIZSWHEh0rw1GL3Q=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/SmartImportJob$1.cl
+ ass
+SHA-256-Digest: y0RXwMdq8OKKulVHKD3uk0t+aegd69qLxYiDWpDJTPI=
+
+Name: org/eclipse/ui/internal/ide/model/WorkbenchResource.class
+SHA-256-Digest: GbTAlpQumlRE4f7NE29O7hLtLFl7XYVy5JM+tpp1lwQ=
+
+Name: icons/full/etool16/search_src@2x.png
+SHA-256-Digest: JQgHaxNYjOIdObg4oz+KZjLsrIQLPG5BUtXssY5z6CY=
+
+Name: org/eclipse/ui/actions/CopyFilesAndFoldersOperation$8.class
+SHA-256-Digest: DzmH72rncaw1iTkDb/CjL5bAO+9idU7g1y650LP09Mo=
+
+Name: org/eclipse/ui/internal/ide/dialogs/ResourceFilterGroup$LabelPro
+ vider.class
+SHA-256-Digest: C3/FsRKkqQ2vvl3xuXpidCxJwnHrnghX2xSixnqJE5E=
+
+Name: org/eclipse/ui/internal/views/markers/SortFieldContribution$2.cl
+ ass
+SHA-256-Digest: KlVQZkXREe7KYwKibLtGici21P06N27BeQhN6n0XTfE=
+
+Name: org/eclipse/ui/views/bookmarkexplorer/BookmarkNavigator.class
+SHA-256-Digest: qoGnEuCz0V9Ec0U3Asc4dNuc8pQ2sMmnWc4Kt8qdqbw=
+
+Name: org/eclipse/ui/internal/views/markers/ScopeArea$WorkingSetArea.c
+ lass
+SHA-256-Digest: 8DAxnec5U6FUmB+8+6lVb1UDy+FLUNI5qrT7zgb8T88=
+
+Name: org/eclipse/ui/ide/IDEActionFactory$9.class
+SHA-256-Digest: NuOPuukDzyfKBwHyGxZ+UzcXlKMAA9XR3BKzP4N/ZUs=
+
+Name: icons/full/obj16/quickfix_error_obj.png
+SHA-256-Digest: /EF2UtXr63Kwr73PsfOtSLih62jEakamweT0m9l6kYw=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/OpenFolderCommand.c
+ lass
+SHA-256-Digest: wj49VKbUGq2oY3IPf1UBOPR14KAT5wIY1u96gNQiTYw=
+
+Name: org/eclipse/ui/internal/ide/StringMatcher$Position.class
+SHA-256-Digest: K1zLBMRP3lTdnM+M08WKeFgX8q+v2WoYK50+hWPOeZs=
+
+Name: org/eclipse/ui/internal/ide/dialogs/OpenResourceDialog.class
+SHA-256-Digest: JfYBZGNQCrf5PkTO9MYXyw0IgYT3QI5Ona1sci9UOM4=
+
+Name: org/eclipse/ui/internal/views/markers/DeleteCompletedHandler.cla
+ ss
+SHA-256-Digest: bSqtSSHu98BEJby37GfTyTdVJ4s9MDSAVx4RXb4/HII=
+
+Name: org/eclipse/ui/wizards/datatransfer/RecursiveFileFinder.class
+SHA-256-Digest: y4v9PcCKvLEn9ZDAXdcHrjl76jZzy8VaJy5IO2FGSY4=
+
+Name: org/eclipse/ui/dialogs/WizardExportResourcesPage$1.class
+SHA-256-Digest: JDEo965oekM+j60JMDH58tt4UzTOVgwX3tK47rCl8Dk=
+
+Name: icons/full/obj16/incomplete_tsk@2x.png
+SHA-256-Digest: umSTwkw/erwP2lSg6PP9nCsGz6kGM/l/GsF5Juzl6js=
+
+Name: icons/full/elcl16/addtsk_tsk@2x.png
+SHA-256-Digest: B6TuQ+JLF9WPamVsh97qvmsdNJkyIc4XtRyyApTXsKs=
+
+Name: org/eclipse/ui/actions/DeleteResourceAction.class
+SHA-256-Digest: V2tLRU/NxmpjR2dvq9uAtORD1n6AHfJkggdaVd1kqmE=
+
+Name: org/eclipse/ui/dialogs/ProjectLocationMoveDialog.class
+SHA-256-Digest: lGbg8OTjRkCNnIcXMW+G0Oaq7aUXE+DwmbeMXAtdDfM=
+
+Name: org/eclipse/ui/internal/ide/actions/QuickMenuAction$1.class
+SHA-256-Digest: sIf81NbkeDCKn74niW7RRgjQ+O41ZwtBCH7k7ObO7A8=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/CouldNotImportProje
+ ctException.class
+SHA-256-Digest: jKaFKVzHBh60onx6xj/yh8cUK1lKy4lVcWnl4pzmVOY=
+
+Name: org/eclipse/ui/IMarkerHelpRegistry.class
+SHA-256-Digest: kzmsMqHcNV8WzIpWwPATELIXyy48MQ/HLkEUCJtpFYw=
+
+Name: org/eclipse/ui/IContributorResourceAdapter.class
+SHA-256-Digest: 2aOXfA6/Edm9UpRcrkJRWzN6s1w01uJ21zXykVr5vZY=
+
+Name: org/eclipse/ui/ide/IDE$1.class
+SHA-256-Digest: RYcToohlefnWiAIlROZdTn9H4xZWBd+Ks/upEYnsslM=
+
+Name: org/eclipse/ui/ide/undo/AbstractCreateResourcesOperation.class
+SHA-256-Digest: CwvkXR7RgAmIS5nELffIlMEzEy36Xe8YlSX5eIZ9/pY=
+
+Name: org/eclipse/ui/internal/views/markers/ExtendedMarkersView$6.clas
+ s
+SHA-256-Digest: XCzSuyGtSG8eNT22259WfAv/xG8dsmEB2W4knXIbx40=
+
+Name: icons/full/etool16/newfile_wiz.png
+SHA-256-Digest: GgnsMpHv+Izw6xAZebpZmNfwSSUDJA+Y1i2dRR341yM=
+
+Name: org/eclipse/ui/internal/views/markers/QuickFixPage$1.class
+SHA-256-Digest: Nvu6+bZJqmPLEe8zgz7xz9E7KpDl1+icvJ6jfyK+qz0=
+
+Name: icons/full/dview16/bkmrk_nav.png
+SHA-256-Digest: uotemlVNLlBPjSZyu4e+hU0oQUjs1OKE9lLXo8SwhvI=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/WizardProjectsImpor
+ tPage$3.class
+SHA-256-Digest: 3PVOLwy3vwlgeJ7dV18nJsAM9msOcXehMTtYTIPF7fo=
+
+Name: org/eclipse/ui/actions/CopyFilesAndFoldersOperation$6.class
+SHA-256-Digest: 2a0M0C3sv18/h3rgvnaqChEDNRGuwl2zxxcu0azaTIA=
+
+Name: icons/full/obj16/warn_tsk.png
+SHA-256-Digest: 922+QFrupJRVPeg5BHHYqBoA9ecwWA7o6YnMaXBHFoo=
+
+Name: org/eclipse/ui/internal/views/markers/ScopeArea$1.class
+SHA-256-Digest: Xd2QCvSLi2m7G7SPYVizZNmTC0E94TsaPj3oDtHdGYw=
+
+Name: org/eclipse/ui/internal/ide/commands/ResourcePathConverter.class
+SHA-256-Digest: eI14u8KZ3tIqn7G3nzGT/XjL1K3JPeSx1BU5C0wFRfg=
+
+Name: org/eclipse/ui/wizards/datatransfer/WizardExternalProjectImportP
+ age$2.class
+SHA-256-Digest: Cj3zNvNGxqN6HsOXS4EoXiZNk8G9wuFHjKtk+syGbRk=
+
+Name: org/eclipse/ui/wizards/datatransfer/ImportOperation.class
+SHA-256-Digest: TDJgQNeW9v7X+twIJEgiYqGIxr6FcN5qanUTgriuj9M=
+
+Name: icons/full/etool16/importdir_wiz.png
+SHA-256-Digest: VY+LS156iW1I9JDiyVhcwIi9AMnaV+WOxeC1zARUp5s=
+
+Name: org/eclipse/ui/IMarkerResolutionGenerator.class
+SHA-256-Digest: pvX7wfn0PtUghr0goBmoxvdohBbsUz5uNOTRXpN8Juc=
+
+Name: org/eclipse/ui/internal/ide/dialogs/FilterEditDialog$5.class
+SHA-256-Digest: PU90NZJ85rbEemSJPlhJNlp6kQfHb4sC6bmE5JCG/68=
+
+Name: org/eclipse/ui/internal/ide/misc/OverlayIcon.class
+SHA-256-Digest: sFEr/XHTdcLF4GB8EW9ZPersSuD5MDWX3oJVTq0axD4=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/TarOutputStream.cla
+ ss
+SHA-256-Digest: bZk8AQMDj5lvcsOt94DRptSnj8KmcvHNgih7F+0fqvI=
+
+Name: org/eclipse/ui/ide/IDEActionFactory$6.class
+SHA-256-Digest: +RRmRO4Z46ELW0PcuDWYeyUexwHZUEx1cJstuzSX5WQ=
+
+Name: org/eclipse/ui/internal/ide/EditorAssociationOverrideDescriptor$
+ 1.class
+SHA-256-Digest: l51f3C1kkGsA2QuS6gzXOc0vfG2iVclMSaJlF/IKoAM=
+
+Name: org/eclipse/ui/IMarkerResolutionGenerator2.class
+SHA-256-Digest: j1Gbore+CGBWiTYW9fLc48Li9aseir6ccNvdB0/nVrY=
+
+Name: org/eclipse/ui/internal/ide/actions/OpenLocalFileAction.class
+SHA-256-Digest: kaWv/jn/sAX/nrxF3wSu+AT6ncUv8kl5N0pvNBNfo54=
+
+Name: org/eclipse/ui/internal/ide/dialogs/WelcomeParser.class
+SHA-256-Digest: Y/eWa2xyN7mIVkZ1Hb1psHWIeAOffKNGgNBcwob+RLU=
+
+Name: icons/full/wizban/workset_wiz@2x.png
+SHA-256-Digest: YNzG+Z/0tSRPtpp09odIJToR67bgv6+0oY7b+MJP7h0=
+
+Name: org/eclipse/ui/internal/ide/registry/MarkerImageProviderRegistry
+ $1MarkerImageReader.class
+SHA-256-Digest: LqpDT5Y1I8oob7EAM+cqxqdXPOL5NLMXixjCc8CM5q8=
+
+Name: org/eclipse/ui/dialogs/WizardNewFileCreationPage.class
+SHA-256-Digest: rZ/7ukJtjUFrtEdeZfks31l9QZ3opb5Jk+zWyUsGs18=
+
+Name: org/eclipse/ui/internal/views/markers/MarkerPathField.class
+SHA-256-Digest: 0ITs9rc41QQaMOUCvif0teIIUvajM0Q9BOchGSD/4hw=
+
+Name: org/eclipse/ui/views/bookmarkexplorer/BookmarkNavigator$SortByAc
+ tion.class
+SHA-256-Digest: NFklZXlGfpXPAAHv2SZiTiboWFXAD++8Mx5QCxWVMq0=
+
+Name: org/eclipse/ui/dialogs/WizardNewLinkPage.class
+SHA-256-Digest: Uoa6y2OTMW6Q6kKeKZEFgI0q2gKSLfiMFqquj7DMAw8=
+
+Name: org/eclipse/ui/actions/CopyFilesAndFoldersOperation$3.class
+SHA-256-Digest: GvdhtFQPsdGaJczPp3mpbZqEVUL88kDB2zZdNekwoc0=
+
+Name: org/eclipse/ui/internal/ide/dialogs/ProjectNaturesPage$3.class
+SHA-256-Digest: lJSR81qK/1k9o1QxXgW65NugzByCayR3sbnLfsEb5ow=
+
+Name: org/eclipse/ui/internal/ide/dialogs/FilterEditDialog$8.class
+SHA-256-Digest: zWEHsLHTTdFYt2O6sghHcCOAvTRubiEP35+KcQP3DXE=
+
+Name: icons/full/etool16/next_nav.png
+SHA-256-Digest: wN1tNED0kwnK+FWNLEAESHNjWmeoYporW0gVWLO2COY=
+
+Name: org/eclipse/ui/internal/ide/dialogs/FilterEditDialog$6.class
+SHA-256-Digest: GRoBM7HC1bU86lmUJ8pQvf1BP57dzeFVIy6vDE7edHM=
+
+Name: icons/full/wizban/newprj_wiz.png
+SHA-256-Digest: gsELJ3FsX3MRo6TGfSvjIM7d3eroOR46WKug6s+BQd8=
+
+Name: icons/full/elcl16/flatLayout.png
+SHA-256-Digest: KL2hKsoUXSUABOQy8w9bARGXZFOnsKfN10LDp0sGYqY=
+
+Name: org/eclipse/ui/views/markers/MarkerItem.class
+SHA-256-Digest: BFjq3uCpDwUq5EY2zioAp2YmsqVhTHBygdjGn7u0HFg=
+
+Name: org/eclipse/ui/views/navigator/SortViewAction.class
+SHA-256-Digest: mfBNgKqJw34SGVysGaKv+WgOMX2h9MdTbmAf+HY0dYg=
+
+Name: org/eclipse/ui/actions/CopyFilesAndFoldersOperation$5.class
+SHA-256-Digest: WGQiCtzK7scXSa9/pDNysx/IL6b4xDZwvjaZpoeBwc0=
+
+Name: org/eclipse/ui/views/navigator/ResourceNavigator$1.class
+SHA-256-Digest: z9BB46I3Gtlws0rTKuDALaXh2FddMebBrJ9rKCO/UuU=
+
+Name: icons/full/elcl16/removefromworkset@2x.png
+SHA-256-Digest: D2QbjZJxPCgQYDEMahlHT6n2afqWK0UCSvFsCoA6oPk=
+
+Name: org/eclipse/ui/internal/views/markers/MarkerCopyHandler.class
+SHA-256-Digest: PLx8X7UcSVv1XvXTENw6i5N/QZWep7BiheaMQh61r1I=
+
+Name: org/eclipse/ui/views/markers/internal/TableComparator.class
+SHA-256-Digest: srFDKEIJhtmdoLhEVknUXg4j8YXYfPZDNS5C+6JPC/Y=
+
+Name: org/eclipse/ui/internal/ide/model/WorkingSetAdapterFactory.class
+SHA-256-Digest: 5JwNtun30f9j15qBV0GH2W18OZDBebdJ6qoCqbvr2Ew=
+
+Name: org/eclipse/ui/internal/views/markers/MarkerLocationField.class
+SHA-256-Digest: cFzPRh5VRvook8XQGNyzg1ZynK8mqcT9qKPCwzF4KTI=
+
+Name: org/eclipse/ui/internal/ide/StringMatcher.class
+SHA-256-Digest: Q356/yzDIeqS8Ln/xKE6gFLEDFn0Is3xmJGACYGWK3g=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/expressions/HasFile
+ RecursivelyExpression.class
+SHA-256-Digest: 0wyknKzC0AIMUMQu+SzTmiGAjinTsecPFFXJGOjZbLA=
+
+Name: org/eclipse/ui/internal/views/markers/MarkersContribution.class
+SHA-256-Digest: tRX1XiLut6f0ZGaGCQyHhTLMVLdBIDBx88u+eTd+RoU=
+
+Name: org/eclipse/ui/internal/views/markers/EditablePropertyTester.cla
+ ss
+SHA-256-Digest: C2dZYdxzK2pLtdjp8pz1ImlbBbJZHfEkoG1aVT+M95E=
+
+Name: org/eclipse/ui/internal/ide/undo/FolderDescription.class
+SHA-256-Digest: hjnxBfeilTGaO8vyJ2mYdvTzX6wbg2mspSpLEPzhh1g=
+
+Name: org/eclipse/ui/internal/views/markers/ExtendedMarkersView$3.clas
+ s
+SHA-256-Digest: tjtCC9xXWMu85QgUsjq09vILsc/82VAtdszwtsr1Wl8=
+
+Name: icons/full/markers/contassist_ovr@2x.png
+SHA-256-Digest: TEzfAR7xwH7swYIWS9ajei2tBtK2mHQTg5SSMy3c7rs=
+
+Name: org/eclipse/ui/internal/ide/addons/SaveAllDirtyPartsAddon$AutoSa
+ veJob.class
+SHA-256-Digest: vqc/QxWC6ueB8d32QYtMXQ05kiTB94obqLn0k9qd1m4=
+
+Name: org/eclipse/ui/dialogs/NewFolderDialog.class
+SHA-256-Digest: 4MjqXhzcB6qnOPsTfmX+VWRpxj0vdKNe1M4IjBAqMnM=
+
+Name: icons/full/dtool16/import_wiz@2x.png
+SHA-256-Digest: iwU2oS5gGz/4EpioixV8zSGMg725pRzRqkBod7DH8+E=
+
+Name: icons/full/obj16/cprj_obj.png
+SHA-256-Digest: Y5E33LoZTczGwsDNTzps4FMrcuJpAF4paT1kc1nNAb4=
+
+Name: org/eclipse/ui/ide/IDEActionFactory$7.class
+SHA-256-Digest: pS9a13H88Mklnidesk4799Mwp5X0ULh6UMDU4NEWh7g=
+
+Name: org/eclipse/ui/views/navigator/ResourceNavigator$2.class
+SHA-256-Digest: 4uz1z8w8yUGphT6n/+RvOoqZu1XYeaQPY/NyK5quKz0=
+
+Name: icons/full/obj16/fileFolderType_filter@2x.png
+SHA-256-Digest: uPiKcacAAY5miRRMSghUWhUDYscmY64VezazFWJVfbY=
+
+Name: org/eclipse/ui/internal/ide/dialogs/IElementFilter.class
+SHA-256-Digest: siW9fymHgQk5PCEm3xobJJgIDBK2kwPEvkGG3whDZfc=
+
+Name: org/eclipse/ui/actions/NewExampleAction.class
+SHA-256-Digest: pB/ApG3XR7q9C7811eCNrUSfk+wbORnT3zDF+I1yvbE=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/WizardProjectsImpor
+ tPage.class
+SHA-256-Digest: PGqDj4aC11ocMVQAST2RUi4NKeW6F2rYBrpyKUvOXao=
+
+Name: icons/full/wizban/newgroup_wiz.png
+SHA-256-Digest: yWnaC8/Xqore55HwAN3HAbkUJNbPEaioTTb5q3B72Ws=
+
+Name: org/eclipse/ui/internal/ide/dialogs/FilterEditDialog$7.class
+SHA-256-Digest: hpxnzJVndYQc9CCIJGPpb7oiIzTBJigZk2MxwFV3XMo=
+
+Name: org/eclipse/ui/internal/ide/dialogs/WelcomeParser$WelcomeContent
+ Handler.class
+SHA-256-Digest: icmiZtE6DyRM3na3020TM/4ypKLzpH5QjH+QRbPltlo=
+
+Name: icons/full/eview16/bkmrk_nav.gif
+SHA-256-Digest: yOn+17L6ZMkwR757YWHXOArQPEmBcckOrxFSvy1jL/k=
+
+Name: org/eclipse/ui/views/markers/internal/FieldCategory.class
+SHA-256-Digest: mvxDzA143bPyq2U+ztDpy3hNKaLHVsu37euD9RvPG84=
+
+Name: org/eclipse/ui/internal/ide/dialogs/ProjectNaturesPage$1.class
+SHA-256-Digest: 0uetblsXaFoCmxzlVmWjxDyWcF1oY+wqLvuhw6e34q8=
+
+Name: icons/full/ovr16/link_ovr@2x.png
+SHA-256-Digest: tD1VAneevtm6/DOBg87ERHjkER8fd9J0Bmp59v2Mt6k=
+
+Name: org/eclipse/ui/views/bookmarkexplorer/EditBookmarkAction.class
+SHA-256-Digest: +kWAj882ypiwuv3O0Xh0FWZtxjyW5eKBCHgDIzH5Igk=
+
+Name: org/eclipse/ui/views/properties/IDEPropertiesMessages.class
+SHA-256-Digest: tw9z7+4QyYouOIfwWK1INh0WPaD6OtoDpY99D22E0Rc=
+
+Name: org/eclipse/ui/internal/views/markers/ExtendedMarkersView$4.clas
+ s
+SHA-256-Digest: ouYH7+mnh5O7YmEmj9QSZIDVhnTRp294XCTkvBXoALI=
+
+Name: org/eclipse/ui/internal/ide/actions/OpenWorkspaceAction.class
+SHA-256-Digest: r9GwdQIRGFGBHF9EoW5HbnhP40l+rtMnK5P/nbGQnag=
+
+Name: icons/full/dtool16/exportzip_wiz.png
+SHA-256-Digest: OFA1YDTJN9Avgb2YXQDs/NE1PnM2c1R73VdPgQrSxIM=
+
+Name: icons/full/elcl16/smartmode_co@2x.png
+SHA-256-Digest: huO8RBGFFmEQgpSHWcfHOKs+qYGqfwHKeUbJLUcbfkw=
+
+Name: org/eclipse/ui/internal/views/markers/MarkerPriorityField$Priori
+ tyEditingSupport.class
+SHA-256-Digest: gP38V7YOU3meJljyW9E+KcP5Yr27/0EtVCNQQFWEQfM=
+
+Name: org/eclipse/ui/internal/ide/dialogs/AutoSavePreferencePage.class
+SHA-256-Digest: qKLMOJ2rtJNdK4TXvkJVtYoWoqkjDDCNnobuym37CEY=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/WizardProjectsImpor
+ tPage$1.class
+SHA-256-Digest: Q/+vx3CPRmIIxUjbfuUrqoqZ7lZt8hwxa3KRROq8cxw=
+
+Name: icons/full/ovr16/filterapplied_ovr.png
+SHA-256-Digest: gQjctvdbdTIly815FZxwJWhpqlrNbQUmz2QXVxeZEsI=
+
+Name: org/eclipse/ui/ide/IDEActionFactory$8.class
+SHA-256-Digest: JU6EOoLEjtgbpFGrm98EFn8lpYel+4iGvUdOoD7Jhtk=
+
+Name: org/eclipse/ui/internal/ide/ChooseWorkspaceDialog.class
+SHA-256-Digest: o+Bl2W50BXAjNSsxO7CljZbzVCGKlwirir7erQQG+cc=
+
+Name: icons/full/eview16/problems_view_error.gif
+SHA-256-Digest: xlznDddzfZ7Wu2bQuLZSCCoI5dtqAthQbt8Bef72Yqw=
+
+Name: org/eclipse/ui/internal/ide/undo/AbstractResourceDescription.cla
+ ss
+SHA-256-Digest: +b5ii+LkBh8GvEm+BkP1adLsm4xwb1h5aywyFckmD8o=
+
+Name: org/eclipse/ui/internal/ide/dialogs/ResourceFilterGroup$2.class
+SHA-256-Digest: wY4qQgSW0hysrsQiPOkH3nR/wU8GOEEjNYsIgQ59LjM=
+
+Name: org/eclipse/ui/internal/ide/IURIEditorInputAdapterFactory.class
+SHA-256-Digest: YcX3w1h2qSRJLadA1M3EMOv+0Gr0PTi2dHE9NokdZ78=
+
+Name: org/eclipse/ui/internal/ide/dialogs/WelcomeEditor$1.class
+SHA-256-Digest: GqZ1vNBDwsTEwoa4SG4Wm8+MySzzZsMC9LTBopP8tBg=
+
+Name: org/eclipse/ui/internal/ide/actions/OpenWorkspaceAction$MenuCrea
+ tor.class
+SHA-256-Digest: HI6G558zBTPnSaHE1EpT8LVoUKws10C+XKOKt5s3Y1E=
+
+Name: org/eclipse/ui/internal/views/markers/AllMarkersSeverityAndDescr
+ iptionConfigurationArea.class
+SHA-256-Digest: lib/5GxwZgTkZrjGK8oKjBC72a73Uc7b0Y1yXLWs/LU=
+
+Name: org/eclipse/ui/internal/views/markers/CopyMarkerDescriptionHandl
+ er.class
+SHA-256-Digest: BAlETA1agfreorDcIwmDEbOZj6xGc0JqQzJp3347An8=
+
+Name: org/eclipse/ui/part/MarkerTransfer.class
+SHA-256-Digest: v5BWEmMxZXPprVjSIazz7xsTgdEo4VTTbRGYIJqFQCg=
+
+Name: icons/full/elcl16/showtsk_tsk.png
+SHA-256-Digest: C8/p6Zx++FVhaUIYGEJeMnmauSpwRgcYFnUjqCWm2TI=
+
+Name: org/eclipse/ui/ide/undo/MoveResourcesOperation.class
+SHA-256-Digest: 5Q63OZxdH6vLjEedVMZ7cEsl0CnFlM6M05fIhVniMG0=
+
+Name: org/eclipse/ui/internal/ide/dialogs/CreateLinkedResourceGroup$1.
+ class
+SHA-256-Digest: Cku7bOzjjKwtZJTQLjXaww991K33M0nuC+zreGOlFV8=
+
+Name: org/eclipse/ui/actions/NewWizardMenu.class
+SHA-256-Digest: MGsoiNBFOwel0brHWexRJMwIZ2kSUZDqmScQYSjBej0=
+
+Name: icons/full/dlcl16/removefromworkset@2x.png
+SHA-256-Digest: 9ey79FVbUbyQCo6l9bi2fc4iNj0PCBL6yb1YYOuKpW8=
+
+Name: org/eclipse/ui/views/navigator/FilterSelectionAction.class
+SHA-256-Digest: pPDE1pJpDMt4ephigGfZwegi2wjGjJm3LRNTIWwG6Q0=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/MinimizedFileSystem
+ Element.class
+SHA-256-Digest: XFU5vsS6/Vwi0Z6g43sSHzIzyep/20mYaZxwT1DfAEU=
+
+Name: icons/full/dlcl16/synced@2x.png
+SHA-256-Digest: jlkmyoXnyWEBZDvX/5ngH3Lsko02nzKbwrDZodCXdjM=
+
+Name: org/eclipse/ui/internal/ide/model/WorkingSetAdapterFactory$Contr
+ ibutorResourceAdapter.class
+SHA-256-Digest: IdOW8/Wg83IKbYOXHvQUjQLher51JgOdAyt152tWZYw=
+
+Name: icons/full/elcl16/workingsets@2x.png
+SHA-256-Digest: HvLd+tY68ZwH3OEK4YZLSnAOuilM0XawzRouNiHhpLg=
+
+Name: org/eclipse/ui/internal/views/markers/SeverityAndDescriptionFiel
+ dFilter.class
+SHA-256-Digest: 8zufMJXEGlzQSBsyh2VEkf05aZj7uopmThAmujw7cXM=
+
+Name: org/eclipse/ui/dialogs/ResourceListSelectionDialog$4.class
+SHA-256-Digest: 6eP7ElPsBOLxCo4crZfzBL36YxaG/WK6KaxIPhaH4jU=
+
+Name: org/eclipse/ui/internal/ide/dialogs/ResourceFilterGroup$EditFilt
+ erAction.class
+SHA-256-Digest: WePSSIITYJ1DVHGdItkQiOCWSCcrkJ+/iBmwqTpjISw=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/SmartImportRootWiza
+ rdPage$FolderForProjectsLabelProvider.class
+SHA-256-Digest: US9Q3vxfAv1MZ1+z754w6PZhIqLXcj5Jz4YKJxwtzLI=
+
+Name: org/eclipse/ui/internal/ide/ChooseWorkspaceDialog$1.class
+SHA-256-Digest: Mb6wyjMMMa3m3UTeHgpawct6SEHrzXnSuqhg0bF2g/Y=
+
+Name: org/eclipse/ui/actions/CreateFileAction.class
+SHA-256-Digest: xL76nSvfneIIdLZzGe5ifeRpUJaBuHWfPNK9T0oRvpk=
+
+Name: icons/full/obj16/taskmrk_tsk.png
+SHA-256-Digest: w3LzhjEPt4bSLf68+X6XDHEzr/pQqImDfOBOXUEot3k=
+
+Name: org/eclipse/ui/internal/ide/dialogs/ResourceFilterGroup$FilterCo
+ pyDrag.class
+SHA-256-Digest: xVbNrvkUwRETMfYjmUT403j9rr91LC5uFWBlICWEd4o=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/SmartImportRootWiza
+ rdPage$10.class
+SHA-256-Digest: R2LqwoIlac8kcwa84kg7QTKhymvY5l/8iJD7OEnA0Xc=
+
+Name: icons/full/dview16/filenav_nav@2x.png
+SHA-256-Digest: ieI1R4gGrhzVu/ZYOkTpr+Tm4EPv8Gxn4n4KsXDZuO4=
+
+Name: icons/full/obj16/fileType_filter@2x.png
+SHA-256-Digest: oJSupi+xHXN+iyh1Kl+ikuGe1bh/kJDSpP60/JQxYsw=
+
+Name: org/eclipse/ui/views/markers/MarkerViewUtil.class
+SHA-256-Digest: HoBbxbU+lZB/9WBa3D/LKJRxTW2ZAqy9aQWkqtUTzVc=
+
+Name: icons/full/obj16/quickfix_warning_obj.png
+SHA-256-Digest: BcxWoPklAGmmEgauunYaZW0tNdCEeukA+3tjvEl12Zc=
+
+Name: icons/full/elcl16/step_current.png
+SHA-256-Digest: BM53s8u8Qvl9Ei3rMivS9SNnG+EvbNy5gVbIkydjLUg=
+
+Name: icons/full/obj16/includeMode_filter.png
+SHA-256-Digest: ij0paoJIk2f2r4Kex5pvJyjefPBD1AvHOn4TZP0Gnxs=
+
+Name: icons/full/obj16/quickfix_warning_obj@2x.png
+SHA-256-Digest: Ql392OuAw++Q//Ea+3y8AUdkm0LcloWoDeKZpOQaiGI=
+
+Name: icons/full/dlcl16/showtsk_tsk@2x.png
+SHA-256-Digest: bAPwF3UubAwwUJVTi9T5S0Wn3LXYSCI6vUs17jooF60=
+
+Name: org/eclipse/ui/internal/views/markers/ErrorsWarningsParameters.c
+ lass
+SHA-256-Digest: S/fMy/Fz62+RYEHrszCtyhX1rq2IqWFD/zYA6OKs8B8=
+
+Name: org/eclipse/ui/internal/ide/ResourceWorkingSetUpdater$WorkingSet
+ Delta.class
+SHA-256-Digest: oiZauEOx22X3OkaBt6AfQTnPTbR52qQK5S0CjsZrPqg=
+
+Name: org/eclipse/ui/internal/views/markers/ExtendedMarkersView$2.clas
+ s
+SHA-256-Digest: 5luRhhtKLgjjus+mq4ainjVeGDWuYZdpftJeyAYycRA=
+
+Name: org/eclipse/ui/internal/views/markers/ExtendedMarkersView$7.clas
+ s
+SHA-256-Digest: lah63gHcBlt/yowr9u5cvvKJ0iVGSKVdEJ02nwtfgP8=
+
+Name: icons/full/dtool16/exportzip_wiz@2x.png
+SHA-256-Digest: bSWNKY7T3NeGAsh723AjiRiPzdZTEiP+YrbZgq4UmWY=
+
+Name: org/eclipse/ui/internal/ide/Policy.class
+SHA-256-Digest: bvBtHIEEsit3lVYxaHmtDzI8Y+BHf9O3/wDlMEklHwY=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/WizardProjectsImpor
+ tPage$4.class
+SHA-256-Digest: nZZmu1fm2Zo/cUF20l0ezVhnlQXF9RirHiHoDe8C2mU=
+
+Name: org/eclipse/ui/actions/SelectionListenerAction.class
+SHA-256-Digest: 1NCURZV3MjhkEYqpbQkAXq4nKCoHvhT4b6hj4b40ujM=
+
+Name: org/eclipse/ui/ide/dialogs/ResourceTreeAndListGroup$CheckListene
+ r.class
+SHA-256-Digest: I0Me7eO/A/zOjHlyjxhBJ1In6yHiRxkGbS1l5YlYN5w=
+
+Name: org/eclipse/ui/internal/ide/dialogs/PathVariableDialog$2.class
+SHA-256-Digest: NKSw4RQsgsL2OoEOcrPz/kaZX0J4sACGtXnTcmNSKqw=
+
+Name: org/eclipse/ui/wizards/datatransfer/FileSystemExportWizard.class
+SHA-256-Digest: SgsRETcrFUKsBMbdzqfqoq34S0SBRbNPcILNO4v+8yQ=
+
+Name: org/eclipse/ui/views/markers/internal/TaskMarker.class
+SHA-256-Digest: QSto7K7pQXeVNqmAqimsKw3ewKe5OSH7nguSQIbsKYo=
+
+Name: org/eclipse/ui/ide/IDEActionFactory$13.class
+SHA-256-Digest: wP14vkeBn/SreufWDeoeW5S/Dzu7V2VChrRI2LsfFDg=
+
+Name: icons/full/wizban/newfile_wiz.png
+SHA-256-Digest: iEa+f8tCedB6XVIdMvwQDJIqOVLrZlRDOwbfXyJNW+4=
+
+Name: org/eclipse/ui/views/navigator/GotoResourceDialog.class
+SHA-256-Digest: IuOx83ak9KS4nVFSQUE8LlV6C0+of9scVvvSZo9pUuU=
+
+Name: org/eclipse/ui/dialogs/WizardNewFolderMainPage$3.class
+SHA-256-Digest: gDHmAYDhfnUoFjYiXDq3w68rpRYyCvBvFmXAmOE9XGg=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/WizardProjectsImpor
+ tPage$ProjectRecord.class
+SHA-256-Digest: 9GC20u7xKjR/xIFvmBLI0AB0wLTgexWe4dkROU4XWK0=
+
+Name: org/eclipse/ui/dialogs/WizardDataTransferPage$1.class
+SHA-256-Digest: mVDNZwnosw1E6Yx0WInI+j9nb4lU4LDluK+1OXehFFs=
+
+Name: org/eclipse/ui/IResourceActionFilter.class
+SHA-256-Digest: D3H5n8+Uzu6s0fQX0fKu5EDqQpNdw/P7NwjSykx7KFc=
+
+Name: org/eclipse/ui/views/navigator/StringMatcher.class
+SHA-256-Digest: hG4wyfaozYTj7SITZybvtVpmD3xmOJLnzdDpPYnbO3o=
+
+Name: org/eclipse/ui/internal/ide/dialogs/PathVariablesGroup$5.class
+SHA-256-Digest: vUrXI0tHgi1FwIVdbhU/S0VPB123GGH3+w1jxaJUWsc=
+
+Name: org/eclipse/ui/dialogs/WizardExportResourcesPage$3.class
+SHA-256-Digest: JMc2YAcZQxdLx1eVVAhhLdSPY5qf8z16RSr2fwcCH3w=
+
+Name: org/eclipse/ui/internal/ide/dialogs/ProjectNaturesPage$4.class
+SHA-256-Digest: X21FrdxFvKCKoT2HTGWnYuXi+pC8ocO0jSelgm4SLNA=
+
+Name: org/eclipse/ui/dialogs/ResourceListSelectionDialog.class
+SHA-256-Digest: HiZ6wm/l/u4DPa0D2W7YeZjRCuBVQ1Zvpy2dxsbYEu4=
+
+Name: org/eclipse/ui/internal/views/markers/CompletionFieldFilter.clas
+ s
+SHA-256-Digest: 3V1YaHde4KO9GNoE40cddTmUUfM7Q0rXkV8pyXLmdog=
+
+Name: org/eclipse/ui/internal/ide/dialogs/BuildOrderPreferencePage$8.c
+ lass
+SHA-256-Digest: Vf4jIaldkCl+ENFmEzGthe5E22Uzwi42IW73Rp5LsMA=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/WizardFileSystemRes
+ ourceImportPage1$2.class
+SHA-256-Digest: MGSlk48BThloMQQONnB+ilD0lm9u4laXN3Y+UZQVBbQ=
+
+Name: org/eclipse/ui/internal/views/markers/ScopeArea$WorkingSetArea$1
+ .class
+SHA-256-Digest: +sKHpST+LqeMWLmqZZgPvuQB26fE9b7tA1vDhcFhhVg=
+
+Name: org/eclipse/ui/internal/ide/undo/FileDescription$1.class
+SHA-256-Digest: RAU/d2006mZCusm20ZA9YDGpfrXmst2L7JrtgXDhEDk=
+
+Name: org/eclipse/ui/internal/ide/dialogs/FilterCopy.class
+SHA-256-Digest: 4TsVjahA6HHEGZRfmaT6bqbWojJh01H/OVnWQfkXDvs=
+
+Name: org/eclipse/ui/internal/ide/ResourceWorkingSetUpdater.class
+SHA-256-Digest: gfdZEjGWqnAvjJDG98pTWU4UZTURAm8JO38tB+Uwah0=
+
+Name: org/eclipse/ui/actions/CopyFilesAndFoldersOperation$7$2.class
+SHA-256-Digest: mRjL51GAGs7bf9A52n60IC2DJJ4OHxS498I5gsB1lzI=
+
+Name: org/eclipse/ui/internal/ide/dialogs/FileSystemSelectionArea$2.cl
+ ass
+SHA-256-Digest: jJKbWcQDLnqlnMp+I9d8K1GJtcAjl+387CKCmWQx224=
+
+Name: org/eclipse/ui/internal/ide/dialogs/ICustomFilterArgumentUI.clas
+ s
+SHA-256-Digest: AVAz5dSpQJlp7AKeCkfekstjxBb24ANQBmgwXBZzOhc=
+
+Name: icons/full/dlcl16/addtoworkset.png
+SHA-256-Digest: PlEI65dIBSZy0sr6amOvhMcSKjaBPhJo8wiz47JYYKQ=
+
+Name: org/eclipse/ui/internal/ide/IDEWorkbenchErrorHandler$1.class
+SHA-256-Digest: claJx5iAv4XioLFnrQtrAHSsiBYPpkM04DVsLDY12JM=
+
+Name: org/eclipse/ui/internal/views/markers/ProblemsSeverityAndDescrip
+ tionFieldFilter.class
+SHA-256-Digest: NWCt8tVqOnDWKsakzG+tPos5Y8RhU0zYWIIjwE6+Z0g=
+
+Name: org/eclipse/ui/actions/CloseResourceAction.class
+SHA-256-Digest: F9voLX6j6kOLGyIiKlsU+nBmlMFC4H0+Rm1JmP05UDk=
+
+Name: org/eclipse/ui/views/markers/internal/DialogTaskProperties$1.cla
+ ss
+SHA-256-Digest: Y9x9cIPw1a2YJ8fgM6O4NFls/Db7jwxBHIND8biDcac=
+
+Name: org/eclipse/ui/internal/views/markers/QuickFixHandler$QuickFixWi
+ zardDialog.class
+SHA-256-Digest: wMVbx5QeDXs1GL7YqnwEU3exxGbQJik1sCkaQ2JUn3U=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/SmartImportJobRepor
+ tDialog$1.class
+SHA-256-Digest: jAsg3uxY4/oaW9Y3aqvfDAC87b4VbeG6HXQwwojOYpU=
+
+Name: icons/full/obj16/welcome_banner.png
+SHA-256-Digest: qKcDpluOhlGwGZBGG9HQw78z1lO0YucFxVrQlT5oSTo=
+
+Name: org/eclipse/ui/ide/dialogs/EncodingFieldEditor.class
+SHA-256-Digest: 39US4On8lj1H1TnXn3Jt1d2kwon/FZWk6Rqs8PGBKTI=
+
+Name: icons/full/obj16/bkmrk_tsk.png
+SHA-256-Digest: Zy9cBKUv2zzT1fN7H5KMEMDVHh4WVOiXUat4KXET344=
+
+Name: icons/full/obj16/goto_input.png
+SHA-256-Digest: lmxKQrdAnpysDKNpOUKukCxgsMTwSCXuVNoz+DRFxU8=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/ConfigureProjectHan
+ dler.class
+SHA-256-Digest: SaQSO4rAY6VqVY6mbt7ZJlcfqET7y+grMicbygAFELg=
+
+Name: org/eclipse/ui/actions/DeleteResourceAction$DeleteProjectDialog$
+ 2.class
+SHA-256-Digest: cUR+6Q6DQDSXh/0sv1pZ8g3Q4D+CO+8H6UbqR1cW9G8=
+
+Name: org/eclipse/ui/internal/views/markers/FiltersConfigurationDialog
+ $2.class
+SHA-256-Digest: dysYCQiLn9HAPMyFHuGFh7+fkjHUHXSGY7mpmNWzfxc=
+
+Name: org/eclipse/ui/internal/ide/dialogs/PathVariablesGroup.class
+SHA-256-Digest: +nN4Q8RxuifJfO6PCq7S/EQg6FwhzXxp+zOnwhKQJck=
+
+Name: org/eclipse/ui/actions/TextActionHandler$CopyActionHandler.class
+SHA-256-Digest: FWborAp/LWNAGE6o/CDj781ndmgOzYDbUHWAfROBNp8=
+
+Name: org/eclipse/ui/internal/ide/ChooseWorkspaceData$XML.class
+SHA-256-Digest: GGhOOJfLabfBHetohCg6jAdSFymp6cOC4NBJxzEFIsU=
+
+Name: icons/full/ovr16/virt_ovr.png
+SHA-256-Digest: zQ1Htp1vdtxW84IidsX2Kw3RKub+V4vZlBq7uSQpnAw=
+
+Name: org/eclipse/ui/internal/ide/handlers/ShowInSystemExplorerHandler
+ .class
+SHA-256-Digest: JHRldzxmLyRh8FLHbgOqNA1av14LJUFtDNgSr9/Kkvg=
+
+Name: icons/full/dtool16/problem_category.png
+SHA-256-Digest: SJ+dbSylQxwLcHKdkzCbxvz4CreCWsR38iz9H6UhPxA=
+
+Name: org/eclipse/ui/views/markers/WorkbenchMarkerResolution.class
+SHA-256-Digest: 7PMlYgz6z+CwirU8TDMnXeuFHdaZwlFrSUyN4lnNoNw=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/SmartImportRootWiza
+ rdPage$15.class
+SHA-256-Digest: vjsQ54kN7aRoLr87yUa3OedKS5uaoXQFkeEYTuwCUo4=
+
+Name: org/eclipse/ui/internal/views/markers/ConfigureColumnsHandler.cl
+ ass
+SHA-256-Digest: RtApgy2CGTtge+CpmeCGqi3YsAaAi8I42RAna2RQCkc=
+
+Name: org/eclipse/ui/internal/views/markers/MarkerShowInAdapter.class
+SHA-256-Digest: G8kJJEUnRE5m48YX1z+iK7yzWjGwaDwnSWNC35cTjtI=
+
+Name: org/eclipse/ui/views/markers/internal/MarkerType.class
+SHA-256-Digest: o3wB6nLZqPln1v/olR1CZJ4M1ny61fA6g14I6imhEEs=
+
+Name: org/eclipse/ui/internal/views/markers/MarkerPropertyTester.class
+SHA-256-Digest: p1PQnCiJTdjHTRL8MVZusyE5mp9r7+Q4485EzYBjy7o=
+
+Name: org/eclipse/ui/actions/RenameResourceAction$1.class
+SHA-256-Digest: zSr30lUi5jD0BIPhhU/SuihRWh+T4kOUWEWoChZ+i2Y=
+
+Name: icons/full/dtool16/exportdir_wiz@2x.png
+SHA-256-Digest: Go30Ft2scJe9ey70FJGr5IkJOrgL2MEB0SKnmGGzmlo=
+
+Name: org/eclipse/ui/internal/ide/ChooseWorkspaceWithSettingsDialog$3.
+ class
+SHA-256-Digest: OX5VRUSGUWnOiFWmite3qqxQ9NoL/Cg5bGPnrNxN+iA=
+
+Name: org/eclipse/ui/internal/ide/dialogs/IDEWorkspacePreferencePage.c
+ lass
+SHA-256-Digest: ZEvSllPA5RczpKeomIbzQHrUrrKg+IYnQTQUL6BR3a4=
+
+Name: icons/full/obj16/bkmrk_tsk@2x.png
+SHA-256-Digest: 4B4dSTZZApj0pjyjrs7YSyerkJB22NNDSw8SFvg9Dj8=
+
+Name: org/eclipse/ui/internal/ide/dialogs/WelcomeEditorCopyAction.clas
+ s
+SHA-256-Digest: ++fHeSM8E6l+ZV6arxq2qYJ3TczkU70o3YzIcKZgrHM=
+
+Name: org/eclipse/ui/internal/views/markers/FiltersConfigurationDialog
+ $7.class
+SHA-256-Digest: GSxALPT3Q/QlmKd3V3fXsvAfmmZEO2rxdhKg9sPqM1k=
+
+Name: org/eclipse/ui/actions/TextActionHandler.class
+SHA-256-Digest: Onbl/WsBLNHcB/GwwA6StdNMHdrOokgUAjtZFLkKkaw=
+
+Name: org/eclipse/ui/views/navigator/CollapseAllAction.class
+SHA-256-Digest: 7lDMtaxdkEnoGOitxw2eyA9enOo9+dt7ec5S8s4ryLQ=
+
+Name: icons/full/elcl16/hierarchicalLayout@2x.png
+SHA-256-Digest: c8gHCwTAUaAIzigf4XUfDHJTy8/YTop+FGe7WwFl+Es=
+
+Name: org/eclipse/ui/internal/views/markers/TypesConfigurationArea$Cat
+ egoryEntry.class
+SHA-256-Digest: f2CSdgOPf6WumaCwKsJgYIx2Xpn+B7MeRLS2xCu0X4k=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/FileSystemExportOpe
+ ration.class
+SHA-256-Digest: IEgcTNcJYlu3s+CToGK2wKqOKkRrzGoKNDr0kL/3xWU=
+
+Name: org/eclipse/ui/actions/BuildAction.class
+SHA-256-Digest: WCBTcdHKGGgFtOpszuUEutg2BwfPA2L+DuLPSrFpruM=
+
+Name: org/eclipse/ui/internal/ide/dialogs/ResourceInfoPage$4.class
+SHA-256-Digest: yRuwESlVjg/Ro47cXQDoFrFS5MQSXOqkAnyezFKTzZw=
+
+Name: org/eclipse/ui/internal/ide/dialogs/LinkedResourceEditor$3.class
+SHA-256-Digest: F5oeZO422pqmKcP8rj+U4P8DBDjRBqWMKFt3xFqPeUQ=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/SmartImportJob$Craw
+ lFolderJob.class
+SHA-256-Digest: Y09wY79PZqrWbVPb+r+7mZSAJR+H4Q89PnRS8wSVsxs=
+
+Name: icons/full/eview16/problems_view@2x.png
+SHA-256-Digest: JBhz2Vkugd/7HFS/ZKub9J0rCJi40hxWbUhJSy+xIFE=
+
+Name: icons/full/etool16/import_wiz.png
+SHA-256-Digest: HUTYcyyn6WAzrUh3b3bFy8GKxkAPfV+DWbP7sQ1YJk0=
+
+Name: org/eclipse/ui/internal/views/markers/MarkerSelectAllHandler.cla
+ ss
+SHA-256-Digest: 13eJGarC5Ccbyx/C/TJ+58EoJKFsuzG0PM4UY0aWcZc=
+
+Name: org/eclipse/ui/internal/ide/dialogs/BuildOrderPreferencePage$3.c
+ lass
+SHA-256-Digest: rMTq18g+vzjocFdApHMuWuRJXllT3fdmnOrOlJGAQnI=
+
+Name: org/eclipse/ui/internal/views/markers/QuickFixPage$4.class
+SHA-256-Digest: qLkknNln67scg1zcasKv391kPJtPIPz3irHeRDmfUys=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/WizardFileSystemRes
+ ourceImportPage1$7.class
+SHA-256-Digest: RBz6G1JfNVcud+u+db6p3WvkG39cKBXBr1EoY1UA6/A=
+
+Name: icons/full/dtool16/importdir_wiz.png
+SHA-256-Digest: wMhSznu+qm9louox+C/mx/mXcthTO6RIZU1wWVEK6CA=
+
+Name: org/eclipse/ui/internal/ide/ResourceFilterDecorator.class
+SHA-256-Digest: ju4e4U1amGiQaeym5lp7UuYow6CCuxsf7gXkpPqDjoE=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/TarLeveledStructure
+ Provider.class
+SHA-256-Digest: G8dc77+n+r5J/ewaV94vmW1KONPjyL6XH2muyifUees=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/WizardProjectsImpor
+ tPage$11.class
+SHA-256-Digest: +QpbQEVX+ypEhFCcz5wZbK4Ik9vAUQZfPF72GWC4ni4=
+
+Name: org/eclipse/ui/internal/views/markers/MarkerUpdateJob.class
+SHA-256-Digest: k14CrKvq1ul6whUcOCHJWW2B0G6hyuoCKedv61cGyiU=
+
+Name: org/eclipse/ui/wizards/datatransfer/IImportStructureProvider.cla
+ ss
+SHA-256-Digest: 0qk05iD5BEJ8F+1Qv+PonF+B3tPDddONmdfdVEUjIoY=
+
+Name: org/eclipse/ui/views/framelist/Frame.class
+SHA-256-Digest: ttbInwASORmju4u3vSQ8pas7LZ2KkMnTR9PtXog+Hzs=
+
+Name: org/eclipse/ui/internal/ide/IDEWorkbenchMessages.class
+SHA-256-Digest: qHgxEMSmsFvAWKoCXIrB2botTOlbp3CF/0jAx4N9AFE=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/SmartImportRootWiza
+ rdPage$2.class
+SHA-256-Digest: V7fSytc6cXvWY3Q2hZJhaUsQP1nfICtjuzjXtKVFGBA=
+
+Name: org/eclipse/ui/internal/ide/handlers/BuildProjectHandler.class
+SHA-256-Digest: QBF/M8u+mBcoRNaHf63oJCart52bb5KOL2zTbaunpKc=
+
+Name: org/eclipse/ui/internal/wizards/newresource/ResourceMessages.cla
+ ss
+SHA-256-Digest: 3osH2RgJvCR06SsRA/kZX9kJUZcooiSGhr/QkeUzM3o=
+
+Name: org/eclipse/ui/actions/TextActionHandler$1.class
+SHA-256-Digest: rMtjDse3cgoVR91KfCtHxJwiL1RtKdRKr0LP+/tJfi0=
+
+Name: org/eclipse/ui/actions/DeleteResourceAction$1.class
+SHA-256-Digest: 8VWDq8phTInIysvhykgBBDPwkRclHA5vmnCcMbEbPpM=
+
+Name: org/eclipse/ui/internal/ide/dialogs/FileFolderSelectionDialog$Fi
+ leLabelProvider.class
+SHA-256-Digest: rIvL3sX4Y4AFZ4ONkC7WsV8im/+I89w7Dy7SrP6ViVk=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/WizardProjectsImpor
+ tPage$9.class
+SHA-256-Digest: bK3OF+rAHLGaL64omszFLNFnA6dv5RxK4LZenfSrxRU=
+
+Name: org/eclipse/ui/internal/views/markers/MarkerUpdateScheduler.clas
+ s
+SHA-256-Digest: Qbd5LyBN/YdWv9F3AyuzoDtx0qcypo78iP1VOynDqMk=
+
+Name: org/eclipse/ui/internal/views/markers/MarkerColumnLabelProvider.
+ class
+SHA-256-Digest: l78khFZogjZKAfpmJhpzShKxPavko3yWdrAoeH5ilnc=
+
+Name: org/eclipse/ui/IMarkerResolution.class
+SHA-256-Digest: NW+FyGdHUSidvKrj5XY4ZHSS2BzAbrB7sIUcL3PSeiI=
+
+Name: org/eclipse/ui/internal/ide/dialogs/ResourceWorkingSetPage$1.cla
+ ss
+SHA-256-Digest: PVqOqJj7+UcqEQUvsYx8w6/SyHjmiUDvn+FzOMH2p4k=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/DataTransferMessage
+ s.class
+SHA-256-Digest: BylPLK4ZSCc/WQBfSD9/wsg2FEZ3zTN6lNDAzy94hxI=
+
+Name: org/eclipse/ui/internal/views/markers/SeverityAndDescriptionConf
+ igurationArea$1.class
+SHA-256-Digest: nAWH88hDUXBYZEeSF2mPLswEC6Y9BJHIXrZtk0pqt8I=
+
+Name: icons/full/obj16/warn_tsk@2x.png
+SHA-256-Digest: QCrZHxUgkEa2M1/p2R4UyKRsgeX5FoPprIXDAHFrrtQ=
+
+Name: org/eclipse/ui/internal/ide/WorkbenchActionBuilder$2.class
+SHA-256-Digest: vrMpB/KYDPKFBAfssj1ODnWp7wCmUFUX33VEM1SKnQk=
+
+Name: icons/full/obj16/welcome_editor@2x.png
+SHA-256-Digest: Mfos1LavB0h+QDqpFXWJpgEwubcY3Uh+98IyS3YJB2g=
+
+Name: org/eclipse/ui/views/framelist/ForwardAction.class
+SHA-256-Digest: YuncVEbGMWPH/e7OdPf865R90LrHYOpTfj8t/8ko9fk=
+
+Name: org/eclipse/ui/wizards/datatransfer/WizardExternalProjectImportP
+ age.class
+SHA-256-Digest: JBsuwbxVRn6pT0VD4QZC8NqxEhOfCOB898ii3LYixqE=
+
+Name: org/eclipse/ui/views/framelist/FrameAction.class
+SHA-256-Digest: 3Q4bbB4camE2rwweGOdKJdRw12ggyjb/AGmRbQqiRJ4=
+
+Name: org/eclipse/ui/actions/CloseUnrelatedProjectsAction.class
+SHA-256-Digest: rLWex2USxybqeF9AVFyqbSYDYUvqU5NMkiGrcJyqazk=
+
+Name: icons/full/obj16/fileType_filter.png
+SHA-256-Digest: C9JnaPsuuB4TysJ0mZQ1fx49c/eEcggSOK3rCTDIxWQ=
+
+Name: org/eclipse/ui/internal/ide/IDEWorkbenchActivityHelper$2.class
+SHA-256-Digest: i5hJuMXlquXAgkLuEiUZC5xlGpdvu0dQTFUA0DKm6jo=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/IDataTransferHelpCo
+ ntextIds.class
+SHA-256-Digest: LirA5fPPxiG2sR0rT2Pwb0+19Y9HSRFDAuQsNDxSBrE=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/WizardFileSystemRes
+ ourceImportPage1.class
+SHA-256-Digest: 3Sq7pdlJVGfr1kLC5HWyoRbnUC0qslvJZz/AAEgJmjk=
+
+Name: org/eclipse/ui/internal/ide/dialogs/WelcomeEditorInputFactory.cl
+ ass
+SHA-256-Digest: btqNISii4/xkWykWSb2TujgPpF+g+vZhAt52znEqAFA=
+
+Name: icons/full/dview16/problems_view_warning.png
+SHA-256-Digest: p5zRC/lYNLm80lf8SKMr612LfHBwoq3l2F79svc7diU=
+
+Name: org/eclipse/ui/internal/views/markers/ViewerColumnsDialog$TestDa
+ ta.class
+SHA-256-Digest: dvCR0hflywEjyF8kL+Fg0NOwdFmiqzFxGTeAFbhbTRM=
+
+Name: org/eclipse/ui/views/framelist/GoIntoAction.class
+SHA-256-Digest: O2GRksWFxQI0A+68Dc9BV+a7AwcXOtZpuT4O1W4MDRI=
+
+Name: icons/full/elcl16/step_done.png
+SHA-256-Digest: Uci/Lt/TutMUW+YKDHfZtlBmgJ0wCKkbIkNeTLrp830=
+
+Name: icons/full/wizban/newprj_wiz@2x.png
+SHA-256-Digest: 27xz+mw8oSYky23UTUaIZS+AZRS0BK/+LKaO9/p8Sbk=
+
+Name: org/eclipse/ui/internal/ide/dialogs/RelativePathVariableGroup$2.
+ class
+SHA-256-Digest: narSMcTWxEGxanJLHA6WLOrE8VPfV8Ym6dkqt9qS4sY=
+
+Name: org/eclipse/ui/internal/views/markers/FiltersConfigurationDialog
+ .class
+SHA-256-Digest: YyucN/joEkBWOIxvyof0lTf4w2V0PUkMchORXjwbb6I=
+
+Name: org/eclipse/ui/views/navigator/ResourceNavigatorActionGroup.clas
+ s
+SHA-256-Digest: M0m6co4/ZUEAWGCiuMl2BGW3NcJvRhPo+SWwH7miQ50=
+
+Name: icons/full/dlcl16/hierarchicalLayout@2x.png
+SHA-256-Digest: +DSbWMH/wPl39oXUGwmx8edurRzWsLrOGqkiO3CVrEA=
+
+Name: org/eclipse/ui/dialogs/FilteredResourcesSelectionDialog$ShowDeri
+ vedResourcesAction.class
+SHA-256-Digest: R3Tvr1eYbKUN5RwnUhCZKXVhUVtHJr0mGl/j+3Y7QtY=
+
+Name: org/eclipse/ui/internal/ide/filesystem/FileSystemMessages.class
+SHA-256-Digest: Nlhjtmd/nNofsmSUgKYiva1mJIIZ84UOC0oahZ25BD4=
+
+Name: org/eclipse/ui/actions/TextActionHandler$TextControlListener.cla
+ ss
+SHA-256-Digest: 5R/0zldbiBzStUUzwORagDOWK07xxla4FomzcPsP54w=
+
+Name: org/eclipse/ui/ide/IDEActionFactory$1.class
+SHA-256-Digest: ENYqLqouaLmO0MEfsJu7568IYU1QYW0aP3fhg3akGT4=
+
+Name: org/eclipse/ui/internal/ide/IURIEditorInputAdapterFactory$PathEd
+ itorInputAdapter.class
+SHA-256-Digest: 6Fh4QVH0ed9q7XsFWQvHxPu4vFo2tFvWqcrYQoGhuC4=
+
+Name: org/eclipse/ui/internal/views/markers/CompletionConfigurationAre
+ a$2.class
+SHA-256-Digest: YxFdkgrt9PD+ioPJizesR7mHm1TYd1wcvXV8XlmHDv8=
+
+Name: org/eclipse/ui/actions/CloseResourceAction$1.class
+SHA-256-Digest: KP6DjO7OdXy3XLptDqCiFZeaq0XHk0wxo1nKuiX0e+w=
+
+Name: icons/full/obj16/folder.png
+SHA-256-Digest: EkoTSOO0Fh7t+yFbPat1FBzkBXtaX64ZPC3+Kjg1/2s=
+
+Name: org/eclipse/ui/actions/TextActionHandler$PasteActionHandler.clas
+ s
+SHA-256-Digest: yawvkVnGC0T1PBOSsVNrRfCUNM5tJqyOgS3dRac3Uxw=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/EclipseProjectConfi
+ gurator.class
+SHA-256-Digest: aweIxRRitBiRB/mfrufoVimnEeppv2ZFBMdH9bPsjUw=
+
+Name: icons/full/dlcl16/smartmode_co@2x.png
+SHA-256-Digest: VlbAr54m6FdWjRUNOKQlBBecwia19S51QvtgT+hoCRs=
+
+Name: org/eclipse/ui/actions/RefreshAction$3.class
+SHA-256-Digest: Oe2uGUQFlJ/pVWLzI9KaDMyNC7FT6O/LArCH3oWMSew=
+
+Name: org/eclipse/ui/internal/ide/dialogs/MultiMatcherCustomFilterArgu
+ mentUI$2.class
+SHA-256-Digest: vIKliPZAAjJWfO8PRJPuZ/iSpXPL9V/SoXc1zL4GJIE=
+
+Name: org/eclipse/ui/actions/BuildAction$1.class
+SHA-256-Digest: ZwMvNyzHuYl6dA4EYqVGtqJTxdNzecpiMgEznsE3urY=
+
+Name: icons/full/elcl16/showtsk_tsk@2x.png
+SHA-256-Digest: jMqXuUZXwJ8YRtWS/Z9d8FauiN0U7A3A5BKRqtLJTxs=
+
+Name: icons/full/elcl16/usearch_obj@2x.png
+SHA-256-Digest: Cw5ieizzmvl8qAx//091N4Q9lnakMiYJYLy280BanxE=
+
+Name: icons/full/obj16/header_complete@2x.png
+SHA-256-Digest: c+fwWJnma418fFEY0QUTDMoNbaGow1ZHOLY1SU5DGgw=
+
+Name: org/eclipse/ui/internal/views/markers/MarkerFieldFilterGroup.cla
+ ss
+SHA-256-Digest: oatJsqGHXjndTc8pZygrQlgzs8JD35mgyEKeNYnEV64=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/SmartImportRootWiza
+ rdPage$3.class
+SHA-256-Digest: uQtn/MiablGa7zzyz2PmF9ih4mRv5C/y2z4bbjOtmn4=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/WizardProjectsImpor
+ tPage$10.class
+SHA-256-Digest: lJ8vnFvTjcQNxhoKqdF7zrn5E/2Eh6tlseQRgVL6qk8=
+
+Name: org/eclipse/ui/views/bookmarkexplorer/MarkerUtil.class
+SHA-256-Digest: aMaCdffMnMiuG3YRTbXs1OA3N9e3jM9vlBEFmrTAdCI=
+
+Name: org/eclipse/ui/internal/ide/dialogs/AutoSavePreferencePage$1.cla
+ ss
+SHA-256-Digest: bicb+ja21kJiGFp9JOGeCgbM4RdWh3uDTAUMPTC/Qlc=
+
+Name: org/eclipse/ui/internal/ide/WorkbenchActionBuilder$1.class
+SHA-256-Digest: AXx2Fe6B6TuoZPGKojF6PUnQ+cXHNRV45VLJjjdHLqk=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/SmartImportRootWiza
+ rdPage$19.class
+SHA-256-Digest: s2yaD293Xm62qXJxZzDZhao+0XyB5Z+mycFTk807x6E=
+
+Name: org/eclipse/ui/internal/ide/dialogs/LinkedResourceEditor$2.class
+SHA-256-Digest: pai+A0bSNdd7iDCPcHTH1Bmi+3YaBQ4lHlZxg5mg80g=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/SmartImportRootWiza
+ rdPage$4$1.class
+SHA-256-Digest: nBkteGq13tHBi25/r4QPbhOPmRQUUR9TphqFx4kktEs=
+
+Name: icons/full/obj16/complete_tsk.png
+SHA-256-Digest: Uci/Lt/TutMUW+YKDHfZtlBmgJ0wCKkbIkNeTLrp830=
+
+Name: org/eclipse/ui/internal/views/markers/FiltersConfigurationDialog
+ $6.class
+SHA-256-Digest: aX4Gm5IbTctk3WucZ8g5WOE0tTY3edAxFPFMA1XDqow=
+
+Name: org/eclipse/ui/internal/ide/addons/SaveAllDirtyPartsAddon$DirtyE
+ ventHandler.class
+SHA-256-Digest: aLJHIT1BH3hZz1aC9yAf12lccYXCbAMEtmfw4vTxp4g=
+
+Name: org/eclipse/ui/internal/ide/misc/NotFileInfoMatcher.class
+SHA-256-Digest: NhWR5SyqBbgb+t13KO9qdJJrKShPJlSPHUrJd1PYh+M=
+
+Name: icons/full/obj16/quickfix_info_obj.png
+SHA-256-Digest: UKV4o8u+6BF9sDlM6ijIndLE7urAut5gqMNSEnchw1w=
+
+Name: org/eclipse/ui/actions/RenameResourceAction.class
+SHA-256-Digest: VEzVlzooTYPWQKVpmAWxOoHuv4jhFiP6NfEgeVbfHy8=
+
+Name: org/eclipse/ui/ide/FileStoreEditorInput.class
+SHA-256-Digest: icHFEPjgthSmNIOO2yRgaaml7fASOkTBfngZeUwltdg=
+
+Name: org/eclipse/ui/ide/undo/CopyResourcesOperation.class
+SHA-256-Digest: fwwi+QyY0FkkgjdkeYv3OfDmIV/Tcx5OOpIL+wfGj40=
+
+Name: org/eclipse/ui/internal/views/markers/PriorityConfigurationArea$
+ 3.class
+SHA-256-Digest: 2enXMEM6oYh07K0Io0f7vl/E/kHoIRsx4/kWnajxZ1o=
+
+Name: org/eclipse/ui/internal/ide/dialogs/IDEWorkspacePreferencePage$C
+ omboFieldEditorInGrid.class
+SHA-256-Digest: PDQNhaPX6vZ6OTRYpjeePSjpgz13u+KirNs/ojCY1j0=
+
+Name: icons/full/etool16/build_exec.png
+SHA-256-Digest: EOpKTSNBIC18Q3Nz/pWGgeTFXsrByHJ1rcUgv4bpWI4=
+
+Name: icons/full/etool16/newfile_wiz@2x.png
+SHA-256-Digest: cICbvf1C425Xx+TRhO7or1lZK2t4+n2XN0n1IDHVijw=
+
+Name: icons/full/elcl16/workingsets.png
+SHA-256-Digest: QxgMI/4gpz1AHu4BVejpC9sIti14CUGUEkp1Gqt4uSQ=
+
+Name: org/eclipse/ui/internal/views/markers/MarkerUpdate.class
+SHA-256-Digest: x3HmtoAbu/3PIfrLfp+HdgIo4JStJE/NJdyv86JCnWE=
+
+Name: org/eclipse/ui/views/markers/internal/MarkerGroup$GroupMarkerFie
+ ld.class
+SHA-256-Digest: UyZlzNGW/5jhcg5BDVJbeLkLe9vrF9DvMm9shLHd25c=
+
+Name: org/eclipse/ui/internal/views/markers/MarkersChangeListener.clas
+ s
+SHA-256-Digest: dIgGObd+UNjslpVpIvPTRhmCfPnqQlp4Ev6SwGbdkaw=
+
+Name: org/eclipse/ui/dialogs/WizardResourceImportPage.class
+SHA-256-Digest: L2tjSPfAN6iNURsxQoUlHHxexDURUNmZ2I3eJqtQuag=
+
+Name: org/eclipse/ui/internal/views/markers/GroupsContribution$1.class
+SHA-256-Digest: KZ6tCK0MiPD1UgNoexKR+ryclAAgc6dtTlM62+KQV1c=
+
+Name: org/eclipse/ui/internal/ide/dialogs/FileFolderSelectionDialog$Fi
+ leViewerSorter.class
+SHA-256-Digest: kDtrnYa6f5UZI6YvlY60KNvPvepi7aIGTmRUdbyvF+Y=
+
+Name: icons/full/etool16/problem_category.png
+SHA-256-Digest: z0o8F/IV3ZR59vkO//VkbWMCt2HUdvmh17wVWdaFx50=
+
+Name: org/eclipse/ui/internal/views/markers/MarkerUpdateScheduler$Mark
+ erUpdateTimer.class
+SHA-256-Digest: SzntJqn/NA9W+Jdm0WXElmDjsBxCUjBISV+KKBD7E6Y=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/expressions/HasFold
+ erExpression.class
+SHA-256-Digest: ui389RnTqZjEg4OTSmKY3q9dbwn7M213kFMRetJFKa0=
+
+Name: org/eclipse/ui/internal/views/markers/TypesConfigurationArea$2.c
+ lass
+SHA-256-Digest: 6rCt5p9Qf095dBfNR87dC9ltxiN6HEU/vCwutwFqb3A=
+
+Name: org/eclipse/ui/dialogs/FileSelectionDialog$3.class
+SHA-256-Digest: 1B8Y+qFTdUV86DVFvfQNZJf8LMPSu2GRkLi5zXDkxQQ=
+
+Name: org/eclipse/ui/views/navigator/ToggleLinkingAction.class
+SHA-256-Digest: OE78aUJkXg13J4+5U2+8HEoSBe4aAzjkp5021OD2Nvc=
+
+Name: icons/full/etool16/problem_category@2x.png
+SHA-256-Digest: c8gHCwTAUaAIzigf4XUfDHJTy8/YTop+FGe7WwFl+Es=
+
+Name: org/eclipse/ui/dialogs/FilteredResourcesSelectionDialog$Resource
+ ProxyVisitor.class
+SHA-256-Digest: IFooeaHYqu/wVLszgT3bSE1vIMW0R1shiH+RR5jU5Dk=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/SmartImportRootWiza
+ rdPage$14.class
+SHA-256-Digest: oqk91eoSkDjq3JkmcWABz8C+qrZf3HbM4HNnl05/zho=
+
+Name: org/eclipse/ui/dialogs/ResourceListSelectionDialog$UpdateGatherT
+ hread.class
+SHA-256-Digest: PGXm4GYF1fM6dl4BWPJR7H+vHeZcdTov4DGd/FoLrCM=
+
+Name: icons/full/eview16/bkmrk_nav.png
+SHA-256-Digest: V433q7AaVVq+jR4m1oMXChMHohw0G+nkWOrUXI1aYiI=
+
+Name: org/eclipse/ui/internal/ide/dialogs/MultiMatcherCustomFilterArgu
+ mentUI$6.class
+SHA-256-Digest: XTuATyHaYeh9cQilcLcoTskcsH8EIm2mshTRW1LJoV8=
+
+Name: org/eclipse/ui/internal/ide/model/WorkbenchWorkspace.class
+SHA-256-Digest: VKOi3omWk4nB4xc9433oW818o5VkirjydVAa3t/qpqQ=
+
+Name: icons/full/elcl16/selected_mode@2x.png
+SHA-256-Digest: MpR1yKhpTa/q7T+hhWf4w92v8Eea3oxFZZ2GCK9pfuE=
+
+Name: org/eclipse/ui/internal/views/markers/TypesConfigurationArea$1.c
+ lass
+SHA-256-Digest: L8B0hdKZUDxZ4faHOuSxRK0egpukOmM6sZk4gpxzdx4=
+
+Name: icons/full/wizban/new_wiz@2x.png
+SHA-256-Digest: YKdiUxYQMJ595UElM5e6ldunol5ffxuKS7llx0fTrU4=
+
+Name: org/eclipse/ui/internal/ide/registry/MarkerImageProviderRegistry
+ $Descriptor.class
+SHA-256-Digest: mMlCvl443sVA/Tkn+ArxeZhmLiXy/n8irrMvlJtoTS4=
+
+Name: org/eclipse/ui/views/markers/internal/DialogMarkerProperties.cla
+ ss
+SHA-256-Digest: iKbAizwMaV+QAtzqC4f7iRGcKSk9A4JKNi04KsOcPQQ=
+
+Name: org/eclipse/ui/views/framelist/IFrameSource.class
+SHA-256-Digest: 3h2lYZmLtmYe29IMLKe3xRItURS+NgwkE21AdmdIrCY=
+
+Name: org/eclipse/ui/dialogs/FileSelectionDialog$4.class
+SHA-256-Digest: UpedEjYrRLsc6+bDFU7dDp7eeU8TqNB+ek54hZKm1ys=
+
+Name: org/eclipse/ui/views/markers/MarkerFieldFilter.class
+SHA-256-Digest: qeWiLi0xgIHyMMHmax0M0007bZRXOGMCs0o9jqcWA04=
+
+Name: icons/full/obj16/lprio_tsk.png
+SHA-256-Digest: Nw46pBXswTWn37APc/PhusieGRR4ZHUvjvzxR6ITB58=
+
+Name: org/eclipse/ui/internal/views/markers/PriorityConfigurationArea$
+ 2.class
+SHA-256-Digest: uqbHZaOmGWlju4moMWu984sdodFIWxeRL0IdkCS+vpQ=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/WizardFileSystemRes
+ ourceImportPage1$1.class
+SHA-256-Digest: 7f80a23I+RSrNG660sH/IAeVNBFzjzPhpEXUuVpfRoc=
+
+Name: org/eclipse/ui/ide/undo/WorkspaceUndoUtil$2.class
+SHA-256-Digest: FXliltNohiLYF5K9LNdvYd1fpCvWu6tmAL4qI/yVwE4=
+
+Name: org/eclipse/ui/internal/ide/dialogs/WelcomeEditorInput.class
+SHA-256-Digest: DEQ0MAS8rO2BojOaHGx+goCUuTwjl7f+zJGI9ZNbsa8=
+
+Name: org/eclipse/ui/internal/ide/dialogs/WelcomeEditor$5.class
+SHA-256-Digest: FF6lvqyxKIrSqewPqNnDA5RqvvGhVp8VE69Semd/jGc=
+
+Name: org/eclipse/ui/internal/ide/undo/IFileContentDescription.class
+SHA-256-Digest: I0BZfJ0lVU6BbmHtjKdaP5TOoST7uqgV3Wx+D3OQtHs=
+
+Name: icons/full/obj16/hprio_tsk.png
+SHA-256-Digest: E4MTwtDQb7qntuwNH+fMXL1oLsYEUAs8Khgwqmanlco=
+
+Name: org/eclipse/ui/ide/IDEActionFactory$12.class
+SHA-256-Digest: yJzYtbFXZmFZDxL51I1ECuOFU/3SAuX7bEPSK2NZ3xk=
+
+Name: icons/full/dview16/problems_view_error.png
+SHA-256-Digest: DYtSYVT6n9ETfZZev4H54Rli/xzSzkOcFste5hq62vw=
+
+Name: org/eclipse/ui/internal/ide/DefaultContributorResourceAdapter.cl
+ ass
+SHA-256-Digest: Fvb5GUa7Ve1K34O5RC6B//KnpVx5tR69u8tUaLHYkaQ=
+
+Name: org/eclipse/ui/internal/ide/dialogs/ProjectContentsLocationArea.
+ class
+SHA-256-Digest: CZY0R9LeEOxvoxEB8dy9q0y7cFWNxQmcvusbbo+kmXo=
+
+Name: icons/full/dlcl16/refresh_nav.png
+SHA-256-Digest: u0S2i7+OocbFyVY76vwfArarT4bRAeS82ozF0MNbwbc=
+
+Name: org/eclipse/ui/views/bookmarkexplorer/PasteBookmarkAction.class
+SHA-256-Digest: p+tDWlFHBTmlJm7lcfCvyhdG/Ng67R3YKU5jv4LkEVY=
+
+Name: icons/full/elcl16/configs@2x.png
+SHA-256-Digest: tO1WLB4sIHSj5K1tf9NKnXnS9eiOVLHz0TjTf7338Ww=
+
+Name: icons/full/obj16/welcome_item.png
+SHA-256-Digest: fejwQBT3PglElQYcultngIQmj8HTN3gC/Nn10k0P1Lk=
+
+Name: org/eclipse/ui/ide/undo/CreateFileOperation.class
+SHA-256-Digest: J64BZOilRxSuBxn6sokmlbQZSz3NT3EDWl/Rwnx46ZE=
+
+Name: org/eclipse/ui/views/markers/MarkerSupportView.class
+SHA-256-Digest: x65KgAAdo5muc8dc8vTGF2XGrTLAPkgbMabcRI+yXvA=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/TarInputStream.clas
+ s
+SHA-256-Digest: MnB/dmFQeopq9QCHZ4ojgEgzIBtQ6i/uVBBNynnh9DU=
+
+Name: org/eclipse/ui/internal/ide/dialogs/IDEEditorsPreferencePage.cla
+ ss
+SHA-256-Digest: wl+i5TQRozf3BHrw+Xz+jbHIUf7/kkVxmaE8QI74bmE=
+
+Name: org/eclipse/ui/views/navigator/OpenActionGroup.class
+SHA-256-Digest: fPOSMX3w8Xs9bb687hOvXxFO5AXUKjcERO1/+1r5Yj8=
+
+Name: org/eclipse/ui/internal/ide/dialogs/ResourceFilterGroup$FilterCo
+ pyTransfer.class
+SHA-256-Digest: cVlhuFszQtgjNL1IZgiO8+4EDV/MUiRIrEaGEWbeRnk=
+
+Name: org/eclipse/ui/internal/ide/dialogs/ResourceFilterGroup.class
+SHA-256-Digest: P7q12Fp9eKQId/eFoyOZ9CgEVmp72g3OtcIX0YIDYCc=
+
+Name: org/eclipse/ui/internal/views/markers/ProblemsSeverityAndDescrip
+ tionConfigurationArea.class
+SHA-256-Digest: Xtd/EWu27QH+DLaj/Fd5r/cvWX1JvCIUnEI5XSSjssc=
+
+Name: org/eclipse/ui/internal/ide/filesystem/FileSystemSupportRegistry
+ .class
+SHA-256-Digest: 2kiVSFhN3OaKPYVdwODSmGqYFaM6WtkDFBSXKIkRsGQ=
+
+Name: icons/full/elcl16/collapseall@2x.png
+SHA-256-Digest: Vx5h16r56NBbPUAxTAiWdEBzUXnT8ZUWpHg4f2a4vow=
+
+Name: icons/full/dtool16/exportdir_wiz.png
+SHA-256-Digest: aKVXqKwflO5n8IcMfGdumWKdIP6xmTY0bfDUIY7XgiQ=
+
+Name: org/eclipse/ui/ide/undo/AbstractCopyOrMoveResourcesOperation.cla
+ ss
+SHA-256-Digest: zCA3R0nUp4RJe8Az9Aovmf3cNFR47udvgjAipmYUjc0=
+
+Name: org/eclipse/ui/internal/ide/dialogs/MultiMatcherCustomFilterArgu
+ mentUI.class
+SHA-256-Digest: KrQMkJKcmZBm447JnXt+CGv5LOFnvBy+jPyYJ+/zq9c=
+
+Name: icons/full/dtool16/build_exec@2x.png
+SHA-256-Digest: n6byHfAnjwSfPCBprSEZdz8+IldSF/v4gGDX6L+SD30=
+
+Name: org/eclipse/ui/internal/views/markers/AllErrorsParameters.class
+SHA-256-Digest: /PsbgatTxstj1AP1hcQucZNvva6v6u2NQTVSxIub1nY=
+
+Name: org/eclipse/ui/dialogs/FilteredResourcesSelectionDialog$Resource
+ ItemLabelProvider.class
+SHA-256-Digest: ecyo91Tt4NDt4Wz4yctD6TtwQ8gOKZxPpkjVPKwsE00=
+
+Name: org/eclipse/ui/ide/ResourceUtil.class
+SHA-256-Digest: QX/aPqyOpaDm4cuvAWq3EdWg/kZ8qnvtSUuM3VWL07w=
+
+Name: org/eclipse/ui/internal/views/markers/TasksView.class
+SHA-256-Digest: 1NidjvjMOGVFnCaoyo0c3wtGXQ41422Ja9/HTi3eMt8=
+
+Name: org/eclipse/ui/actions/WorkspaceAction$1.class
+SHA-256-Digest: 3J5QCRznc+g+byMsvKW3RF1wGofg/MEcFLXJQTMY7bs=
+
+Name: org/eclipse/ui/actions/CopyProjectOperation.class
+SHA-256-Digest: 2zPyLoP/r/SvBYqNgpcPLW6Yh6IOKEqPs5UnheRcpbs=
+
+Name: icons/full/dview16/problems_view_warning@2x.png
+SHA-256-Digest: R44m02LwzwMMIFgb+VuUmRhOw05/FY3qmDFFGlqNGqg=
+
+Name: org/eclipse/ui/ide/dialogs/AbstractEncodingFieldEditor$3.class
+SHA-256-Digest: IXOnhFqwKAwrzQ2gJ0c5N1P7bHFOX8umMxaqFYaawM8=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/ArchiveFileManipula
+ tions.class
+SHA-256-Digest: iOrVrS/B6Pa+sLsZsg6Tf2BcFccETpZ1xIdCiB8I1E8=
+
+Name: org/eclipse/ui/views/bookmarkexplorer/BookmarkContentProvider.cl
+ ass
+SHA-256-Digest: qGaDYjJNDFhzdE5eG/CC8a0A48OpUX4nsUbxcmC8yCg=
+
+Name: org/eclipse/ui/internal/views/markers/SortFieldContribution.clas
+ s
+SHA-256-Digest: 7CPxrdqYLcZ+egg9DRLOXYGsavPxL5llE6tLP336Suw=
+
+Name: icons/full/wizban/exportzip_wiz.png
+SHA-256-Digest: 4K6R36xcHVdYnG8qPf26SJ/nADeeovo8JiEmHpZM3Wk=
+
+Name: org/eclipse/ui/internal/ide/dialogs/AutoSavePreferencePage$2.cla
+ ss
+SHA-256-Digest: i9bvunHJUdPR426rWJA1DGUDG1ds1vF6OyhylmC57wk=
+
+Name: icons/full/etool16/exportzip_wiz@2x.png
+SHA-256-Digest: mH35yVjEn48kkHR1LKXGXACthIdSc65MvnSBALtP9OE=
+
+Name: icons/full/wizban/newgroup_wiz@2x.png
+SHA-256-Digest: 6RN+OEv5BZST3SotiLnOcYf6wyhdDMRqBZNUGkZZA98=
+
+Name: org/eclipse/ui/views/markers/internal/ProblemMarker.class
+SHA-256-Digest: luePGrLZACAZHaqHZYslQX4ggDwSQz7usoGQTXs22sI=
+
+Name: org/eclipse/ui/internal/ide/dialogs/CleanDialog$2.class
+SHA-256-Digest: WR/N4Lh2reKvcQVul0RCXHM9psO8rD7o9lK4uyDlw28=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/SmartImportJobRepor
+ tDialog$6.class
+SHA-256-Digest: F/KCYaoMs0K5tHbho1NSGUDmzs4uMtnrgQNM1RDM2r0=
+
+Name: org/eclipse/ui/ide/ResourceSelectionUtil.class
+SHA-256-Digest: WYVVpNsLNOb7yqXyKWuDAe2u9zCV397Bdzpg/Rop7FE=
+
+Name: org/eclipse/ui/part/ResourceTransfer.class
+SHA-256-Digest: xmSXHScfp/VwwcJ7xHfyVkFYofmh7EfI/ledKbMew5Q=
+
+Name: icons/full/dview16/tasks_tsk.png
+SHA-256-Digest: Z5NNX3JIm4reOFijU8X3gNqrmT94iZ8d9VecmQn/Xk4=
+
+Name: org/eclipse/ui/internal/ide/actions/QuickMenuAction.class
+SHA-256-Digest: A1YbZOqMYZNR70w0Hbt3uVmhoNOk4GeTIEeNEM0xLQo=
+
+Name: icons/full/obj16/excludeMode_filter.png
+SHA-256-Digest: fRGzJQFcDgviz0+t+lnjnorGNFx/kEyAQPGN3pazF/4=
+
+Name: org/eclipse/ui/ide/dialogs/UIResourceFilterDescription$1.class
+SHA-256-Digest: ZMrVU/KG5YbNdJU10AknkAptPl1z5KTgSAPq6DdnebM=
+
+Name: org/eclipse/ui/ide/dialogs/AbstractEncodingFieldEditor$2.class
+SHA-256-Digest: UNq54XlYY4KIV+T8fVhcm+6sJrPgEZ7051kKzcfhlPE=
+
+Name: org/eclipse/ui/internal/ide/misc/ResourceAndContainerGroup.class
+SHA-256-Digest: TAjd46Png7zrOhU7L/Ug3b4L53nnlPedjol93q4282g=
+
+Name: org/eclipse/ui/internal/ide/misc/DisjointSet$Node.class
+SHA-256-Digest: r9TLrYtrpUNhJfCIDXeeg9M2vfz0kGARiWIvX77e6ok=
+
+Name: icons/full/elcl16/gotoobj_tsk.png
+SHA-256-Digest: TQcMUslZsiqEQ5HjpEXii7xsOm+1VoVOUnmvOUGlmkA=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/SmartImportJobRepor
+ tDialog$5.class
+SHA-256-Digest: AQP1+M6AHPNheAVD9estdpFen/xS2mH7IM03gSp6fo4=
+
+Name: icons/full/dlcl16/showcomplete_tsk@2x.png
+SHA-256-Digest: I36SDN+ohMI6GoRytqEEgCMrBBNrEJa4DoHgjaMOapE=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/SmartImportRootWiza
+ rdPage$8.class
+SHA-256-Digest: jfCaL/e2W6AMnchWh3IdMone96FWnLEXSUlOKA8vtno=
+
+Name: org/eclipse/ui/internal/views/markers/ExtendedMarkersView.class
+SHA-256-Digest: qIAR0Ojvxbg/3flQA+V2PfL2bfQamUnwqaT6DgOQGJ8=
+
+Name: org/eclipse/ui/internal/ide/dialogs/LinkedResourceEditor.class
+SHA-256-Digest: meIO0jqtk8PzNwXKCzZlIaneuip13u3XJM0bJXEr1fY=
+
+Name: org/eclipse/ui/internal/views/markers/MarkerCompletionField.clas
+ s
+SHA-256-Digest: QU8eote97MkzjtPx57jnSkvCTmFYlvHFde7t4dM58eE=
+
+Name: org/eclipse/ui/internal/ide/dialogs/CleanDialog$1.class
+SHA-256-Digest: KLfEVmyQOawtYvmr7MtypXym/3E3kdmbABZyEFwkI7I=
+
+Name: org/eclipse/ui/views/navigator/NavigatorDropAdapter.class
+SHA-256-Digest: xQKk8oi+z1W5RCcGF5NY1F3NdgrcSNRitbVH+Qz9Gxg=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/WizardFileSystemRes
+ ourceImportPage1$12.class
+SHA-256-Digest: RlbbBgMh9ShVXMCmcXgtGzIH/A3RjATOXY2FJA+V+uI=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/expressions/HasFile
+ WithSuffixRecursivelyExpression.class
+SHA-256-Digest: GwnvxBfca8g1akKt6YaTyNmTfAZ9gyeVbMLiICTN+8A=
+
+Name: org/eclipse/ui/dialogs/WizardNewLinkPage$3.class
+SHA-256-Digest: V9hRy1MqgrHL3NI5ki506PPL0vECSDUT0dS3Yd1dVCk=
+
+Name: org/eclipse/ui/actions/CopyFilesAndFoldersOperation$8$1$1.class
+SHA-256-Digest: VoYw8zlreq0onNX5/OLJb/gTEZTFUcmXuMf5hLQQPXw=
+
+Name: org/eclipse/ui/internal/views/markers/MarkerSeverityField.class
+SHA-256-Digest: gUsX/O6hl7TUy1bCWkwhMoA8aTKsnJOw4Qb+Jpf23Ck=
+
+Name: org/eclipse/ui/views/navigator/INavigatorHelpContextIds.class
+SHA-256-Digest: hLvBtqPeat8qq1Vzjxc42OQPfFh1j/kkE5SsOr7zEVQ=
+
+Name: org/eclipse/ui/internal/ide/DirectoryProposalContentAssist$Direc
+ toryProposalAutoCompleteField.class
+SHA-256-Digest: L8r3rlr2bUmpqamsst6+yyZkJgrCFesHcqV2IR/A36I=
+
+Name: org/eclipse/ui/views/navigator/ResourceNavigatorMoveAction.class
+SHA-256-Digest: j4OGLRtoghUW+LPF9iR1C4SLPWBm6KZAS4yEP3/LP0E=
+
+Name: org/eclipse/ui/dialogs/WizardNewLinkPage$2.class
+SHA-256-Digest: ZKZk0EsHs2fH3Kgh008xV4GngxK4YT2HHgUA+Z02Vzw=
+
+Name: org/eclipse/ui/ide/dialogs/ResourceTreeAndListGroup$3.class
+SHA-256-Digest: dv1G5HZuz2UsXTVnHN5aFTtzABlUTiLP/dCL77twDls=
+
+Name: icons/full/obj16/folder@2x.png
+SHA-256-Digest: 6QdWIOtqQ2G0WuGF/xluAdpDI0qN6kUpijwqeZzU8Is=
+
+Name: org/eclipse/ui/internal/views/markers/CompletionConfigurationAre
+ a.class
+SHA-256-Digest: SralGGJR5EqaWr+rdLryNYthYSAMbR7XYk6jYq67ccA=
+
+Name: org/eclipse/ui/views/markers/internal/AttributeMarkerGrouping.cl
+ ass
+SHA-256-Digest: nbV9GINpoJbWg/Qq2t3OOKX74EmtEAOoOwmYNjolohs=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/SmartImportRootWiza
+ rdPage$7.class
+SHA-256-Digest: QKwZMSB2rZwjw0bH57TUVikEN5xImOYKcylGkuyH1Os=
+
+Name: icons/full/elcl16/addtoworkset.png
+SHA-256-Digest: QMJ/Gy5/ViaXQwhOPs1TwDiTB7UxnCoGJXhfbBL3UV0=
+
+Name: icons/full/wizban/importzip_wiz@2x.png
+SHA-256-Digest: yTFPf2GcYmQxm0rneK88qZNhuEOGj0v1+jXaFu/2gvo=
+
+Name: org/eclipse/ui/views/markers/internal/IField.class
+SHA-256-Digest: 62HC5pBdrmvjrHjMktPC4hnkMKcsU1anZ30Kf+ahZQI=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/WizardFileSystemRes
+ ourceExportPage1.class
+SHA-256-Digest: fDCgx/nu0KirkPxC6mWa3z+o3KMJXw3e3a2u18NG3is=
+
+Name: org/eclipse/ui/actions/WorkspaceAction$2.class
+SHA-256-Digest: f833vU5MpzQWvSbeZaoZWAz98MNuuHfLPp23EWL06W0=
+
+Name: org/eclipse/ui/views/markers/MarkerSupportConstants.class
+SHA-256-Digest: hJY+UgoZo6ilExcuzL6DH9CR2kI5MpdyvDBtfvyk8NM=
+
+Name: icons/full/elcl16/step_current@2x.png
+SHA-256-Digest: RvPkHW6BUMppVlB5OG5soYAdUVH21T92UaDkNfP6ksI=
+
+Name: org/eclipse/ui/internal/views/markers/ViewerColumnsDialog$TestDa
+ ta$3.class
+SHA-256-Digest: bmfV526FioD5j4HXdPSQbE1XK7mlUMIaprlwJu30u8M=
+
+Name: org/eclipse/ui/internal/ide/registry/ProjectImageRegistryReader.
+ class
+SHA-256-Digest: Iec676LzgdCFpBxlZvbhHPs9IuycPFZLtLAiHHD1TWY=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/WizardFileSystemRes
+ ourceImportPage1$11.class
+SHA-256-Digest: yLtvYmwQxHNWZl8E7MvJ0mDmnC8r1VJZivyaB/Uwa84=
+
+Name: org/eclipse/ui/ide/FileStoreEditorInput$WorkbenchAdapter.class
+SHA-256-Digest: 60ZJGQ5Tah/eyaGxuLCciCeONcH3XrV9NuLQT56RxFU=
+
+Name: org/eclipse/ui/ide/dialogs/ResourceTreeAndListGroup.class
+SHA-256-Digest: zHcc3Vm50wLgTp9bVuPFh1PSX4a+NR8LuQjuBcpuWPI=
+
+Name: icons/full/dtool16/search_src.png
+SHA-256-Digest: Eic59xKQQwZf5MtOYTpZyoh+IS7R4WR6sDq89dAnS3I=
+
+Name: plugin.xml
+SHA-256-Digest: Qambhqh7NUWxwQWwzI1/AOpTZiMEHvfxBs5ck3QFyRs=
+
+Name: org/eclipse/ui/internal/views/markers/MarkerHelpAdapterFactory$1
+ .class
+SHA-256-Digest: /hDavQhF1jeJofcnim7QrQvKlELjbPAUf5LpEJMH/ic=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/SmartImportJobRepor
+ tDialog$7.class
+SHA-256-Digest: NILXOsP9jI1Lmj4dM8uvwOXxc208OuT7VesSqF7aJ4I=
+
+Name: org/eclipse/ui/internal/ide/dialogs/BuildOrderPreferencePage$7.c
+ lass
+SHA-256-Digest: 5Jv8L9yEyTVSTN5VvLMnUJRwmjtfKT0f/L5QMrJWEHY=
+
+Name: org/eclipse/ui/views/properties/FilePropertySource.class
+SHA-256-Digest: Ra/lnp3r+4Dyt2ONnzGQOiwAKyItuuceOutw07ueRHY=
+
+Name: org/eclipse/ui/views/markers/internal/MarkerFilter.class
+SHA-256-Digest: mjF4v5KNb4OJ+7yn2PzvCfrSoH2UWOvgJBnnTfTJpWA=
+
+Name: org/eclipse/ui/internal/views/bookmarkexplorer/messages.properti
+ es
+SHA-256-Digest: 8knZTn1qDTchQt/7B7JG04uyGa17Fi5DyudNKjrlWUY=
+
+Name: icons/full/dlcl16/showchild_mode.png
+SHA-256-Digest: 4slUgr8SynNUwGkc9NI5z2c1Omt9KKa2YalH2cJzYCU=
+
+Name: org/eclipse/ui/ide/dialogs/IElementFilter.class
+SHA-256-Digest: aRrv7j89DKjk7hPsq3XN9xDaEaTExLV3D9PSJDFy/L0=
+
+Name: org/eclipse/ui/internal/views/markers/DeleteHandler$1.class
+SHA-256-Digest: +ILAB7k7psSw0kWd6C+0uNWxSdAu83mjjP5nDN29Dvw=
+
+Name: org/eclipse/ui/views/navigator/IResourceNavigator.class
+SHA-256-Digest: yBEbI3C7fAZP4YnSdzNXe6mAQUpiNXxNisGAaoxNdxw=
+
+Name: icons/full/obj16/lprio_tsk@2x.png
+SHA-256-Digest: YnBpAyAPW+wBpTnajqas21b4AAFFAgWNN17yaZFDKe8=
+
+Name: org/eclipse/ui/IProjectActionFilter.class
+SHA-256-Digest: w1a91PagCdP5FQqxAhPpOB89XHAScbqofpKmoCWrFBA=
+
+Name: icons/full/markers/help_small.png
+SHA-256-Digest: dlSVTK0aXIK29zpN6WnR7Co4EiZzsrry6Ao20120jnY=
+
+Name: org/eclipse/ui/internal/views/markers/FiltersContribution.class
+SHA-256-Digest: 9LIXj67U+b9CCiYhVsg1KpRnO5+My1RrpEDa5qH1ZU4=
+
+Name: icons/full/wizban/importdir_wiz@2x.png
+SHA-256-Digest: EabBxalLdBUNtNpJKNTa3fvY5wChx2su17L2yJyn4BQ=
+
+Name: org/eclipse/ui/internal/ide/dialogs/ProjectLinkedResourcePage$1.
+ class
+SHA-256-Digest: t+MdFXML1YCWJ3YSpAsu0QJt4Cub3h2Dkvb3cD/9Vuc=
+
+Name: icons/full/wizban/importproj_wiz.png
+SHA-256-Digest: mlMpoUMWQnM4p+LMJvATZEGY3dTZL7qikHhJ8g+h2es=
+
+Name: org/eclipse/ui/dialogs/FilteredResourcesSelectionDialog.class
+SHA-256-Digest: rK/MbDnHPOcpCyRMJ5XeyMOJHQF9oBaOyOsWzqJE4Ps=
+
+Name: icons/full/elcl16/refresh_nav@2x.png
+SHA-256-Digest: N6gFp2eg0pwCdKAxdKeXONK9GiIpJICSAc8aafX1hoE=
+
+Name: org/eclipse/ui/internal/views/markers/MarkCompletedHandler.class
+SHA-256-Digest: BfewWOZ6qBMY0mpEpZ4Jy1aFycTCU9AGdnTRRBuH6dw=
+
+Name: org/eclipse/ui/internal/ide/actions/OpenWorkspaceAction$OpenDial
+ ogAction.class
+SHA-256-Digest: 7Cfqk1ixB0nt0KVbHZYTKRMMKZa14qHRpcgv0Pfs12E=
+
+Name: icons/full/elcl16/configs.png
+SHA-256-Digest: 5uSxyy9IYfs2cFP8xpzkUHQDjrB7xTdUTGzP7kMgbqA=
+
+Name: org/eclipse/ui/actions/TextActionHandler$PropertyChangeListener.
+ class
+SHA-256-Digest: 55dBABcrCCFGU7uHyckCNTa9Jkmw44Fat9P6rYODoYM=
+
+Name: icons/full/dlcl16/filter_ps.png
+SHA-256-Digest: R/mdOZFvdqttZIfVdwuvmA1GnysJcGZhRK255l1WBjA=
+
+Name: org/eclipse/ui/views/bookmarkexplorer/SelectAllAction.class
+SHA-256-Digest: EOABzaEPozc9L0+TBmuavv/NxMTfbGzee0ubGmSmELU=
+
+Name: org/eclipse/ui/dialogs/WizardNewFolderMainPage$4.class
+SHA-256-Digest: geyijKg7tqR60qqg7Li8zND3wMdAfFmtTKi2AQSBrGw=
+
+Name: icons/full/wizban/saveas_wiz.png
+SHA-256-Digest: iNjgCDjGM5hsPPM951CF11Xl8wlfqsqiP53qIbGQWAU=
+
+Name: org/eclipse/ui/dialogs/FilteredResourcesSelectionDialog$FilterRe
+ sourcesByLocation.class
+SHA-256-Digest: DzLuVgkgpLnjwQZCwj22pTW9mhHkjKCqcu6GGNWYNy0=
+
+Name: org/eclipse/ui/internal/views/markers/GroupsContribution.class
+SHA-256-Digest: JTO0hvm7cY+e7VWnavPzCj0qYq3kG7UeCEo1/vQ5e14=
+
+Name: .api_description
+SHA-256-Digest: yTB4084yUvJIAu31jRS12qv3rZhJzYOXXHy7IgPaQu8=
+
+Name: org/eclipse/ui/internal/ide/actions/RetargetActionWithDefault.cl
+ ass
+SHA-256-Digest: CLKLluJZAjVgLyW3iAs9je8TdJXojxK8fWV1HwtpCWo=
+
+Name: org/eclipse/ui/views/markers/internal/ProblemFilter$1.class
+SHA-256-Digest: 6TO2XD7TxfRNFBsSHlmxbsP0DfhJXmmjD6Xr6tFFXBs=
+
+Name: org/eclipse/ui/internal/ide/AboutInfo.class
+SHA-256-Digest: sSuEyEkU393BHlWgQwhFewMianPdDnDaOh4OxrayPKw=
+
+Name: org/eclipse/ui/views/bookmarkexplorer/IBookmarkHelpContextIds.cl
+ ass
+SHA-256-Digest: yvOb4vXZNUgT9a7f18x1zQNFA2MbAyLir4MdFvRNNpQ=
+
+Name: org/eclipse/ui/ide/IDEActionFactory$14.class
+SHA-256-Digest: qm/r7oK1fdPEPD+tbLN2ri2SmVPw8gMHW15xwtL9vbk=
+
+Name: org/eclipse/ui/actions/OpenWithMenu$1.class
+SHA-256-Digest: cWoLrmUiWlfrpcxPJsFNZv1V2Om+pGkaam31QDbGHQE=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/WizardFileSystemRes
+ ourceImportPage1$3.class
+SHA-256-Digest: i8maAPe47VMrTE6RKRY271RNHoJcEYpV2J4shrOi1aI=
+
+Name: icons/full/dlcl16/usearch_obj@2x.png
+SHA-256-Digest: rKF+cxobzlBG7lpP7/rgalJXdySJxbmSUqgYIekoWNk=
+
+Name: org/eclipse/ui/internal/ide/dialogs/WelcomeParser$IntroItemHandl
+ er.class
+SHA-256-Digest: J/Z8nzAsOcZftKqy0/PVWbQJv17q7uAOqRUpgisRGyo=
+
+Name: org/eclipse/ui/views/markers/internal/MarkerGroup.class
+SHA-256-Digest: XHpbZibOWpI4vokGO6wvhPLqOQ41Xh26Rr9XgBhugXs=
+
+Name: org/eclipse/ui/ide/dialogs/UIResourceFilterDescription.class
+SHA-256-Digest: duMcl9wtzcAoIDmplts3ZLctD0FF40Xcd9tUQ+5tVbc=
+
+Name: org/eclipse/ui/ide/IDEActionFactory.class
+SHA-256-Digest: XPVhjOylFLxd8/WrNXPvNgBmHXoVKQGzFhJ0dfUwIzg=
+
+Name: org/eclipse/ui/views/framelist/TreeViewerFrameSource.class
+SHA-256-Digest: HrjMgHdQtgv6P3cioxhIiG7WwYg29I9VVCuhjlhhfsM=
+
+Name: icons/full/dtool16/newfile_wiz@2x.png
+SHA-256-Digest: PKqN93WA4/nmF74h6i9oIe6IeD73JWadRQSvUQdvdJQ=
+
+Name: icons/full/elcl16/collapseall.png
+SHA-256-Digest: pAOGtZ4GKfmt6e+1VlskYEftxSRKqU77KrTwyex4/60=
+
+Name: org/eclipse/ui/dialogs/MarkerResolutionSelectionDialog$1.class
+SHA-256-Digest: M4mO/eRcLij7x9UD0qRj1AXAb4Ia4TTlvZ6WTxcIwCs=
+
+Name: icons/full/obj16/incomplete_tsk.png
+SHA-256-Digest: YRnRgbg57olukJi45tXiX6ooK6bzWW4cBJhfRzga2+0=
+
+Name: org/eclipse/ui/internal/ide/dialogs/BuildOrderPreferencePage$2.c
+ lass
+SHA-256-Digest: TH1RwEuEcYt7m3UiUDmzcaeMljPxuI5RcF36oFaVtEU=
+
+Name: org/eclipse/ui/views/markers/MarkerField.class
+SHA-256-Digest: q+XFaaIqT4uYwpkNDTKgYTgzqs/p2cWdCBJ3ZhgK2mo=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/SmartImportJob.clas
+ s
+SHA-256-Digest: 8RU8XKklBk2FMKjOOStEglgIdwEB1tikC3WCPoezNeg=
+
+Name: icons/full/dtool16/newfolder_wiz@2x.png
+SHA-256-Digest: yDpRCRd8L6xve+M+WIewy/IFDK8a1OzZNBRY0NTzFj0=
+
+Name: org/eclipse/ui/internal/ide/actions/BuildUtilities.class
+SHA-256-Digest: NjmgdW7qq02zJ/YEWR+E6x5o2IhcJiU0hQAL8O0amzo=
+
+Name: org/eclipse/ui/internal/ide/actions/BuildSetMenu.class
+SHA-256-Digest: gU9Gg1oVaaYjGCrM3IRHZMcQpR9UNOgIt7TcxZBM6pU=
+
+Name: icons/full/eview16/problems_view.png
+SHA-256-Digest: eV83b0txtheQUba94Ga+SmApnJNEIz0KRWpz4h77Z6I=
+
+Name: org/eclipse/ui/internal/views/markers/MarkerPriorityField.class
+SHA-256-Digest: FNh9L1Bn+7xqSGorxa6GHzAeGVZkHFnIqhJUkZ85UUE=
+
+Name: org/eclipse/ui/internal/ide/IDEWorkbenchErrorHandler.class
+SHA-256-Digest: BdDzPRFAeX8mXfcoUnBHnimVkFvUbfcaOonZftKax9U=
+
+Name: org/eclipse/ui/dialogs/ResourceListSelectionDialog$3.class
+SHA-256-Digest: p6KqwQXNGrlRk5C1h4mapFg2jpS05PVAutDqyVPukLk=
+
+Name: icons/full/obj16/error_tsk@2x.png
+SHA-256-Digest: IESSjP9fjBDDOjg4Ixmmt3thdu7nGqRZUM2UsPWTYtE=
+
+Name: icons/full/wizban/newfolder_wiz@2x.png
+SHA-256-Digest: pyz6xVSY0h4jIB8/uHBSO+8WbVR0ySn2XRDV21gEfJ4=
+
+Name: org/eclipse/ui/internal/ide/ChooseWorkspaceDialog$2.class
+SHA-256-Digest: mVPZQCE9h7rYnyVgUBO2QT92v0szjleKNQ+xioK1TRc=
+
+Name: org/eclipse/ui/internal/ide/dialogs/FileFolderSelectionDialog.cl
+ ass
+SHA-256-Digest: uhLDIjUfn91PAuTkjcrb3B5E+kRfIGgAfiwvF91otIU=
+
+Name: org/eclipse/ui/internal/ide/dialogs/IDEWorkbenchPreferencePage.c
+ lass
+SHA-256-Digest: cee6+IjiAkX/Fxi32LfSClmGcZFuir5GEyQ4+8BaJxg=
+
+Name: org/eclipse/ui/internal/ide/dialogs/ProjectNaturesPage$NatureLab
+ elProvider.class
+SHA-256-Digest: r+6fUCz9ydoTpPKWJdWZTRpS6md5pF3R4mmPg35Zksk=
+
+Name: icons/full/dtool16/newfile_wiz.png
+SHA-256-Digest: AYtDHNkIp7M/O9858S+tI4MuSbIe6/ycLn7u2UZz6JU=
+
+Name: org/eclipse/ui/internal/ide/WorkbenchActionBuilder$5.class
+SHA-256-Digest: EerMwnL817RTh5RREUjcVQhbMdCdXaAhMRmV4E+ZSqE=
+
+Name: icons/full/eview16/tasks_tsk@2x.png
+SHA-256-Digest: Q+5vEGcNBADGMEY5zmHmARiWwr3sfk3x/XFDLgmvy5k=
+
+Name: org/eclipse/ui/views/markers/MarkerViewHandler.class
+SHA-256-Digest: iGZ1XE0GqY9iT2ZB/Yoa4uesdPqQv0syXU8rD5Z74Tk=
+
+Name: org/eclipse/ui/views/markers/internal/TypeMarkerGroup$TypeMarker
+ Field.class
+SHA-256-Digest: /K/OzDCpsagpY9iPG4zTesWHM1x95GUH465+rxY5MMY=
+
+Name: org/eclipse/ui/internal/ide/dialogs/PathVariablesGroup$6.class
+SHA-256-Digest: +P3cs47mPPvnu7t6ML4nuuarWt71umnYJNs1bSqm5Mg=
+
+Name: org/eclipse/ui/internal/ide/model/WorkbenchFile.class
+SHA-256-Digest: qvPJaJz7a9aPMYDIXLMZ30whOfaDwmqUnlcoJg8rv34=
+
+Name: org/eclipse/ui/actions/OpenResourceAction$1.class
+SHA-256-Digest: Fia++amXuoLO3sbvoSU5ECpsX2L0loF6Kd03ElpkYIQ=
+
+Name: icons/full/wizban/saveas_wiz@2x.png
+SHA-256-Digest: DY6RSKVOv+isLUltpOotHqMfSLb+KKAk6fHjo7ODZ44=
+
+Name: org/eclipse/ui/IMarkerHelpContextProvider.class
+SHA-256-Digest: xxJ/2ijB+Dzlr8qg+GGpQQAV/Hy5DQTGpcV49A0G62I=
+
+Name: icons/full/dlcl16/step_done@2x.png
+SHA-256-Digest: I36SDN+ohMI6GoRytqEEgCMrBBNrEJa4DoHgjaMOapE=
+
+Name: org/eclipse/ui/internal/views/markers/MarkerResourceUtil.class
+SHA-256-Digest: 6H/6KemlS4KwBe8Ch0+n9j9Qz6PpjBhWE+G1MRrp2y4=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/WizardFileSystemRes
+ ourceImportPage1$8.class
+SHA-256-Digest: AVYDO9+J5h1AXrNmPO7JnNhDcmLpqwL2idNnZumm/7A=
+
+Name: org/eclipse/ui/internal/views/markers/MarkerGoToHandler.class
+SHA-256-Digest: MLoNWnGx4UFtojlZWEmtY4WRajavTXm/XtIG8sosH2Q=
+
+Name: org/eclipse/ui/internal/ide/IDEWorkbenchPlugin$1.class
+SHA-256-Digest: z4PRyF9FzxzGdcOqm/yMj2leDueVeRh6u1HusBugSYE=
+
+Name: org/eclipse/ui/views/navigator/WorkspaceActionGroup$1.class
+SHA-256-Digest: QI67MzD8rOzz+4bMa6IjZUyUMYGV+ZOw6FKAdWsT0/Y=
+
+Name: icons/full/etool16/newprj_wiz@2x.png
+SHA-256-Digest: sndhk3kW24jtA5cr20UxZBfb/16FNexGpYZlj/R34mk=
+
+Name: org/eclipse/ui/dialogs/WizardNewProjectCreationPage.class
+SHA-256-Digest: 5kBf3aCy8sGbhZdnUc7ZeGSceijQ0TF+KiQ4dh6rw5U=
+
+Name: org/eclipse/ui/internal/ide/messages.properties
+SHA-256-Digest: kRNSlx1oN82/YSPe0LitrrVVoGamQQ6cDzFICtkGCxg=
+
+Name: org/eclipse/ui/internal/ide/filesystem/messages.properties
+SHA-256-Digest: bIRR1tMAZlzOpjfSjSSVLLhdg848vXMYCGtr16ex5j0=
+
+Name: org/eclipse/ui/internal/ide/dialogs/WelcomeItem.class
+SHA-256-Digest: 0vvdk8ouiY9KSfc/Ks5QSKHgtMBrDPHNEtsN9h8Q6U8=
+
+Name: org/eclipse/ui/internal/ide/SymlinkDecorator.class
+SHA-256-Digest: LRMfscc8xB6y2oqAYmqkqXjaGB17zsTaobutLeB4gyQ=
+
+Name: org/eclipse/ui/internal/ide/IDEWorkbenchActivityHelper$1.class
+SHA-256-Digest: dn2Qe6IubK6vx5mvg8BizIhZe7QCONbk+AgnbOUoGD8=
+
+Name: icons/full/eview16/problems_view_warning.png
+SHA-256-Digest: HLxOKD1hpacvkujpExtNU+dlCV0SF5P/f5YVE8o5Dg0=
+
+Name: org/eclipse/ui/internal/ide/registry/UnassociatedEditorStrategyR
+ egistry.class
+SHA-256-Digest: fdXtIvt0sRCbo+mwMYSgmQMo6PTAuGx6VGzzd86IYww=
+
+Name: org/eclipse/ui/actions/RefreshAction$2.class
+SHA-256-Digest: c74FV0IdaPIJdryrqIhNw3qaqBVUcv4LrBGxDW1Rlwk=
+
+Name: icons/full/dlcl16/hierarchicalLayout.png
+SHA-256-Digest: SJ+dbSylQxwLcHKdkzCbxvz4CreCWsR38iz9H6UhPxA=
+
+Name: org/eclipse/ui/internal/views/markers/ViewerSettingsAndStatusDia
+ log.class
+SHA-256-Digest: eDKizr1PT808Wu9LBzCxBkAmqcr7rYfJK+5lvoEhvyg=
+
+Name: org/eclipse/ui/internal/ide/dialogs/InternalErrorDialog.class
+SHA-256-Digest: 0PCvpH/szubALmkcqotunR7iPRJIfBcs9jtKZV/8MmM=
+
+Name: org/eclipse/ui/wizards/datatransfer/SelectFilesOperation.class
+SHA-256-Digest: SoWBjqpfBUU+iAjJ3r703Debaq7gvwWU4No1Edptw78=
+
+Name: icons/full/obj16/error_tsk.png
+SHA-256-Digest: 0UV9q2giwjZdoHt00hyNktE/BO2SFWZ+AY+guppoJ3I=
+
+Name: org/eclipse/ui/views/navigator/WorkspaceActionGroup$1$1.class
+SHA-256-Digest: BBeIDIRBVfpXwD7su19UteJH5HJREW63qfM/AiwvISU=
+
+Name: org/eclipse/ui/internal/views/markers/SeverityAndDescriptionConf
+ igurationArea$2.class
+SHA-256-Digest: V9rgm2LvGxqh/+lFl5/x/lAHS0YAwHdw2eTClCuGay4=
+
+Name: org/eclipse/ui/views/navigator/NavigatorDragAdapter.class
+SHA-256-Digest: Te3jR0JOht2uajhHr3dehiVANDmyoaLT/AgqI6a+1lw=
+
+Name: icons/full/obj16/quickfix_info_obj@2x.png
+SHA-256-Digest: yvVA5yiYnqQHWCDcnyedXCDqJp+t4O/r2Dq/aqIeFhs=
+
+Name: org/eclipse/ui/internal/ide/dialogs/ResourceWorkingSetPage$2.cla
+ ss
+SHA-256-Digest: Xjt+FwNMXZ9Z6DzO1KY1793rxylD5PC4H5lAlx3GJqY=
+
+Name: org/eclipse/ui/internal/ide/dialogs/WelcomeParser$ItemHandler$Bo
+ ldHandler.class
+SHA-256-Digest: JyMox1jr1zHzJZHtl2kfMJsmWRPqZ1fQfJO5m57TVc0=
+
+Name: org/eclipse/ui/internal/ide/dialogs/PathVariablesGroup$1.class
+SHA-256-Digest: yw2UBD3bt4h9xAXA+BbEwyoyhY0qMdu8SN2/IOn6t1Y=
+
+Name: org/eclipse/ui/views/markers/internal/MarkerGroup$AttributeMappi
+ ng.class
+SHA-256-Digest: kpwSJ0atmT+xGeO09wKwKkou3ZO1eogDPrJVU1+zfwE=
+
+Name: icons/full/dtool16/newprj_wiz@2x.png
+SHA-256-Digest: gsfloWb2wfw7Xouo19X6mVO2NT73kq1qG9bL0duSHIk=
+
+Name: org/eclipse/ui/internal/views/markers/MarkerDescriptionField.cla
+ ss
+SHA-256-Digest: 2vadBjmsvsLUrdbEvmJnfm8c8zfurU9xidwinGGAR5w=
+
+Name: org/eclipse/ui/internal/ide/dialogs/ProjectContentsLocationArea$
+ 1.class
+SHA-256-Digest: tmCMtGVm8Myd8u4swbV0NrgibXMJO2NkzKRxgXJNoZg=
+
+Name: org/eclipse/ui/internal/ide/WorkbenchActionBuilder$3.class
+SHA-256-Digest: yRcBLYrvPf0CdoIxWJNwKsxC+mnZFpmLNzmFgvVyBkQ=
+
+Name: icons/full/elcl16/showerr_tsk.png
+SHA-256-Digest: QkGSlB9uqmyXs/1SgzeEZ5DXBAjqWpU8xG9Xjtt8d1M=
+
+Name: org/eclipse/ui/views/navigator/ResourceNavigator.class
+SHA-256-Digest: Of20U2dMShhNEE+GptN5ahJ49AFtNV9q/WaZkSobmqI=
+
+Name: org/eclipse/ui/views/markers/internal/MarkerTypesModel.class
+SHA-256-Digest: r64J5R5dJDzq5JDNMLf7ZN2jhaOwAJharmKRwzqu6Ys=
+
+Name: org/eclipse/ui/internal/views/markers/MarkersViewColumnsDialog$1
+ .class
+SHA-256-Digest: d2NdQPLJHJyrbnFyl1jengAmIzfAktRWYv6xPziMV7c=
+
+Name: org/eclipse/ui/internal/ide/dialogs/FileFolderSelectionDialog$Fi
+ leContentProvider.class
+SHA-256-Digest: pveteH4pde75TslCZ4ajkAxXKJVqg3jHi6pXKtTdoCY=
+
+Name: org/eclipse/ui/dialogs/ResourceListSelectionDialog$UpdateFilterT
+ hread.class
+SHA-256-Digest: rFdJlKxLboAEghZWbKpzrmHbxxvCEgF3upCDWscevkA=
+
+Name: icons/full/eview16/problems_view_error.png
+SHA-256-Digest: 1aQAkIJXOpvWAlbRilj0WN/tEILjhXc8NmYz9dHioK8=
+
+Name: org/eclipse/ui/internal/ide/registry/TextEditorStrategy.class
+SHA-256-Digest: xY8pr4N59QRwYK3WSXAOENBXcaUvpEiN/O/I9oayeF4=
+
+Name: org/eclipse/ui/internal/views/markers/ScopeArea.class
+SHA-256-Digest: 08Ob27Cygf4TnPvoQjkWuE8dt6M1yJc87UjI79dcQfo=
+
+Name: org/eclipse/ui/internal/views/markers/ViewerColumnsDialog.class
+SHA-256-Digest: vnv+EnJNJ99t3LbO2SUmYs+/lilGvRv7T1mG0tHE2p0=
+
+Name: org/eclipse/ui/internal/views/markers/QuickFixWizard.class
+SHA-256-Digest: xEOjVsHAErrDh8rAuYc4RI2hYIkM1qVBgyteldxLglw=
+
+Name: org/eclipse/ui/internal/ide/dialogs/PathVariablesGroup$4.class
+SHA-256-Digest: Z0qmCZuTReWmWFbIYluO2kmaDXFJgFzjW1ZJc3Q22wc=
+
+Name: icons/full/dlcl16/addtsk_tsk@2x.png
+SHA-256-Digest: Ha15yHTEFtzP1mgXoMdL1JUvRqo1Hmigabcm0UfI39Q=
+
+Name: org/eclipse/ui/internal/views/markers/SortingJob.class
+SHA-256-Digest: NnhqAFjv+aD5vrRN9FzzrAGE9pW88iWQ5e6jGvCDq4o=
+
+Name: org/eclipse/ui/internal/ide/dialogs/ResourceInfoPage$1.class
+SHA-256-Digest: /UClktTqeGQsyJ2w6NMdNvr+dk/1sf9fvEDJMIGdI40=
+
+Name: org/eclipse/ui/views/tasklist/ITaskListResourceAdapter.class
+SHA-256-Digest: +RCyb6WDuhVx3tsGpRZIMVAE+Wvj7HqlBY+0xIvxBO0=
+
+Name: org/eclipse/ui/dialogs/WizardDataTransferPage$2.class
+SHA-256-Digest: CkqXh2b8g7yuW2MyzDuMFkbrprPT1bMdU5zQ2JLIwWU=
+
+Name: org/eclipse/ui/internal/views/navigator/ResourceNavigatorMessage
+ s.class
+SHA-256-Digest: ILTgA0hrRmRfRrJgJopCLvpk7PZ12agIFf1NN2/DZJ8=
+
+Name: icons/full/wizban/importdir_wiz.png
+SHA-256-Digest: jbfzrGCms0tGH8Hh0IgUH2Dvj0b0RWj8SYzFKEplNSs=
+
+Name: org/eclipse/ui/internal/ide/dialogs/BuildOrderPreferencePage$5.c
+ lass
+SHA-256-Digest: YtMT262Ge5Esmepn2LTpEdG3jVpXseRIDtDluYAa0Og=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/WizardFileSystemRes
+ ourceImportPage1$5.class
+SHA-256-Digest: sPDDsr7RtKguu0Mhu6QIu4jJ42ko0x6pDP8v6p6ExBc=
+
+Name: org/eclipse/ui/internal/ide/dialogs/WelcomeEditor$2.class
+SHA-256-Digest: mSdfBWeQliL8IsDhtp+FnWd9AaSK9nf6zwjodqyZxP4=
+
+Name: org/eclipse/ui/internal/ide/dialogs/ProjectNaturesPage.class
+SHA-256-Digest: 3oEheEw+LXZnqb9afnbd2bcjwvgSkZv+NupZ23oGziQ=
+
+Name: icons/full/wizban/newfolder_wiz.png
+SHA-256-Digest: C/pBLSASWg6Dz4dGVknnpAjcIjIRpbQ8IXhbHFYE3mQ=
+
+Name: org/eclipse/ui/internal/ide/ChooseWorkspaceData.class
+SHA-256-Digest: Mp4QokyQCLe5P5M8IIlJ7mJTXsCGiyvzUtBRqBwv3nY=
+
+Name: org/eclipse/ui/ide/undo/CreateFileOperation$1.class
+SHA-256-Digest: Zc57RK7iXToQhLQfnLjxsk7UjqRnN30d0Qhk+nItJfs=
+
+Name: org/eclipse/ui/internal/ide/ChooseWorkspaceDialog$5.class
+SHA-256-Digest: SK2y4nk/IOOjFGE/6Y9snrNdZmkgThd4Do0zkhcfW44=
+
+Name: org/eclipse/ui/actions/GlobalBuildAction$1.class
+SHA-256-Digest: u+j4wHcztV9+GHSFYk2f5fdv/AP0l6zBGgC1vPfrsZI=
+
+Name: org/eclipse/ui/internal/ide/dialogs/OpenResourceDialog$3.class
+SHA-256-Digest: ka6CkjIotwAI2b2/3KSuikBvA/91BXAjoAk8hUX/GhU=
+
+Name: org/eclipse/ui/internal/ide/ChooseWorkspaceWithSettingsDialog$1.
+ class
+SHA-256-Digest: W+JLR4Q7kj8a54hEKo9BXp7mzEGJ+gWanenDX1hTgUM=
+
+Name: org/eclipse/ui/internal/ide/dialogs/OpenResourceDialog$ResourceS
+ howInMenu$1.class
+SHA-256-Digest: LYQENEu5AQhYFNx5MVAXgh5smIZlyl+N12XFZ/tmwx4=
+
+Name: icons/full/dview16/pview.png
+SHA-256-Digest: ae2TI33l4xInZocA6HVcur/KKyXTGmB6r46nRatJ0ho=
+
+Name: icons/full/obj16/welcome_editor.png
+SHA-256-Digest: iC7OpO+RG97KXPMRPkkeQ1XE8AWaOhvZoK842dCUv8Q=
+
+Name: org/eclipse/ui/internal/ide/ExtendedFileEditorsPreferencePage$1.
+ class
+SHA-256-Digest: NUcsvfBhiGOSFLS+kVcbRHIRSvgHT8e+1Eqi3QCUwJs=
+
+Name: org/eclipse/ui/internal/ide/dialogs/WelcomeParser$ItemHandler.cl
+ ass
+SHA-256-Digest: eDuq3a+4ni7oMrKig1nOgfWjWJs3XePSLPs+gn5drzI=
+
+Name: icons/full/markers/contassist_ovr.png
+SHA-256-Digest: guB12iOnz+PgBzb9Qs+nyOxcj/Ttd5F0yRN+AGfkJW4=
+
+Name: org/eclipse/ui/actions/TextActionHandler$2.class
+SHA-256-Digest: ojHcp7aWDTfhsAl/kjFMool29wwB5RqZ+9rkxqsqoPk=
+
+Name: org/eclipse/ui/internal/ide/dialogs/OpenResourceDialog$2.class
+SHA-256-Digest: 5ago01txILljFoRWFdLGDKj9eQZyCRZ0Ax6US/ASFr4=
+
+Name: org/eclipse/ui/internal/ide/dialogs/ResourceInfoPage$3.class
+SHA-256-Digest: I8MIRLSiNuRdgtyVGTgdH0S4uRUeaxt0VwASwktepg0=
+
+Name: icons/full/dlcl16/gotoobj_tsk.png
+SHA-256-Digest: pPygBx/JY4Bs9hEUEcqynyFfr0PiVjdH3Wiv3+mfazM=
+
+Name: org/eclipse/ui/views/navigator/ResourceNavigatorRenameAction.cla
+ ss
+SHA-256-Digest: 4NJm/X+m8egzZvQ3gSVclOO4xnnx/C9Gcqld8alqTcA=
+
+Name: org/eclipse/ui/views/navigator/WorkspaceActionGroup.class
+SHA-256-Digest: /p1cwdxYIdiyC2CyqtFqYdRZo3gzKm1Blc2G4Pg+ZbU=
+
+Name: org/eclipse/ui/internal/ide/filesystem/FileSystemConfiguration.c
+ lass
+SHA-256-Digest: Wrc40bdKKlITv5Nb+uAtwIce0p7sJkk2O1343T+BKNQ=
+
+Name: org/eclipse/ui/internal/ide/dialogs/CreateLinkedResourceGroup$2.
+ class
+SHA-256-Digest: PBDuWcovR0qvJPAsSHv5gSGL9/Rcc5DPSCWhEo5TUT4=
+
+Name: org/eclipse/ui/internal/ide/dialogs/BuildOrderPreferencePage$4.c
+ lass
+SHA-256-Digest: zsOBSJH+uwgP9zDKK8NHNSJj1dML+spb2rdz8JIGcPM=
+
+Name: org/eclipse/ui/views/bookmarkexplorer/BookmarkNavigator$ChangeSo
+ rtDirectionAction.class
+SHA-256-Digest: J8R6Hc/meIwTiusRZXRuhEfNsFbjFQfcPgmodmnSm8o=
+
+Name: org/eclipse/ui/ide/ResourceSaveableFilter.class
+SHA-256-Digest: tklOeMN8eR3nbygjbu7/eYydSNJ2grx3/R2u2BoFr2c=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/WizardProjectsImpor
+ tPage$ConflictingProjectFilter.class
+SHA-256-Digest: GJe0xKWzbFbeaqUrxBIj6wbcXFTo078HHwVrY4MfJWM=
+
+Name: icons/full/elcl16/cpyqual_menu.png
+SHA-256-Digest: flk11clSL+8BnusurBBnvMZxLIDdHdnKFw/e+PwWh7Q=
+
+Name: icons/full/dview16/problems_view@2x.png
+SHA-256-Digest: tuDOeDe4lcGz6h0XQrhdNfNJO8lW/BVxyBRiCZWSTA0=
+
+Name: org/eclipse/ui/internal/ide/undo/messages.properties
+SHA-256-Digest: kdeeL+6Uhvio/z7CDiCgGdla1BULY6qEGcTK3qQLYjs=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/TarFile$1.class
+SHA-256-Digest: ICrWwG/QtMJRPFCXO4tVuBEjwppPQxhm7weTNkzvRTA=
+
+Name: org/eclipse/ui/internal/views/markers/MarkerTypeFieldFilter.clas
+ s
+SHA-256-Digest: lYS6ghGUyWThcdlMlp2wlABLs3grsE37bNQcbrB5bMU=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/SmartImportRootWiza
+ rdPage$17$1.class
+SHA-256-Digest: UJNSGtjKAShIsUE9dgjo9vfZ4oX4JmLG1PRpF7BBqsk=
+
+Name: org/eclipse/ui/views/bookmarkexplorer/OpenBookmarkAction.class
+SHA-256-Digest: YHPW3+KuoxNohV/BH1y8PPd8jaULUvc8Hc4oYvDAFQM=
+
+Name: org/eclipse/ui/ide/dialogs/ImportTypeDialog$1.class
+SHA-256-Digest: qSXXz5+ytRRIdHUmUGC9o6og90iwqTgP712R0WM+pBQ=
+
+Name: icons/full/elcl16/selected_mode.png
+SHA-256-Digest: O29r/AFktpAOi9XSNlFYNGWs8N97h0I9lxz6Q9qN0O0=
+
+Name: org/eclipse/ui/dialogs/ResourceSelectionDialog$1.class
+SHA-256-Digest: c+L6/cLUQLjvJ585VUcRA5G+A7fkySUKFYi1YRsGFo4=
+
+Name: org/eclipse/ui/internal/views/markers/ViewerColumnsDialog$TableL
+ abelProvider.class
+SHA-256-Digest: TICBHAhfTV+g6xYM/cgJHbwbB+VqDIIoC+UHwkTCsBw=
+
+Name: org/eclipse/ui/wizards/newresource/BasicNewProjectResourceWizard
+ .class
+SHA-256-Digest: f0MMbQUYW2dByNxvPIDlQqp2UkZcIlIl7vIEQFNCil8=
+
+Name: org/eclipse/ui/internal/ide/ChooseWorkspaceDialog$4.class
+SHA-256-Digest: 0OQZ2nTvO4EjLal7cxe0MqvYThyKXU+jOUXZUKU4RGY=
+
+Name: org/eclipse/ui/dialogs/ResourceListSelectionDialog$1.class
+SHA-256-Digest: bUjBSRWZwqvy6870KcZiKSHSS4rghhm5mJh3dtfttCk=
+
+Name: org/eclipse/ui/internal/ide/FeatureSelectionDialog$2.class
+SHA-256-Digest: RcRlgb6JFGleyc9WpS7oJzMC70lCDcCIqsrcmR4M/go=
+
+Name: org/eclipse/ui/internal/ide/dialogs/ResourceFilterGroup$FilterCo
+ pyDrop.class
+SHA-256-Digest: CQ24Mrg8aiQCxUeMK1CraGRIguNT+82Kyrv2Hdas1B4=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/WizardArchiveFileRe
+ sourceImportPage1$2.class
+SHA-256-Digest: Ow+79cK6bXBOTGt8+xz0vrFD45qT1jQYvvNDWP5lDjw=
+
+Name: org/eclipse/ui/internal/views/markers/CompletionConfigurationAre
+ a$1.class
+SHA-256-Digest: P5YNxCia3Ez7Oqp3XwkbLslrX9l2NoG1tTjfnRszq6w=
+
+Name: org/eclipse/ui/internal/views/navigator/messages.properties
+SHA-256-Digest: UexuU3G6ZaiXJlynVCMx9gQH7shWNImbKK5oGGVK1sY=
+
+Name: org/eclipse/ui/internal/ide/registry/MarkerHelpRegistryReader.cl
+ ass
+SHA-256-Digest: NJDB/ghblY52jEKnBXO3F2PTEQ9CPcN26VsMeDamq70=
+
+Name: icons/full/etool16/exportdir_wiz@2x.png
+SHA-256-Digest: i+PHQOqAGoC31/DVN3ku/m8sK3sT3kLoTYwEDZP6Xrw=
+
+Name: org/eclipse/ui/dialogs/WizardNewFolderMainPage$1.class
+SHA-256-Digest: LCh/VKcfJT2mL9yzRMBN/OQPWmIM2chzgc7r20rX8Ww=
+
+Name: org/eclipse/ui/internal/views/markers/DeltaMarkerEntry.class
+SHA-256-Digest: aNOAi9wMhPPMYab4nG0gRLkKFnVl4VM91tPfWOS292A=
+
+Name: icons/full/elcl16/filter_ps.png
+SHA-256-Digest: O2b4uC0BspHiT/kIpKN+ZaxHx3JWGtNHhXt3oqYB0M4=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/expressions/FileExp
+ ressionHandler.class
+SHA-256-Digest: eGLged5MMgEcbm0f0A+bwaOL/Ve5/1tLRX/oM1M9S9U=
+
+Name: org/eclipse/ui/dialogs/FilteredResourcesSelectionDialog$Resource
+ Filter.class
+SHA-256-Digest: Sp/MeoRlrdDT3/KtqVrNOO4BF66CcBFhM26DBjA2bTM=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/WizardFileSystemRes
+ ourceImportPage1$6.class
+SHA-256-Digest: oCg/YaYW3pAPlGlqNLj2s2VPUOH0MZaQ6A5WX0DdumA=
+
+Name: org/eclipse/ui/IMarkerResolution2.class
+SHA-256-Digest: 4FpnOn2EIg2mYO1i4gNsUa/6ej2q1VfT6xNM8UC3To8=
+
+Name: org/eclipse/ui/internal/ide/ChooseWorkspaceWithSettingsDialog$2.
+ class
+SHA-256-Digest: qZYTQNARZIVz0DGcFsHkY41QGkqVanwq/ot2wlYstMo=
+
+Name: icons/full/elcl16/synced.png
+SHA-256-Digest: otifVa+dQFq0LbN+9VZ+Rj43KTu59WxwPWBKj4R/b18=
+
+Name: org/eclipse/ui/wizards/newresource/BasicNewFileResourceWizard.cl
+ ass
+SHA-256-Digest: TZBevCENMa4ukIWTl6qym9vZbUvZJVrh3qVRiFrP+/g=
+
+Name: icons/full/obj16/taskmrk_tsk@2x.png
+SHA-256-Digest: jMqXuUZXwJ8YRtWS/Z9d8FauiN0U7A3A5BKRqtLJTxs=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/ILeveledImportStruc
+ tureProvider.class
+SHA-256-Digest: UUM+unnxdokW+lY+LMBYleANXYtcY8r5gdmG54muiqU=
+
+Name: org/eclipse/ui/views/bookmarkexplorer/BookmarkLabelProvider.clas
+ s
+SHA-256-Digest: 4dEnhVuvPPgfE3icttSPy+WtnHSwXgVVk7ktdPriCck=
+
+Name: icons/full/eview16/bkmrk_nav@2x.png
+SHA-256-Digest: 8MgZNuZdGEORt9jlIPzQ72Si5yRsXfVdxowaNeBRXEs=
+
+Name: org/eclipse/ui/internal/ide/dialogs/ResourceWorkingSetPage$3.cla
+ ss
+SHA-256-Digest: Lr6DLzNH90CBDtgXuOWmqwhnSKRoPRN21YGprvB2yfc=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/TarFile.class
+SHA-256-Digest: 60fS8TgokW9W1KZ7CYVGYLgVIer1W4DKFnlOVPg58TA=
+
+Name: org/eclipse/ui/views/markers/internal/MarkerGroup$EntryMapping.c
+ lass
+SHA-256-Digest: m/3jzwEnZXE3d/uXbmzN+DoVvZY4PMTugn4n2YVfVYA=
+
+Name: icons/full/etool16/newfolder_wiz@2x.png
+SHA-256-Digest: W5LoaVJfz/yEdK9kE0UR6h9zozu0V6q7mj5n4u+XoLc=
+
+Name: org/eclipse/ui/internal/views/markers/TypesConfigurationArea.cla
+ ss
+SHA-256-Digest: tFsPq+M9v+rHM1y5Hp+KeveytOPjQLDGzfTUL8Hw7vg=
+
+Name: icons/full/dlcl16/step_current.png
+SHA-256-Digest: IYXTbTm1/TyKGof+SFARGis5qsb33eiq9q0QPlS2kaY=
+
+Name: icons/full/eview16/pview@2x.png
+SHA-256-Digest: t+7K7r6tQUjMeto/FcSUnMhVvjyiR0dgrAx0lnI4E74=
+
+Name: org/eclipse/ui/IMarkerResolutionRelevance.class
+SHA-256-Digest: 0Eml6dWQydXtOmpYZ/9y+XfXj7t5s1UDhIUfcghpTfg=
+
+Name: org/eclipse/ui/ide/dialogs/ImportTypeDialog.class
+SHA-256-Digest: ltWHqHua7tfK79IrDgO8Mri95ib3Id5NSw1qt0USYiY=
+
+Name: org/eclipse/ui/internal/ide/LineDelimiterEditor$1.class
+SHA-256-Digest: V8K+urXMlU+hz1NzSoTGhw+H458JZou/ak7G/pGf7Rk=
+
+Name: org/eclipse/ui/actions/MoveFilesAndFoldersOperation.class
+SHA-256-Digest: JCUm7ogRSXOG0YnmdTEe3WMrW8MQ51jCD3j2KhZdKkU=
+
+Name: icons/full/dtool16/export_wiz.png
+SHA-256-Digest: MnPsgfr07nWSgebm4yIv4U+Ls832TAxsNbu6bxoVESE=
+
+Name: org/eclipse/ui/actions/OpenWithMenu.class
+SHA-256-Digest: kc3AUAeHm43xpAzDsDLkCyAPfDIYTqrPbgXg/65K3eg=
+
+Name: org/eclipse/ui/internal/views/markers/TypeFieldGroup.class
+SHA-256-Digest: kvjsZX8Akj7Q6EtktWRl7NeCe5jET44F6RyCClD2ngo=
+
+Name: icons/full/dlcl16/refresh_nav@2x.png
+SHA-256-Digest: Nra4qJ2bCeim2R6/uKwfv4+t91lb526x/NxKogongnw=
+
+Name: org/eclipse/ui/wizards/datatransfer/ExternalProjectImportWizard.
+ class
+SHA-256-Digest: fjnh+T9xCdAdd/zCbYRbjLq3MBY66jaLXSDmvSnxG5I=
+
+Name: org/eclipse/ui/views/properties/IResourcePropertyConstants.class
+SHA-256-Digest: nUBhQt2sOoBHWETD9BuOAYCRyx+NEmXFMjDzDb7QI4E=
+
+Name: icons/full/obj16/prj_obj.png
+SHA-256-Digest: mRbaTzUkwb5HNy/dj0W3MxORJg6rIxL+wvC54kHoyN8=
+
+Name: org/eclipse/ui/internal/ide/LinkedResourceDecorator.class
+SHA-256-Digest: gW5vgd92La6ogdKd6t92Y2hreMYmT+MR9ikxYg08QVw=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/RecursiveImportList
+ ener.class
+SHA-256-Digest: CxpC0QvbnGZDNm1SfhPeEfZuqUEvis+AGbSW2pnUBpA=
+
+Name: org/eclipse/ui/dialogs/ResourceSelectionDialog$2.class
+SHA-256-Digest: iWMaXtOZ6pYgAyPoCQYMm6Lc7Y3cdiReM7n8TRvZV/4=
+
+Name: org/eclipse/ui/internal/ide/commands/CopyBuildIdToClipboardHandl
+ er.class
+SHA-256-Digest: IizK0raBbfPYFLU8no/eLNxyJtF3+smQp2bDk26on2I=
+
+Name: org/eclipse/ui/internal/views/markers/MarkerCreationTimeField.cl
+ ass
+SHA-256-Digest: yOneXTNQI/vFJyvc8sgIwUY/+ZaevJagY5T/pcCockE=
+
+Name: org/eclipse/ui/internal/views/markers/TypesConfigurationArea$Mar
+ kerTypeEntry.class
+SHA-256-Digest: H86500IXM7QH3u1Sj9tz+wrHpiLUw4ziJBRSwkgu+bo=
+
+Name: org/eclipse/ui/internal/ide/FeatureSelectionDialog.class
+SHA-256-Digest: Mcl8+Ql6TOzywD3OmfnYOq5b437buo3FKICbt1znQ6k=
+
+Name: org/eclipse/ui/part/FileEditorInputFactory.class
+SHA-256-Digest: fd3BsLnqgFgLCE3E1aoSDVhsS8Nt2QBB3sBsKfIaWb8=
+
+Name: org/eclipse/ui/internal/ide/dialogs/CreateLinkedResourceGroup$IS
+ tringValue.class
+SHA-256-Digest: ry3CYfGdNQYs06dHiX4SrRLOpzvX4nC0ztZk/xKqZ5w=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/ZipLeveledStructure
+ Provider.class
+SHA-256-Digest: EIjoVScp7H8NbC8sXpRNrd/YXEN93hVW1kgrkcc7iYY=
+
+Name: org/eclipse/ui/internal/ide/actions/OpenWorkspaceAction$Workspac
+ eMRUAction.class
+SHA-256-Digest: dGny+yGmbyssleJWsFmSZ20csd6UXvosHcYQNCKu8wI=
+
+Name: org/eclipse/ui/actions/DeleteResourceAction$2.class
+SHA-256-Digest: iVQePl5eYvQX2oVef36Ne0XUJO/PVye6lXHWUio+Qk0=
+
+Name: org/eclipse/ui/internal/ide/dialogs/IDEResourceInfoUtils.class
+SHA-256-Digest: dEHXqR5ajkzzUBZsWkQm7WT58nacjKOfcQSzUe01mtY=
+
+Name: org/eclipse/ui/internal/ide/ChooseWorkspaceDialog$3.class
+SHA-256-Digest: Z+ejUw8GQ0SMdA1YEmYN4yemePwo5bWOkoWlZ7VI2Yg=
+
+Name: icons/full/dtool16/build_exec.png
+SHA-256-Digest: VeAVVlYJtHlSZkzyMWPq8gVlY9SoXd+bD0sfwMUdvc4=
+
+Name: org/eclipse/ui/internal/ide/FeatureSelectionDialog$1.class
+SHA-256-Digest: ScYt/CwKOkZcRYFi3MzU8RbAyUAW3KuSfQXCLs7AfiM=
+
+Name: icons/full/obj16/hprio_tsk@2x.png
+SHA-256-Digest: Ol7Oisrf1ki1KH3MGIFR6yZWBB2plsN4SJssRcNKAcs=
+
+Name: icons/full/etool16/export_wiz.png
+SHA-256-Digest: leVn6bW+TmYdZ1suEaqGmHNp7K2+N/3Scd01XyB/hwQ=
+
+Name: org/eclipse/ui/views/markers/internal/ProblemFilter.class
+SHA-256-Digest: lyDEZRqt3G9pDh2433d4vXT7Z95EcV7CFA2yNcTp8rc=
+
+Name: icons/full/elcl16/filter_ps@2x.png
+SHA-256-Digest: NsonmwD3VFpRsWwWN7RHFCoqmN2ijxoPLJz+nMcBbO0=
+
+Name: org/eclipse/ui/internal/views/markers/TypesConfigurationArea$Typ
+ esEntry.class
+SHA-256-Digest: RG5VXFos5KHByDCv8V7dd65yzwpkAQBsZMHrJoinFAU=
+
+Name: org/eclipse/ui/dialogs/WizardNewFolderMainPage$2.class
+SHA-256-Digest: /zMjcCEYulNSZe3u/yWPA/nLljSoAaBx1Uk2FjFW+8E=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/SmartImportRootWiza
+ rdPage$ProjectConfiguratorLabelProvider.class
+SHA-256-Digest: 1M/CGvSEnrqRr8UFS3h4Ni1mbZj9QGGDI0CogYjzsyY=
+
+Name: org/eclipse/ui/ide/dialogs/ResourceTreeAndListGroup$TreeListener
+ .class
+SHA-256-Digest: YYwsxXm5wtm3prBn11IjuH9/vYwXAD7FFJu2xpGvQlw=
+
+Name: org/eclipse/ui/dialogs/WizardNewProjectReferencePage$1.class
+SHA-256-Digest: DD/ISzqveNjrazqoGXbz+9R6x9ZGyhOxCBRO57b7iRw=
+
+Name: org/eclipse/ui/views/navigator/ResourcePatternFilter.class
+SHA-256-Digest: 44NHEhpZKUpd2CyEKvN8dTAIl+ZiaBcfib40S2P1uo0=
+
+Name: icons/full/dlcl16/collapseall@2x.png
+SHA-256-Digest: DBCG6xcuxhYA8155H4NPYkw6IFzg069OB+5RbKtJHVs=
+
+Name: org/eclipse/ui/dialogs/ResourceListSelectionDialog$2.class
+SHA-256-Digest: jcYErHraE66ihjmkGwbhxJ3ru6ewRLQ7u/1Gw9yiXSM=
+
+Name: org/eclipse/ui/views/markers/internal/TypeMarkerGroup.class
+SHA-256-Digest: CRRnQkpq+d6FrurwZcuKXXXnkTTvfRLDMb4dm7RQFnA=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/TarFile$2.class
+SHA-256-Digest: SgK8ou/9gkmqJWAamhNOYbTctM+nB4haSVALsm6KuSA=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/WizardArchiveFileRe
+ sourceImportPage1$1.class
+SHA-256-Digest: ucuaWFVln5bEsGdtAwJ9TjILn2BanPkLSPQBWBj9LcQ=
+
+Name: icons/full/obj16/welcome_item@2x.png
+SHA-256-Digest: SSH9mBdjRuGRLoKJDdIn1k1ahhxBta45nxtvFTfeIQE=
+
+Name: org/eclipse/ui/internal/ide/misc/DisjointSet.class
+SHA-256-Digest: 2MrYjutswTn55eT6vuufU/mrCEl5z6hRwiDitGwQN+w=
+
+Name: org/eclipse/ui/wizards/datatransfer/ZipFileImportWizard.class
+SHA-256-Digest: Nx8owCLUQRgsx3R6DYRbTDrGqFDLST0DfESslhk+jqI=
+
+Name: org/eclipse/ui/internal/ide/handlers/OpenResourceHandler.class
+SHA-256-Digest: 5/yFy/yT5TmxsgoScXepBA6eBBVni9n9x7VTECXf+EE=
+
+Name: org/eclipse/ui/internal/views/markers/AllMarkersSeverityAndDescr
+ iptionFieldFilter.class
+SHA-256-Digest: AGBcKAAS32gQlD9GR7AwXxeW7vWnvIz33ybeh9lXd34=
+
+Name: icons/full/obj16/header_priority.png
+SHA-256-Digest: 2wvAT+SRXB7glZOvJcsA0cKvqY693xOMF+lGOdch3E4=
+
+Name: org/eclipse/ui/internal/views/markers/CopyMarkerResourceQualifie
+ dNameHandler.class
+SHA-256-Digest: eDrEDSjp9ymfjxGKz7bTa6rpS3CBqXlNgnGZnIPDc9Q=
+
+Name: org/eclipse/ui/internal/ide/IDEWorkbenchPlugin.class
+SHA-256-Digest: zyNBTvp1t/s0A27+nysv8to3Szk939kkSA/Nc7ZsZ74=
+
+Name: org/eclipse/ui/views/properties/ResourcePropertySource.class
+SHA-256-Digest: /+uAEea8oCP8P42d/3Ciu/X0vVO2nk7AoZgmGXdYIR8=
+
+Name: icons/full/eview16/pview.png
+SHA-256-Digest: cFS64UxIeXyNQMkrnzimKKqr3fnNx9BaY54wpQu2ueY=
+
+Name: org/eclipse/ui/actions/ReadOnlyStateChecker$1.class
+SHA-256-Digest: fi3kNUJxSLkIgQ6ATL1zoRcw6kW+eXYbu9DvU+7k9j0=
+
+Name: org/eclipse/ui/internal/ide/dialogs/ResourceFilterEditDialog.cla
+ ss
+SHA-256-Digest: lQxJ8XwrNEKGwtneLzTcmprz07EbHlxo7oUIfYIscss=
+
+Name: org/eclipse/ui/internal/ide/IDEInternalPreferences.class
+SHA-256-Digest: Eusx+BVEuqUwnTnL41oQ0R6tNk3U69hrwGdwmsj2050=
+
+Name: org/eclipse/ui/internal/views/markers/CachedMarkerBuilder$Workin
+ gSetListener.class
+SHA-256-Digest: U5xXCuWq0HYG0Q3TuCkK6Te/wXklZ4O8VNRRSQusinQ=
+
+Name: org/eclipse/ui/ide/IDE.class
+SHA-256-Digest: t5nQVT0gVD0N46IlFk1pHvVMpTkYUOmIs/ZQIGAguTk=
+
+Name: plugin.properties
+SHA-256-Digest: WssBfVcInO3xz9b/c+rP8lOPnptRfqFHJcCyQJ2+W78=
+
+Name: icons/full/obj16/quickfix_error_obj@2x.png
+SHA-256-Digest: 8/u4P4vUMigLiE/t7GFr+34ya1sNkkVdZZ0lxDdAFjY=
+
+Name: org/eclipse/ui/internal/ide/dialogs/FileSystemSelectionArea$1.cl
+ ass
+SHA-256-Digest: NB5XWHE9G42IopEG7el/wqPKWu6o1S0K45Owe8Z5Azw=
+
+Name: icons/full/obj16/fileFolderType_filter.png
+SHA-256-Digest: 0sCRAjQGSxVbIKXQ5psIS6ceXQmekYI8L6/Jf3Z/4v8=
+
+Name: org/eclipse/ui/ResourceWorkingSetFilter.class
+SHA-256-Digest: 8XYP2tpVlLwr6luUrI6laXSdAXaAmJF7wJZmMkWtIlA=
+
+Name: org/eclipse/ui/internal/views/markers/MarkerSupportInternalUtili
+ ties.class
+SHA-256-Digest: Pfl+E9GreECkXzMfBzKcegzC2ByhMymddCeYQWvvA7g=
+
+Name: org/eclipse/ui/ide/undo/AbstractWorkspaceOperation.class
+SHA-256-Digest: 3CHWOMExIjFSY7XHbOPdRSGFWbLB+UthRSLQvd9GTi8=
+
+Name: org/eclipse/ui/internal/ide/misc/FileInfoAttributesMatcher$Match
+ erCache.class
+SHA-256-Digest: Bby9LgFvFEm4Ldhytfc5IBUz0wAvhjVB5vb1UIGe0zI=
+
+Name: org/eclipse/ui/views/navigator/SortAndFilterActionGroup.class
+SHA-256-Digest: oWa9ekZf7unROlevp9TXcMlL9bk6u56Ho2UE0hNBqms=
+
+Name: org/eclipse/ui/ide/undo/CreateMarkersOperation.class
+SHA-256-Digest: uUQwtdq+wiJdmylpxAC6i6DGRxZkXY8oWolzJ1ktw8E=
+
+Name: icons/full/elcl16/showcomplete_tsk.png
+SHA-256-Digest: Uci/Lt/TutMUW+YKDHfZtlBmgJ0wCKkbIkNeTLrp830=
+
+Name: icons/full/obj16/importpref_obj.png
+SHA-256-Digest: znqy2d3iw7yottso+x2G9r/uSwGsVn690qwWgXE4Bt4=
+
+Name: org/eclipse/ui/internal/ide/EditorAssociationOverrideDescriptor.
+ class
+SHA-256-Digest: VRrkPpQJzlQP1xfKc6YzJ1Nha/XfvF9M5enFUUb9lng=
+
+Name: org/eclipse/ui/internal/views/markers/SelectedWarningsParameters
+ .class
+SHA-256-Digest: G4PbiWv+cBS/4kPsXxTilm6+0zg0c4qth5NLu+7Lf+M=
+
+Name: org/eclipse/ui/internal/ide/dialogs/WelcomeParser$WelcomePageHan
+ dler.class
+SHA-256-Digest: uHJ2UBBoceuVf4LerI0VW/npR9Z2QUcmHPOwkSw6Sfo=
+
+Name: org/eclipse/ui/dialogs/WizardNewFileCreationPage$2.class
+SHA-256-Digest: i4ouQI3RAnjIE+j0grO0XVEMikOn07Ifrv9CMJyCIj8=
+
+Name: org/eclipse/ui/internal/ide/model/WorkbenchProject.class
+SHA-256-Digest: 50NCj2bv4LTjAjLwQYVjQ1kmPSukE9EujOFo/O3PtwY=
+
+Name: org/eclipse/ui/internal/ide/dialogs/PathVariablesGroup$PathVaria
+ bleElement.class
+SHA-256-Digest: ndOJFpAo5SdxUgEstRm841JBeOqQJ+4l1Z1F/J5ZPQs=
+
+Name: org/eclipse/ui/views/navigator/StringMatcher$Position.class
+SHA-256-Digest: kakDy+mdjfhbF7ETmDYiCu8SnfU9IjC6bosJAiD9i3U=
+
+Name: org/eclipse/ui/ide/dialogs/ImportTypeDialog$3.class
+SHA-256-Digest: ZeLp5Nnkolli9Qdw1oZe+1vViPUXD//ZUOCVno6qV1A=
+
+Name: org/eclipse/ui/internal/ide/dialogs/ResourceFilterGroup$RemoveFi
+ lterAction.class
+SHA-256-Digest: wIxAvON725r7k/hnN3QKMh+LzLRDk4oqJLXGkt2+gIM=
+
+Name: org/eclipse/ui/part/FileEditorInput.class
+SHA-256-Digest: uCcOCbocNpPrHDatvVb++3LW32KZICDFGCqv05zFP4Q=
+
+Name: icons/full/dlcl16/flatLayout@2x.png
+SHA-256-Digest: IEq7YSsh5DKnHYpUKmkAP8P2i4qRq1lfjK10rhnAfIw=
+
+Name: icons/full/wizban/exportdir_wiz.png
+SHA-256-Digest: v4a4KpcDnxP7phpOIZTXW8Y9PTUQB8f1tf2ptlOjckc=
+
+Name: org/eclipse/ui/internal/views/markers/GroupFilterConfigurationAr
+ ea.class
+SHA-256-Digest: 5KDhjZZM1Iwra9oLN13k+ILkTTW7jntJpFCjt6he3KA=
+
+Name: icons/full/dtool16/importzip_wiz@2x.png
+SHA-256-Digest: P8XEb4If31H0otl1rwhdil//0zEee1YX9RVWSR8pk9s=
+
+Name: icons/full/dlcl16/addtsk_tsk.png
+SHA-256-Digest: Czcg3tNFQycYZA0R6k9vF6nMrSveOCsy7aRFeQ1146Y=
+
+Name: org/eclipse/ui/internal/views/markers/AllMarkersSeverityAndDescr
+ iptionConfigurationArea$1.class
+SHA-256-Digest: WAUjUTRsLG8r58mNvREbUkQNGgpARCZ/iMhFW94Bh1Y=
+
+Name: org/eclipse/ui/internal/ide/model/StandardPropertiesAdapterFacto
+ ry.class
+SHA-256-Digest: AU2foAiI6LR84wUyLTYpA8mfh4AkPLf8U8hGm004Xi4=
+
+Name: org/eclipse/ui/views/bookmarkexplorer/BookmarkMessages.class
+SHA-256-Digest: JYOT7Ga0xMHyNFa8zdvm3PjluQpETCD4zyBQwlcXZTs=
+
+Name: org/eclipse/ui/ide/undo/WorkspaceUndoUtil.class
+SHA-256-Digest: rJBw5qAAIsnXi2c9jjmlztN2E3jfFWR8bYSpDnu4xoc=
+
+Name: org/eclipse/ui/internal/wizards/datatransfer/FileSystemExporter.
+ class
+SHA-256-Digest: ZEfaZIg7wF92z9qsr1z3Q9SEYC7b2l/3jkqzkp0NK9Y=
+
+Name: org/eclipse/ui/internal/ide/registry/AskUserViaPopupUnassociated
+ EditorStrategy.class
+SHA-256-Digest: 44ezWHAlet+Z0TsyWgd35HP3QZiR1PbeIko+uIDxX/0=
+
+Name: icons/full/dlcl16/removefromworkset.png
+SHA-256-Digest: HaIIEvSDoRWRL1NAvm594clWtsMB07xIsm/KbrhfFtw=
+
+Name: org/eclipse/ui/internal/views/markers/MarkerContentGenerator.cla
+ ss
+SHA-256-Digest: tq/txjL+omUG9HMX6MIvB9DyAbDEAwtTlVoVS+Ig1iU=
+
+Name: org/eclipse/ui/ide/undo/AbstractMarkersOperation.class
+SHA-256-Digest: N1+FI6rh0IKIZLKO/b2fB4H7i13r1IOZh1o1ncekm3M=
+
+Name: org/eclipse/ui/internal/ide/dialogs/LinkedResourcesPreferencePag
+ e.class
+SHA-256-Digest: 01trbY689Icugvclu0vnWhm9eevsHxbLvIYFpr1kSbo=
+
+Name: icons/full/eview16/tasks_tsk.png
+SHA-256-Digest: OMEhSj0hLL6//j3imr0FLmaExJOWhrJ5ZlbsYEVfJBg=
+
+Name: org/eclipse/ui/internal/ide/dialogs/PathVariablesGroup$ValueLabe
+ lProvider.class
+SHA-256-Digest: qbH1iZen1je9DmTfvkeTZJRYwjysaMMRIUTsjACj+08=
+
+Name: icons/full/dlcl16/collapseall.png
+SHA-256-Digest: Wiv1ZAOyCdLGggoNxZa9l3PXnvsAvAogprVwM70Iucw=
+
+Name: icons/full/etool16/importzip_wiz@2x.png
+SHA-256-Digest: FTIVL5aLeqOwqapjAXvvnGr2GUjXtitSDMARJN90O5M=
+
+Name: org/eclipse/ui/model/WorkbenchContentProvider.class
+SHA-256-Digest: uX9Fi7M8EBJuZXrUGVVX7PXuYrtRnQnrkcLQMAxaA6A=
+
+Name: about.html
+SHA-256-Digest: 7mbS+ztMDS7S5/aYvJ7U49bPd/pcr0CtAylhJdsaxfA=
+
+Name: icons/full/dview16/problems_view.png
+SHA-256-Digest: WEvu8toaOO212qz46UKmeNgdw3CyvoNp4pGC6rJrkb8=
+
+Name: icons/full/obj16/header_priority@2x.png
+SHA-256-Digest: uCIvRSvCHKvWZViyo2aw+sFss5ihYFr5aZiaOoIXRfs=
+
+Name: org/eclipse/ui/actions/TextActionHandler$CutActionHandler.class
+SHA-256-Digest: gf3IWm+jRu2I6tTc0HqFoebe1SWshzgrfHay8Bf9i5E=
+
+Name: org/eclipse/ui/views/navigator/RefactorActionGroup.class
+SHA-256-Digest: mLvsK9Pze390PNYwV6XL0TLGoc2l/mHQrOuOgroSLug=
+
+Name: org/eclipse/ui/internal/views/markers/Markers.class
+SHA-256-Digest: Skojm/UMuBdfA9Cas6+6tP1Ld+76PipmUF2DYqUeVPo=
+
+Name: icons/full/obj16/warning.png
+SHA-256-Digest: 922+QFrupJRVPeg5BHHYqBoA9ecwWA7o6YnMaXBHFoo=
+
+Name: org/eclipse/ui/internal/ide/misc/ContainerSelectionGroup.class
+SHA-256-Digest: 9T9oHJsAvTzzhTTRsQjZttTDlIXJXGwxZJuB14g9wpg=
+
+Name: icons/full/eview16/filenav_nav.png
+SHA-256-Digest: zqBptA79HbMAVUg46LiSmVLaavIgYo/+rilKWVxjpoY=
+
+Name: org/eclipse/ui/dialogs/WizardNewFileCreationPage$1.class
+SHA-256-Digest: 5gduTZofFhdLy9QGojIM1fuO/tqDBlHlLjr9oeDOggI=
+
+Name: org/eclipse/ui/internal/ide/DirectoryProposalContentAssist.class
+SHA-256-Digest: TXqV8SBPsejISylNOXomzTzPC+sqEPVUN/cwry83xm8=
+
+Name: icons/full/dlcl16/workingsets@2x.png
+SHA-256-Digest: B47fM4Q2xoXO/edEbrUEzlVYK7NOfJZKCpAGffFPb4k=
+
+Name: org/eclipse/ui/ide/dialogs/ResourceEncodingFieldEditor.class
+SHA-256-Digest: Ds3WcQkTxdsR8bVVeKJWcilZPxSnhwPEhOjofmjPIyU=
+
+Name: icons/full/elcl16/removefromworkset.png
+SHA-256-Digest: yoyoZUSzonjbCBpjESPYlML6oTPy4ZtkwQpd4oONAdw=
+
+Name: org/eclipse/ui/ide/dialogs/ImportTypeDialog$2.class
+SHA-256-Digest: Ae2QUECZyzvRJ655MYN7mc2k/diPvEjKFEnm23cTTeE=
+
+Name: org/eclipse/ui/internal/ide/dialogs/CleanDialog$ProjectSubsetBui
+ ldAction.class
+SHA-256-Digest: phnyLt65cG5IXD23wU0NawUz6iMUhgui+oBe9CvA9gE=
+
+Name: org/eclipse/ui/actions/OpenSystemEditorAction.class
+SHA-256-Digest: gI/TTA8f+rmRnzWtC7zpTiYCTsI/W26gbLLbXG2RcTU=
+
