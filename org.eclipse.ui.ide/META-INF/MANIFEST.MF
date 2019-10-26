@@ -59,7 +59,7 @@ Export-Package: org.eclipse.ui,org.eclipse.ui.actions,org.eclipse.ui.d
  ipse.ui.views.tasklist,org.eclipse.ui.wizards.datatransfer,org.eclips
  e.ui.wizards.newresource
 Bundle-Name: %Plugin.name
-Bundle-Version: 3.16.0.v20190916-1323
+Bundle-Version: 3.16.10
 Bundle-ClassPath: .
 Bundle-Localization: plugin
 Bundle-Activator: org.eclipse.ui.internal.ide.IDEWorkbenchPlugin
